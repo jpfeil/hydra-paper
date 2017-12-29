@@ -1,21 +1,41 @@
 \documentclass[fleqn,10pt]{wlscirep}
-\title{Scientific Reports Title to see here (20 words or less)}
 
-\author[1,*]{Alice Author}
-\author[2]{Bob Author}
-\author[1,2,+]{Christine Author}
-\author[2,+]{Derek Author}
-\affil[1]{Affiliation, department, city, postcode, country}
-\affil[2]{Affiliation, department, city, postcode, country}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.jpg}
+\usepackage{textcomp}
 
-\affil[*]{corresponding.author@email.example}
+\newcommand{\secref}[1]{Section~\ref{sec:#1}}
+\newcommand{\tabref}[1]{Table~\ref{tab:#1}}
+\newcommand{\figref}[1]{Figure~\ref{fig:#1}}
 
-\affil[+]{these authors contributed equally to this work}
+\newcommand{\textapprox}{\raisebox{0.5ex}{\texttildelow}}
+
+\graphicspath{{./images/}}
+
+
+\title{Mixture Models for Pediatric Gene Expression Analysis}
+
+\author[1,*]{Jacob Pfeil}
+\author[1]{Olena Morozova}
+\author[1]{Holly Beale}
+\author[1]{Sofie Salama}
+\author[1]{David Haussler}
+\affil[1]{University of California, Santa Cruz, Biomolecular Engineering, Santa Cruz, 95064, United States}
+
+\affil[*]{jpfeil@ucsc.edu}
 
 %\keywords{Keyword1, Keyword2, Keyword3}
 
+% TODO
+% Write results 
+% - make figure showing a normally distributed gene expression distribution
+% - make neuroblastoma MYCN distribution
+% Write methods 
+% Write discussion
+% Write introduction
+
 \begin{abstract}
-Example Abstract. Abstract must be under 200 words and not include subheadings or citations. Example Abstract. Abstract must be under 200 words and not include subheadings or citations. Example Abstract. Abstract must be under 200 words and not include subheadings or citations. Example Abstract. Abstract must be under 200 words and not include subheadings or citations. Example Abstract. Abstract must be under 200 words and not include subheadings or citations. Example Abstract. Abstract must be under 200 words and not include subheadings or citations. Example Abstract. Abstract must be under 200 words and not include subheadings or citations. Example Abstract. Abstract must be under 200 words and not include subheadings or citations. 
+Cancer is the leading cause of death by disease for children in the United States. The standard of care therapies are toxic and some childhood cancer types do not respond well to these therapies. Molecularly targeted therapies inhibit specific proteins that are necessary for cancer progression and may be able to overcome the limitations of current standard of care therapies. Current big data analyses treat specific diseases as being homogeneous, but significant heterogeneity exists within specific cancer types. This has led to the development of molecular subtypes. To facilitate the development of therapies specifically designed for each molecular subtype, we have developed a mixture model that deconvolutes subtypes within large, public cancer gene expression profiles. Often, it is difficult to acquire a normal sample for pediatric gene expression analysis or the cell of origin for some pediatric cancers is unknown. Our approach does not require a normal sample because it identifies which gene expression programs are differentially activated or repressed across cancer subtypes. Once the mixture model is learned, it is straightforward to classify new patients into molecular subtypes. We hope this work will accelerate personalized medicine approaches for pediatric and adult cancers. 
 \end{abstract}
 \begin{document}
 
@@ -31,13 +51,62 @@ Example Abstract. Abstract must be under 200 words and not include subheadings o
 
 \section*{Introduction}
 
-The Introduction section, of referenced text\cite{Figueredo:2009dg} expands on the background of the work (some overlap with the Abstract is acceptable). The introduction should not include subheadings.
+%The Introduction section, of referenced text\cite{Figueredo:2009dg} expands on the background of the work (some overlap with the Abstract is acceptable). The introduction should not include subheadings.
+
+Childhood cancer patients need therapies that cure disease while also safeguarding development and future health. Approximately, 16,000 children are diagnosed with cancer each year in the United States. Despite significant improvements in childhood cancer therapies, one in eight children will die of cancer. Some forms of childhood cancer respond better to standard of care therapies than others. There are forms of pediatric brain tumors that have survival rates around \textapprox 10 \%. 
+
+The standard of care therapies are also harmful to the long-term health of childhood cancer survivors. For instance, children respond well to high-dose chemotherapy, but chemotherapeutic agents are toxic and damage healthy tissue. Life-long side effects develop in \textapprox 60 \% of the childhood cancer survivors. Childhood cancer survivors are more likely to develop other forms of cancer, heart and lung problems, stunted growth, and learning disabilities \cite{cancer.org:longTermEffects,kopp2012late,AmericanCancerSociety:ChildCancer}. There are \textapprox 380,000 childhood cancer survivors in the United States and 60\% of them are facing life-long disabilities as a result of their cancer therapy.
+
+A more personalized approach may overcome the shortcomings of current standard of care therapies. Molecularly targeted therapies identify rare alterations within a patient's cancer that can be specifically inhibited to prevent cancer progression. Targeted therapies are biologically active at a lower dose than many standard of care therapies which makes them less toxic. While targeted therapies have induced tumor remissions, cancer cells are prone to become resistant to targeted therapies and the cancer returns. Research into the molecular mechanisms of drug resistance as well as development of more pediatric targeted inhibitors may yield novel therapeutic directions that yield better outcomes for patients with fewer harmful side effects \cite{norris2012challenges}. 
+
+A more targeted approach identifies specific molecular alterations that make cancer cells susceptible to targeted therapies. An example of a successful targeted therapy is imatinib (Gleevec) for BCR-ABL driven leukemia. BCR-ABL is a fusion protein that couples the oncogenic ABL1 gene with a constitutively expressed BCR gene. This increases the concentration of the oncogenic ABL1 gene to drive cancer progression. Imatinib can correct for this alteration by binding to the ABL active site and preventing ABL's biological function. BCR-ABL positive cancer cells depend on the ABL protein to proliferate, so inhibition of ABL's function halts cancer progression. The BCR-ABL fusion occurs in a fraction of leukemia patients, but application of imatinib to BCR-ABL positive leukemias has been proven to improve treatment outcomes \cite{wong2004bcr,bernt2014current}.
+
+Raw RNA sequencing data is in FASTQ format. FASTQ format is a simple text format that lists each sequence with the sequencer's confidence score for calling each base in the sequence. After preprocessing and quality control, the next step in gene expression analysis is to map the sequencing data to a reference genome or transcriptome using sequence similarity. The human genome is well-annotated, and the annotation is used to assign sequencing data to specific genes. There are many algorithms for mapping sequencing data to reference genomes, but one of the most widely adopted algorithms is called STAR \cite{dobin2013star}. After alignment, gene quantification algorithms count the number of reads that mapped to each gene or transcript. To improve transcript-level quantifications, some algorithms like the RSEM algorithm try to maximize the likelihood of observing the data and estimate an expected count for each gene \cite{li2011rsem}.
+
+Absolute gene expression is difficult to analyze, so a common analysis method is to compare absolute gene expression of two groups of data and identify differences in expression. Differential expression analysis for cancer studies typically estimate gene expression in two groups of samples, typically a healthy control and disease group, and identifies differences in gene expression. Differential expression analysis can be used to find cancer genes by comparing tumor expression to matched healthy tissue expression. When a tumor is biopsied or resected, the surgeon often takes a sample of healthy tissue for comparison. For many cancer types, it is not feasible to take a matched normal sample. In our experience, pediatric gene expression data rarely has matched normal data, so other methods are needed to identify differentially expressed genes.
+
+Differential expression analysis also requires defining two conditions. For cancer, the two conditions are usually cohort of paired healthy tissue, or normal samples, and the second condition is a cohort of disease samples. In addition to having limited cancer tissue, in our experience, it is more difficult to obtain paired normal pediatric tissue. Therefore, there is not a control group to compare pediatric cancer expression to. This is one reason to assemble the Treehouse compendium of adult and pediatric cancer because we can use other pediatric cancer samples to identify patterns in expression for pediatric tissue.
+
+Alternative methods to differential expression analysis include GFOLD and Cancer Outlier Profile Analysis (COPA). GFOLD is the state-of-the-art method for ranking genes based on fold-change. GFOLD prioritizes genes that have high fold change relative to controls and a large number of read counts. GFOLD performs better than differential expression algorithms when working with a single biological replicate \cite{feng2012gfold}. The Treehouse algorithm is similar to GFOLD in that a gene expression outlier needs to be expressed at a much higher level than the median and be in the top 5\% of all expressed genes.
+
+Many differential expression tools are based on a t-test for comparing two means. One challenge with this approach is that some samples in a cohort may have differential gene expression that is not consistent with the overall population. For a particular disease, patient A may have MYC over-expression and normal levels of CDK4, but patient B may have CDK4 over-expression and normal levels of MYC. The COPA method was designed to find subtle patterns of differential expression compared to a normal cohort. The COPA method assumes that the healthy cohort will not have pathogenic expression, but samples within the experimental disease cohort will show mutually exclusive expression for pairs of genes \cite{macdonald2006copa,wang2012mcopa}. This approach fails for Treehouse analysis because our control cohort includes cancer samples that will likely have over-expression of oncogenic genes.
+
+Many researchers have proposed a mixture modeling approach for differential expression analysis, but a mixture modeling approach has not been adopted by the gene expression analysis community (TODO: ADD REFERENCES TO GENE EXPRESSION MIXTURE MODEL PAPERS). One reason for this is the lack of tools to facilitate this type of analysis. These models are difficult to implement from scratch and pre-implemented tools are not well designed for cancer gene expression analyses. There has also been an insufficient number of tissue-specific gene expression profiles to differentiate molecular subtypes. However, the work of TCGA, TARGET, and public repositories not make more sophisticated gene expression analyses possible. 
+
+Most genes' expression distribution is approximately normally distributed once normalized using a log transformation \cite{zwiener2014transforming}. 
+
 
 \section*{Results}
 
 Up to three levels of \textbf{subheading} are permitted. Subheadings should not be numbered.
 
-\subsection*{Subsection}
+\subsection*{Cancer Gene Expression Distributions are Multi-Modal}
+\subsubsection*{Modes Correspond to Sex-Specific Expression}
+Genes are expressed at different levels for different tissues. In addition to tissue specific expression, there are also biological features that influence gene expression across individuals. For example, age and gender are correlated with expression of some genes. A varying effects model where the mean and the effect of biological features change depending on the tissue can be used to make better predictions of gene expression. For example, a hierarchical model can identify sex-linked expression, but the current pan-cancer and pan-disease analyses are not able to detect sex-linked expression. An example of sex-linked expression that has been associated with cancer is the XIST gene \cite{yildirim2013xist}. XIST controls X-chromosome silencing in females and is not usually expressed in males (\figref{xist}). This is a clear example where assuming male and female gene expression comes from the same distribution leads to an exaggerated estimation of the outlier threshold. It is therefore difficult to identify potential cases where under-expression of XIST in females may contribute to their cancer. While the incidence of cancer is equal across boys and girls, boys tend to respond worse to therapy. An investigation into sex-linked gene expression may yield insights into the differences in response to cancer therapies for boys and girls. 
+
+%%%%%%%%%%%%%%%
+% XIST Figure %
+%%%%%%%%%%%%%%%
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/xist-fig.png}
+\caption{Example of gender-specific expression that can be modeled in a hierarchical model. The XIST gene is involved in X chromosome silencing, so XIST is not expressed for males. XIST has been linked to cancer, but the Treehouse model overestimates the variance in XIST expression because females and males are modeled together. The proposed hierarchical model learns the differences between male and female XIST expression for improved model fit.}
+\label{fig:xist}
+\end{figure}
+
+\subsection*{Modes Correspond to Molecular Subtypes}
+
+%%%%%%%%%%%%%%%
+% MYCN Overview Figure %
+%%%%%%%%%%%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/neuroblastoma-mycn-distribution-comparison-boxplot-2017-12-28.png}
+\caption{TEXT}
+\label{fig:mycn}
+\end{figure}
+
 
 Example text under a subsection. Bulleted lists may be used where appropriate, e.g.
 
@@ -58,7 +127,7 @@ The Discussion should be succinct and must not contain subheadings.
 
 Topical subheadings are allowed. Authors must ensure that their Methods section includes adequate experimental and characterization data necessary for others in the field to reproduce their work.
 
-\bibliography{sample}
+\bibliography{reference}
 
 \noindent LaTeX formats citations and references automatically using the bibliography records in your .bib file, which you can edit via the project menu. Use the cite command for an inline citation, e.g.  \cite{Figueredo:2009dg}.
 
