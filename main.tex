@@ -8,6 +8,13 @@
 \newcommand{\tabref}[1]{Table~\ref{tab:#1}}
 \newcommand{\figref}[1]{Figure~\ref{fig:#1}}
 
+\newcommand{\beginsupplement}{%
+        \setcounter{table}{0}
+        \renewcommand{\thetable}{S\arabic{table}}%
+        \setcounter{figure}{0}
+        \renewcommand{\thefigure}{S\arabic{figure}}%
+     }
+
 \newcommand{\textapprox}{\raisebox{0.5ex}{\texttildelow}}
 
 \graphicspath{{./images/}}
@@ -80,20 +87,7 @@ Most genes' expression distribution is approximately normally distributed once n
 
 Up to three levels of \textbf{subheading} are permitted. Subheadings should not be numbered.
 
-\subsection*{Cancer Gene Expression Distributions are Multi-Modal}
-\subsubsection*{Modes Correspond to Sex-Specific Expression}
-Genes are expressed at different levels for different tissues. In addition to tissue specific expression, there are also biological features that influence gene expression across individuals. For example, age and gender are correlated with expression of some genes. A varying effects model where the mean and the effect of biological features change depending on the tissue can be used to make better predictions of gene expression. For example, a hierarchical model can identify sex-linked expression, but the current pan-cancer and pan-disease analyses are not able to detect sex-linked expression. An example of sex-linked expression that has been associated with cancer is the XIST gene \cite{yildirim2013xist}. XIST controls X-chromosome silencing in females and is not usually expressed in males (\figref{xist}). This is a clear example where assuming male and female gene expression comes from the same distribution leads to an exaggerated estimation of the outlier threshold. It is therefore difficult to identify potential cases where under-expression of XIST in females may contribute to their cancer. While the incidence of cancer is equal across boys and girls, boys tend to respond worse to therapy. An investigation into sex-linked gene expression may yield insights into the differences in response to cancer therapies for boys and girls. 
 
-%%%%%%%%%%%%%%%
-% XIST Figure %
-%%%%%%%%%%%%%%%
-
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth]{images/xist-fig.png}
-\caption{Example of gender-specific expression that can be modeled in a hierarchical model. The XIST gene is involved in X chromosome silencing, so XIST is not expressed for males. XIST has been linked to cancer, but the Treehouse model overestimates the variance in XIST expression because females and males are modeled together. The proposed hierarchical model learns the differences between male and female XIST expression for improved model fit.}
-\label{fig:xist}
-\end{figure}
 
 \subsection*{Modes Correspond to Molecular Subtypes}
 
@@ -102,10 +96,16 @@ Genes are expressed at different levels for different tissues. In addition to ti
 %%%%%%%%%%%%%%%
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{images/neuroblastoma-mycn-distribution-comparison-boxplot-2017-12-28.png}
+\includegraphics[width=1.05\linewidth]{images/MYCN-Figure.png}
 \caption{TEXT}
 \label{fig:mycn}
 \end{figure}
+
+\subsection*{Precision medicine needs more sophisticated models that can learn cancer subtypes}
+
+\subsubsection*{Mixture Model is able to deconvolute expression modes}
+We developed a simple Bayesian mixture model using the STAN bayesian modeling software \cite{stan}
+
 
 
 Example text under a subsection. Bulleted lists may be used where appropriate, e.g.
@@ -146,27 +146,24 @@ To include, in this order: \textbf{Accession codes} (where applicable); \textbf{
 
 The corresponding author is responsible for submitting a \href{http://www.nature.com/srep/policies/index.html#competing}{competing financial interests statement} on behalf of all authors of the paper. This statement must be included in the submitted article file.
 
-\begin{figure}[ht]
+\beginsupplement
+\section*{Supplementary Information}
+
+\subsection*{Cancer Gene Expression Distributions are Multi-Modal}
+\subsubsection*{Modes Correspond to Sex-Specific Expression}
+Genes are expressed at different levels for different tissues. In addition to tissue specific expression, there are also biological features that influence gene expression across individuals. For example, age and gender are correlated with expression of some genes. A varying effects model where the mean and the effect of biological features change depending on the tissue can be used to make better predictions of gene expression. For example, a hierarchical model can identify sex-linked expression, but the current pan-cancer and pan-disease analyses are not able to detect sex-linked expression. An example of sex-linked expression that has been associated with cancer is the XIST gene \cite{yildirim2013xist}. XIST controls X-chromosome silencing in females and is not usually expressed in males (\figref{xist}). This is a clear example where assuming male and female gene expression comes from the same distribution leads to an exaggerated estimation of the outlier threshold. It is therefore difficult to identify potential cases where under-expression of XIST in females may contribute to their cancer. While the incidence of cancer is equal across boys and girls, boys tend to respond worse to therapy. An investigation into sex-linked gene expression may yield insights into the differences in response to cancer therapies for boys and girls. 
+
+%%%%%%%%%%%%%%%
+% XIST Figure %
+%%%%%%%%%%%%%%%
+
+\begin{figure}
 \centering
-\includegraphics[width=\linewidth]{stream}
-\caption{Legend (350 words max). Example legend text.}
-\label{fig:stream}
+\includegraphics[width=0.75\linewidth]{images/xist-fig-2017-12-28.png}
+\caption{Example of gender-specific expression that can be modeled in a hierarchical model. The XIST gene is involved in X chromosome silencing, so XIST is not expressed for males. XIST has been linked to cancer, but the Treehouse model overestimates the variance in XIST expression because females and males are modeled together. The proposed hierarchical model learns the differences between male and female XIST expression for improved model fit.}
+\label{sfig:xist}
 \end{figure}
 
-\begin{table}[ht]
-\centering
-\begin{tabular}{|l|l|l|}
-\hline
-Condition & n & p \\
-\hline
-A & 5 & 0.1 \\
-\hline
-B & 10 & 0.01 \\
-\hline
-\end{tabular}
-\caption{\label{tab:example}Legend (350 words max). Example legend text.}
-\end{table}
 
-Figures and tables can be referenced in LaTeX using the ref command, e.g. Figure \ref{fig:stream} and Table \ref{tab:example}.
 
 \end{document}
