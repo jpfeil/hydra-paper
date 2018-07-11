@@ -20,7 +20,7 @@
 \graphicspath{{./images/}}
 
 
-\title{Mixture Models for Pediatric Gene Expression Analysis}
+\title{Non-Parametric Mixture Modeling for Pediatric Precision Oncology}
 
 \author[1,*]{Jacob Pfeil}
 \author[1]{Olena Morozova}
@@ -87,36 +87,18 @@ Most genes' expression distribution is approximately normally distributed once n
 
 Up to three levels of \textbf{subheading} are permitted. Subheadings should not be numbered.
 
+\subsection*{Synthetic Data Analysis}
+Synthetic data was generated to assess the performance of the hydra mixture modeling approach. We have also included a few comparable gene expression analysis tools to validate our approach. Our first validation is to show the sensitivity and specificity of the hydra method compared to the common endpoint of bioinformatic analysis which is gene set enrichment analysis (GSEA). As mentioned in the introduction, gene set enrichment analysis is a challenge for precision oncology, especially in the pediatric field, since access to matched normal tissue is lacking. This limits the number of methods for inferring differentially expressed genes to ranking approaches such as single sample gene set enrichment analysis \cite{barbie2009systematic} and gene set variation analysis \cite{hanzelmann2013gsva}. These methods are commonly used for N-of-1 analysis and have performed surprisingly well given limitations in their design.
 
+We compared the predictive performance for identifying enriched genes using healthy tissue samples collected as part of the Genotype-Tissue Expression (GTEx) project \cite{lonsdale2013genotype}. The Molecular Signatures Database (MSigDB) provides a large set of curated gene lists for identifying biological functions for precision medicine applications. We used the Hallmark MSigDB gene sets to select genes with related biological functions and correlated expression \cite{liberzon2015molecular}. We then randomly sampled GTEx skeletal muscle samples, modified their expression values for a subset of the gene set genes. We did this process twice to generate synthetic training and test data. The same genes were used in the test and training data, but the values were sampled independently from a normal distribution at varying mean differences. 
 
-\subsection*{Modes Correspond to Molecular Subtypes}
+We applied this analysis to all of the Hallmark gene sets, but we are showing two illustrative examples here (TODO: add figure ref). The Hallmark Glycolysis gene set includes 
+199 genes involved in glycolysis and gluconeogenesis. We sample 25\% of these genes to be differentially expressed and sampled a difference in expression value from a normal $\mathcal{N}(0.5, 0.5)$ or a $\mathcal{N}(1, 0.5)$. If this difference caused a negative expression value, then we set the expression value to be zero. The GTEx expression TPM values were generated using the Toil RNA-Seq pipeline \cite{vivian2017toil}. The reciever operator curves (ROC) were generated for the hydra, ssGSEA, and GSVA methods. The hydra method performed the best with an AUC (area under the curve) of X, but the ssGSEA method was comparable with an AUC of blank. The GSVA method performed the worst with an AUC of BLANK. 
 
-%%%%%%%%%%%%%%%
-% MYCN Overview Figure %
-%%%%%%%%%%%%%%%
-\begin{figure}
-\centering
-\includegraphics[width=1.05\linewidth]{images/MYCN-Figure.png}
-\caption{TEXT}
-\label{fig:mycn}
-\end{figure}
+One of the limitations of a non-parametric ranking approach to gene set enrichment is that it cannot account for the dynamic range in expression for a gene in a single-sample context. Therefore, we hypothesized that a GSEA method approach that does not account for this information will suffer if the background expression for a gene set is high. We see this in the HALLMARK Oxidative Phosphorylation analysis where the ssGSEA suffers from poor performance because the background expression is higher and thus is not well suited to identify subtle changes in expression.
 
-\subsection*{Precision medicine needs more sophisticated models that can learn cancer subtypes}
+TODO: Need to compare the small effect size and the large effect size 
 
-\subsubsection*{Mixture Model is able to deconvolute expression modes}
-We developed a simple Bayesian mixture model using the STAN bayesian modeling software \cite{stan}
-
-
-
-Example text under a subsection. Bulleted lists may be used where appropriate, e.g.
-
-\begin{itemize}
-\item First item
-\item Second item
-\end{itemize}
-
-\subsubsection*{Third-level section}
- 
 Topical subheadings are allowed.
 
 \section*{Discussion}
@@ -126,6 +108,10 @@ The Discussion should be succinct and must not contain subheadings.
 \section*{Methods}
 
 Topical subheadings are allowed. Authors must ensure that their Methods section includes adequate experimental and characterization data necessary for others in the field to reproduce their work.
+\subsection{Synthetic Data Generation}
+blah
+
+
 
 \bibliography{reference}
 
