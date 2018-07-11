@@ -1,0 +1,35 @@
+\subsection*{Modes Correspond to Molecular Subtypes}
+
+%%%%%%%%%%%%%%%
+% MYCN Overview Figure %
+%%%%%%%%%%%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=1.05\linewidth]{images/MYCN-Figure.png}
+\caption{TEXT}
+\label{fig:mycn}
+\end{figure}
+
+\subsection*{Precision medicine needs more sophisticated models that can learn cancer subtypes}
+
+\subsubsection*{Mixture Model is able to deconvolute expression modes}
+We developed a simple Bayesian mixture model using the STAN bayesian modeling software \cite{stan}
+
+%
+%
+%
+
+
+
+
+
+
+
+Example text under a subsection. Bulleted lists may be used where appropriate, e.g.
+
+\begin{itemize}
+\item First item
+\item Second item
+\end{itemize}
+
+\subsubsection*{Third-level section}
