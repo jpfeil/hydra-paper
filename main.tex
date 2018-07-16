@@ -23,8 +23,13 @@
 \title{Non-Parametric Mixture Modeling for Pediatric Precision Oncology}
 
 \author[1,*]{Jacob Pfeil}
-\author[1]{Olena Morozova}
+\author[1]{Lauren Sanders}
+\author[1]{Geoff Lyle}
+\author[1]{Katrina Learned}
+\author[1]{Ellen Kephart}
+\author[1]{Ann Durbin}
 \author[1]{Holly Beale}
+\author[1]{Olena Morozova}
 \author[1]{Sofie Salama}
 \author[1]{David Haussler}
 \affil[1]{University of California, Santa Cruz, Biomolecular Engineering, Santa Cruz, 95064, United States}
@@ -54,7 +59,6 @@ Cancer is the leading cause of death by disease for children in the United State
 %
 \thispagestyle{empty}
 
-\noindent Please note: Abbreviations should be introduced at the first mention in the main text – no abbreviations lists. Suggested structure of main text (not enforced) is provided below.
 
 \section*{Introduction}
 
@@ -85,8 +89,6 @@ Most genes' expression distribution is approximately normally distributed once n
 
 \section*{Results}
 
-Up to three levels of \textbf{subheading} are permitted. Subheadings should not be numbered.
-
 \subsection*{Synthetic Data Analysis}
 Synthetic data was generated to assess the performance of the hydra mixture modeling approach. We have also included a few comparable gene expression analysis tools to validate our approach. Our first validation is to show the sensitivity and specificity of the hydra method compared to the common endpoint of bioinformatic analysis which is gene set enrichment analysis (GSEA). As mentioned in the introduction, gene set enrichment analysis is a challenge for precision oncology, especially in the pediatric field, since access to matched normal tissue is lacking. This limits the number of methods for inferring differentially expressed genes to ranking approaches such as single sample gene set enrichment analysis \cite{barbie2009systematic} and gene set variation analysis \cite{hanzelmann2013gsva}. These methods are commonly used for N-of-1 analysis and have performed surprisingly well given limitations in their design.
 
@@ -99,7 +101,10 @@ One of the limitations of a non-parametric ranking approach to gene set enrichme
 
 TODO: Need to compare the small effect size and the large effect size 
 
-Topical subheadings are allowed.
+\subsection*{Melanoma Validation}
+Whether pediatric cancer in general has a significant immune component is an active area or research. The success of checkpoint therapies in adult cancers has not been as strongly adopted in pediatric cancers because these therapies tend to do better in patients with a high mutation burden. Pediatric cancers generally have low mutation burdens. However, several groups have found elevated checkpoint marker expression in pediatric cancers \cite{majzner2017assessment,saletta2017programmed,nowicki2016prospective}, which suggests that immunosuppressive mechanisms are active in pediatric cancers and may need further characterization to identify therapeutic opportunities. 
+
+We show that the hydra approach is able to subtype patients using immune gene sets in a way that correlates with the computational staining of haemotoxylin and eosin (H\&E) staining. We analyzed the TCGA skin cutaneous melanoma data set (TODO: N=X) 
 
 \section*{Discussion}
 
@@ -112,10 +117,7 @@ Topical subheadings are allowed. Authors must ensure that their Methods section 
 blah
 
 
-
 \bibliography{reference}
-
-\noindent LaTeX formats citations and references automatically using the bibliography records in your .bib file, which you can edit via the project menu. Use the cite command for an inline citation, e.g.  \cite{Figueredo:2009dg}.
 
 \section*{Acknowledgements (not compulsory)}
 
@@ -123,8 +125,7 @@ Acknowledgements should be brief, and should not include thanks to anonymous ref
 
 \section*{Author contributions statement}
 
-Must include all authors, identified by initials, for example:
-A.A. conceived the experiment(s),  A.A. and B.A. conducted the experiment(s), C.A. and D.A. analysed the results.  All authors reviewed the manuscript. 
+J.P. conceived the analysis, conducted the analysis, and analyzed the data. O.M., H.B., S.S., and D.H. analyzed the results.  All authors reviewed the manuscript. 
 
 \section*{Additional information}
 
