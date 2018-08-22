@@ -1,7 +1,7 @@
 \documentclass[fleqn,10pt]{wlscirep}
 
 \usepackage{graphicx}
-\DeclareGraphicsExtensions{.jpg}
+\usepackage{grffile}
 \usepackage{textcomp}
 
 \newcommand{\secref}[1]{Section~\ref{sec:#1}}
@@ -23,8 +23,8 @@
 \title{Non-Parametric Mixture Modeling for Pediatric Precision Oncology}
 
 \author[1,*]{Jacob Pfeil}
-\author[1]{Lauren Sanders}
 \author[1]{Geoff Lyle}
+\author[1]{Lauren Sanders}
 \author[1]{Katrina Learned}
 \author[1]{Ellen Kephart}
 \author[1]{Ann Durbin}
@@ -88,23 +88,55 @@ Most genes' expression distribution is approximately normally distributed once n
 
 
 \section*{Results}
+\subsection*{Overview of Method}
+The goal of the hydra algorithm is to enrich for genes of interest by removing genes that are unimodally expressed across a disease cohort and thus not differentially expressed. The assumption is that a unimodally distributed gene has limited information because the signal is diluted by the variability in sequencing technology. However, multi-modally expressed genes have a signal that clearly breaks through the noise of sequencing technology and thus should be prioritized in a genome-wide gene expression analysis. This method is unbiased and can be used to identify novel biomarkers for disease. We can additionally filter genes that covary with a variable of interest such as response to a drug or survival in order to identify subtype specific expression that is related to the research question. Once the feature space has been reduced to a smaller size, then the analysis become powered to detected coordinated expression by identifying multivariate clusters. This allows the researchers to investigate the correlation of several genes associated with a variable of interest which will lead to robust detection of expression subtypes and robust gene expression signatures.
+
+Here we apply this method to synthetic data and compare this approach to other common analysis methods for subtyping tumors samples. One of the benefits of this approach is that this provides a framework for understanding a population of patients and can identify subtypes that may benefit from future drug development. Investigation into subtype specific expression may also identify opportunities to repurpose available therapies for other diseases. This is particularly useful for pediatric cancer gene expression analysis where drug development has lagged and there is a need for novel therapies. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Figure describing the approach %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection*{Synthetic Data Analysis}
 Synthetic data was generated to assess the performance of the hydra mixture modeling approach. We have also included a few comparable gene expression analysis tools to validate our approach. Our first validation is to show the sensitivity and specificity of the hydra method compared to the common endpoint of bioinformatic analysis which is gene set enrichment analysis (GSEA). As mentioned in the introduction, gene set enrichment analysis is a challenge for precision oncology, especially in the pediatric field, since access to matched normal tissue is lacking. This limits the number of methods for inferring differentially expressed genes to ranking approaches such as single sample gene set enrichment analysis \cite{barbie2009systematic} and gene set variation analysis \cite{hanzelmann2013gsva}. These methods are commonly used for N-of-1 analysis and have performed surprisingly well given limitations in their design.
 
+%%%%%%%%%%%%%%%
+% ROC Plot Figure %
+%%%%%%%%%%%%%%%
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{images/roc-curves-eff-0.5-2018-07-11.png}
+	\caption{ROC Plot Curves for Assessing the Performance of Pathway Enrichment Tools.}
+	\label{sfig:rocplot}
+\end{figure}
+
 We compared the predictive performance for identifying enriched genes using healthy tissue samples collected as part of the Genotype-Tissue Expression (GTEx) project \cite{lonsdale2013genotype}. The Molecular Signatures Database (MSigDB) provides a large set of curated gene lists for identifying biological functions for precision medicine applications. We used the Hallmark MSigDB gene sets to select genes with related biological functions and correlated expression \cite{liberzon2015molecular}. We then randomly sampled GTEx skeletal muscle samples, modified their expression values for a subset of the gene set genes. We did this process twice to generate synthetic training and test data. The same genes were used in the test and training data, but the values were sampled independently from a normal distribution at varying mean differences. 
 
-We applied this analysis to all of the Hallmark gene sets, but we are showing two illustrative examples here (TODO: add figure ref). The Hallmark Glycolysis gene set includes 
-199 genes involved in glycolysis and gluconeogenesis. We sample 25\% of these genes to be differentially expressed and sampled a difference in expression value from a normal $\mathcal{N}(0.5, 0.5)$ or a $\mathcal{N}(1, 0.5)$. If this difference caused a negative expression value, then we set the expression value to be zero. The GTEx expression TPM values were generated using the Toil RNA-Seq pipeline \cite{vivian2017toil}. The reciever operator curves (ROC) were generated for the hydra, ssGSEA, and GSVA methods. The hydra method performed the best with an AUC (area under the curve) of X, but the ssGSEA method was comparable with an AUC of blank. The GSVA method performed the worst with an AUC of BLANK. 
+We applied this analysis to all of the Hallmark gene sets, but we are showing two illustrative examples here (TODO: add figure ref). The Hallmark Glycolysis gene set includes 199 genes involved in glycolysis and gluconeogenesis. We sample 25\% of these genes to be differentially expressed and sampled a difference in expression value from a normal $\mathcal{N}(0.5, 0.5)$ or a $\mathcal{N}(1, 0.5)$. If this difference caused a negative expression value, then we set the expression value to be zero. The GTEx expression TPM values were generated using the Toil RNA-Seq pipeline \cite{vivian2017toil}. The reciever operator curves (ROC) were generated for the hydra, ssGSEA, and GSVA methods. The hydra method performed the best with an AUC (area under the curve) of X, but the ssGSEA method was comparable with an AUC of blank. The GSVA method performed the worst with an AUC of BLANK. 
 
 One of the limitations of a non-parametric ranking approach to gene set enrichment is that it cannot account for the dynamic range in expression for a gene in a single-sample context. Therefore, we hypothesized that a GSEA method approach that does not account for this information will suffer if the background expression for a gene set is high. We see this in the HALLMARK Oxidative Phosphorylation analysis where the ssGSEA suffers from poor performance because the background expression is higher and thus is not well suited to identify subtle changes in expression.
 
 TODO: Need to compare the small effect size and the large effect size 
 
-\subsection*{Melanoma Validation}
+\subsection{Cell Line Validation}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{images/rough-cell-line-validation.png}
+	\caption{Cell Line Validation}
+	\label{sfig:cellline}
+\end{figure}
+
+\subsection*{Immune Subtype Validation}
 Whether pediatric cancer in general has a significant immune component is an active area or research. The success of checkpoint therapies in adult cancers has not been as strongly adopted in pediatric cancers because these therapies tend to do better in patients with a high mutation burden. Pediatric cancers generally have low mutation burdens. However, several groups have found elevated checkpoint marker expression in pediatric cancers \cite{majzner2017assessment,saletta2017programmed,nowicki2016prospective}, which suggests that immunosuppressive mechanisms are active in pediatric cancers and may need further characterization to identify therapeutic opportunities. 
 
-We show that the hydra approach is able to subtype patients using immune gene sets in a way that correlates with the computational staining of haemotoxylin and eosin (H\&E) staining. We analyzed the TCGA skin cutaneous melanoma data set (TODO: N=X) 
+We show that the hydra approach is able to subtype patients using immune gene sets in a way that correlates with the computational staining of haemotoxylin and eosin (H\&E) staining. We analyzed the TCGA skin cutaneous melanoma data set (TODO: N=X)
+
+\subsection*{Neuroblastoma Transposable Element Analysis}
+One theory for way ATRX deleted samples have higher immune marker infiltrate is that dysregulation of ATRX function leads to increased expression of transposable elements which induces a DAMP response. Transposable elements have been shown to induce innate and adaptive immune responses, so the nature of the transposable elements may play a role in the type of immune response the occurs. The transposable element sequences may lead to the generation of antigens that can be used for treatment of neuroblastoma. 
+
+In order to investigate the transposable element expression in neuroblastoma, we applied two state-of-the-art methods. The first is the salmonTE algorithm and the second is the BLANK algorithm. We used two background cohorts to quantify transposable element expression. The first is tissue matched patients that were identified as having significantly lower expression of immune markers. The second is the UVM TCGA cohort which has been used in other studies as a negative control for immune active tumors \cite{bindea2013spatiotemporal,thorsson2018immune}.
+
 
 \section*{Discussion}
 
@@ -113,8 +145,11 @@ The Discussion should be succinct and must not contain subheadings.
 \section*{Methods}
 
 Topical subheadings are allowed. Authors must ensure that their Methods section includes adequate experimental and characterization data necessary for others in the field to reproduce their work.
+
 \subsection{Synthetic Data Generation}
-blah
+The MSigDB Hallmark gene sets were used to simulate biological pathway expression that reflects the gene set properties of a typical gene expression analysis \cite{liberzon2015molecular,liberzon2011molecular}. We also needed a large cohort of human tissue samples to infer differentially expressed genes. We used the GTEx skeletal muscle cohort \cite{consortium2013genotype}. To simulate subtype specific expression, we randomly sampled 25\% of the patient population and then we sampled from a normal distribution centered at 0.5 with a standard deviation of 0.5. We then added this value to 25\% of the genes in each Hallmark gene set to simulate coordinated expression of genes within a biological gene set.
+
+
 
 
 \bibliography{reference}
@@ -125,7 +160,7 @@ Acknowledgements should be brief, and should not include thanks to anonymous ref
 
 \section*{Author contributions statement}
 
-J.P. conceived the analysis, conducted the analysis, and analyzed the data. O.M., H.B., S.S., and D.H. analyzed the results.  All authors reviewed the manuscript. 
+J.P. conceived the analysis, conducted the analysis, and analyzed the data. O.M., H.B., S.S., and D.H. reviewed the results.  All authors reviewed the manuscript. 
 
 \section*{Additional information}
 
@@ -149,6 +184,18 @@ Genes are expressed at different levels for different tissues. In addition to ti
 \includegraphics[width=0.75\linewidth]{images/xist-fig-2017-12-28.png}
 \caption{Example of gender-specific expression that can be modeled in a hierarchical model. The XIST gene is involved in X chromosome silencing, so XIST is not expressed for males. XIST has been linked to cancer, but the Treehouse model overestimates the variance in XIST expression because females and males are modeled together. The proposed hierarchical model learns the differences between male and female XIST expression for improved model fit.}
 \label{sfig:xist}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MYCN Validation Figure %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{images/MYCN-Figure.png}
+	\caption{MYCN Validation}
+	\label{sfig:mycn}
 \end{figure}
 
 
