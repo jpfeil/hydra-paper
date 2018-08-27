@@ -91,11 +91,21 @@ Most genes' expression distribution is approximately normally distributed once n
 \subsection*{Overview of Method}
 The goal of the hydra algorithm is to enrich for genes of interest by removing genes that are unimodally expressed across a disease cohort and thus not differentially expressed. The assumption is that a unimodally distributed gene has limited information because the signal is diluted by the variability in sequencing technology. However, multi-modally expressed genes have a signal that clearly breaks through the noise of sequencing technology and thus should be prioritized in a genome-wide gene expression analysis. This method is unbiased and can be used to identify novel biomarkers for disease. We can additionally filter genes that covary with a variable of interest such as response to a drug or survival in order to identify subtype specific expression that is related to the research question. Once the feature space has been reduced to a smaller size, then the analysis become powered to detected coordinated expression by identifying multivariate clusters. This allows the researchers to investigate the correlation of several genes associated with a variable of interest which will lead to robust detection of expression subtypes and robust gene expression signatures.
 
+%%%%%%%%%%%%%%%%%%%
+% Hydra Overview  %
+%%%%%%%%%%%%%%%%%%%
+
 Here we apply this method to synthetic data and compare this approach to other common analysis methods for subtyping tumors samples. One of the benefits of this approach is that this provides a framework for understanding a population of patients and can identify subtypes that may benefit from future drug development. Investigation into subtype specific expression may also identify opportunities to repurpose available therapies for other diseases. This is particularly useful for pediatric cancer gene expression analysis where drug development has lagged and there is a need for novel therapies. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Figure describing the approach %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{images/hydra-overview@2x.png}
+	\caption{Hydra Method Overview}
+	\label{sfig:hydra-overview}
+\end{figure}
 
 \subsection*{Synthetic Data Analysis}
 Synthetic data was generated to assess the performance of the hydra mixture modeling approach. We have also included a few comparable gene expression analysis tools to validate our approach. Our first validation is to show the sensitivity and specificity of the hydra method compared to the common endpoint of bioinformatic analysis which is gene set enrichment analysis (GSEA). As mentioned in the introduction, gene set enrichment analysis is a challenge for precision oncology, especially in the pediatric field, since access to matched normal tissue is lacking. This limits the number of methods for inferring differentially expressed genes to ranking approaches such as single sample gene set enrichment analysis \cite{barbie2009systematic} and gene set variation analysis \cite{hanzelmann2013gsva}. These methods are commonly used for N-of-1 analysis and have performed surprisingly well given limitations in their design.
@@ -106,7 +116,7 @@ Synthetic data was generated to assess the performance of the hydra mixture mode
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\linewidth]{images/roc-curves-eff-0.5-2018-07-11.png}
+	\includegraphics[width=0.75\linewidth]{images/figure-2-roc-curves@2x.png}
 	\caption{ROC Plot Curves for Assessing the Performance of Pathway Enrichment Tools.}
 	\label{sfig:rocplot}
 \end{figure}
