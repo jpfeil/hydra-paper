@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.30)  27 AUG 2018 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.30)  8 SEP 2018 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -964,28 +964,28 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 52.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -1056,7 +1056,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring ON on input line 52.
+Package hyperref Info: Link coloring ON on input line 51.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1065,9 +1065,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
@@ -1075,8 +1075,8 @@ LaTeX Info: Redefining \nameref on input line 52.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 52.
-LaTeX Info: Redefining \microtypecontext on input line 52.
+(lastpage)             ! on input line 51.
+LaTeX Info: Redefining \microtypecontext on input line 51.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1090,7 +1090,7 @@ Package microtype Info: No adjustment of character kerning.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 60.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 59.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
@@ -1100,10 +1100,10 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 60.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 60
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 59.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 59
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
@@ -1113,30 +1113,30 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `ztmcm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 60
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 59
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 60
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 59
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 60
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 59
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1145,124 +1145,102 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 60.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 67.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [1
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 59.
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<images/hydra-overview@2x.png, id=40, 643.40375pt x 770.88pt>
+<images/hydra-overview@2x.png, id=28, 643.40375pt x 770.88pt>
 File: images/hydra-overview@2x.png Graphic file (type png)
 
 <use images/hydra-overview@2x.png>
-Package pdftex.def Info: images/hydra-overview@2x.png used on input line 105.
+Package pdftex.def Info: images/hydra-overview@2x.png used on input line 91.
 (pdftex.def)             Requested size: 250.24199pt x 299.8186pt.
- [2]
-<images/figure-2-roc-curves@2x.png, id=55, 1212.53pt x 724.7075pt>
+
+<images/figure-2-roc-curves@2x.png, id=32, 1212.53pt x 724.7075pt>
 File: images/figure-2-roc-curves@2x.png Graphic file (type png)
 
 <use images/figure-2-roc-curves@2x.png>
 Package pdftex.def Info: images/figure-2-roc-curves@2x.png used on input line 1
-19.
+05.
 (pdftex.def)             Requested size: 375.36299pt x 224.34737pt.
- [3 <./images/hydra-overview@2x.png>]
-<images/rough-cell-line-validation.png, id=74, 747.79375pt x 1056.94875pt>
+ [2 <./images/hydra-overview@2x.png>]
+<images/rough-cell-line-validation.png, id=49, 747.79375pt x 1056.94875pt>
 File: images/rough-cell-line-validation.png Graphic file (type png)
 
 <use images/rough-cell-line-validation.png>
 Package pdftex.def Info: images/rough-cell-line-validation.png used on input li
-ne 135.
+ne 121.
 (pdftex.def)             Requested size: 375.36299pt x 530.55356pt.
- [4 <./images/figure-2-roc-curves@2x.png>] [5 <./images/rough-cell-line-validat
-ion.png>] (./main.bbl
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 14.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `pcr' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Underfull \hbox (badness 1052) in paragraph at lines 28--34
-[]\OT1/ptm/m/n/10 (+20) The Amer-i-can Can-cer So-ci-ety.  Can-cers that de-vel
-op in chil-dren.  [][]$\OT1/pcr/m/n/10 http : / / www . cancer . org / cancer /
-
- []
-
-[6])
+ [3 <./images/figure-2-roc-curves@2x.png>] [4 <./images/rough-cell-line-validat
+ion.png>] (./main.bbl) [5]
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 185.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 171.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 185.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 171.
 
 
-LaTeX Warning: Reference `fig:xist' on page 7 undefined on input line 186.
+LaTeX Warning: Reference `fig:xist' on page 6 undefined on input line 172.
 
-<images/xist-fig-2017-12-28.png, id=118, 722.7pt x 445.665pt>
+<images/xist-fig-2017-12-28.png, id=92, 722.7pt x 445.665pt>
 File: images/xist-fig-2017-12-28.png Graphic file (type png)
 
 <use images/xist-fig-2017-12-28.png>
-Package pdftex.def Info: images/xist-fig-2017-12-28.png used on input line 194.
+Package pdftex.def Info: images/xist-fig-2017-12-28.png used on input line 180.
 
 (pdftex.def)             Requested size: 375.36299pt x 231.47511pt.
 
-<images/MYCN-Figure.png, id=119, 671.50874pt x 624.3325pt>
+<images/MYCN-Figure.png, id=93, 671.50874pt x 624.3325pt>
 File: images/MYCN-Figure.png Graphic file (type png)
 
 <use images/MYCN-Figure.png>
-Package pdftex.def Info: images/MYCN-Figure.png used on input line 206.
+Package pdftex.def Info: images/MYCN-Figure.png used on input line 192.
 (pdftex.def)             Requested size: 375.36299pt x 348.99507pt.
  
 AED: lastpage setting LastPage
-[7] [8 <./images/xist-fig-2017-12-28.png>] [9 <./images/MYCN-Figure.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
+[6 <./images/xist-fig-2017-12-28.png>] [7 <./images/MYCN-Figure.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
 
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 0120F639566C94A893E1A2452C1CD470;175.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 19015 strings out of 493029
- 359796 string characters out of 6136234
- 508978 words of memory out of 5000000
- 22087 multiletter control sequences out of 15000+600000
- 52187 words of font info for 212 fonts, out of 8000000 for 9000
+ 18882 strings out of 493029
+ 357767 string characters out of 6136234
+ 505852 words of memory out of 5000000
+ 22005 multiletter control sequences out of 15000+600000
+ 50034 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,12n,82p,1389b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,82p,1389b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
-hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 530154 bytes).
+rw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
+uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (7 pages, 512531 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 41010 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 150 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 39986 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -6,89 +6,6 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem{cancer.org:longTermEffects}
-\bibinfo{author}{Berger, E.}
-\newblock \bibinfo{title}{Late and long-term effects of treatment of childhood
-  leukemia} (\bibinfo{year}{2016}).
-\newblock
-  \urlprefix\url{https://www.cancer.org/cancer/leukemia-in-children/after-treatment/long-term-effects.html}.
-\newblock \bibinfo{note}{[Online; accessed 28-April-2017]}.
-
-\bibitem{kopp2012late}
-\bibinfo{author}{Kopp, L.~M.}, \bibinfo{author}{Gupta, P.},
-  \bibinfo{author}{Pelayo-Katsanis, L.}, \bibinfo{author}{Wittman, B.} \&
-  \bibinfo{author}{Katsanis, E.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Late effects in adult survivors of
-  pediatric cancer: a guide for the primary care physician}}.
-\newblock {\emph{\JournalTitle{The American journal of medicine}}}
-  \textbf{\bibinfo{volume}{125}}, \bibinfo{pages}{636--641}
-  (\bibinfo{year}{2012}).
-
-\bibitem{AmericanCancerSociety:ChildCancer}
-\bibinfo{author}{{The American Cancer Society}}.
-\newblock \bibinfo{title}{Cancers that develop in children}.
-\newblock
-  \bibinfo{howpublished}{\url{http://www.cancer.org/cancer/cancer-in-children/types-of-childhood-cancers.html}}
-  (\bibinfo{year}{2016}).
-\newblock \bibinfo{note}{Accessed: 2016-01-19}.
-
-\bibitem{norris2012challenges}
-\bibinfo{author}{Norris, R.~E.} \& \bibinfo{author}{Adamson, P.~C.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Challenges and opportunities in
-  childhood cancer drug development}}.
-\newblock {\emph{\JournalTitle{Nature Reviews. Cancer}}}
-  \textbf{\bibinfo{volume}{12}}, \bibinfo{pages}{776} (\bibinfo{year}{2012}).
-
-\bibitem{wong2004bcr}
-\bibinfo{author}{Wong, S.} \& \bibinfo{author}{Witte, O.~N.}
-\newblock \bibinfo{journal}{\bibinfo{title}{The bcr-abl story: bench to bedside
-  and back}}.
-\newblock {\emph{\JournalTitle{Annu. Rev. Immunol.}}}
-  \textbf{\bibinfo{volume}{22}}, \bibinfo{pages}{247--306}
-  (\bibinfo{year}{2004}).
-
-\bibitem{bernt2014current}
-\bibinfo{author}{Bernt, K.~M.} \& \bibinfo{author}{Hunger, S.~P.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Current concepts in pediatric
-  philadelphia chromosome-positive acute lymphoblastic leukemia}}.
-\newblock {\emph{\JournalTitle{Frontiers in oncology}}}
-  \textbf{\bibinfo{volume}{4}}, \bibinfo{pages}{54} (\bibinfo{year}{2014}).
-
-\bibitem{dobin2013star}
-\bibinfo{author}{Dobin, A.} \emph{et~al.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Star: ultrafast universal rna-seq
-  aligner}}.
-\newblock {\emph{\JournalTitle{Bioinformatics}}} \textbf{\bibinfo{volume}{29}},
-  \bibinfo{pages}{15--21} (\bibinfo{year}{2013}).
-
-\bibitem{li2011rsem}
-\bibinfo{author}{Li, B.} \& \bibinfo{author}{Dewey, C.~N.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Rsem: accurate transcript
-  quantification from rna-seq data with or without a reference genome}}.
-\newblock {\emph{\JournalTitle{BMC bioinformatics}}}
-  \textbf{\bibinfo{volume}{12}}, \bibinfo{pages}{323} (\bibinfo{year}{2011}).
-
-\bibitem{feng2012gfold}
-\bibinfo{author}{Feng, J.} \emph{et~al.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Gfold: a generalized fold change
-  for ranking differentially expressed genes from rna-seq data}}.
-\newblock {\emph{\JournalTitle{Bioinformatics}}} \textbf{\bibinfo{volume}{28}},
-  \bibinfo{pages}{2782--2788} (\bibinfo{year}{2012}).
-
-\bibitem{macdonald2006copa}
-\bibinfo{author}{Macdonald, J.~W.} \& \bibinfo{author}{Ghosh, D.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Copa—cancer outlier profile
-  analysis}}.
-\newblock {\emph{\JournalTitle{Bioinformatics}}} \textbf{\bibinfo{volume}{22}},
-  \bibinfo{pages}{2950--2951} (\bibinfo{year}{2006}).
-
-\bibitem{wang2012mcopa}
-\bibinfo{author}{Wang, C.} \emph{et~al.}
-\newblock \bibinfo{journal}{\bibinfo{title}{mcopa: analysis of heterogeneous
-  features in cancer expression data}}.
-\newblock {\emph{\JournalTitle{Journal of clinical bioinformatics}}}
-  \textbf{\bibinfo{volume}{2}}, \bibinfo{pages}{22} (\bibinfo{year}{2012}).
-
 \bibitem{zwiener2014transforming}
 \bibinfo{author}{Zwiener, I.}, \bibinfo{author}{Frisch, B.} \&
   \bibinfo{author}{Binder, H.}
@@ -96,6 +13,19 @@
   improve the performance of prognostic gene signatures}}.
 \newblock {\emph{\JournalTitle{PloS one}}} \textbf{\bibinfo{volume}{9}},
   \bibinfo{pages}{e85150} (\bibinfo{year}{2014}).
+
+\bibitem{hughes2014bnpy}
+\bibinfo{author}{Hughes, M.~C.} \& \bibinfo{author}{Sudderth, E.~B.}
+\newblock \bibinfo{title}{Bnpy: Reliable and scalable variational inference for
+  bayesian nonparametric models}.
+\newblock In \emph{\bibinfo{booktitle}{NIPS Probabilistic Programimming
+  Workshop}} (\bibinfo{year}{2014}).
+
+\bibitem{mckight2010kruskal}
+\bibinfo{author}{McKight, P.~E.} \& \bibinfo{author}{Najab, J.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Kruskal-wallis test}}.
+\newblock {\emph{\JournalTitle{The corsini encyclopedia of psychology}}}
+  \bibinfo{pages}{1--1} (\bibinfo{year}{2010}).
 
 \bibitem{barbie2009systematic}
 \bibinfo{author}{Barbie, D.~A.} \emph{et~al.}
