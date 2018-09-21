@@ -42,19 +42,12 @@
 \newblock {\emph{\JournalTitle{BMC bioinformatics}}}
   \textbf{\bibinfo{volume}{14}}, \bibinfo{pages}{7} (\bibinfo{year}{2013}).
 
-\bibitem{lonsdale2013genotype}
-\bibinfo{author}{Lonsdale, J.} \emph{et~al.}
-\newblock \bibinfo{journal}{\bibinfo{title}{The genotype-tissue expression
-  (gtex) project}}.
-\newblock {\emph{\JournalTitle{Nature genetics}}}
-  \textbf{\bibinfo{volume}{45}}, \bibinfo{pages}{580} (\bibinfo{year}{2013}).
-
-\bibitem{liberzon2015molecular}
-\bibinfo{author}{Liberzon, A.} \emph{et~al.}
-\newblock \bibinfo{journal}{\bibinfo{title}{The molecular signatures database
-  hallmark gene set collection}}.
-\newblock {\emph{\JournalTitle{Cell systems}}} \textbf{\bibinfo{volume}{1}},
-  \bibinfo{pages}{417--425} (\bibinfo{year}{2015}).
+\bibitem{hanahan2012accessories}
+\bibinfo{author}{Hanahan, D.} \& \bibinfo{author}{Coussens, L.~M.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Accessories to the crime: functions
+  of cells recruited to the tumor microenvironment}}.
+\newblock {\emph{\JournalTitle{Cancer cell}}} \textbf{\bibinfo{volume}{21}},
+  \bibinfo{pages}{309--322} (\bibinfo{year}{2012}).
 
 \bibitem{vivian2017toil}
 \bibinfo{author}{Vivian, J.} \emph{et~al.}
@@ -64,29 +57,27 @@
   \textbf{\bibinfo{volume}{35}}, \bibinfo{pages}{314--316}
   (\bibinfo{year}{2017}).
 
-\bibitem{majzner2017assessment}
-\bibinfo{author}{Majzner, R.~G.} \emph{et~al.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Assessment of programmed
-  death-ligand 1 expression and tumor-associated immune cells in pediatric
-  cancer tissues}}.
-\newblock {\emph{\JournalTitle{Cancer}}} \textbf{\bibinfo{volume}{123}},
-  \bibinfo{pages}{3807--3815} (\bibinfo{year}{2017}).
+\bibitem{bhattacharya2018immport}
+\bibinfo{author}{Bhattacharya, S.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Immport, toward repurposing of open
+  access immunological assay data for translational and clinical research}}.
+\newblock {\emph{\JournalTitle{Scientific data}}} \textbf{\bibinfo{volume}{5}},
+  \bibinfo{pages}{180015} (\bibinfo{year}{2018}).
 
-\bibitem{saletta2017programmed}
-\bibinfo{author}{Saletta, F.} \emph{et~al.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Programmed death-ligand 1
-  expression in a large cohort of pediatric patients with solid tumor and
-  association with clinicopathologic features in neuroblastoma}}.
-\newblock {\emph{\JournalTitle{JCO Precision Oncology}}}
-  \textbf{\bibinfo{volume}{1}}, \bibinfo{pages}{1--12} (\bibinfo{year}{2017}).
+\bibitem{saltz2018spatial}
+\bibinfo{author}{Saltz, J.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Spatial organization and molecular
+  correlation of tumor-infiltrating lymphocytes using deep learning on
+  pathology images}}.
+\newblock {\emph{\JournalTitle{Cell reports}}} \textbf{\bibinfo{volume}{23}},
+  \bibinfo{pages}{181} (\bibinfo{year}{2018}).
 
-\bibitem{nowicki2016prospective}
-\bibinfo{author}{Nowicki, T.~S.}, \bibinfo{author}{Anderson, J.~L.} \&
-  \bibinfo{author}{Federman, N.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Prospective immunotherapies in
-  childhood sarcomas: Pd1/pdl1 blockade in combination with tumor vaccines}}.
-\newblock {\emph{\JournalTitle{Pediatric research}}}
-  \textbf{\bibinfo{volume}{79}}, \bibinfo{pages}{371} (\bibinfo{year}{2016}).
+\bibitem{newman2015robust}
+\bibinfo{author}{Newman, A.~M.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Robust enumeration of cell subsets
+  from tissue expression profiles}}.
+\newblock {\emph{\JournalTitle{Nature methods}}} \textbf{\bibinfo{volume}{12}},
+  \bibinfo{pages}{453} (\bibinfo{year}{2015}).
 
 \bibitem{bindea2013spatiotemporal}
 \bibinfo{author}{Bindea, G.} \emph{et~al.}
@@ -101,6 +92,13 @@
 \newblock {\emph{\JournalTitle{Immunity}}} \textbf{\bibinfo{volume}{48}},
   \bibinfo{pages}{812--830} (\bibinfo{year}{2018}).
 
+\bibitem{liberzon2015molecular}
+\bibinfo{author}{Liberzon, A.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{The molecular signatures database
+  hallmark gene set collection}}.
+\newblock {\emph{\JournalTitle{Cell systems}}} \textbf{\bibinfo{volume}{1}},
+  \bibinfo{pages}{417--425} (\bibinfo{year}{2015}).
+
 \bibitem{liberzon2011molecular}
 \bibinfo{author}{Liberzon, A.} \emph{et~al.}
 \newblock \bibinfo{journal}{\bibinfo{title}{Molecular signatures database
@@ -110,6 +108,13 @@
 
 \bibitem{consortium2013genotype}
 \bibinfo{author}{Consortium, T.~G.}
+\newblock \bibinfo{journal}{\bibinfo{title}{The genotype-tissue expression
+  (gtex) project}}.
+\newblock {\emph{\JournalTitle{Nature genetics}}}
+  \textbf{\bibinfo{volume}{45}}, \bibinfo{pages}{580} (\bibinfo{year}{2013}).
+
+\bibitem{lonsdale2013genotype}
+\bibinfo{author}{Lonsdale, J.} \emph{et~al.}
 \newblock \bibinfo{journal}{\bibinfo{title}{The genotype-tissue expression
   (gtex) project}}.
 \newblock {\emph{\JournalTitle{Nature genetics}}}

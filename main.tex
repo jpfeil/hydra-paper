@@ -62,6 +62,12 @@ Precision oncology is changing the way medicine is practiced by incorporating hi
 \section*{Introduction}
 
 % The Introduction section, of referenced text\cite{Figueredo:2009dg} expands on the background of the work (some overlap with the Abstract is acceptable). The introduction should not include subheadings.
+RNA-Seq and Bioinformatic tools for quantifying gene expression have been well developed, but there is a need for data analysis approaches for synthesizing this information and generating clinically useful hypotheses. Differential expression approaches are established for comparing two groups, but there are not sufficient methods for identifying related subgroups within a disease population in an unsupervised approach. Genomic and transcriptomic analysis of large cancer research projects have identified common themes across patients and cancers, but the long-tail phenomenon makes it difficult to characterize a large subset of patients that do not have more common genomic alterations.
+
+There are in general two major machine learning approaches. Supervised approaches identify important differences across groups but require knowing the labels that isolate these distinct groups. These methods have limited utility in the precision medicine setting where more descriptive labels are not known before the analysis. Unsupervised methods do not require knowing the clusters in the disease group, but may be sensitive to identifying noise that is not correlated with a variable of interest like survival. Many of the unsupervised clustering approaches also require the user to specify the number of clusters beforehand, which is difficult when trying to identify unknown groups of patients. In practice, researchers fit several unsupervised clustering approaches and nominate the best performing model, but this approach is computationally expensive because a large number of clusters may need to be tested. 
+
+Genomic medicine has become an important component of modern cancer therapies and gene expression analysis is on its way to supplementing and enhancing genomic approaches. Gene expression data has been used to cluster patients into therapeutically related groups. The ability to cluster patients across variant
+
 % Overview of field? I really don't want to start with the whole DNA sequencing has become so popular. Let's write an outline first.
 Cancer gene expression analysis has traditionally been used to compare the expression between two groups. The heterogeneity of tumor populations warrants an analysis that can identify differences across multiple subtypes with overlapping features. Differentiating expression at this level has been a challenge, so single-sample approaches have become more popular. However, the single-sample approach does not identify structure within a disease population that would improve the analysis of individual patients. 
 
@@ -88,19 +94,22 @@ The input for the hydra approach is a genes by samples matrix. The Dirichlet pro
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\centering
-	\includegraphics[width=0.5\linewidth]{images/hydra-overview@2x.png}
-	\caption{Hydra Method Overview}
+	\includegraphics[width=0.75\linewidth]{images/hydra-overview@2x.png}
+	\caption{Hydra Method Overview. The hydra pipeline works by taking an input matrix of gene expression profiles across an ideally homogeneous set of samples. The first step in the pipeline is to apply a non-parametric mixture model to learn differentially expressed genes. There is also an option to subset the genes of interest using curated gene sets. Once the multimodally expressed genes are identified, a multivariate mixture model is apply to learn the expression networks that can be used to subtype patients. The parameters are extracted and normalized and the normalized parameters are used to investigate the biological function of gene expression programs using gene set enrichment analysis.}
 	\label{sfig:hydra-overview}
 \end{figure}
+
+\section*{Method Overview}
+
 
 \section*{Results}
 
 \subsection*{Synthetic Data Analysis}
-Synthetic data was generated to assess the performance of the hydra mixture modeling approach. The synthetic data was generated from GTEx normal muscle tissue and randomly assigning a subset of samples to have higher expression for a subset of the MSigDB hallmark genes. We compare our method with single sample gene set enrichment analysis \cite{barbie2009systematic} and gene set variation analysis \cite{hanzelmann2013gsva}. The hydra method performed best across the 34 Hallmark gene sets. We also compare the area under the curve from the receiver operator characteristics plot to the mean expression across the Hallmark gene sets and noticed that the ranking methods have lower predictive performance when the background expression for the gene set increases.
+Synthetic data was generated to assess the performance of the hydra mixture modeling approach. The synthetic data was generated from GTEx skeletal muscle tissue and randomly assigning a subset of samples to have higher expression for a subset of the MSigDB hallmark genes. We used 26 Hallmark gene sets to simulate activation of a pathway. We created separate synthetic training and test data. We compared our method with single sample gene set enrichment analysis (ssGSEA) \cite{barbie2009systematic} and gene set variation analysis (GSVA) \cite{hanzelmann2013gsva}. These methods are used widely in the field and have been used to identify biological pathway activation and subtype tumors. 
 
-For instance, we compare the performance across these methods for the Hallmark Glycolysis gene set and the Hallmark Oxidative Phosphorylation gene set. The Hallmark Glycoloysis gene set has lower background expression than the Hallmark Oxidative Phosphorylation gene set (TODO: Add mean expression). We found that the ssGSEA method performed comparatively to the hydra method when the background expression is lower, but when the background expression is higher, the ssGSEA method's performance wanes and this effect is related to the effect size. A larger effect size for the change in expression decreases the effect of the background expression.
+Figure \ref{sfig:rocplot}A highlights two illustrative examples of receiver operator curves with a larger effect size and a smaller effect size with two different gene sets highlighting the influence of background expression in estimating pathway activity.For instance, we compare the performance across these methods for the Hallmark Glycolysis gene set and the Hallmark Oxidative Phosphorylation gene set. The Hallmark Glycoloysis gene set has lower background expression than the Hallmark Oxidative Phosphorylation gene set (TODO: Add mean expression). We found that the ssGSEA method performed comparatively to the hydra method when the background expression is lower, but when the background expression is higher, the ssGSEA method's performance wanes and this effect is related to the effect size. A larger effect size for the change in expression decreases the effect of the background expression.
 
-Across the 34 Hallmark gene sets with at least 100 genes, the hydra approach had a mean AUC of 
+We next investigated the performance of these methods across 26 Hallmark gene sets (Figure \ref{sfig:rocplot}B). The hydra method performed best across the 26 Hallmark gene sets with a mean of AUC of 0.99 (95\% CI, 0.98 - 1.0 CI). ssGSEA also performed witha mean AUC of 0.93 (95\% CI, 0.90 - 0.96) followed by GSVA with a mean AUC of 0.85 (95\% CI, 0.82 - 0.89).  We also compare the area under the curve from the receiver operator characteristics plot to the mean expression across the Hallmark gene sets and noticed that the ranking methods have lower predictive performance when the background expression for the gene set increases. We found that the background expression for a gene set influenced the performance for ranking methods (Figure \ref{sfig:rocplot}C). Both the GSVA and ssGSEA AUC scores were negatively correlated with the background mean expression level with a Pearson correlation of -0.55 and -0.52, respectively. The hydra approach was not correlated with the background expression levels (p-value $>$ 0.05).
 
 %%%%%%%%%%%%%%%
 % ROC Plot Figure %
@@ -108,33 +117,59 @@ Across the 34 Hallmark gene sets with at least 100 genes, the hydra approach had
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\linewidth]{images/figure-2-roc-curves@2x.png}
+	\includegraphics[width=0.8\linewidth]{images/figure-2-roc-curves@2x.png}
 	\caption{ROC Plot Curves for Assessing the Performance of Pathway Enrichment Tools.}
 	\label{sfig:rocplot}
 \end{figure}
 
- 
+\subsection*{Immune Subtype Validation}
+The tumor microenvironment plays an important role in providing nutrients and oxygen to the tumor, shielding cancer cells from the immune system, and providing growth factors that promote cancer growth and resistance to therapies \cite{hanahan2012accessories}. We applied the hydra method to identify immune subtypes of melanoma using the TCGA skin cutaneous melanome RNA-Seq data (N=383) hosted on the Xena browser \cite{vivian2017toil}. We used the IMMPORT database to identify immune subtypes in the TCGA melanoma data set \cite{bhattacharya2018immport}. We set a minimum mean expression value for a gene to 1 log2(TPM + 1). The IMMPORT gene list started with 1,740 genes and identified 570 genes that are multimodally expressed. The multivariate clustering algorithm identified 8 clusters. Hierarchical clustering using the Ward method across the mean expression levels across clusters identified three major subtypes of melanoma (Figure \ref{sfig:melanoma}A). We next compared the estimated leukocyte infiltrate as determined by Saltz et al. (2018) \cite{saltz2018spatial}. The hydra approach identified statistically different immune infiltrates by the nonparametric Kruskal-Wallis test (p < 0.01).
+
+We next compared the hydra subtype identification clusters to another published method for enumerating cell types within gene expression data known as CIBERSORT \cite{newman2015robust}. Lymphocytes, MAST cells, and macrophages were differentially abundant in the TCGA melanoma tissue samples (Kruskal-Wallis p < 0.01) (Figure \ref{sfig:melanoma}C). Clusters 6, 0, and 5 have elevated lymphocyte expression but lower Mast cell and macrophage associated expression (TODO: Add statistical test). Subtypes 2, 1, 3, 4, 7 have subtype had higher total leukocyte infiltration with cluster 5 having the highest estimate of leukocyte infiltrate.
 
 
-TODO: Need to compare the small effect size and the large effect size 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SKCM Immune Subtype Figure %
+%%%%%%%%%2%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Cell Line Validation}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\linewidth]{images/rough-cell-line-validation.png}
-	\caption{Cell Line Validation}
-	\label{sfig:cellline}
+	\includegraphics[width=0.75\linewidth]{images/melanoma-immune-subtypes-immport-boxen@2x.png}
+	\caption{Melanoma Immune Subtyping and Validation. The hydra clustering algorithm identified 8 melanoma subtypes. Comparing these subtypes to a whole-slide image analysis of H\&E slides identified statistically significant differences in the leukocyte infiltrate across the hydra clusters (B). Further analysis of the clusters using the CIBSORT algorithm identified statistically significant differences for the lymphocyte, Mast cell, and macrophage expression (C). TODO: Make another figure where the immune cell expression is interspersed into one plot so show the contrast in immune infiltrate.}
+	\label{sfig:melanoma}
 \end{figure}
 
-\subsection*{Immune Subtype Validation}
-Whether pediatric cancer in general has a significant immune component is an active area or research. The success of checkpoint therapies in adult cancers has not been as strongly adopted in pediatric cancers because these therapies tend to do better in patients with a high mutation burden. Pediatric cancers generally have low mutation burdens. However, several groups have found elevated checkpoint marker expression in pediatric cancers \cite{majzner2017assessment,saletta2017programmed,nowicki2016prospective}, which suggests that immunosuppressive mechanisms are active in pediatric cancers and may need further characterization to identify therapeutic opportunities. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SKCM Immune Survival Figure %
+%%%%%%%%%2%%%%%%%%%%%%%%%%%%%%%
 
-We show that the hydra approach is able to subtype patients using immune gene sets in a way that correlates with the computational staining of haemotoxylin and eosin (H\&E) staining. We analyzed the TCGA skin cutaneous melanoma data set (TODO: N=X)
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{images/immport-skcm-cluster-survival.png}
+	\caption{Hydra Subtypes Predict Poor Survival in Melanoma.}
+	\label{sfig:melanoma-surv}
+\end{figure}
 
-\subsection*{Neuroblastoma Transposable Element Analysis}
-One theory for way ATRX deleted samples have higher immune marker infiltrate is that dysregulation of ATRX function leads to increased expression of transposable elements which induces a DAMP response. Transposable elements have been shown to induce innate and adaptive immune responses, so the nature of the transposable elements may play a role in the type of immune response the occurs. The transposable element sequences may lead to the generation of antigens that can be used for treatment of neuroblastoma. 
 
-In order to investigate the transposable element expression in neuroblastoma, we applied two state-of-the-art methods. The first is the salmonTE algorithm and the second is the BLANK algorithm. We used two background cohorts to quantify transposable element expression. The first is tissue matched patients that were identified as having significantly lower expression of immune markers. The second is the UVM TCGA cohort which has been used in other studies as a negative control for immune active tumors \cite{bindea2013spatiotemporal,thorsson2018immune}.
+We next investigated the survival for different immune clusters and identified a survival benefit from a high lymphocyte to macrophage ratio. For example, cluster six grouped with the elevated (Figure \ref{sfig:melanoma-surv}). 
+
+
+
+
+\subsection*{Molecular Subtype Validation}
+Gene expression analysis is also used to identify molecular subtypes of cancer.
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% TCGA BRCA Subtypes %
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{images/tcga-brca-tnbc-subtypes-gsea@2x}
+	\caption{Triple Negative Breast Cancer Subtypes.}
+	\label{sfig:tnbc-subtypes}
+\end{figure}
 
 
 \section*{Discussion}
