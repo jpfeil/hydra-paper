@@ -6,6 +6,29 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{zhao2018molecular}
+\bibinfo{author}{Zhao, L.}, \bibinfo{author}{Lee, V.~H.}, \bibinfo{author}{Ng,
+  M.~K.}, \bibinfo{author}{Yan, H.} \& \bibinfo{author}{Bijlsma, M.~F.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Molecular subtyping of cancer:
+  current status and moving toward clinical applications}}.
+\newblock {\emph{\JournalTitle{Briefings in bioinformatics}}}
+  (\bibinfo{year}{2018}).
+
+\bibitem{barbie2009systematic}
+\bibinfo{author}{Barbie, D.~A.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Systematic rna interference reveals
+  that oncogenic kras-driven cancers require tbk1}}.
+\newblock {\emph{\JournalTitle{Nature}}} \textbf{\bibinfo{volume}{462}},
+  \bibinfo{pages}{108} (\bibinfo{year}{2009}).
+
+\bibitem{kothari2013outlier}
+\bibinfo{author}{Kothari, V.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Outlier kinase expression by rna
+  sequencing as targets for precision therapy}}.
+\newblock {\emph{\JournalTitle{Cancer discovery}}}
+  \textbf{\bibinfo{volume}{3}}, \bibinfo{pages}{280--293}
+  (\bibinfo{year}{2013}).
+
 \bibitem{zwiener2014transforming}
 \bibinfo{author}{Zwiener, I.}, \bibinfo{author}{Frisch, B.} \&
   \bibinfo{author}{Binder, H.}
@@ -26,13 +49,6 @@
 \newblock \bibinfo{journal}{\bibinfo{title}{Kruskal-wallis test}}.
 \newblock {\emph{\JournalTitle{The corsini encyclopedia of psychology}}}
   \bibinfo{pages}{1--1} (\bibinfo{year}{2010}).
-
-\bibitem{barbie2009systematic}
-\bibinfo{author}{Barbie, D.~A.} \emph{et~al.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Systematic rna interference reveals
-  that oncogenic kras-driven cancers require tbk1}}.
-\newblock {\emph{\JournalTitle{Nature}}} \textbf{\bibinfo{volume}{462}},
-  \bibinfo{pages}{108} (\bibinfo{year}{2009}).
 
 \bibitem{hanzelmann2013gsva}
 \bibinfo{author}{H{\"a}nzelmann, S.}, \bibinfo{author}{Castelo, R.} \&
@@ -78,19 +94,6 @@
   from tissue expression profiles}}.
 \newblock {\emph{\JournalTitle{Nature methods}}} \textbf{\bibinfo{volume}{12}},
   \bibinfo{pages}{453} (\bibinfo{year}{2015}).
-
-\bibitem{bindea2013spatiotemporal}
-\bibinfo{author}{Bindea, G.} \emph{et~al.}
-\newblock \bibinfo{journal}{\bibinfo{title}{Spatiotemporal dynamics of
-  intratumoral immune cells reveal the immune landscape in human cancer}}.
-\newblock {\emph{\JournalTitle{Immunity}}} \textbf{\bibinfo{volume}{39}},
-  \bibinfo{pages}{782--795} (\bibinfo{year}{2013}).
-
-\bibitem{thorsson2018immune}
-\bibinfo{author}{Thorsson, V.} \emph{et~al.}
-\newblock \bibinfo{journal}{\bibinfo{title}{The immune landscape of cancer}}.
-\newblock {\emph{\JournalTitle{Immunity}}} \textbf{\bibinfo{volume}{48}},
-  \bibinfo{pages}{812--830} (\bibinfo{year}{2018}).
 
 \bibitem{liberzon2015molecular}
 \bibinfo{author}{Liberzon, A.} \emph{et~al.}
