@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.30)  27 SEP 2018 17:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.30)  1 OCT 2018 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1157,124 +1157,124 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<images/hydra-overview@2x.png, id=28, 968.61874pt x 652.4375pt>
+<images/hydra-overview@2x.png, id=33, 968.61874pt x 652.4375pt>
 File: images/hydra-overview@2x.png Graphic file (type png)
 
 <use images/hydra-overview@2x.png>
-Package pdftex.def Info: images/hydra-overview@2x.png used on input line 124.
+Package pdftex.def Info: images/hydra-overview@2x.png used on input line 94.
 (pdftex.def)             Requested size: 375.36299pt x 252.83682pt.
  [2] [3 <./images/hydra-overview@2x.png>]
-<images/figure-2-roc-curves@2x.png, id=51, 1212.53pt x 724.7075pt>
+<images/figure-2-roc-curves@2x.png, id=59, 1212.53pt x 724.7075pt>
 File: images/figure-2-roc-curves@2x.png Graphic file (type png)
 
 <use images/figure-2-roc-curves@2x.png>
 Package pdftex.def Info: images/figure-2-roc-curves@2x.png used on input line 1
-47.
+17.
 (pdftex.def)             Requested size: 400.38872pt x 239.30902pt.
- [4 <./images/figure-2-roc-curves@2x.png>]
-<images/melanoma-immune-subtypes-immport-boxen@2x.png, id=69, 1232.605pt x 989.
+
+<images/melanoma-immune-subtypes-immport-boxen@2x.png, id=67, 1232.605pt x 989.
 6975pt>
 File: images/melanoma-immune-subtypes-immport-boxen@2x.png Graphic file (type p
 ng)
  <use images/melanoma-immune-subtypes-immport-boxen@2x.png>
 Package pdftex.def Info: images/melanoma-immune-subtypes-immport-boxen@2x.png u
-sed on input line 164.
+sed on input line 134.
 (pdftex.def)             Requested size: 375.36299pt x 301.38159pt.
 
-<images/immport-skcm-cluster-survival.png, id=70, 510.708pt x 330.033pt>
+<images/immport-skcm-cluster-survival.png, id=68, 510.708pt x 330.033pt>
 File: images/immport-skcm-cluster-survival.png Graphic file (type png)
 
 <use images/immport-skcm-cluster-survival.png>
 Package pdftex.def Info: images/immport-skcm-cluster-survival.png used on input
- line 175.
+ line 145.
 (pdftex.def)             Requested size: 375.36299pt x 242.57385pt.
-
-<images/tcga-brca-subtyping-figure@2x.png, id=73, 1371.1225pt x 445.665pt>
+ [4 <./images/figure-2-roc-curves@2x.png>] [5 <./images/melanoma-immune-subtype
+s-immport-boxen@2x.png> <./images/immport-skcm-cluster-survival.png>]
+<images/tcga-brca-subtyping-figure@2x.png, id=92, 1371.1225pt x 445.665pt>
 File: images/tcga-brca-subtyping-figure@2x.png Graphic file (type png)
 
 <use images/tcga-brca-subtyping-figure@2x.png>
 Package pdftex.def Info: images/tcga-brca-subtyping-figure@2x.png used on input
- line 197.
+ line 167.
 (pdftex.def)             Requested size: 550.53545pt x 178.94966pt.
 
-Overfull \hbox (50.05145pt too wide) in paragraph at lines 197--198
+Overfull \hbox (50.05145pt too wide) in paragraph at lines 167--168
  [][] 
  []
 
-<images/tcga-brca-subcluster-tree.png, id=74, 602.25pt x 602.25pt>
+<images/tcga-brca-subcluster-tree.png, id=93, 602.25pt x 602.25pt>
 File: images/tcga-brca-subcluster-tree.png Graphic file (type png)
 
 <use images/tcga-brca-subcluster-tree.png>
 Package pdftex.def Info: images/tcga-brca-subcluster-tree.png used on input lin
-e 205.
+e 175.
 (pdftex.def)             Requested size: 400.38872pt x 400.39932pt.
 
-<images/example-subtyping-distribution-changes.png, id=75, 522.95375pt x 516.93
+<images/example-subtyping-distribution-changes.png, id=94, 522.95375pt x 516.93
 124pt>
 File: images/example-subtyping-distribution-changes.png Graphic file (type png)
 
  <use images/example-subtyping-distribution-changes.png>
 Package pdftex.def Info: images/example-subtyping-distribution-changes.png used
- on input line 212.
+ on input line 182.
 (pdftex.def)             Requested size: 375.36299pt x 371.0465pt.
- [5 <./images/melanoma-immune-subtypes-immport-boxen@2x.png>] [6 <./images/immp
-ort-skcm-cluster-survival.png> <./images/tcga-brca-subtyping-figure@2x.png>] [7
- <./images/tcga-brca-subcluster-tree.png>] [8 <./images/example-subtyping-distr
-ibution-changes.png>] (./main.bbl [9])
+ [6 <./images/tcga-brca-subtyping-figure@2x.png>] [7 <./images/tcga-brca-subclu
+ster-tree.png>]
+[8 <./images/example-subtyping-distribution-changes.png>] (./main.bbl [9])
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 287.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 257.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 287.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 257.
 
 
-LaTeX Warning: Reference `fig:xist' on page 10 undefined on input line 288.
+LaTeX Warning: Reference `fig:xist' on page 10 undefined on input line 258.
 
-<images/xist-fig-2017-12-28.png, id=132, 722.7pt x 445.665pt>
+<images/xist-fig-2017-12-28.png, id=138, 722.7pt x 445.665pt>
 File: images/xist-fig-2017-12-28.png Graphic file (type png)
 
 <use images/xist-fig-2017-12-28.png>
-Package pdftex.def Info: images/xist-fig-2017-12-28.png used on input line 296.
+Package pdftex.def Info: images/xist-fig-2017-12-28.png used on input line 266.
 
 (pdftex.def)             Requested size: 375.36299pt x 231.47511pt.
 
-<images/MYCN-Figure.png, id=133, 671.50874pt x 624.3325pt>
+<images/MYCN-Figure.png, id=139, 671.50874pt x 624.3325pt>
 File: images/MYCN-Figure.png Graphic file (type png)
 
 <use images/MYCN-Figure.png>
-Package pdftex.def Info: images/MYCN-Figure.png used on input line 308.
+Package pdftex.def Info: images/MYCN-Figure.png used on input line 278.
 (pdftex.def)             Requested size: 375.36299pt x 348.99507pt.
 
-<images/melanoma-immune-subtype-enrichment.png, id=134, 1436.567pt x 1151.502pt
+<images/melanoma-immune-subtype-enrichment.png, id=140, 1436.567pt x 1151.502pt
 >
 File: images/melanoma-immune-subtype-enrichment.png Graphic file (type png)
  <use images/melanoma-immune-subtype-enrichment.png>
 Package pdftex.def Info: images/melanoma-immune-subtype-enrichment.png used on 
-input line 319.
+input line 289.
 (pdftex.def)             Requested size: 375.36299pt x 300.87695pt.
 
 
 AED: lastpage setting LastPage
 [10] [11 <./images/xist-fig-2017-12-28.png>] [12 <./images/MYCN-Figure.png>]
 [13 <./images/melanoma-immune-subtype-enrichment.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 327.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 327.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 327.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 327.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 1F27DBB6178198BE401DD9F3F82FC50F;115.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 297.
  ) 
 Here is how much of TeX's memory you used:
- 18973 strings out of 493029
- 360040 string characters out of 6136234
- 509673 words of memory out of 5000000
- 22063 multiletter control sequences out of 15000+600000
- 50785 words of font info for 203 fonts, out of 8000000 for 9000
+ 18981 strings out of 493029
+ 360383 string characters out of 6136234
+ 508754 words of memory out of 5000000
+ 22075 multiletter control sequences out of 15000+600000
+ 50547 words of font info for 199 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,12n,82p,1389b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1286,10 +1286,10 @@ uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 1924658 bytes).
+Output written on main.pdf (13 pages, 1925440 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 214 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
  40003 words of extra memory for PDF output out of 42996 (max. 10000000)
 

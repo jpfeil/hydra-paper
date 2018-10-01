@@ -43,3 +43,42 @@ Example text under a subsection. Bulleted lists may be used where appropriate, e
 One theory for way ATRX deleted samples have higher immune marker infiltrate is that dysregulation of ATRX function leads to increased expression of transposable elements which induces a DAMP response. Transposable elements have been shown to induce innate and adaptive immune responses, so the nature of the transposable elements may play a role in the type of immune response the occurs. The transposable element sequences may lead to the generation of antigens that can be used for treatment of neuroblastoma. 
 
 In order to investigate the transposable element expression in neuroblastoma, we applied two state-of-the-art methods. The first is the salmonTE algorithm and the second is the BLANK algorithm. We used two background cohorts to quantify transposable element expression. The first is tissue matched patients that were identified as having significantly lower expression of immune markers. The second is the UVM TCGA cohort which has been used in other studies as a negative control for immune active tumors \cite{bindea2013spatiotemporal,thorsson2018immune}.
+
+
+While DNA variant analysis has been the most developed, gene expression analysis offers many advantages including the detection of druggable pathway activity and a measurement of tumor microenvironment effects. The measurement of tumor microenvironment effects is becoming increasingly important as immunotherapies have become available that take advantage of infiltrating immune cells. Additionally, some tumors, such as pediatric tumors, have limited tissue and it is not possible to generate several sequencing libraries. For this reason, RNA-Seq may be the most useful assay because it allows a greater number of analyses based on a single genome-wide experiment.
+
+One of the limitations of current subtyping approaches is that they are not able to perform N-of-1 classification for new patient samples. Furthermore, it is not computationally feasible to recluster the background cohort for every incoming patient. Typically, researchers use the labels learned from the unsupervised clustering to perform a supervised learning algorithm to classify new patients. Ideally, a subtyping approach would produce a generative model that can be used to assess the likelihood of a sample being produced from a given subtype distribution.
+
+%% Assumptions in traditional clustering approach 
+Gene expression distributions reflect the heterogeneity of cancer, so to discover the structure of cancer subtypes, one must identify how the differentially expressed genes within a disease interact. A mixture model can be used to learn the components of a complex expression distribution, but one of the limitations of many clustering approaches and a simple Gaussian mixture model is that the number of clusters needs to be specified beforehand. Typically, these algorithms repeat the analysis for a range of parameters and nominates the best performing parameter. However, this approach is computationally expensive and may miss the global maximum for a local minimum parameterization. Non-parametric mixture models are able to learn the number of clusters from the data and may provided necessary flexibility in the modeling assumptions to learn more accurate models \cite{medvedovic2002bayesian,newton2004detecting,zhao2014bayesian}.
+
+Transcriptomic characterization of tumors will likely increase and thus an online learning framework that can improve for every new patient sample is an ideal strategy to iteratively improve predictions over time.
+
+
+
+Here, we describe a semi-parametric mixture modeling pipeline called hydra for subtyping cancer gene expression profiles and classifying N-of-1 tumor samples. We provide an overview of the pipeline, compare the hydra N-of-1 analysis to rank-based approaches\cite{barbie2009systematic,hanzelmann2013gsva}, and reproduce known subtypes of breast invasive carcinoma. Finally, we subtype melanoma immune expression and predict response to immune checkpoint inhibitors. The hydra pipeline provides an additional analysis framework for precision medicine applications.
+
+Most genes' expression distribution is approximately normally distributed once normalized using a log transformation \cite{zwiener2014transforming}. 
+
+Methods for detecting subtype expression include unsupervised clustering, ranking methods such as ssGSEA \cite{barbie2009systematic}, and outlier analysis using a background cohort of gene expression profiles \cite{kothari2013outlier}. 
+
+
+
+
+RNA-Seq and Bioinformatic tools for quantifying gene expression have been well developed, but there is a need for data analysis approaches for synthesizing this information and generating clinically useful tools. The field of precision medicine is limited by the 
+lack of treatment and response data. This limits the utility of supervised learning 
+approaches, but others have used unsupervised clustering approaches to identify clinical 
+subtypes.
+
+Differential expression approaches are established for comparing two groups, but there are not sufficient methods for identifying related subgroups within a disease population in an unsupervised approach. Genomic and transcriptomic analysis of large cancer research projects have identified common themes across patients and cancers, but the long-tail phenomenon makes it difficult to characterize a large subset of patients that do not have more common genomic alterations.
+
+There are in general two major machine learning approaches. Supervised approaches identify important differences across groups but require knowing the labels that isolate these distinct groups. These methods have limited utility in the precision medicine setting where more descriptive labels are not known before the analysis. Unsupervised methods do not require knowing the clusters in the disease group, but may be sensitive to identifying noise that is not correlated with a variable of interest like survival. Many of the unsupervised clustering approaches also require the user to specify the number of clusters beforehand, which is difficult when trying to identify unknown groups of patients. In practice, researchers fit several unsupervised clustering approaches and nominate the best performing model, but this approach is computationally expensive because a large number of clusters may need to be tested. 
+
+Genomic medicine has become an important component of modern cancer therapies and gene expression analysis is on its way to supplementing and enhancing genomic approaches. Gene expression data has been used to cluster patients into therapeutically related groups. The ability to cluster patients across variant
+
+% Overview of field? I really don't want to start with the whole DNA sequencing has become so popular. Let's write an outline first.
+Cancer gene expression analysis has traditionally been used to compare the expression between two groups. The heterogeneity of tumor populations warrants an analysis that can identify differences across multiple subtypes with overlapping features. Differentiating expression at this level has been a challenge, so single-sample approaches have become more popular. However, the single-sample approach does not identify structure within a disease population that would improve the analysis of individual patients. 
+
+% TCGA Gene Expression Data
+
+Many researchers have proposed a mixture modeling approach for differential expression analysis, but a mixture modeling approach has not been adopted by the gene expression analysis community (TODO: ADD REFERENCES TO GENE EXPRESSION MIXTURE MODEL PAPERS). One reason for this is the lack of tools to facilitate this type of analysis. These models are difficult to implement and pre-implemented tools are not well designed for cancer gene expression analysis. There has also been an insufficient number of tissue-specific gene expression profiles to differentiate molecular subtypes. However, the work of TCGA, TARGET, and public repositories not make more sophisticated gene expression analyses possible. 
