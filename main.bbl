@@ -6,6 +6,13 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{armenia2018long}
+\bibinfo{author}{Armenia, J.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{The long tail of oncogenic drivers
+  in prostate cancer}}.
+\newblock {\emph{\JournalTitle{Nature genetics}}}
+  \textbf{\bibinfo{volume}{50}}, \bibinfo{pages}{645} (\bibinfo{year}{2018}).
+
 \bibitem{zhao2018molecular}
 \bibinfo{author}{Zhao, L.}, \bibinfo{author}{Lee, V.~H.}, \bibinfo{author}{Ng,
   M.~K.}, \bibinfo{author}{Yan, H.} \& \bibinfo{author}{Bijlsma, M.~F.}
@@ -14,15 +21,12 @@
 \newblock {\emph{\JournalTitle{Briefings in bioinformatics}}}
   (\bibinfo{year}{2018}).
 
-\bibitem{eren2012comparative}
-\bibinfo{author}{Eren, K.}, \bibinfo{author}{Deveci, M.},
-  \bibinfo{author}{K{\"u}{\c{c}}{\"u}ktun{\c{c}}, O.} \&
-  \bibinfo{author}{{\c{C}}ataly{\"u}rek, {\"U}.~V.}
-\newblock \bibinfo{journal}{\bibinfo{title}{A comparative analysis of
-  biclustering algorithms for gene expression data}}.
-\newblock {\emph{\JournalTitle{Briefings in bioinformatics}}}
-  \textbf{\bibinfo{volume}{14}}, \bibinfo{pages}{279--292}
-  (\bibinfo{year}{2012}).
+\bibitem{auslander2018robust}
+\bibinfo{author}{Auslander, N.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Robust prediction of response to
+  immune checkpoint blockade therapy in metastatic melanoma}}.
+\newblock {\emph{\JournalTitle{Nature medicine}}} \bibinfo{pages}{1}
+  (\bibinfo{year}{2018}).
 
 \bibitem{medvedovic2002bayesian}
 \bibinfo{author}{Medvedovic, M.} \& \bibinfo{author}{Sivaganesan, S.}
@@ -39,13 +43,12 @@
 \newblock {\emph{\JournalTitle{Biostatistics}}} \textbf{\bibinfo{volume}{5}},
   \bibinfo{pages}{155--176} (\bibinfo{year}{2004}).
 
-\bibitem{zhao2014bayesian}
-\bibinfo{author}{Zhao, Y.}, \bibinfo{author}{Kang, J.} \& \bibinfo{author}{Yu,
-  T.}
-\newblock \bibinfo{journal}{\bibinfo{title}{A bayesian nonparametric mixture
-  model for selecting genes and gene subnetworks}}.
-\newblock {\emph{\JournalTitle{The annals of applied statistics}}}
-  \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{999} (\bibinfo{year}{2014}).
+\bibitem{gelman2014bayesian}
+\bibinfo{author}{Gelman, A.}, \bibinfo{author}{Carlin, J.~B.},
+  \bibinfo{author}{Stern, H.~S.} \& \bibinfo{author}{Rubin, D.~B.}
+\newblock \emph{\bibinfo{title}{Bayesian data analysis}},
+  vol.~\bibinfo{volume}{2} (\bibinfo{publisher}{Chapman \& Hall/CRC Boca Raton,
+  FL, USA}, \bibinfo{year}{2014}).
 
 \bibitem{hughes2014bnpy}
 \bibinfo{author}{Hughes, M.~C.} \& \bibinfo{author}{Sudderth, E.~B.}
@@ -66,6 +69,25 @@
 \newblock \bibinfo{journal}{\bibinfo{title}{Kruskal-wallis test}}.
 \newblock {\emph{\JournalTitle{The corsini encyclopedia of psychology}}}
   \bibinfo{pages}{1--1} (\bibinfo{year}{2010}).
+
+\bibitem{robert2014machine}
+\bibinfo{author}{Robert, C.}
+\newblock \bibinfo{title}{Machine learning, a probabilistic perspective}
+  (\bibinfo{year}{2014}).
+
+\bibitem{kluyver2016jupyter}
+\bibinfo{author}{Kluyver, T.} \emph{et~al.}
+\newblock \bibinfo{title}{Jupyter notebooks-a publishing format for
+  reproducible computational workflows.}
+\newblock In \emph{\bibinfo{booktitle}{ELPUB}}, \bibinfo{pages}{87--90}
+  (\bibinfo{year}{2016}).
+
+\bibitem{sergushichev2016algorithm}
+\bibinfo{author}{Sergushichev, A.}
+\newblock \bibinfo{journal}{\bibinfo{title}{An algorithm for fast preranked
+  gene set enrichment analysis using cumulative statistic calculation}}.
+\newblock {\emph{\JournalTitle{BioRxiv}}} \bibinfo{pages}{060012}
+  (\bibinfo{year}{2016}).
 
 \bibitem{barbie2009systematic}
 \bibinfo{author}{Barbie, D.~A.} \emph{et~al.}
