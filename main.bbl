@@ -89,6 +89,13 @@
 \newblock {\emph{\JournalTitle{BioRxiv}}} \bibinfo{pages}{060012}
   (\bibinfo{year}{2016}).
 
+\bibitem{consortium2013genotype}
+\bibinfo{author}{Consortium, T.~G.}
+\newblock \bibinfo{journal}{\bibinfo{title}{The genotype-tissue expression
+  (gtex) project}}.
+\newblock {\emph{\JournalTitle{Nature genetics}}}
+  \textbf{\bibinfo{volume}{45}}, \bibinfo{pages}{580} (\bibinfo{year}{2013}).
+
 \bibitem{barbie2009systematic}
 \bibinfo{author}{Barbie, D.~A.} \emph{et~al.}
 \newblock \bibinfo{journal}{\bibinfo{title}{Systematic rna interference reveals
@@ -141,19 +148,28 @@
 \newblock {\emph{\JournalTitle{Nature methods}}} \textbf{\bibinfo{volume}{12}},
   \bibinfo{pages}{453} (\bibinfo{year}{2015}).
 
+\bibitem{subramanian2005gene}
+\bibinfo{author}{Subramanian, A.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Gene set enrichment analysis: a
+  knowledge-based approach for interpreting genome-wide expression profiles}}.
+\newblock {\emph{\JournalTitle{Proceedings of the National Academy of
+  Sciences}}} \textbf{\bibinfo{volume}{102}}, \bibinfo{pages}{15545--15550}
+  (\bibinfo{year}{2005}).
+
+\bibitem{mootha2003pgc}
+\bibinfo{author}{Mootha, V.~K.} \emph{et~al.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Pgc-1$\alpha$-responsive genes
+  involved in oxidative phosphorylation are coordinately downregulated in human
+  diabetes}}.
+\newblock {\emph{\JournalTitle{Nature genetics}}}
+  \textbf{\bibinfo{volume}{34}}, \bibinfo{pages}{267} (\bibinfo{year}{2003}).
+
 \bibitem{liberzon2015molecular}
 \bibinfo{author}{Liberzon, A.} \emph{et~al.}
 \newblock \bibinfo{journal}{\bibinfo{title}{The molecular signatures database
   hallmark gene set collection}}.
 \newblock {\emph{\JournalTitle{Cell systems}}} \textbf{\bibinfo{volume}{1}},
   \bibinfo{pages}{417--425} (\bibinfo{year}{2015}).
-
-\bibitem{consortium2013genotype}
-\bibinfo{author}{Consortium, T.~G.}
-\newblock \bibinfo{journal}{\bibinfo{title}{The genotype-tissue expression
-  (gtex) project}}.
-\newblock {\emph{\JournalTitle{Nature genetics}}}
-  \textbf{\bibinfo{volume}{45}}, \bibinfo{pages}{580} (\bibinfo{year}{2013}).
 
 \bibitem{lonsdale2013genotype}
 \bibinfo{author}{Lonsdale, J.} \emph{et~al.}

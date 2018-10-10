@@ -24,15 +24,18 @@
 
 \author[1,*]{Jacob Pfeil}
 \author[1]{Geoff Lyle}
+\author[1]{Ioannis Anastopoulos}
 \author[1]{Lauren Sanders}
 \author[1]{Katrina Learned}
 \author[1]{Ellen Kephart}
 \author[1]{Ann Durbin}
 \author[1]{Holly Beale}
-\author[1]{Olena Morozova}
 \author[1]{Sofie Salama}
+\author[1,2]{Ted Goldstein}
 \author[1]{David Haussler}
+\author[1]{Olena Morozova}
 \affil[1]{University of California, Santa Cruz, Biomolecular Engineering, Santa Cruz, 95064, United States}
+\affil[2]{University of California, San Francisco}
 
 \affil[*]{jpfeil@ucsc.edu}
 
@@ -96,11 +99,13 @@ The output of the hydra pipeline includes the multimodally expressed genes, the 
 \section*{Results}
 
 \subsection*{Synthetic Data Analysis}
-A synthetic data analysis was done to assess the performance of the hydra mixture modeling approach compared to rank-based approaches. The synthetic data was generated from GTEx skeletal muscle data and the MSigDB hallmark gene sets. We used 26 Hallmark gene sets with at least 100 genes. We randomly assigned a subset of the samples to have over-expression for a subset of the genes in each gene set. This process was repeated twice to created synthetic training and test data. We compared the hydra method to single sample gene set enrichment analysis (ssGSEA) \cite{barbie2009systematic} and gene set variation analysis (GSVA) \cite{hanzelmann2013gsva}. These methods are used widely in the field and have been used to identify biological pathway activation and subtype tumors. 
+% TODO: Add AUC table in supplemental
+A synthetic data analysis was done to assess the performance of the hydra mixture modeling approach compared to rank-based approaches. The synthetic data was generated from GTEx skeletal muscle data and the MSigDB hallmark gene sets \cite{consortium2013genotype,liberzon2011molecular}. We used the 26 Hallmark gene sets with at least 100 genes. We randomly assigned a subset of the samples to have over-expression for each gene set. This process was repeated twice to created synthetic training and test data. We compared the hydra method to single sample gene set enrichment analysis (ssGSEA) \cite{barbie2009systematic} and gene set variation analysis (GSVA) \cite{hanzelmann2013gsva}. Both methods are implemented in the GSVA package. These methods are used widely in the field and have been used to identify biological pathway activation and subtype tumors.
 
-Receiver operator curves were generated to visualize the performance of each method. Figure \ref{sfig:rocplot}A highlights two illustrative gene sets at two different effect sizes. One with a larger effect size of 1 and another with a smaller effect size 0.5 log2(TPM + 1). The Hallmark Glycoloysis gene set had lower background expression than the Hallmark Oxidative Phosphorylation gene set, 2.28 and 2.83 log2(TPM + 1) respectively. We found that the ssGSEA method performed comparatively to the hydra method when the background expression is lower, but when the background expression is higher, the ssGSEA method's performance decreases. A larger effect size decreased the effect of the background gene set expression.
+Receiver operator curves were generated to visualize the performance of each method. Figure \ref{sfig:rocplot}A highlights two illustrative gene sets at two different effect sizes. The baseline expression for the Hallmark Glycoloysis gene set was lower than the Hallmark Oxidative Phosphorylation gene set, 2.28 and 2.83 log2(TPM + 1) respectively. We also compared the performance of these methods for two different effect sizes. One with a larger effect size of 1 and another with a smaller effect size 0.5 log2(TPM + 1).  
 
-We next investigated the performance of these methods across 26 Hallmark gene sets (Figure \ref{sfig:rocplot}B). The hydra method performed best across the 26 Hallmark gene sets with a mean of AUC of 0.99 (95\% CI, 0.98 - 1.0 CI). ssGSEA also performed witha mean AUC of 0.93 (95\% CI, 0.90 - 0.96) followed by GSVA with a mean AUC of 0.85 (95\% CI, 0.82 - 0.89).  We also compare the area under the curve from the receiver operator characteristics plot to the mean expression across the Hallmark gene sets and noticed that the ranking methods have lower predictive performance when the background expression for the gene set increases. We found that the background expression for a gene set influenced the performance for ranking methods (Figure \ref{sfig:rocplot}C). Both the GSVA and ssGSEA AUC scores were negatively correlated with the background mean expression level with a Pearson correlation of -0.55 and -0.52, respectively. The hydra approach was not correlated with the background expression levels (p-value $>$ 0.05).
+The hydra pipeline performed the best of the three methods. The hydra method performed best across the 26 Hallmark gene sets with a mean of AUC of 0.99 (95\% CI, 0.98 - 1.0 CI). ssGSEA method had a mean AUC of 0.93 (95\% CI, 0.90 - 0.96) followed by GSVA with a mean AUC of 0.85 (95\% CI, 0.82 - 0.89) \ref{sfig:rocplot}B). We found that the background expression for a gene set influenced the performance for ranking methods (Figure \ref{sfig:rocplot}C). Both the GSVA and ssGSEA AUC scores were negatively correlated with the background mean expression level with a Pearson correlation of -0.55 and -0.52, respectively. The hydra approach was not correlated with the background expression levels (p-value $>$ 0.05) \ref{sfig:rocplot}C).
+
 
 %%%%%%%%%%%%%%%
 % ROC Plot Figure %
@@ -109,15 +114,22 @@ We next investigated the performance of these methods across 26 Hallmark gene se
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\linewidth]{images/figure-2-roc-curves@2x.png}
-	\caption{ROC Plot Curves for Assessing the Performance of Pathway Enrichment Tools.}
+	\caption{Hydra is more sensitive than gene set enrichment approaches for detecting differential pathway activity in synthetic data. The performance of the ranking methods depends on the baseline expression for the gene set and the effect size (A). On average, the hydra approach performed the best across 26 simulated data sets using the HALLMARK gene sets. The performance of the rank-based methods was negatively correlated with the baseline expression for the gene set, but the hydra approach was not affected (C).}
 	\label{sfig:rocplot}
 \end{figure}
 
 \subsection*{Immune Subtype Validation}
-The tumor microenvironment plays an important role in providing nutrients and oxygen to the tumor, shielding cancer cells from the immune system, and providing growth factors that promote cancer growth and resistance to therapies \cite{hanahan2012accessories}. We applied the hydra method to identify immune subtypes of melanoma using the TCGA skin cutaneous melanome RNA-Seq data (N=383) hosted on the Xena browser \cite{vivian2017toil}. We used the IMMPORT database to identify immune subtypes in the TCGA melanoma data set \cite{bhattacharya2018immport}. We set a minimum mean expression value for a gene to 1 log2(TPM + 1). The IMMPORT gene list started with 1,740 genes and identified 570 genes that are multimodally expressed. The multivariate clustering algorithm identified 8 clusters. Hierarchical clustering using the Ward method across the mean expression levels across clusters identified three major subtypes of melanoma (Figure \ref{sfig:melanoma}A). We next compared the estimated leukocyte infiltrate as determined by Saltz et al. (2018) \cite{saltz2018spatial}. The hydra approach identified statistically different immune infiltrates by the nonparametric Kruskal-Wallis test (p $<$ 0.01).
+% TODO: Look into the general features of the differentially expressed genes
+The tumor microenvironment plays an important role in providing nutrients and oxygen to the tumor, shielding cancer cells from the immune system, and providing growth factors that promote cancer growth and resistance to therapies \cite{hanahan2012accessories}. We applied the hydra method to identify immune subtypes of skin cutaneous melanoma from TCGA (N=469). The data was downloaded from the UCSC Xena browser \cite{vivian2017toil}.
 
-We next compared the hydra subtype identification clusters to another published method for enumerating cell types within gene expression data known as CIBERSORT \cite{newman2015robust}. Lymphocytes, MAST cells, and macrophages were differentially abundant in the TCGA melanoma tissue samples (Kruskal-Wallis p $<$ 0.01) (Figure \ref{sfig:melanoma}C). Clusters 6, 0, and 5 have elevated lymphocyte expression but lower Mast cell and macrophage associated expression (TODO: Add statistical test). Subtypes 2, 1, 3, 4, 7 have subtype had higher total leukocyte infiltration with cluster 5 having the highest estimate of leukocyte infiltrate.
+We used the IMMPORT database of immune markers to narrow the set of genes for clustering to immune specific genes \cite{bhattacharya2018immport}. We removed any gene with a mean expression value less than 1 log2(TPM + 1). The hydra pipeline identified 253 differentially expressed genes out of the 1,740 genes in the IMMPORT database. Th 253 genes were used for the multivariate Gaussian mixture model analysis which identified 18 clusters (Figure \ref{sfig:melanoma}A). Hierarchical clustering across the cluster means identified 5 super-clusters (Figure \ref{sfig:melanoma}A). Clusters 0 and 1 were the most common with a posterior probability of ~13\% and clustered with low immune expression clusters. 
 
+% TODO: Incude an estimate analysis as well
+We next compared the leukocyte infiltrate fractions across hydra clusters. The leukocyte fraction was estimated by Saltz et al. (2018) using a convolutional neural network trained on H\&E stained slide images \cite{saltz2018spatial}. This analysis provides the total leukocyte fraction as well as estimates for specific immune cell populations using the CIBERSORT algorithm \cite{newman2015robust}. The clusters identified by the hydra pipeline had statistically different leukocyte fractions as well as lymphocyte, mast cell, dedritic cell, macrophage and eosinophil expression (Kruskal-Wallis test: p $<$ 0.01) (Figures \ref{sfig:melanoma}B and \ref{sfig:melanoma}C).
+
+We then identified cluster specific features using gene set enrichment analysis \cite{subramanian2005gene,mootha2003pgc,sergushichev2016algorithm}. We pre-ranked a list of genes using the t-statistic generated by comparing the cluster specific expression levels to background expression of the disease population. Super cluster 1 not surprisingly showed high expression of T-cell and B-cell markers and markers of PD1 signaling, but each cluster also had specific immune associated expression patterns that differentiated them from their neighboring clusters. Super cluster 4 showed either a lack of immune associated expression or pathways associated with VPR interactions, MHC class II antigen presentation, or TGF-Beta signaling. 
+
+Finally, we used the clustering pattern learned from the TCGA data to predict response to checkpoint blockade. We processed RNA-Seq data generated by Riaz et al. 2017 and used the N-of-1 classification scheme to label patient tumors by their TCGA cluster assignment. Our predictions found that partial and complete responders were more likely to be placed in super cluster 1 and progressive disease or stable disease patients were placed in super cluster 4.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SKCM Immune Subtype Figure %
@@ -143,11 +155,6 @@ We next compared the hydra subtype identification clusters to another published 
 
 
 We next investigated the survival for different immune clusters and identified a survival benefit from a high lymphocyte to macrophage ratio. For example, cluster six grouped with the elevated lymphocyte fraction and had a statistically significant improvement in survival compared to a cluster that had lower immune infiltrate and a higher macrophage fraction (Figures \ref{sfig:melanoma} and \ref{sfig:melanoma-surv}). Gene set enrichment analysis for the subtypes that had a statistically significant survival benefit were also enriched for T-cell infiltrate whereas cluster 4 was not enriched for an immune gene set suggesting that the cancer cells were unchecked by the immune system . 
-
-% Need a paragraph about the TCGA immune subtype paper
-
-
-
 
 \subsection*{Molecular Subtype Validation}
 Gene expression analysis is also used to identify molecular subtypes of cancer. Genetic and epigenetic alterations lead to changes in expression and these changes can be quantified using RNA-Seq technology and compared across patients to find molecular subtypes.
@@ -214,12 +221,16 @@ One of the benefits of this approach is that this provides a framework for under
 
 One of the limitations of a non-parametric ranking approach to gene set enrichment is that it cannot account for the dynamic range in expression for a gene in a single-sample context. Therefore, we hypothesized that a GSEA method approach that does not account for this information will suffer if the background expression for a gene set is high. We see this in the HALLMARK Oxidative Phosphorylation analysis where the ssGSEA suffers from poor performance because the background expression is higher and thus is not well suited to identify subtle changes in expression.
 
+ssGSEA method performed as well as the hydra method when the background expression is low, but the ssGSEA performance decreased when the baseline expression for a gene set is high. A larger effect size decreased the effect of baseline gene set expression. The hydra approach was not influenced by the baseline expression for a gene set.
+
 
 \section*{Methods}
 
 %Topical subheadings are allowed. Authors must ensure that their Methods section includes adequate experimental and characterization data necessary for others in the field to reproduce their work.
 
 \subsection{Synthetic Data Generation}
+A synthetic data analysis was done to assess the performance of the hydra mixture modeling approach compared to rank-based approaches. The synthetic data was generated from GTEx skeletal muscle data and the MSigDB hallmark gene sets \cite{consortium2013genotype,liberzon2011molecular}. We used the 26 Hallmark gene sets with at least 100 genes. We randomly assigned a subset of the samples to have over-expression for each gene set. This process was repeated twice to created synthetic training and test data. We compared the hydra method to single sample gene set enrichment analysis (ssGSEA) \cite{barbie2009systematic} and gene set variation analysis (GSVA) \cite{hanzelmann2013gsva}. Both methods are implemented in the GSVA package. These methods are used widely in the field and have been used to identify biological pathway activation and subtype tumors.
+
 The MSigDB Hallmark gene sets were used to simulate biological pathway expression that reflects the gene set properties of a typical gene expression analysis \cite{liberzon2015molecular,liberzon2011molecular}. We also needed a large cohort of human tissue samples to infer differentially expressed genes. We used the GTEx skeletal muscle cohort \cite{consortium2013genotype}. To simulate subtype specific expression, we randomly sampled 25\% of the patient population and then we sampled from a normal distribution centered at 0.5 with a standard deviation of 0.5. We then added this value to 25\% of the genes in each Hallmark gene set to simulate coordinated expression of genes within a biological gene set.
 
 We compared the predictive performance for identifying enriched genes using healthy tissue samples collected as part of the Genotype-Tissue Expression (GTEx) project \cite{lonsdale2013genotype}. The Molecular Signatures Database (MSigDB) provides a large set of curated gene lists for identifying biological functions for precision medicine applications. We used the Hallmark MSigDB gene sets to select genes with related biological functions and correlated expression \cite{liberzon2015molecular}. We then randomly sampled GTEx skeletal muscle samples, modified their expression values for a subset of the gene set genes. We did this process twice to generate synthetic training and test data. The same genes were used in the test and training data, but the values were sampled independently from a normal distribution at varying mean differences. 
