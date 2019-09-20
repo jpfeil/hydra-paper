@@ -1,0 +1,75 @@
+INFO:root:Started Hydra...
+INFO:root:Parameters:
+INFO:root:	go_enrichment: False
+INFO:root:	min_effect_filter: None
+INFO:root:	gmt_regex: None
+INFO:root:	debug: False
+INFO:root:	min_prob_filter: 0.05
+INFO:root:	min_mean_filter: 1.0
+INFO:root:	CPU: 15
+INFO:root:	max_fit_time: 900
+INFO:root:	mm_path: None
+INFO:root:	sF: 2.0
+INFO:root:	min_num_filter: 5
+INFO:root:	sensitive: False
+INFO:root:	mode: filter
+INFO:root:	output_dir: NRC-hydra-out
+INFO:root:	test: False
+INFO:root:	num_laps: 1000
+INFO:root:	all_genes: False
+INFO:root:	expression: nrc-mycn-na-microarray.tsv
+INFO:root:	K: 5
+INFO:root:	gamma: 5.0
+INFO:root:	gmt: None
+INFO:root:Minimum gene expression mean: 1.00
+INFO:root:Minimum component probability: 0.05
+INFO:root:Reading in expression data:
+nrc-mycn-na-microarray.tsv
+INFO:root:Removing duplicate genes:
+INFO:root:Number of genes: 17324
+INFO:root:Number of genes after removing duplicates: 17324
+INFO:root:Gene names cannot contain forward slashes! OK/SW-CL.36
+INFO:root:Gene names cannot contain forward slashes! OK/SW-CL.58
+INFO:root:Number of genes after removing misformatted genes: 17322
+INFO:root:Running multimodal filter
+INFO:root:Gene ABCA10 was removed by min prob filter.
+INFO:root:Gene ABCA9 was removed by min prob filter.
+INFO:root:Gene ALB was removed by min prob filter.
+INFO:root:Gene ALAS2 was removed by min prob filter.
+INFO:root:Gene APOL4 was removed by min prob filter.
+INFO:root:Gene ARHGEF25 was removed by min prob filter.
+INFO:root:Gene C2orf88 was removed by min prob filter.
+INFO:root:Gene CYP11B1 was removed by min prob filter.
+INFO:root:Gene CYP21A2 was removed by min prob filter.
+INFO:root:Gene DDIT3 was removed by min prob filter.
+INFO:root:Gene DEFA4 was removed by min prob filter.
+INFO:root:Gene DPEP3 was removed by min prob filter.
+INFO:root:Gene FAM150B was removed by min prob filter.
+INFO:root:Gene FGA was removed by min prob filter.
+INFO:root:Gene FNDC7 was removed by min prob filter.
+INFO:root:Gene GABRA5 was removed by min prob filter.
+INFO:root:Gene GPR50 was removed by min prob filter.
+INFO:root:Gene HP was removed by min prob filter.
+INFO:root:Gene INHBA was removed by min prob filter.
+INFO:root:Gene KLK4 was removed by min prob filter.
+INFO:root:Gene LHX9 was removed by min prob filter.
+INFO:root:Gene TRHDE was removed by min prob filter.
+INFO:root:Gene LRP1B was removed by min prob filter.
+INFO:root:Gene MBD6 was removed by min prob filter.
+INFO:root:Gene MC2R was removed by min prob filter.
+INFO:root:Gene NPNT was removed by min prob filter.
+INFO:root:Gene NTRK2 was removed by min prob filter.
+INFO:root:Gene ORM1 was removed by min prob filter.
+INFO:root:Gene PA2G4 was removed by min prob filter.
+INFO:root:Gene PIP4K2C was removed by min prob filter.
+INFO:root:Gene SILV was removed by min prob filter.
+INFO:root:Gene SATB2 was removed by min prob filter.
+INFO:root:Gene SLC47A1 was removed by min prob filter.
+INFO:root:Gene SLC5A7 was removed by min prob filter.
+INFO:root:Gene SULT2A1 was removed by min prob filter.
+INFO:root:Gene TMEM45B was removed by min prob filter.
+INFO:root:Gene TSFM was removed by min prob filter.
+INFO:root:Gene TSPAN31 was removed by min prob filter.
+INFO:root:Gene FSIP2 was removed by min prob filter.
+INFO:root:Multimodal genes are located here:
+NRC-hydra-out/MultiModalGenes
