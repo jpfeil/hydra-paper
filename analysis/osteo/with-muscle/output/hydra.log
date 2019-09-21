@@ -1,0 +1,33 @@
+INFO:root:Started Hydra...
+INFO:root:Parameters:
+INFO:root:	num_laps: 1000
+INFO:root:	CPU: 13
+INFO:root:	go_enrichment: False
+INFO:root:	gmt_regex: None
+INFO:root:	min_mean_filter: None
+INFO:root:	output_dir: output
+INFO:root:	test: False
+INFO:root:	min_prob_filter: None
+INFO:root:	gmt: None
+INFO:root:	min_effect_filter: None
+INFO:root:	K: 5
+INFO:root:	mm_path: None
+INFO:root:	sF: 2.0
+INFO:root:	max_fit_time: 900
+INFO:root:	min_num_filter: 5
+INFO:root:	sensitive: False
+INFO:root:	mode: filter
+INFO:root:	debug: False
+INFO:root:	all_genes: False
+INFO:root:	expression: data/TARGET-osteosarcoma-2019-02-02.tsv
+INFO:root:	enrichment: False
+INFO:root:	gamma: 5.0
+INFO:root:Reading in expression data:
+data/TARGET-osteosarcoma-2019-02-02.tsv
+INFO:root:Removing duplicate genes:
+INFO:root:Number of genes: 15273
+INFO:root:Number of genes after removing duplicates: 15273
+INFO:root:Number of genes after removing misformatted genes: 15273
+INFO:root:Running multimodal filter
+INFO:root:Multimodal genes are located here:
+output/MultiModalGenes
