@@ -1,3 +1,36 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{vivianToilEnablesReproducible2017}
+Vivian J, Rao AA, Nothaft FA, Ketchum C, Armstrong J, Novak A, et~al.
+\newblock Toil Enables Reproducible, Open Source, Big Biomedical Data Analyses.
+\newblock Nature Biotechnology. 2017;35(4):314--316.
+\newblock doi:{10.1038/nbt.3772}.
+
+\bibitem{pughGeneticLandscapeHighrisk2013}
+Pugh TJ, Morozova O, Attiyeh EF, Asgharzadeh S, Wei JS, Auclair D, et~al.
+\newblock The Genetic Landscape of High-Risk Neuroblastoma.
+\newblock Nature Genetics. 2013;45(3):279--284.
+\newblock doi:{10.1038/ng.2529}.
+
+\bibitem{goldmanUCSCXenaPlatform2018}
+Goldman M, Craft B, Kamath A, Brooks A, Zhu J, Haussler D.
+\newblock The {{UCSC Xena Platform}} for Cancer Genomics Data Visualization and
+  Interpretation.
+\newblock bioRxiv. 2018; p. 326470.
+\newblock doi:{10.1101/326470}.
+
+\bibitem{thecancergenomeatlasresearchnetworkCancerGenomeAtlas2013}
+{The Cancer Genome Atlas Research Network}, Weinstein JN, Collisson EA, Mills
+  GB, Shaw KRM, Ozenberger BA, et~al.
+\newblock The {{Cancer Genome Atlas Pan}}-{{Cancer}} Analysis Project.
+\newblock Nature Genetics. 2013;45:1113--1120.
+\newblock doi:{10.1038/ng.2764}.
+
+\bibitem{newtonTumorMapExploringMolecular2017}
+Newton Y, Novak AM, Swatloski T, McColl DC, Chopra S, Graim K, et~al.
+\newblock {{TumorMap}}: {{Exploring}} the {{Molecular Similarities}} of
+  {{Cancer Samples}} in an {{Interactive Portal}}.
+\newblock Cancer Research. 2017;77(21):e111--e114.
+\newblock doi:{10.1158/0008-5472.CAN-17-0580}.
 
 \end{thebibliography}

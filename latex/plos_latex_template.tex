@@ -178,7 +178,7 @@
 % Title must be 250 characters or less.
 \begin{flushleft}
 {\Large
-\textbf\newline{Hydra: a mixture modeling toolkit for subtyping pediatric cancer cohorts using multimodal gene expression signatures} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+\textbf\newline{Hydra: a mixture modeling framework for subtyping pediatric cancer cohorts using multimodal gene expression signatures} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
 }
 \newline
 % Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
@@ -255,27 +255,29 @@ Precision oncology has primarily relied on coding mutation status as a readout t
 % Use first person. PLOS ONE authors please skip this step. 
 % Author Summary not valid for PLOS ONE submissions.   
 \section*{Author summary}
-Our work in pediatric precision oncology found a large number of multimodally expressed genes, but the methods being used in the translational research community often assume a single mode. To fit the data to a single mode leads to several problems, including overestimating uncertainty and potentially leading to spurious results. To enhance clinical utility, bioinformatic tools need to reflect the data being analyzed as accurately as possible. Mixture models that rely on computationally intensive MCMC sampling or do not incorporate prior biological knowledge in appropriate ways. There is a need for a computational approach that can scale to whole-transcriptome datasets, discover tumor subtypes and assign these subtypes to a given patient, and can incorporate available pathway gene set databases. We have developed an approach that uses variational methods at the gene-level to quickly and accurately identify multimodally expressed genes, which we use to define subtypes with respect to user-defined gene sets. 
+Our work in pediatric precision oncology found a large number of multimodally expressed genes, but the methods being used in the translational research community often assume a single mode. To fit the data to a single mode leads to several problems, including overestimating uncertainty and potentially leading to spurious results. To enhance clinical utility, bioinformatic tools need to reflect the data being analyzed as accurately as possible. Mixture models that rely on computationally intensive MCMC sampling or do not incorporate prior biological knowledge in appropriate ways. There is a need for a computational approach that can scale to whole-transcriptome datasets, discover tumor subtypes and assign these subtypes to a given patient, and can incorporate available pathway gene set databases. We have developed an approach that uses variational methods at the gene-level to quickly and accurately identify multimodally expressed genes, which we use to define subtypes with respect to user-defined gene sets.
 
 
 \linenumbers
 
 % Use "Eq" instead of "Equation" for equation citations.
 \section*{Introduction}
-Lorem ipsum dolor sit~\cite{bib1} amet, consectetur adipiscing elit. Curabitur eget porta erat. Morbi consectetur est vel gravida pretium. Suspendisse ut dui eu ante cursus gravida non sed sem. Nullam Eq~(\ref{eq:schemeP}) sapien tellus, commodo id velit id, eleifend volutpat quam. Phasellus mauris velit, dapibus finibus elementum vel, pulvinar non tellus. Nunc pellentesque pretium diam, quis maximus dolor faucibus id.~\cite{bib2} Nunc convallis sodales ante, ut ullamcorper est egestas vitae. Nam sit amet enim ultrices, ultrices elit pulvinar, volutpat risus.
+Large cancer sequencing projects, including The Cancer Genome Atlas (TCGA) and Therapeutically Applicable Research to Generate Effective Treatments (TARGET), have facilitated the development of cancer gene expression compendia \cite{vivianToilEnablesReproducible2017, pughGeneticLandscapeHighrisk2013, goldmanUCSCXenaPlatform2018, thecancergenomeatlasresearchnetworkCancerGenomeAtlas2013, newtonTumorMapExploringMolecular2017} but these compendia often lack corresponding normal tissue expression data. Without the the normal comparator, Hoadley et al. (2018) found that cell-of-origin signals drive integrative clustering of TCGA data, with the exception of tumors that have high immune and stromal expression clustering irrespective of the cell-of-origin. Strong cell-of-origin and tumor microenvironment (TME) signals may complicate the interpretation of gene expression results for precision oncology applications, so careful modeling of the data is necessary to infer accurate conclusions from the data. 
+
+The TME includes tumor cells, stromal fibroblasts, infiltrating immune cells, and vasculature \cite{joyceCellExclusionImmune2015}. Similarities in TME composition across tumor samples have led to the identification of TME states (i.e. inflamed, immune-excluded, immune-desert). These states are dynamic and may change as the tumor progresses, but may shed light on the immunogenicity of tumor cells and correlate with response to cancer immunotherapies \cite{chenElementsCancerImmunity2017}}. The TME cellular composition can be inferred from gene expression data since host cell RNA is sequenced along with the cancer cell RNA. Not accounting for the immune signal when performing gene expression analysis may confound the interpretation of clustering results \cite{aranXCellDigitallyPortraying2017, rheeImpactTumorPurity2018, hoadleyCellofOriginPatternsDominate2018}.
+
+Tumor progression and response to therapies is associated with features of the TME, so targeting the TME therapeutically may improve the treatment of some cancers. Immunotherapies that activate the host immune system to eradicate tumors have improved the treatment of several cancer types \cite{mellmanCancerImmunotherapyComes2011, pageImmuneModulationCancer2014}. Pediatric cancers are thought to be less immunogenic because pediatric cancers have lower mutation burdens in general. Gene overexpression is another source of tumor-specific antigens which may play an important role in pediatric tumor immunogenicity. In addition to infiltrating immune cells, cancer-associated fibroblasts assist in extracellular matrix remodeling and activation of growth factor signaling that facilitate tumor growth, metastasis, and resistance to therapies. Methods are needed to both infer and characterize gene expression subtypes that correlate with tumor microenvironment states to accelerate the development of novel therapies for pediatric cancers.
+Tumor/normal differential expression analysis in which a cohort of tumor tissues is compared to normal counterparts is an effective approach for identifying gene expression biomarkers \cite{andersCountbasedDifferentialExpression2013, andersDifferentialExpressionAnalysis2010, sonesonComparisonMethodsDifferential2013}, but it is often not possible to conduct this analysis in a clinical setting. Sufficient biological and technical replicates are limited by tumor tissue availability, and healthy neighboring tissue often cannot be isolated. In addition, for many pediatric cancers, the cell-of-origin and thus the appropriate reference normal tissue is not known. Besides differential expression analysis, single-sample pathway analysis can be used to identify upregulation of biological gene sets in tumor subtypes. The most widely used pathway analysis approach is gene set enrichment analysis (GSEA). GSEA identifies coordinated expression of pathway genes using gene ranks and a Kolmogorov-Smirnov-like test statistic (Subramanian et al. 2005; Mootha et al. 2003). GSEA is usually performed on differentially expressed genes, but single-sample versions exist for identifying cancer subtypes. GSEA uses curated pathway gene sets like those in the Molecular Signatures Database (MSigDB) (Liberzon et al. 2011). 
+Cancer gene expression subtypes are traditionally identified using unsupervised clustering analysis such as consensus clustering analysis (Oyelade et al. 2016; John et al. 2018; Wilkerson and Hayes 2010). These methods are generally underpowered because the number of genes greatly exceeds the number of samples. Dimensionality reduction approaches such as Principal Component Analysis (PCA) have been found to underestimate the dimensionality of gene expression data. Lenz at al. (2016) found two cases in which PCA fails to identify a biological signal: when the size of the cluster is small and when the effect size is small. Lenz et al. (2016) suggest investigating multimodally expressed genes to improve identification of subtypes. Cancer subtypes naturally lead to multimodal expression patterns where each subtype expresses genes with distinct levels and correlation patterns. Furthermore, enriching for multimodally expressed genes before clustering has been shown to improve correlations with clinical features of interest (Yi Li et al. 2005).
+Gaussian mixture models are a powerful class of unsupervised clustering algorithms for detecting multimodally expressed genes (Ghosh 2004). A Gaussian mixture model is appropriate when the expression data can be modeled by two or more Gaussian distributions (Gelman et al. 2014). One limitation of Gaussian mixture models in this context is that the number of clusters in the data is often not known beforehand, so a parameter search is used to identify the best-performing model. However, this is a computationally expensive approach. This problem can be overcome by placing a Dirichlet process prior on the number of expression clusters. The number of clusters is then inferred while fitting the mixture model using Markov chain Monte Carlo sampling (Gelman et al. 2014). This approach has not been widely used in clinical cancer research because these algorithms are also computationally intensive, but recent advances in approximate sampling methods make this approach scalable for precision oncology applications.
 
 \begin{eqnarray}
-\label{eq:schemeP}
-	\mathrm{P_Y} = \underbrace{H(Y_n) - H(Y_n|\mathbf{V}^{Y}_{n})}_{S_Y} + \underbrace{H(Y_n|\mathbf{V}^{Y}_{n})- H(Y_n|\mathbf{V}^{X,Y}_{n})}_{T_{X\rightarrow Y}},
+\label{eq:dpgmm}
+G ~ DP(M, G_0)
+y_1, y_2, ..., y_n | G ~ G
 \end{eqnarray}
 
 
-Large cancer sequencing projects, including The Cancer Genome Atlas (TCGA) and Therapeutically Applicable Research to Generate Effective Treatments (TARGET), have facilitated the development of cancer gene expression compendia (Vivian et al. 2017; Pugh et al. 2013; Goldman et al. 2018; Weinstein et al. 2013; Newton et al. 2017) but these compendia often lack corresponding normal tissue expression data. Without the the normal comparator, Hoadley et al. (2018) found that cell-of-origin signals drive integrative clustering of TCGA data, with the exception of tumors that have high immune and stromal expression clustering irrespective of the cell-of-origin. Strong cell-of-origin and tumor microenvironment (TME) signals may complicate the interpretation of gene expression results for precision oncology applications, so careful modeling of the data is necessary to subtract out unwanted signals. 
-The TME includes tumor cells, stromal fibroblasts, infiltrating immune cells, and vasculature (Joyce and Fearon 2015). Similarities in TME composition across tumor samples have led to the identification of TME states (i.e. inflamed, immune-excluded, immune-desert). These states are dynamic and may change as the tumor progresses, but may shed light on the immunogenicity of tumor cells and correlate with response to cancer immunotherapies (Chen and Mellman 2017). The TME cellular composition can be inferred from gene expression data since host cell RNA is sequenced along with the cancer cell RNA. Not accounting for the immune signal when performing gene expression analysis may confound the interpretation of clustering results (Aran et al. 2017; Rhee et al. 2018).
-Tumor progression and response to therapies is associated with features of the TME, so targeting the TME therapeutically may improve the treatment of some cancers. Immunotherapies that activate the host immune system to eradicate tumors have improved the treatment of several cancer types (Mellman et al. 2011; Page et al. 2014). Pediatric cancers are thought to be less immunogenic because pediatric cancers have lower mutation burdens in general. Gene overexpression is another source of tumor-specific antigens which may play an important role in pediatric tumor immunogenicity. In addition to infiltrating immune cells, cancer-associated fibroblasts assist in extracellular matrix remodeling and activation of growth factor signaling that facilitate tumor growth, metastasis, and resistance to therapies. Methods are needed to both infer and characterize gene expression subtypes that correlate with tumor microenvironment states to accelerate the development of novel therapies for pediatric cancers.
-Tumor/normal differential expression analysis in which a cohort of tumor tissues is compared to normal counterparts is an effective approach for identifying gene expression biomarkers (Anders and Huber 2010; Soneson and Delorenzi 2013; Anders et al. 2013), but it is often not possible to conduct this analysis in a clinical setting. Sufficient biological and technical replicates are limited by tumor tissue availability, and healthy neighboring tissue often cannot be isolated. In addition, for many pediatric cancers, the cell-of-origin and thus the appropriate reference normal tissue is not known. Besides differential expression analysis, single-sample pathway analysis can be used to identify upregulation of biological gene sets in tumor subtypes. The most widely used pathway analysis approach is gene set enrichment analysis (GSEA). GSEA identifies coordinated expression of pathway genes using gene ranks and a Kolmogorov-Smirnov-like test statistic (Subramanian et al. 2005; Mootha et al. 2003). GSEA is usually performed on differentially expressed genes, but single-sample versions exist for identifying cancer subtypes. GSEA uses curated pathway gene sets like those in the Molecular Signatures Database (MSigDB) (Liberzon et al. 2011). 
-Cancer gene expression subtypes are traditionally identified using unsupervised clustering analysis such as consensus clustering analysis (Oyelade et al. 2016; John et al. 2018; Wilkerson and Hayes 2010). These methods are generally underpowered because the number of genes greatly exceeds the number of samples. Dimensionality reduction approaches such as Principal Component Analysis (PCA) have been found to underestimate the dimensionality of gene expression data. Lenz at al. (2016) found two cases in which PCA fails to identify a biological signal: when the size of the cluster is small and when the effect size is small. Lenz et al. (2016) suggest investigating multimodally expressed genes to improve identification of subtypes. Cancer subtypes naturally lead to multimodal expression patterns where each subtype expresses genes with distinct levels and correlation patterns. Furthermore, enriching for multimodally expressed genes before clustering has been shown to improve correlations with clinical features of interest (Yi Li et al. 2005).
-Gaussian mixture models are a powerful class of unsupervised clustering algorithms for detecting multimodally expressed genes (Ghosh 2004). A Gaussian mixture model is appropriate when the expression data can be modeled by two or more Gaussian distributions (Gelman et al. 2014). One limitation of Gaussian mixture models in this context is that the number of clusters in the data is often not known beforehand, so a parameter search is used to identify the best-performing model. However, this is a computationally expensive approach. This problem can be overcome by placing a Dirichlet process prior on the number of expression clusters. The number of clusters is then inferred while fitting the mixture model using Markov chain Monte Carlo sampling (Gelman et al. 2014). This approach has not been widely used in clinical cancer research because these algorithms are also computationally intensive, but recent advances in approximate sampling methods make this approach scalable for precision oncology applications.
 Here, we describe a Dirichlet process mixture model pipeline called hydra for identifying clinically relevant expression subtypes and classifying N-of-1 tumor samples. The hydra pipeline uses the nonparametric Bayesian Python library bnpy (Hughes and Sudderth 2015) and incorporates state-of-the-art cluster profiling software and biological pathway gene sets. We provide an overview of the hydra pipeline, assess performance for detecting differential pathway expression, and apply the approach to better understand expression patterns in high-risk neuroblastoma and osteosarcoma. We propose a novel framework for N-of-1 tumor gene expression analysis and show that this framework can identify distinct immune and stromal expression signatures that differentiate pediatric cancer samples.
 
 
@@ -447,23 +449,39 @@ Cras egestas velit mauris, eu mollis turpis pellentesque sit amet. Interdum et m
 
 \begin{thebibliography}{10}
 
-\bibitem{bib1}
-Conant GC, Wolfe KH.
-\newblock {{T}urning a hobby into a job: how duplicated genes find new
-  functions}.
-\newblock Nat Rev Genet. 2008 Dec;9(12):938--950.
+\bibitem{vivianToilEnablesReproducible2017}
+Vivian J, Rao AA, Nothaft FA, Ketchum C, Armstrong J, Novak A, et~al.
+\newblock Toil Enables Reproducible, Open Source, Big Biomedical Data Analyses.
+\newblock Nature Biotechnology. 2017;35(4):314--316.
+\newblock doi:{10.1038/nbt.3772}.
 
-\bibitem{bib2}
-Ohno S.
-\newblock Evolution by gene duplication.
-\newblock London: George Alien \& Unwin Ltd. Berlin, Heidelberg and New York:
-  Springer-Verlag.; 1970.
+\bibitem{pughGeneticLandscapeHighrisk2013}
+Pugh TJ, Morozova O, Attiyeh EF, Asgharzadeh S, Wei JS, Auclair D, et~al.
+\newblock The Genetic Landscape of High-Risk Neuroblastoma.
+\newblock Nature Genetics. 2013;45(3):279--284.
+\newblock doi:{10.1038/ng.2529}.
 
-\bibitem{bib3}
-Magwire MM, Bayer F, Webster CL, Cao C, Jiggins FM.
-\newblock {{S}uccessive increases in the resistance of {D}rosophila to viral
-  infection through a transposon insertion followed by a {D}uplication}.
-\newblock PLoS Genet. 2011 Oct;7(10):e1002337.
+\bibitem{goldmanUCSCXenaPlatform2018}
+Goldman M, Craft B, Kamath A, Brooks A, Zhu J, Haussler D.
+\newblock The {{UCSC Xena Platform}} for Cancer Genomics Data Visualization and
+Interpretation.
+\newblock bioRxiv. 2018; p. 326470.
+\newblock doi:{10.1101/326470}.
+
+\bibitem{thecancergenomeatlasresearchnetworkCancerGenomeAtlas2013}
+{The Cancer Genome Atlas Research Network}, Weinstein JN, Collisson EA, Mills
+GB, Shaw KRM, Ozenberger BA, et~al.
+\newblock The {{Cancer Genome Atlas Pan}}-{{Cancer}} Analysis Project.
+\newblock Nature Genetics. 2013;45:1113--1120.
+\newblock doi:{10.1038/ng.2764}.
+
+\bibitem{newtonTumorMapExploringMolecular2017}
+Newton Y, Novak AM, Swatloski T, McColl DC, Chopra S, Graim K, et~al.
+\newblock {{TumorMap}}: {{Exploring}} the {{Molecular Similarities}} of
+{{Cancer Samples}} in an {{Interactive Portal}}.
+\newblock Cancer Research. 2017;77(21):e111--e114.
+\newblock doi:{10.1158/0008-5472.CAN-17-0580}.
+
 
 \end{thebibliography}
 
