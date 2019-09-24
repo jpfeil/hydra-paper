@@ -99,14 +99,6 @@ Soneson C, Delorenzi M.
 \newblock BMC Bioinformatics. 2013;14(1):91.
 \newblock doi:{10.1186/1471-2105-14-91}.
 
-\bibitem{subramanianGeneSetEnrichment2005}
-Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, et~al.
-\newblock Gene Set Enrichment Analysis: {{A}} Knowledge-Based Approach for
-  Interpreting Genome-Wide Expression Profiles.
-\newblock Proceedings of the National Academy of Sciences.
-  2005;102(43):15545--15550.
-\newblock doi:{10.1073/pnas.0506580102}.
-
 \bibitem{moothaPGC1alpharesponsiveGenesInvolved2003}
 Mootha VK, Lindgren CM, Eriksson KF, Subramanian A, Sihag S, Lehar J, et~al.
 \newblock {{PGC}}-1alpha-Responsive Genes Involved in Oxidative Phosphorylation
@@ -134,13 +126,6 @@ John CR, Watson D, Russ D, Goldmann K, Ehrenstein M, Lewis M, et~al.
   Algorithm.
 \newblock bioRxiv. 2018; p. 377002.
 
-\bibitem{wilkersonConsensusClusterPlusClassDiscovery2010}
-Wilkerson MD, Hayes DN.
-\newblock {{ConsensusClusterPlus}}: A Class Discovery Tool with Confidence
-  Assessments and Item Tracking.
-\newblock Bioinformatics. 2010;26(12):1572--1573.
-\newblock doi:{10.1093/bioinformatics/btq170}.
-
 \bibitem{yiliMultimodalityCriterionFeature2005}
 {Yi Li}, {Wing-Kin Sung}, Miller LD.
 \newblock Multimodality as a Criterion for Feature Selection in Unsupervised
@@ -155,14 +140,91 @@ Ghosh D.
 \newblock Bioinformatics (Oxford, England). 2004;20(11):1663--1669.
 \newblock doi:{10.1093/bioinformatics/bth139}.
 
-\bibitem{gelman2013bayesian}
-Gelman A, Carlin JB, Stern HS, Dunson DB, Vehtari A, Rubin DB.
-\newblock Bayesian data analysis.
-\newblock Chapman and Hall/CRC; 2013.
-
 \bibitem{hughesBnpyReliableScalable}
 Hughes MC, Sudderth EB.
 \newblock Bnpy : {{Reliable}} and Scalable Variational Inference for
   {{Bayesian}} Nonparametric Models; p.~4.
+
+\bibitem{barbieSystematicRNAInterference2009}
+Barbie DA, Tamayo P, Boehm JS, Kim SY, Moody SE, Dunn IF, et~al.
+\newblock Systematic {{RNA}} Interference Reveals That Oncogenic
+  {{KRAS}}-Driven Cancers Require {{TBK1}}.
+\newblock Nature. 2009;462(7269):108--112.
+\newblock doi:{10.1038/nature08460}.
+
+\bibitem{hanzelmannGSVAGeneSet2013}
+H{\"a}nzelmann S, Castelo R, Guinney J.
+\newblock {{GSVA}}: Gene Set Variation Analysis for Microarray and
+  {{RNA}}-{{Seq}} Data.
+\newblock BMC Bioinformatics. 2013;14(1):7.
+\newblock doi:{10.1186/1471-2105-14-7}.
+
+\bibitem{tarcaComparisonGeneSet2013}
+Tarca AL, Bhatti G, Romero R.
+\newblock A {{Comparison}} of {{Gene Set Analysis Methods}} in {{Terms}} of
+  {{Sensitivity}}, {{Prioritization}} and {{Specificity}}.
+\newblock PLOS ONE. 2013;8(11):e79217.
+\newblock doi:{10.1371/journal.pone.0079217}.
+
+\bibitem{zwienerTransformingRNASeqData2014}
+Zwiener I, Frisch B, Binder H.
+\newblock Transforming {{RNA}}-{{Seq Data}} to {{Improve}} the {{Performance}}
+  of {{Prognostic Gene Signatures}}.
+\newblock PLOS ONE. 2014;9(1):e85150.
+\newblock doi:{10.1371/journal.pone.0085150}.
+
+\bibitem{benson2012genbank}
+Benson DA, Cavanaugh M, Clark K, {Karsch-Mizrachi} I, Lipman DJ, Ostell J,
+  et~al.
+\newblock {{GenBank}}.
+\newblock Nucleic acids research. 2012;41(D1):D36--D42.
+
+\bibitem{yuClusterProfilerPackageComparing2012}
+Yu G, Wang LG, Han Y, He QY.
+\newblock {{clusterProfiler}}: An {{R}} Package for Comparing Biological Themes
+  among Gene Clusters.
+\newblock Omics: A Journal of Integrative Biology. 2012;16(5):284--287.
+\newblock doi:{10.1089/omi.2011.0118}.
+
+\bibitem{ashburner2000gene}
+Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, et~al.
+\newblock Gene Ontology: Tool for the Unification of Biology.
+\newblock Nature genetics. 2000;25(1):25.
+
+\bibitem{gene2018gene}
+Consortium GO.
+\newblock The Gene Ontology Resource: 20 Years and Still {{GOing}} Strong.
+\newblock Nucleic acids research. 2018;47(D1):D330--D338.
+
+\bibitem{merico2010enrichment}
+Merico D, Isserlin R, Stueker O, Emili A, Bader GD.
+\newblock Enrichment Map: A Network-Based Method for Gene-Set Enrichment
+  Visualization and Interpretation.
+\newblock PloS one. 2010;5(11):e13984.
+
+\bibitem{morgenstern2019challenge}
+Morgenstern DA, Bagatell R, Cohn SL, Hogarty MD, Maris JM, Moreno L, et~al.
+\newblock The Challenge of Defining ``Ultra-High-Risk'' Neuroblastoma.
+\newblock Pediatric blood \& cancer. 2019;66(4):e27556.
+
+\bibitem{yoshiharaInferringTumourPurity2013a}
+Yoshihara K, Shahmoradgoli M, Mart{\'i}nez E, Vegesna R, Kim H, {Torres-Garcia}
+  W, et~al.
+\newblock Inferring Tumour Purity and Stromal and Immune Cell Admixture from
+  Expression Data.
+\newblock Nature Communications. 2013;4:2612.
+\newblock doi:{10.1038/ncomms3612}.
+
+\bibitem{majzner2017harnessing}
+Majzner RG, Heitzeneder S, Mackall CL.
+\newblock Harnessing the Immunotherapy Revolution for the Treatment of
+  Childhood Cancers.
+\newblock Cancer Cell. 2017;31(4):476--485.
+
+\bibitem{raphael2017integrated}
+Raphael BJ, Hruban RH, Aguirre AJ, Moffitt RA, Yeh JJ, Stewart C, et~al.
+\newblock Integrated Genomic Characterization of Pancreatic Ductal
+  Adenocarcinoma.
+\newblock Cancer cell. 2017;32(2):185--203.
 
 \end{thebibliography}
