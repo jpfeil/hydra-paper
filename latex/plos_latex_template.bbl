@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{vivianToilEnablesReproducible2017}
 Vivian J, Rao AA, Nothaft FA, Ketchum C, Armstrong J, Novak A, et~al.
@@ -32,5 +32,137 @@ Newton Y, Novak AM, Swatloski T, McColl DC, Chopra S, Graim K, et~al.
   {{Cancer Samples}} in an {{Interactive Portal}}.
 \newblock Cancer Research. 2017;77(21):e111--e114.
 \newblock doi:{10.1158/0008-5472.CAN-17-0580}.
+
+\bibitem{joyceCellExclusionImmune2015}
+Joyce JA, Fearon DT.
+\newblock T Cell Exclusion, Immune Privilege, and the Tumor Microenvironment.
+\newblock Science (New York, NY). 2015;348(6230):74--80.
+\newblock doi:{10.1126/science.aaa6204}.
+
+\bibitem{chenElementsCancerImmunity2017}
+Chen DS, Mellman I.
+\newblock Elements of Cancer Immunity and the Cancer\textendash{}Immune Set
+  Point.
+\newblock Nature. 2017;541(7637):321--330.
+\newblock doi:{10.1038/nature21349}.
+
+\bibitem{aranXCellDigitallyPortraying2017}
+Aran D, Hu Z, Butte AJ.
+\newblock {{xCell}}: Digitally Portraying the Tissue Cellular Heterogeneity
+  Landscape.
+\newblock Genome Biology. 2017;18(1):220.
+\newblock doi:{10.1186/s13059-017-1349-1}.
+
+\bibitem{rheeImpactTumorPurity2018}
+Rhee JK, Jung YC, Kim KR, Yoo J, Kim J, Lee YJ, et~al.
+\newblock Impact of {{Tumor Purity}} on {{Immune Gene Expression}} and
+  {{Clustering Analyses}} across {{Multiple Cancer Types}}.
+\newblock Cancer Immunology Research. 2018;6(1):87--97.
+\newblock doi:{10.1158/2326-6066.CIR-17-0201}.
+
+\bibitem{hoadleyCellofOriginPatternsDominate2018}
+Hoadley KA, Yau C, Hinoue T, Wolf DM, Lazar AJ, Drill E, et~al.
+\newblock Cell-of-{{Origin Patterns Dominate}} the {{Molecular Classification}}
+  of 10,000 {{Tumors}} from 33 {{Types}} of {{Cancer}}.
+\newblock Cell. 2018;173(2):291--304.e6.
+\newblock doi:{10.1016/j.cell.2018.03.022}.
+
+\bibitem{mellmanCancerImmunotherapyComes2011}
+Mellman I, Coukos G, Dranoff G.
+\newblock Cancer Immunotherapy Comes of Age.
+\newblock Nature. 2011;480(7378):480--489.
+\newblock doi:{10.1038/nature10673}.
+
+\bibitem{pageImmuneModulationCancer2014}
+Page DB, Postow MA, Callahan MK, Allison JP, Wolchok JD.
+\newblock Immune Modulation in Cancer with Antibodies.
+\newblock Annual Review of Medicine. 2014;65:185--202.
+\newblock doi:{10.1146/annurev-med-092012-112807}.
+
+\bibitem{andersCountbasedDifferentialExpression2013}
+Anders S, McCarthy DJ, Chen Y, Okoniewski M, Smyth GK, Huber W, et~al.
+\newblock Count-Based Differential Expression Analysis of {{RNA}} Sequencing
+  Data Using {{R}} and {{Bioconductor}}.
+\newblock Nature Protocols. 2013;8(9):1765--1786.
+\newblock doi:{10.1038/nprot.2013.099}.
+
+\bibitem{andersDifferentialExpressionAnalysis2010}
+Anders S, Huber W.
+\newblock Differential Expression Analysis for Sequence Count Data.
+\newblock Genome Biology. 2010;11(10):R106.
+\newblock doi:{10.1186/gb-2010-11-10-r106}.
+
+\bibitem{sonesonComparisonMethodsDifferential2013}
+Soneson C, Delorenzi M.
+\newblock A Comparison of Methods for Differential Expression Analysis of
+  {{RNA}}-Seq Data.
+\newblock BMC Bioinformatics. 2013;14(1):91.
+\newblock doi:{10.1186/1471-2105-14-91}.
+
+\bibitem{subramanianGeneSetEnrichment2005}
+Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, et~al.
+\newblock Gene Set Enrichment Analysis: {{A}} Knowledge-Based Approach for
+  Interpreting Genome-Wide Expression Profiles.
+\newblock Proceedings of the National Academy of Sciences.
+  2005;102(43):15545--15550.
+\newblock doi:{10.1073/pnas.0506580102}.
+
+\bibitem{moothaPGC1alpharesponsiveGenesInvolved2003}
+Mootha VK, Lindgren CM, Eriksson KF, Subramanian A, Sihag S, Lehar J, et~al.
+\newblock {{PGC}}-1alpha-Responsive Genes Involved in Oxidative Phosphorylation
+  Are Coordinately Downregulated in Human Diabetes.
+\newblock Nature Genetics. 2003;34(3):267--273.
+\newblock doi:{10.1038/ng1180}.
+
+\bibitem{liberzonMolecularSignaturesDatabase2011}
+Liberzon A, Subramanian A, Pinchback R, Thorvaldsd{\'o}ttir H, Tamayo P,
+  Mesirov JP.
+\newblock Molecular Signatures Database ({{MSigDB}}) 3.0.
+\newblock Bioinformatics. 2011;27(12):1739--1740.
+\newblock doi:{10.1093/bioinformatics/btr260}.
+
+\bibitem{oyeladeClusteringAlgorithmsTheir2016}
+Oyelade J, Isewon I, Oladipupo F, Aromolaran O, Uwoghiren E, Ameh F, et~al.
+\newblock Clustering {{Algorithms}}: {{Their Application}} to {{Gene Expression
+  Data}}.
+\newblock Bioinformatics and Biology Insights. 2016;10:237--253.
+\newblock doi:{10.4137/BBI.S38316}.
+
+\bibitem{johnM3CMonteCarlo2018}
+John CR, Watson D, Russ D, Goldmann K, Ehrenstein M, Lewis M, et~al.
+\newblock {{M3C}}: {{A Monte Carlo}} Reference-Based Consensus Clustering
+  Algorithm.
+\newblock bioRxiv. 2018; p. 377002.
+
+\bibitem{wilkersonConsensusClusterPlusClassDiscovery2010}
+Wilkerson MD, Hayes DN.
+\newblock {{ConsensusClusterPlus}}: A Class Discovery Tool with Confidence
+  Assessments and Item Tracking.
+\newblock Bioinformatics. 2010;26(12):1572--1573.
+\newblock doi:{10.1093/bioinformatics/btq170}.
+
+\bibitem{yiliMultimodalityCriterionFeature2005}
+{Yi Li}, {Wing-Kin Sung}, Miller LD.
+\newblock Multimodality as a Criterion for Feature Selection in Unsupervised
+  Analysis of Gene Expression Data.
+\newblock In: Fifth {{IEEE Symposium}} on {{Bioinformatics}} and
+  {{Bioengineering}} ({{BIBE}}'05); 2005. p. 276--280.
+
+\bibitem{ghoshMixtureModelsAssessing2004}
+Ghosh D.
+\newblock Mixture Models for Assessing Differential Expression in Complex
+  Tissues Using Microarray Data.
+\newblock Bioinformatics (Oxford, England). 2004;20(11):1663--1669.
+\newblock doi:{10.1093/bioinformatics/bth139}.
+
+\bibitem{gelman2013bayesian}
+Gelman A, Carlin JB, Stern HS, Dunson DB, Vehtari A, Rubin DB.
+\newblock Bayesian data analysis.
+\newblock Chapman and Hall/CRC; 2013.
+
+\bibitem{hughesBnpyReliableScalable}
+Hughes MC, Sudderth EB.
+\newblock Bnpy : {{Reliable}} and Scalable Variational Inference for
+  {{Bayesian}} Nonparametric Models; p.~4.
 
 \end{thebibliography}
