@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.14)  24 SEP 2019 07:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.14)  25 SEP 2019 09:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -672,70 +672,70 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 LaTeX Warning: Citation `subramanianGeneSetEnrichment2005' on page 2 undefined 
-on input line 270.
+on input line 268.
 
 [2]
 
 LaTeX Warning: Citation `wilkersonConsensusClusterPlusClassDiscovery2010' on pa
-ge 3 undefined on input line 272.
+ge 3 undefined on input line 270.
 
 
 LaTeX Warning: Citation `gelman2013bayesian' on page 3 undefined on input line 
-274.
+272.
 
 
 LaTeX Warning: Citation `gelman2013bayesian' on page 3 undefined on input line 
-274.
+272.
 
 [3]
 
 LaTeX Warning: Citation `yoshiharaInferringTumourPurity2013' on page 4 undefine
-d on input line 302.
+d on input line 300.
 
 [4] [5] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ) [6]
-[7] [8] [9] [10] (./plos_latex_template.bbl [11] [12] [13])pdfTeX warning (ext4
-): destination with the same identifier (name{cite.vivianToilEnablesReproducibl
-e2017}) has been already used, duplicate ignored
+[7] [8] [9] [10] [11] (./plos_latex_template.bbl [12] [13] [14])pdfTeX warning 
+(ext4): destination with the same identifier (name{cite.vivianToilEnablesReprod
+ucible2017}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.419 \bibitem{vivianToilEnablesReproducible2017}
+l.428 \bibitem{vivianToilEnablesReproducible2017}
                                                  pdfTeX warning (ext4): destina
 tion with the same identifier (name{cite.pughGeneticLandscapeHighrisk2013}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.425 \bibitem{pughGeneticLandscapeHighrisk2013}
+l.434 \bibitem{pughGeneticLandscapeHighrisk2013}
                                                 pdfTeX warning (ext4): destinat
 ion with the same identifier (name{cite.goldmanUCSCXenaPlatform2018}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.431 \bibitem{goldmanUCSCXenaPlatform2018}
+l.440 \bibitem{goldmanUCSCXenaPlatform2018}
                                            pdfTeX warning (ext4): destination w
 ith the same identifier (name{cite.thecancergenomeatlasresearchnetworkCancerGen
 omeAtlas2013}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.438 ...tlasresearchnetworkCancerGenomeAtlas2013}
+l.447 ...tlasresearchnetworkCancerGenomeAtlas2013}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{cite.newtonTumorMapExploringMolecular2017}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.445 ...tem{newtonTumorMapExploringMolecular2017}
+l.454 ...tem{newtonTumorMapExploringMolecular2017}
                                                   
 
 AED: lastpage setting LastPage
-[14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 457.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 457.
+[15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 466.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 466.
  (./plos_latex_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 457.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 457.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 466.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 466.
 Package rerunfilecheck Info: File `plos_latex_template.out' has not changed.
-(rerunfilecheck)             Checksum: 48BD7354A7616CF0B72D15C150939BEE;678.
+(rerunfilecheck)             Checksum: 19FF8AE75C39F4637D1B1D9F6BD8EEBF;679.
 
 
 LaTeX Warning: There were undefined references.
@@ -743,16 +743,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 457.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 466.
  ) 
 Here is how much of TeX's memory you used:
- 11319 strings out of 492982
- 172037 string characters out of 6134896
- 311859 words of memory out of 5000000
- 14593 multiletter control sequences out of 15000+600000
+ 11326 strings out of 492982
+ 172156 string characters out of 6134896
+ 312398 words of memory out of 5000000
+ 14596 multiletter control sequences out of 15000+600000
  8494 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,43p,2297b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,43p,2297b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -763,10 +763,10 @@ type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb>
-Output written on plos_latex_template.pdf (14 pages, 173941 bytes).
+Output written on plos_latex_template.pdf (15 pages, 179419 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
- 79 named destinations out of 1000 (max. 500000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 83 named destinations out of 1000 (max. 500000)
  8257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
