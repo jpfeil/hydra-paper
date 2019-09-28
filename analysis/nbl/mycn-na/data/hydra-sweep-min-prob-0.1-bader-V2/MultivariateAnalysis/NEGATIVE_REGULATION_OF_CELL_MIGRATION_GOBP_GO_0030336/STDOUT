@@ -1,0 +1,81 @@
+Dataset Summary:
+NEGATIVE_REGULATION_OF_CELL_MIGRATION_GOBP_GO_0030336.csv
+  total size: 70 units
+  median batch size: 70 units
+  num. batches: 1
+Allocation Model:  DP mixture with K=0. Concentration gamma0= 5.00
+Obs. Data  Model:  Gaussian with full covariance.
+Obs. Data  Prior:  Gauss-Wishart on mean and covar of each cluster
+  E[  mean[k] ] = 
+   [0. 0.]  ...
+  E[ covar[k] ] = 
+  [[2. 0.]
+   [0. 2.]] ...
+Initialization:
+  initname = randexamples
+  K = 5 (number of clusters)
+  seed = 1607680
+  elapsed_time: 0.0 sec
+Learn Alg: memoVB | task  1/1 | alg. seed: 1607680 | data order seed: 8541952
+task_output_path: /tmp/NEGATIVE_REGULATION_OF_CELL_MIGRATION_GOBP_GO_0030336_S6oLEu/K=5-gamma=5.0-ECovMat=2.0-moves=birth,merge,delete,shuffle/1
+MERGE @ lap 1.00: Disabled. Cannot plan merge on first lap. Need valid SS that represent whole dataset.
+DELETE @ lap 1.00: Disabled. Cannot delete before first complete lap, because SS that represents whole dataset is required.
+BIRTH @ lap 1.00 : Added 0 states. 0/5 succeeded. 1/5 failed eval phase. 4/5 failed build phase.
+    1.000/1000 after      0 sec. |    138.2 MiB | K    5 | loss  2.269897509e+00 |  
+BIRTH @ lap 2.000 : None attempted. 0 past failures. 0 too small. 5 too busy.
+DELETE @ lap 2.00: 1/1 accepted. Ndiff 28.64.
+    2.000/1000 after      1 sec. |    138.5 MiB | K    4 | loss  2.070666770e+00 |  
+BIRTH @ lap 3.000 : None attempted. 0 past failures. 0 too small. 4 too busy.
+DELETE @ lap 3.00: 1/1 accepted. Ndiff 27.51.
+    3.000/1000 after      1 sec. |    138.5 MiB | K    3 | loss  2.034663443e+00 |  
+BIRTH @ lap 4.000 : None attempted. 0 past failures. 0 too small. 3 too busy.
+DELETE @ lap 4.00: 1/1 accepted. Ndiff 33.55.
+    4.000/1000 after      1 sec. |    138.7 MiB | K    2 | loss  1.955894086e+00 |  
+BIRTH @ lap 5.000 : None attempted. 0 past failures. 0 too small. 2 too busy.
+DELETE @ lap 5.00: 1/1 accepted. Ndiff 40.59.
+    5.000/1000 after      1 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 |  
+MERGE @ lap 6.00: No promising candidates, so no attempts.
+DELETE @ lap 6.00: Ineligible. Did not find >= 2 UIDs in entire model.
+BIRTH @ lap 6.00 : Added 0 states. 0/1 succeeded. 1/1 failed eval phase. 0/1 failed build phase.
+    6.000/1000 after      1 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 | Ndiff    0.000 
+MERGE @ lap 7.00: No promising candidates, so no attempts.
+DELETE @ lap 7.00: Ineligible. Did not find >= 2 UIDs in entire model.
+BIRTH @ lap 7.000 : None attempted. 1 past failures. 0 too small. 0 too busy.
+    7.000/1000 after      1 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 | Ndiff    0.000 
+MERGE @ lap 8.00: No promising candidates, so no attempts.
+DELETE @ lap 8.00: Ineligible. Did not find >= 2 UIDs in entire model.
+BIRTH @ lap 8.000 : None attempted. 1 past failures. 0 too small. 0 too busy.
+    8.000/1000 after      1 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 | Ndiff    0.000 
+MERGE @ lap 9.00: No promising candidates, so no attempts.
+DELETE @ lap 9.00: Ineligible. Did not find >= 2 UIDs in entire model.
+BIRTH @ lap 9.000 : None attempted. 1 past failures. 0 too small. 0 too busy.
+    9.000/1000 after      1 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 | Ndiff    0.000 
+MERGE @ lap 10.00: No promising candidates, so no attempts.
+DELETE @ lap 10.00: Ineligible. Did not find >= 2 UIDs in entire model.
+BIRTH @ lap 10.000 : None attempted. 1 past failures. 0 too small. 0 too busy.
+   10.000/1000 after      1 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 | Ndiff    0.000 
+MERGE @ lap 11.00: No promising candidates, so no attempts.
+DELETE @ lap 11.00: Ineligible. Did not find >= 2 UIDs in entire model.
+BIRTH @ lap 11.000 : None attempted. 1 past failures. 0 too small. 0 too busy.
+   11.000/1000 after      2 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 | Ndiff    0.000 
+MERGE @ lap 12.00: No promising candidates, so no attempts.
+DELETE @ lap 12.00: Ineligible. Did not find >= 2 UIDs in entire model.
+BIRTH @ lap 12.000 : None attempted. 1 past failures. 0 too small. 0 too busy.
+   12.000/1000 after      2 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 | Ndiff    0.000 
+MERGE @ lap 13.00: No promising candidates, so no attempts.
+DELETE @ lap 13.00: Ineligible. Did not find >= 2 UIDs in entire model.
+BIRTH @ lap 13.000 : None attempted. 1 past failures. 0 too small. 0 too busy.
+   13.000/1000 after      2 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 | Ndiff    0.000 
+MERGE @ lap 14.00: No promising candidates, so no attempts.
+DELETE @ lap 14.00: Ineligible. Did not find >= 2 UIDs in entire model.
+BIRTH @ lap 14.000 : None attempted. 1 past failures. 0 too small. 0 too busy.
+   14.000/1000 after      2 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 | Ndiff    0.000 
+MERGE @ lap 15.00: No promising candidates, so no attempts.
+DELETE @ lap 15.00: Ineligible. Did not find >= 2 UIDs in entire model.
+BIRTH @ lap 15.000 : None attempted. 1 past failures. 0 too small. 0 too busy.
+   15.000/1000 after      2 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 | Ndiff    0.000 
+MERGE @ lap 16.00: No promising candidates, so no attempts.
+DELETE @ lap 16.00: Ineligible. Did not find >= 2 UIDs in entire model.
+BIRTH @ lap 16.000 : None attempted. 1 past failures. 0 too small. 0 too busy.
+   16.000/1000 after      2 sec. |    138.8 MiB | K    1 | loss  1.942744772e+00 | Ndiff    0.000 
+... done. converged.
