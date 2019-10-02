@@ -276,29 +276,26 @@ Here, we describe the hydra approach for identifying clinically relevant express
 
 \section*{Materials and methods}
 \subsection{Dirichlet Process Gaussian Mixture Model}
-Traditional parametric models, like the finite mixture model, use a fixed number of parameters and suffer from over- and underfitting \cite{teh2010dirichlet}. Unlike the finite mixture model, the Dirichlet process mixture model adjusts the number of clusters given the data and prior belief. 
-
-The Dirichlet process is related to the Dirichlet distribution, which is a distribution over probability vectors. The Dirichlet process extends the Dirichlet process to  and is used as a prior for cluster likelihoods. 
+Traditional parametric models, like the finite mixture model, use a fixed number of parameters (i.e. number of clusters). Over- or underfitting can occur when the parametric model does not reflect the underlying data \cite{teh2010dirichlet}. Unlike the finite mixture model, the Dirichlet process mixture model adapts the number of parameters with respect to prior belief and the data \cite{gelmanBayesianDataAnalysis2013, antoniakMixturesDirichletProcesses1974}. The Dirichlet distribution is a multivariate distribution over probability vectors. The Dirichlet proce and is commonly used prior distribution for cluster mixing proportions in a mixture model. The Dirichlet process is an infinite dimensional extension of the Dirichlet distribution and is used a prior distribution for the cluster mixing proportions in the Dirichlet process mixture model \cite{muller2004nonparametric, gorurDirichletProcessGaussian2010}. The stick-breaking construction of the Dirichlet Process $G \sim DP(\alpha, H)$ \\ is as follows:
 
 \begin{eqnarray}
 \label{eq:dp}
-G \sim DP(M, G_0) \\
-y_1, y_2, ..., y_n | G \sim G
+\nu \sim Beta(1, \alpha) \nonumber \\
+\pi_k = \nu_k \prod_{l=1}^{k-1}(1 - \nu_l) \nonumber\\
+\theta_k^{*} \sim H \nonumber \\
+G = \sum_{k=1}^{\infty} \pi_k \delta_{\theta_k^{*}} \nonumber
 \end{eqnarray}
 
-
-This features is useful for clinical applications of clustering because the number of clusters is usually not known beforehand and the number of
-
-
-The Dirichlet process 
-
-
+Then $G$ follows a Dirichlet process prior parameterized by concentration parameter $\alpha$ and centering parameter $H$. This construction generates the mixing proportions and parameters for the Gaussian mixture model.
 
 \begin{eqnarray}
-\label{eq:dpgmm}
-G \sim DP(M, G_0) \\
-y_1, y_2, ..., y_n | G \sim G
+\label{eq:mm}
+y_i | \theta_{i} \sim F(\theta_i) \nonumber \\
+\theta_i | G \sim G \nonumber \\
+G | \alpha, H \sim DP(\alpha, H) \nonumber
 \end{eqnarray}
+
+Where each observation $y_i$ is clustered under a Gaussian distribution with mean and standard deviation parameters represented by $\theta_i$. The $theta_i$ is sampled from the Dirichlet Process described above. The Dirichlet Process mixture model is thus an infinite mixture model that infers the number of clusters from the data. This features is useful for clinical applications because the number of clusters is usually not known. The number of clusters also scales with the number of samples.
 
 \subsection*{Synthetic Data Generation and Validation}
 % For figure citations, please use "Fig" instead of "Figure".
