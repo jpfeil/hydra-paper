@@ -276,12 +276,17 @@ Here, we describe the hydra approach for identifying clinically relevant express
 
 \section*{Materials and methods}
 \subsection{Dirichlet Process Gaussian Mixture Model}
-Traditional parametric models, like the finite mixture model, use a fixed number of parameters (i.e. number of clusters). Over- or underfitting can occur when the parametric model does not reflect the underlying data \cite{teh2010dirichlet}. Unlike the finite mixture model, the Dirichlet process mixture model adapts the number of parameters with respect to prior belief and the data \cite{gelmanBayesianDataAnalysis2013, antoniakMixturesDirichletProcesses1974}. The Dirichlet distribution is a multivariate distribution over probability vectors. The Dirichlet proce and is commonly used prior distribution for cluster mixing proportions in a mixture model. The Dirichlet process is an infinite dimensional extension of the Dirichlet distribution and is used a prior distribution for the cluster mixing proportions in the Dirichlet process mixture model \cite{muller2004nonparametric, gorurDirichletProcessGaussian2010}. The stick-breaking construction of the Dirichlet Process $G \sim DP(\alpha, H)$ \\ is as follows:
+Traditional parametric models, like the finite mixture model, use a fixed number of parameters (i.e. number of clusters). Over- or underfitting can occur when the parametric model does not reflect the underlying data \cite{teh2010dirichlet}. Unlike the finite mixture model, the Dirichlet process mixture model adapts the number of parameters with respect to prior belief and the data \cite{gelmanBayesianDataAnalysis2013, antoniakMixturesDirichletProcesses1974}. The Dirichlet distribution is a multivariate distribution over probability vectors. The Dirichlet proce and is commonly used prior distribution for cluster mixing proportions in a mixture model. The Dirichlet process is an infinite dimensional extension of the Dirichlet distribution and is used a prior distribution for the cluster mixing proportions in the Dirichlet process mixture model \cite{muller2004nonparametric, gorurDirichletProcessGaussian2010}. The stick-breaking construction of the Dirichlet Process $G \sim DP(\alpha, H)$ is as follows. Visualize a stick of unit length. We then sample from a beta distribution to determine the fraction of the stick to break for the first mixing component. 
 
 \begin{eqnarray}
 \label{eq:dp}
-\nu \sim Beta(1, \alpha) \nonumber \\
-\pi_k = \nu_k \prod_{l=1}^{k-1}(1 - \nu_l) \nonumber\\
+\nu \sim \text{Beta}(1, \alpha) \nonumber \\
+\pi_k = \nu_k \prod_{l=1}^{k-1}(1 - \nu_l) \nonumber
+\end{eqnarray}
+
+We then sample 
+
+\begin{eqnarray}
 \theta_k^{*} \sim H \nonumber \\
 G = \sum_{k=1}^{\infty} \pi_k \delta_{\theta_k^{*}} \nonumber
 \end{eqnarray}
@@ -319,10 +324,10 @@ The neuroblastoma unsupervised enrichment analysis included all genes with a mea
 A Kruskal-Wallis test was used to identify statistically significant differences across two or more groups, and a Mann-Whitney U test was used for pairwise tests using a Holm-Sidak correction for multiple hypothesis testing (Pedregosa et al. 2011; Jones et al. 2001). We used the scipy stats implementation of the Kruskal-Wallis test and the scikit-learn post hoc processing implementation of pairwise Mann-Whitney U tests. Spearman rank and Pearson correlation values were calculated using the scipy library (Jones et al. 2001). Correlations between clinical features and clusters were identified using the Fisher Exact Test implemented in the R stats package (R Core Team 2013). Survival analysis was done using the survminer package (Kassambara et al. 2017). 
 
 \subsection{H\&E Slide Preparation and Pathologist Review}
-Pediatric tumor samples were flash frozen, embedded in OCT, and 5um cryosections were collected. Slides were hematoxylin and eosin (H\&E) stained and imaged on a Leica DMi8, equipped with a HC PL APO 40x/0.85 NA objective and DFC7000T camera. H\&E slides were reviewed by a licensed pathologist for evidence of inflammation and graded as having either minimal (< 10\%) or moderate inflammation (20-30\%).
+Pediatric tumor samples were flash frozen, embedded in OCT, and 5um cryosections were collected. Slides were hematoxylin and eosin (H\&E) stained and imaged on a Leica DMi8, equipped with a HC PL APO 40x/0.85 NA objective and DFC7000T camera. H\&E slides were reviewed by a licensed pathologist for evidence of inflammation and graded as having either minimal ($<$ 10\%) or moderate inflammation (20-30\%).
 
 \subsection{Hydra Method}
-We developed a Bayesian non-parametric clustering pipeline for identifying biological and technical variation in large cancer gene expression datasets without the need for a reference normal dataset (Fig \ref{overview}). Bayesian non-parametric models have been proposed for analyzing gene expression, but to our knowledge, this is the first reproducible and widely deployable implementation of a non-parametric mixture model pipeline designed for precision oncology gene expression analysis. The hydra pipeline is an open source software tool hosted on GitHub (\url(www.github.com/jpfeil/hydra)). A Docker container is available for deployment across environments (\url(www.dockerhub.com/jpfeil/hydra)).
+We developed a Bayesian non-parametric clustering pipeline for identifying biological and technical variation in large cancer gene expression datasets without the need for a reference normal dataset (Fig \ref{overview}). Bayesian non-parametric models have been proposed for analyzing gene expression, but to our knowledge, this is the first reproducible and widely deployable implementation of a non-parametric mixture model pipeline designed for precision oncology gene expression analysis. The hydra pipeline is an open source software tool hosted on GitHub (\url{www.github.com/jpfeil/hydra}). A Docker container is available for deployment across environments (\url{www.dockerhub.com/jpfeil/hydra}).
 
 % Overview Figure
 \begin{figure}[h!]
@@ -389,7 +394,7 @@ To further investigate expression patterns within the hydra-identified tumor mic
 While the MYCN-NA neuroblastoma analysis focused on immune and fibroblast expression signatures, the hydra enrichment pipeline is unsupervised and is not restricted to immune or fibroblast signatures. For example, we applied the hydra enrichment analysis to the TARGET osteosarcoma cohort (N=74) and discovered enrichment of the GO striated muscle contraction term (FDR < 0.01) (Supplementary Figure 5). Multivariate clustering for the GO striated muscle contraction gene set identified two clusters. xCell analysis of the osteosarcoma cohort found significant enrichment of skeletal muscle expression in the second cluster (Mann-Whitney U test, p < 0.001). Surprisingly, the M3C clustering approach was not able to detect the strong muscle signature using the 5000 genes with the largest MAD (p > 0.05). We identified a similar expression signal in an independent cohort of osteosarcoma tumor samples and subsequently confirmed with a licensed pathologist that the tumor sample did in fact contain muscle tissue. Explaining these sources of variation is necessary to derive clinically relevant conclusions from gene expression data. In addition to the muscle signature, we were able to identify innate immune and stromal subtypes in the TARGET osteosarcoma cohort that correlated with differences in overall survival rates (data not shown). Therefore, the hydra approach reveals important gene expression signatures reflecting cell content within the tumor sample and is widely applicable for revealing important gene expression signatures in complex tumor samples.
 
 \begin{figure}[!h]
-	\includegraphics[width=1.05\textwidth]{img/hydra-pan-small-round-blue-V1-2x}
+	\includegraphics[width=1.05\textwidth]{img/hydra-pan-small-round-blue-V2-2x}
 	\caption{{\bf Pan-Cancer Analysis}}
 	\label{hefig}
 \end{figure}
@@ -411,37 +416,49 @@ Precision oncology aims to differentiate tumors of the same diagnosis in order t
 
 % Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
 \paragraph*{S1 Fig.}
+\includegraphics[width=\textwidth]{img/bnpy-example-fit}
 \label{S1_Fig}
-{\bf Enriching for multimodally expressed genes improves clustering of established neuroblastoma subtypes.} Standard TumorMap analysis (Newton et al. 2017) of the TARGET neuroblastoma dataset resulted in stage 4S samples clustering with stage 4 neuroblastoma samples (left). An alternative TumorMap based solely on 1,498 multimodally expressed genes separated the stage 4S samples into a distinct cluster (right).
+{\bf Example model fit with toy data.} 
 
 \paragraph*{S2 Fig.}
+\includegraphics[width=\textwidth]{img/TumorMap-NBL-MM-V3-2x}
 \label{S2_Fig}
-{\bf No statistically significant differences observed for age, mutation burden, or tumor purity features across MYCN-NA neuroblastoma hydra clusters.} We hypothesized that older patients may have a better trained immune system and correlate with elevated immune infiltrate, but we did not find evidence to support this hypothesis. Mutation burden has been shown to correlate with immune infiltration, but we did not observe a correlation between elevated adaptive immune infiltrate and mutation burden in MYCN-NA neuroblastoma. Finally, we did not identify a significant difference in the pathology assessed tumor content, which is surprising because our gene expression analysis revealed a strong difference in estimated tumor purity. Investigation of these clinical features of MYCN-NA tumor tumor microenvironment revealed no statistically significant difference (Kruskal-Wallis test; p $>$ 0.05).
+{\bf Enriching for multimodally expressed genes improves clustering of established neuroblastoma subtypes.} Standard TumorMap analysis (Newton et al. 2017) of the TARGET neuroblastoma dataset resulted in stage 4S samples clustering with stage 4 neuroblastoma samples (left). An alternative TumorMap based solely on 1,498 multimodally expressed genes separated the stage 4S samples into a distinct cluster (right).
 
 \paragraph*{S3 Fig.}
+\includegraphics[width=\textwidth]{img/SubCluster-Analysis-V2@2x.png}
 \label{S3_Fig} {\bf Gene set enrichment analysis (GSEA) of MYCN-NA neuroblastoma identifies survival differences within hydra cluster 2 and cluster 3.} (A) Top 5 differentially enriched gene sets for each cluster comparing the entire MYCN-NA neuroblastoma cohort (cohort-level GSEA) and the corresponding hydra cluster (cluster-level GSEA). GSEA analysis of the hydra clusters found immune and cell cycle signals that were not identified in the cohort-level analysis. (B \& C) GSEA separated cluster 2 into high and low immune subtypes and cluster 3 into high and low cell cycle subtypes. These signals correlated with differences in overall survival. 
 
 \paragraph*{S4 Fig.}
+\includegraphics[width=\textwidth]{img/muscle-signature-genes-2x}
 \label{S4_Fig} {\bf Hydra analysis of TARGET osteosarcoma cohort reveals skeletal muscle signature.} Hydra enrichment analysis on the TARGET osteosarcoma cohort revealed a subset of patients with high skeletal muscle expression. (A) Clustered heatmap shows the muscle signature genes identified by hydra unsupervised enrichment analysis. (B) xCell tumor microenvironment profiling identified significant differences in skeletal muscle expression compared to background (p < 0.001). (C) H\&E stained tumor slide for an independent osteosarcoma sample confirms presence of striated muscle tissue within the sequenced tumor sample.
 
-\paragraph*{S1 File.}
-\label{S1_File}
-{\bf Lorem ipsum.}  Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+\paragraph*{S5 Fig.}
+\includegraphics[width=\textwidth]{img/osteosarcoma-survival-2x}
+\label{S5_Fig} {\bf Hydra analysis of TARGET osteosarcoma cohort reveals immune related survival benefit.} 
 
-\paragraph*{S1 Video.}
-\label{S1_Video}
-{\bf Lorem ipsum.}  Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+\paragraph*{S6 Fig.}
+\includegraphics[width=\textwidth]{img/synovial-sarcoma-survival-2x}
+\label{S6_Fig} {\bf Hydra analysis of synovial sarcoma cohort reveals immune related benefit with respect to metastasis rate.} 
 
-\paragraph*{S1 Appendix.}
-\label{S1_Appendix}
-{\bf Lorem ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+%\paragraph*{S1 File.}
+%\label{S1_File}
+%{\bf Lorem ipsum.}  Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
 
-\paragraph*{S1 Table.}
-\label{S1_Table}
-{\bf Lorem ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+%\paragraph*{S1 Video.}
+%\label{S1_Video}
+%{\bf Lorem ipsum.}  Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+
+%\paragraph*{S1 Appendix.}
+%\label{S1_Appendix}
+%{\bf Lorem ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
+
+%\paragraph*{S1 Table.}
+%\label{S1_Table}
+%{\bf Lorem ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
 
 \section*{Acknowledgments}
-Cras egestas velit mauris, eu mollis turpis pellentesque sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam id pretium nisi. Sed ac quam id nisi malesuada congue. Sed interdum aliquet augue, at pellentesque quam rhoncus vitae.
+We would like to thank the patients and families who participated in translational genomics research. We thank St. Baldrick's Foundation, California Precision Medicine Initiative, National Human Genome Research Institute of the National Institutes of Health for funding support.
 
 \nolinenumbers
 
