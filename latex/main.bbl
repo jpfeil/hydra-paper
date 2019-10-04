@@ -213,42 +213,6 @@ Hughes MC, Sudderth E.
 \newblock In: Advances in Neural Information Processing Systems; 2013. p.
   1133--1141.
 
-\bibitem{barbieSystematicRNAInterference2009}
-Barbie DA, Tamayo P, Boehm JS, Kim SY, Moody SE, Dunn IF, et~al.
-\newblock Systematic {{RNA}} Interference Reveals That Oncogenic
-  {{KRAS}}-Driven Cancers Require {{TBK1}}.
-\newblock Nature. 2009;462(7269):108--112.
-\newblock doi:{10.1038/nature08460}.
-
-\bibitem{hanzelmannGSVAGeneSet2013}
-H{\"a}nzelmann S, Castelo R, Guinney J.
-\newblock {{GSVA}}: Gene Set Variation Analysis for Microarray and
-  {{RNA}}-{{Seq}} Data.
-\newblock BMC Bioinformatics. 2013;14(1):7.
-\newblock doi:{10.1186/1471-2105-14-7}.
-
-\bibitem{tarcaComparisonGeneSet2013}
-Tarca AL, Bhatti G, Romero R.
-\newblock A {{Comparison}} of {{Gene Set Analysis Methods}} in {{Terms}} of
-  {{Sensitivity}}, {{Prioritization}} and {{Specificity}}.
-\newblock PLOS ONE. 2013;8(11):e79217.
-\newblock doi:{10.1371/journal.pone.0079217}.
-
-\bibitem{zwienerTransformingRNASeqData2014}
-Zwiener I, Frisch B, Binder H.
-\newblock Transforming {{RNA}}-{{Seq Data}} to {{Improve}} the {{Performance}}
-  of {{Prognostic Gene Signatures}}.
-\newblock PLOS ONE. 2014;9(1):e85150.
-\newblock doi:{10.1371/journal.pone.0085150}.
-
-\bibitem{yoshiharaInferringTumourPurity2013}
-Yoshihara K, Shahmoradgoli M, Mart{\'i}nez E, Vegesna R, Kim H, {Torres-Garcia}
-  W, et~al.
-\newblock Inferring Tumour Purity and Stromal and Immune Cell Admixture from
-  Expression Data.
-\newblock Nature Communications. 2013;4:2612.
-\newblock doi:{10.1038/ncomms3612}.
-
 \bibitem{hughesBnpyReliableScalable}
 Hughes MC, Sudderth EB.
 \newblock Bnpy : {{Reliable}} and Scalable Variational Inference for
@@ -284,6 +248,42 @@ Merico D, Isserlin R, Stueker O, Emili A, Bader GD.
 \newblock Enrichment Map: A Network-Based Method for Gene-Set Enrichment
   Visualization and Interpretation.
 \newblock PloS one. 2010;5(11):e13984.
+
+\bibitem{barbieSystematicRNAInterference2009}
+Barbie DA, Tamayo P, Boehm JS, Kim SY, Moody SE, Dunn IF, et~al.
+\newblock Systematic {{RNA}} Interference Reveals That Oncogenic
+  {{KRAS}}-Driven Cancers Require {{TBK1}}.
+\newblock Nature. 2009;462(7269):108--112.
+\newblock doi:{10.1038/nature08460}.
+
+\bibitem{hanzelmannGSVAGeneSet2013}
+H{\"a}nzelmann S, Castelo R, Guinney J.
+\newblock {{GSVA}}: Gene Set Variation Analysis for Microarray and
+  {{RNA}}-{{Seq}} Data.
+\newblock BMC Bioinformatics. 2013;14(1):7.
+\newblock doi:{10.1186/1471-2105-14-7}.
+
+\bibitem{tarcaComparisonGeneSet2013}
+Tarca AL, Bhatti G, Romero R.
+\newblock A {{Comparison}} of {{Gene Set Analysis Methods}} in {{Terms}} of
+  {{Sensitivity}}, {{Prioritization}} and {{Specificity}}.
+\newblock PLOS ONE. 2013;8(11):e79217.
+\newblock doi:{10.1371/journal.pone.0079217}.
+
+\bibitem{zwienerTransformingRNASeqData2014}
+Zwiener I, Frisch B, Binder H.
+\newblock Transforming {{RNA}}-{{Seq Data}} to {{Improve}} the {{Performance}}
+  of {{Prognostic Gene Signatures}}.
+\newblock PLOS ONE. 2014;9(1):e85150.
+\newblock doi:{10.1371/journal.pone.0085150}.
+
+\bibitem{yoshiharaInferringTumourPurity2013}
+Yoshihara K, Shahmoradgoli M, Mart{\'i}nez E, Vegesna R, Kim H, {Torres-Garcia}
+  W, et~al.
+\newblock Inferring Tumour Purity and Stromal and Immune Cell Admixture from
+  Expression Data.
+\newblock Nature Communications. 2013;4:2612.
+\newblock doi:{10.1038/ncomms3612}.
 
 \bibitem{morgensternChallengeDefiningUltrahighrisk2019a}
 Morgenstern DA, Bagatell R, Cohn SL, Hogarty MD, Maris JM, Moreno L, et~al.
