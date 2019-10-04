@@ -218,6 +218,28 @@ Hughes MC, Sudderth EB.
 \newblock Bnpy : {{Reliable}} and Scalable Variational Inference for
   {{Bayesian}} Nonparametric Models; p.~4.
 
+\bibitem{modyIntegrativeClinicalSequencing2015}
+Mody RJ, Wu YM, Lonigro RJ, Cao X, Roychowdhury S, Vats P, et~al.
+\newblock Integrative {{Clinical Sequencing}} in the {{Management}} of
+  {{Refractory}} or {{Relapsed Cancer}} in {{Youth}}.
+\newblock JAMA. 2015;314(9):913--925.
+\newblock doi:{10.1001/jama.2015.10080}.
+
+\bibitem{worstNextgenerationPersonalisedMedicine2016}
+Worst BC, {van Tilburg} CM, Balasubramanian GP, Fiesel P, Witt R, Freitag A,
+  et~al.
+\newblock Next-Generation Personalised Medicine for High-Risk Paediatric Cancer
+  Patients \textendash{} {{The INFORM}} Pilot Study.
+\newblock European Journal of Cancer. 2016;65:91--101.
+\newblock doi:{10.1016/j.ejca.2016.06.009}.
+
+\bibitem{obergImplementationNextGeneration2016}
+Oberg JA, Glade~Bender JL, Sulis ML, Pendrick D, Sireci AN, Hsiao SJ, et~al.
+\newblock Implementation of next Generation Sequencing into Pediatric
+  Hematology-Oncology Practice: Moving beyond Actionable Alterations.
+\newblock Genome Medicine. 2016;8(1):133.
+\newblock doi:{10.1186/s13073-016-0389-6}.
+
 \bibitem{benson2012genbank}
 Benson DA, Cavanaugh M, Clark K, {Karsch-Mizrachi} I, Lipman DJ, Ostell J,
   et~al.
