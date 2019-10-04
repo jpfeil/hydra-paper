@@ -106,6 +106,12 @@
 % array package and thick rules for tables
 \usepackage{array}
 
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{placeins}
+
 % create "+" rule type for thick vertical lines
 \newcolumntype{+}{!{\vrule width 2pt}}
 
@@ -168,6 +174,10 @@
 
 \newcommand{\lorem}{{\bf LOREM}}
 \newcommand{\ipsum}{{\bf IPSUM}}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 
 %% END MACROS SECTION
 
@@ -253,7 +263,7 @@ Precision oncology has primarily relied on coding mutation status as a readout t
 % Use first person. PLOS ONE authors please skip this step. 
 % Author Summary not valid for PLOS ONE submissions.   
 \section*{Author summary}
-Gene expression data contains valuable clinical information, but the complexity of this data and the relatively small number of samples makes it difficult to analyze. We developed a novel computational approach that enriches for non-Gaussian expression distributions. We found that these genes correlate with important biomarkers and subdivide patient populations into clinically relevant tumor microenvironment subtypes. Furthermore, our analysis of distinct but related pediatric cancers found similar expression signatures across diseases and that these diseases similarly predict differences in patient outcomes based on biological pathway enrichment patterns. This works sheds light on the underlying biological processes influencing cancer progress and shows that distinct pediatric cancers share targetable expression patterns. 
+Pediatric cancers tend to have few somatic mutations, which limits the number of actionable leads from the analysis of tumor DNA. For this reason, we have developed a gene expression analysis framework for discovering clinically relevant expression signatures in relatively large pediatric cancer gene expression cohorts. We found significant differences in the expression proliferative signaling pathways, immune signaling pathways, and markers of infiltrating immune and stromal cells. Expression signatures correlated with differences in patient outcomes in three disease for which we had overall survival and metastasis rate data. The low mutation rate in pediatric cancers have led some to suggest that pediatric cancers are less immunogenic, but our analysis suggests that similar immune activation signals can be identified across pediatric cancers and suggests further research into pediatric immunotherapies is warranted.
 
 \linenumbers
 
@@ -276,31 +286,35 @@ Here, we describe the hydra approach for identifying clinically relevant express
 
 \section*{Materials and methods}
 \subsection{Dirichlet Process Gaussian Mixture Model}
-Traditional parametric models, like the finite mixture model, use a fixed number of parameters (i.e. number of clusters). Over- or underfitting can occur when the parametric model does not reflect the underlying data \cite{teh2010dirichlet}. Unlike the finite mixture model, the Dirichlet process mixture model adapts the number of parameters with respect to prior belief and the data \cite{gelmanBayesianDataAnalysis2013, antoniakMixturesDirichletProcesses1974}. The Dirichlet distribution is a multivariate distribution over probability vectors. The Dirichlet proce and is commonly used prior distribution for cluster mixing proportions in a mixture model. The Dirichlet process is an infinite dimensional extension of the Dirichlet distribution and is used a prior distribution for the cluster mixing proportions in the Dirichlet process mixture model \cite{muller2004nonparametric, gorurDirichletProcessGaussian2010}. The stick-breaking construction of the Dirichlet Process $G \sim DP(\alpha, H)$ is as follows. Visualize a stick of unit length. We then sample from a beta distribution to determine the fraction of the stick to break for the first mixing component. 
+Traditional parametric models, like the finite mixture model, use a fixed number of parameters (i.e. number of clusters). Over- or underfitting can occur when the parametric model does not reflect the underlying data \cite{teh2010dirichlet}. Unlike the finite mixture model, the Dirichlet process mixture model (DPMM) adapts the number of parameters with respect to prior belief and the data \cite{gelmanBayesianDataAnalysis2013, antoniakMixturesDirichletProcesses1974}.
+
+The Dirichlet process is an infinite dimensional extension of the Dirichlet distribution and is commonly used as a prior distribution for infinite mixture models \cite{muller2004nonparametric, gorurDirichletProcessGaussian2010}. The Dirichlet process has two parameters: the concentration parameter $\alpha$ and centering distribution $H$. The concentration parameter $\alpha$ controls the extent to which samples from the DP resemble the centering distribution $H$. We model gene expression as a multivariate Gaussian distribution, so our centering distribution is a normal-Wishart distribution $\mathcal{NW}$.
+
+We briefly describe the stick-breaking construction of the Dirichlet process $G \sim DP(\alpha, H)$ \cite{hughes2013memoized, teh2010dirichlet, gelmanBayesianDataAnalysis2013}. Consider a stick of unit length. To generate an infinite number of mixing components $\pi_i$ for the DP, we sample breakpoints $\nu \in [0, 1]$ from a $\text{Beta}$ distribution. 
 
 \begin{eqnarray}
 \label{eq:dp}
-\nu \sim \text{Beta}(1, \alpha) \nonumber \\
-\pi_k = \nu_k \prod_{l=1}^{k-1}(1 - \nu_l) \nonumber
+\nu \sim \text{Beta}(1, \alpha) \\
+\pi_k = \nu_k \prod_{l=1}^{k-1}(1 - \nu_l)
 \end{eqnarray}
 
-We then sample 
+Once we have the mixing components, we want to sample parameters from the centering distribution $H$ at the frequency of the mixing components. 
 
 \begin{eqnarray}
-\theta_k^{*} \sim H \nonumber \\
-G = \sum_{k=1}^{\infty} \pi_k \delta_{\theta_k^{*}} \nonumber
+\theta_k^{*} \sim H \\
+G = \sum_{k=1}^{\infty} \pi_k \delta_{\theta_k^{*}} 
 \end{eqnarray}
 
-Then $G$ follows a Dirichlet process prior parameterized by concentration parameter $\alpha$ and centering parameter $H$. This construction generates the mixing proportions and parameters for the Gaussian mixture model.
+Then $G$ follows a Dirichlet process prior parameterized by concentration parameter $\alpha$ and centering parameter $H$. This construction generates cluster-specific parameters $\mu_k$ and $\Sigma_k$.
 
 \begin{eqnarray}
 \label{eq:mm}
-y_i | \theta_{i} \sim F(\theta_i) \nonumber \\
-\theta_i | G \sim G \nonumber \\
-G | \alpha, H \sim DP(\alpha, H) \nonumber
+x_i | \mu_i, \Sigma_i \sim \mathcal{N}(\mu_i, \Sigma_i) \\
+\mu_i, \Sigma_i | G \sim G \\
+G | \alpha, \mathcal{NW}_0 \sim DP(\alpha, \mathcal{NW}_0)
 \end{eqnarray}
 
-Where each observation $y_i$ is clustered under a Gaussian distribution with mean and standard deviation parameters represented by $\theta_i$. The $theta_i$ is sampled from the Dirichlet Process described above. The Dirichlet Process mixture model is thus an infinite mixture model that infers the number of clusters from the data. This features is useful for clinical applications because the number of clusters is usually not known. The number of clusters also scales with the number of samples.
+In our experience, standard inference algorithms like the Gibbs sampler, tend to over-estimate the number of clusters such that samples belong to a separate cluster when they should be merged into a larger cluster that has more support. For this reason, we incorporated the bnpy memoized online variational inference algorithm (moVB) \cite{hughes2013memoized} into our analysis framework. The moVB algorithm uses variational inference algorithms and interleaves birth, merge, and delete moves, which was shown to generate reliable results by avoiding local optima and removing redundant clusters \cite{hughesBnpyReliableScalable}. 
 
 \subsection*{Synthetic Data Generation and Validation}
 % For figure citations, please use "Fig" instead of "Figure".
@@ -372,7 +386,7 @@ After completing the performance assessment with synthetic gene expression data,
 
 We applied the hydra unsupervised enrichment analysis to the MYCN-NA cohort. The multimodal expression filter identified 428 genes with a minor component probability greater than 20\% (Supplementary Table 2). Gene Ontology analysis found enrichment for the following GO terms (FDR q < 0.01): adaptive immune response (24 genes), mesenchyme development (12 genes), steroid hormone secretion (4 genes), and response to corticosterone (4 genes). Multivariate Dirichlet process mixture model analysis of the 44 enriched GO term genes identified three clusters of neuroblastoma samples (Figure 3A). The posterior probability for belonging to each cluster was 42\%, 34\%, and 17\%, respectively. The posterior probability for a sample belonging to a new cluster was about 6\% in our analysis. 
 
-We next applied the cluster profiling gene set enrichment analysis (see Hydra Method section) to each cluster using all genes from the pre-filtered expression matrix. Cluster 1 was enriched for adaptive immune response gene sets, cluster 2 was enriched for proliferative signaling gene sets, and cluster 3 was enriched for cancer-associated fibroblast gene sets (Figure 3B). Two of the three clusters were enriched for tumor microenvironment-associated expression. To further validate this signal, we correlated the hydra clusters with enrichment scores from the tumor microenvironment profiling tools xCell \cite{aranXCellDigitallyPortraying2017} and ESTIMATE \cite{yoshiharaInferringTumourPurity2013a}. Cluster 1 had higher average xCell enrichment scores associated with adaptive immune cell types including B-cells, CD4+ naive T-cells, and CD8+ naive T-cells (Kruskal-Wallis: p < 0.001; Supplementary Tables 3-5). Cluster 2 was characterized by the absence of immune and stromal expression and higher tumor purity. The average ESTIMATE tumor purity for each cluster was 88\%, 96\% and 82\%, respectively. Cluster 3 was enriched for fibroblast-associated expression by xCell analysis (Kruskal-Wallis: p < 0.001). Clusters 1 and 3 had higher ESTIMATE immune-associated expression levels than cluster 2 (average ImmuneScore per cluster: 58, -612, 56), but cluster 3 had the highest stromal expression signature (average StromalScore per cluster: -1027, -1310, -135). We found no difference in patient survival outcomes across clusters (log-rank test, p > 0.05). We investigated associations with clinical covariates, including mutation burden, age, and tumor content as assessed by a clinical pathologist, but found no statistically significant differences (Kruskal-Wallis: p > 0.05; Supplementary Figure 2). We then investigated associations between the hydra clusters and neuroblastoma-associated molecular aberrations and clinical features (Supplementary Table 6). ATRX gene deletions were enriched in cluster 1 (Fisher’s Exact Test: p < 0.05). MKI low tumors were enriched in cluster 2 and 3 (Fisher’s Exact Test: p < 0.01). Chromosome 17 wild type tumors were enriched in clusters 2 and 3 (Fisher’s Exact Test: p < 0.01).
+We next applied the cluster profiling gene set enrichment analysis (see Hydra Method section) to each cluster using all genes from the pre-filtered expression matrix. Cluster 1 was enriched for adaptive immune response gene sets, cluster 2 was enriched for proliferative signaling gene sets, and cluster 3 was enriched for cancer-associated fibroblast gene sets (Figure 3B). Two of the three clusters were enriched for tumor microenvironment-associated expression. To further validate this signal, we correlated the hydra clusters with enrichment scores from the tumor microenvironment profiling tools xCell \cite{aranXCellDigitallyPortraying2017} and ESTIMATE \cite{yoshiharaInferringTumourPurity2013a}. Cluster 1 had higher average xCell enrichment scores associated with adaptive immune cell types including B-cells, CD4+ naive T-cells, and CD8+ naive T-cells (Kruskal-Wallis: p < 0.001; Supplementary Tables 3-5). Cluster 2 was characterized by the absence of immune and stromal expression and higher tumor purity. The average ESTIMATE tumor purity for each cluster was 88\%, 96\% and 82\%, respectively. Cluster 3 was enriched for fibroblast-associated expression by xCell analysis (Kruskal-Wallis: p < 0.001). Clusters 1 and 3 had higher ESTIMATE immune-associated expression levels than cluster 2 (average ImmuneScore per cluster: 58, -612, 56), but cluster 3 had the highest stromal expression signature (average StromalScore per cluster: -1027, -1310, -135). We found no difference in patient survival outcomes across clusters (log-rank test, p > 0.05). We investigated associations with clinical covariates, including mutation burden, age, and tumor content as assessed by a clinical pathologist, but found no statistically significant differences (Kruskal-Wallis: p > 0.05; Supplementary Figure 2). We then investigated associations between the hydra clusters and neuroblastoma-associated molecular aberrations and clinical features (Supplementary Table 6). ATRX gene deletions were enriched in cluster 1 (Fisher’s Exact Test: p < 0.05). MKI low tumors were enriched in cluster 2 and 3 (Fisher’s Exact Test: p < 0.01). Chromosome 17 wild type tumors were enriched in clusters 2 and 3 (Fisher’s Exact Test: p $<$ 0.01).
 
 Consensus clustering is a widely used approach for identifying tumor subtypes using gene expression data. We applied the M3C consensus clustering method, which is a more sophisticated version of consensus clustering that uses a null distribution to assess the statistical significance of the clustering (John et al. 2018; Wilkerson and Hayes 2010). M3C clustering of the MYCN-NA expression data using the 5000 genes with the largest median absolute deviation (MAD) resulted in the identification of two statistically significant clusters. We found that the M3C clusters correlated with the hydra clusters with lower ESTIMATE TumorPurity, but were not able to separate the adaptive immune cell and fibroblast infiltrated clusters. We also applied kmeans clustering using the gap statistic approach for estimating the number of clusters, but this approach did not identify any clusters (Tibshirani et al. 2001; Maechler et al. 2019).These results suggest that the hydra approach is more sensitive at detecting distinct tumor microenvironment states.
 
@@ -391,7 +405,7 @@ We obtained H\&E slide images for these samples; the images were reviewed by a l
 To further investigate expression patterns within the hydra-identified tumor microenvironment subtypes, we performed GSEA by z-score normalizing each tumor’s gene expression data to its tumor microenvironment cluster. This approach revealed additional signal not present at the cohort level (Supplementary Figure 4). For example, enrichment of immune expression signatures within cluster 2 predicted differences in overall survival such that patients with higher immune expression had a better survival rate. Similarly, an elevated cell cycle signal within cluster 3 predicted worse survival compared to other cluster 3 samples with lower cell cycle expression. This approach provides a more appropriate background distribution for determining the significance of gene expression patterns and survival statistics.
 
 \subsection{Hydra Analysis Discovers Complex Tissue Signatures}
-While the MYCN-NA neuroblastoma analysis focused on immune and fibroblast expression signatures, the hydra enrichment pipeline is unsupervised and is not restricted to immune or fibroblast signatures. For example, we applied the hydra enrichment analysis to the TARGET osteosarcoma cohort (N=74) and discovered enrichment of the GO striated muscle contraction term (FDR < 0.01) (Supplementary Figure 5). Multivariate clustering for the GO striated muscle contraction gene set identified two clusters. xCell analysis of the osteosarcoma cohort found significant enrichment of skeletal muscle expression in the second cluster (Mann-Whitney U test, p < 0.001). Surprisingly, the M3C clustering approach was not able to detect the strong muscle signature using the 5000 genes with the largest MAD (p > 0.05). We identified a similar expression signal in an independent cohort of osteosarcoma tumor samples and subsequently confirmed with a licensed pathologist that the tumor sample did in fact contain muscle tissue. Explaining these sources of variation is necessary to derive clinically relevant conclusions from gene expression data. In addition to the muscle signature, we were able to identify innate immune and stromal subtypes in the TARGET osteosarcoma cohort that correlated with differences in overall survival rates (data not shown). Therefore, the hydra approach reveals important gene expression signatures reflecting cell content within the tumor sample and is widely applicable for revealing important gene expression signatures in complex tumor samples.
+While the MYCN-NA neuroblastoma analysis focused on immune and fibroblast expression signatures, the hydra enrichment pipeline is unsupervised and is not restricted to immune or fibroblast signatures. For example, we applied the hydra enrichment analysis to the TARGET osteosarcoma cohort (N=74) and discovered enrichment of the GO striated muscle contraction term (FDR $<$ 0.01) \nameref{S5_Fig}. Multivariate clustering for the GO striated muscle contraction gene set identified two clusters. xCell analysis of the osteosarcoma cohort found significant enrichment of skeletal muscle expression in the second cluster (Mann-Whitney U test, p < 0.001). Surprisingly, the M3C clustering approach was not able to detect the strong muscle signature using the 5000 genes with the largest MAD (p > 0.05). We identified a similar expression signal in an independent cohort of osteosarcoma tumor samples and subsequently confirmed with a licensed pathologist that the tumor sample did in fact contain muscle tissue. Explaining these sources of variation is necessary to derive clinically relevant conclusions from gene expression data. In addition to the muscle signature, we were able to identify innate immune and stromal subtypes in the TARGET osteosarcoma cohort that correlated with differences in overall survival rates (data not shown). Therefore, the hydra approach reveals important gene expression signatures reflecting cell content within the tumor sample and is widely applicable for revealing important gene expression signatures in complex tumor samples.
 
 \begin{figure}[!h]
 	\includegraphics[width=1.05\textwidth]{img/hydra-pan-small-round-blue-V2-2x}
@@ -426,20 +440,118 @@ Precision oncology aims to differentiate tumors of the same diagnosis in order t
 {\bf Enriching for multimodally expressed genes improves clustering of established neuroblastoma subtypes.} Standard TumorMap analysis (Newton et al. 2017) of the TARGET neuroblastoma dataset resulted in stage 4S samples clustering with stage 4 neuroblastoma samples (left). An alternative TumorMap based solely on 1,498 multimodally expressed genes separated the stage 4S samples into a distinct cluster (right).
 
 \paragraph*{S3 Fig.}
-\includegraphics[width=\textwidth]{img/SubCluster-Analysis-V2@2x.png}
-\label{S3_Fig} {\bf Gene set enrichment analysis (GSEA) of MYCN-NA neuroblastoma identifies survival differences within hydra cluster 2 and cluster 3.} (A) Top 5 differentially enriched gene sets for each cluster comparing the entire MYCN-NA neuroblastoma cohort (cohort-level GSEA) and the corresponding hydra cluster (cluster-level GSEA). GSEA analysis of the hydra clusters found immune and cell cycle signals that were not identified in the cohort-level analysis. (B \& C) GSEA separated cluster 2 into high and low immune subtypes and cluster 3 into high and low cell cycle subtypes. These signals correlated with differences in overall survival. 
+\includegraphics[width=0.75\textwidth]{img/clustering-screen}
+\label{S3_Fig}
+{\bf{Consensus clustering and k-means clustering do not detect all tumor microenvironment expression subtypes.}}
 
 \paragraph*{S4 Fig.}
-\includegraphics[width=\textwidth]{img/muscle-signature-genes-2x}
-\label{S4_Fig} {\bf Hydra analysis of TARGET osteosarcoma cohort reveals skeletal muscle signature.} Hydra enrichment analysis on the TARGET osteosarcoma cohort revealed a subset of patients with high skeletal muscle expression. (A) Clustered heatmap shows the muscle signature genes identified by hydra unsupervised enrichment analysis. (B) xCell tumor microenvironment profiling identified significant differences in skeletal muscle expression compared to background (p < 0.001). (C) H\&E stained tumor slide for an independent osteosarcoma sample confirms presence of striated muscle tissue within the sequenced tumor sample.
+\includegraphics[width=\textwidth]{img/SubCluster-Analysis-V2@2x.png}
+\label{S4_Fig} {\bf Gene set enrichment analysis (GSEA) of MYCN-NA neuroblastoma identifies survival differences within hydra cluster 2 and cluster 3.} (A) Top 5 differentially enriched gene sets for each cluster comparing the entire MYCN-NA neuroblastoma cohort (cohort-level GSEA) and the corresponding hydra cluster (cluster-level GSEA). GSEA analysis of the hydra clusters found immune and cell cycle signals that were not identified in the cohort-level analysis. (B \& C) GSEA separated cluster 2 into high and low immune subtypes and cluster 3 into high and low cell cycle subtypes. These signals correlated with differences in overall survival. 
 
 \paragraph*{S5 Fig.}
-\includegraphics[width=\textwidth]{img/osteosarcoma-survival-2x}
-\label{S5_Fig} {\bf Hydra analysis of TARGET osteosarcoma cohort reveals immune related survival benefit.} 
+\includegraphics[width=\textwidth]{img/muscle-signature-genes-2x}
+\label{S5_Fig} {\bf Hydra analysis of TARGET osteosarcoma cohort reveals skeletal muscle signature.} Hydra enrichment analysis on the TARGET osteosarcoma cohort revealed a subset of patients with high skeletal muscle expression. (A) Clustered heatmap shows the muscle signature genes identified by hydra unsupervised enrichment analysis. (B) xCell tumor microenvironment profiling identified significant differences in skeletal muscle expression compared to background (p < 0.001). (C) H\&E stained tumor slide for an independent osteosarcoma sample confirms presence of striated muscle tissue within the sequenced tumor sample.
 
-\paragraph*{S6 Fig.}
-\includegraphics[width=\textwidth]{img/synovial-sarcoma-survival-2x}
-\label{S6_Fig} {\bf Hydra analysis of synovial sarcoma cohort reveals immune related benefit with respect to metastasis rate.} 
+\begin{table}
+	\label{S1_Table}
+	\caption*{\bf{S1 Table}}
+	\subcaption{Osteosarcoma Translational Regulation Cluster}
+	\begin{tabular}{L{10cm}R{1.5cm}R{1.5cm}}
+		\toprule
+		Pathway &      Adjusted P-value &   NES \\
+		\midrule
+		TRANSLATION (REACTOME) &  1.56e-03 &  4.14 \\
+		CHROMOSOME MAINTENANCE (REACTOME) &  1.52e-03 &  3.95 \\
+		MITOCHONDRIAL TRANSLATIONAL ELONGATION (GOBP) &  1.52e-03 &  3.84 \\
+		HALLMARK\_E2F\_TARGETS (MSIGDB\_C2) &  1.52e-03 &  3.84 \\
+		TRANSLATION (GOBP) &  1.57e-03 &  3.83 \\
+		MITOCHONDRIAL TRANSLATION ELONGATION (REACTOME) &  1.52e-03 &  3.82 \\
+		HALLMARK\_MYC\_TARGETS\_V1 (MSIGDB\_C2) &  1.52e-03 &  3.80 \\
+		DEPOSITION OF NEW CENPA-CONTAINING NUCLEOSOMES (REACTOME) &  1.52e-03 &  3.78 \\
+		NUCLEOSOME ASSEMBLY (REACTOME) &  1.52e-03 &  3.78 \\
+		MITOCHONDRIAL TRANSLATION TERMINATION (REACTOME) &  1.52e-03 &  3.75 \\
+		\bottomrule
+	\end{tabular}
+	
+	\bigskip
+
+	\subcaption{Osteosarcoma Wound Healing Cluster}
+	\begin{tabular}{L{10cm}R{1.5cm}R{1.5cm}}
+		\toprule
+		Pathway &  Adjusted P-value &   NES \\
+		\midrule
+		EXTRACELLULAR MATRIX ORGANIZATION (GOBP) &  0.04 &  4.38 \\
+		EXTRACELLULAR STRUCTURE ORGANIZATION (GOBP) &  0.05 &  4.38 \\
+		NABA\_CORE\_MATRISOME (MSIGDB\_C2) &  0.04 &  4.02 \\
+		HALLMARK\_INFLAMMATORY\_RESPONSE (MSIGDB\_C2) &  0.03 &  3.97 \\
+		TYROBP CAUSAL NETWORK (WIKIPATHWAYS\_20181110) &  0.01 &  3.93 \\
+		PID\_AVB3\_INTEGRIN\_PATHWAY (MSIGDB\_C2) &  0.02 &  3.91 \\
+		HALLMARK\_COAGULATION (MSIGDB\_C2) &  0.02 &  3.90 \\
+		HALLMARK\_EPITHELIAL\_MESENCHYMAL\_TRANSITION (MSIGDB\_C2) &  0.04 &  3.89 \\
+		PID\_INTEGRIN1\_PATHWAY (MSIGDB\_C2) &  0.01 &  3.88 \\
+		BETA1 INTEGRIN CELL SURFACE INTERACTIONS (PID) &  0.01 &  3.88 \\
+		\bottomrule
+	\end{tabular}
+	
+	\ContinuedFloat
+	
+	\subcaption{Osteosarcoma Overall Survival}
+	\centering
+	\includegraphics[width=0.75\textwidth]{img/osteo-kaplan-meier-2x}	
+\end{table}
+
+\FloatBarrier
+
+\begin{table}
+	\label{S2_Table}
+	\caption*{\bf{S2 Table}}
+	\subcaption{Synovial Sarcoma Translational Regulation Cluster}
+	\begin{tabular}{L{10cm}R{1.5cm}R{1.5cm}}
+		\toprule
+		Pathway &      Adjusted P-Value &   NES \\
+		\midrule
+		TRANSLATION (REACTOME) &  3.36e-03 &  4.52 \\
+		TRANSLATION (GOBP) &  3.36e-03 &  4.42 \\
+		RIBOSOME BIOGENESIS (GOBP) &  3.36e-03 &  4.42 \\
+		RNA PROCESSING (REACTOME) &  3.36e-03 &  4.29 \\
+		RRNA PROCESSING IN THE NUCLEUS AND CYTOSOL (REACTOME) &  3.36e-03 &  4.25 \\
+		MAJOR PATHWAY OF RRNA PROCESSING (REACTOME) &  3.36e-03 &  4.22 \\
+		PEPTIDE BIOSYNTHETIC PROCESS (GOBP) &  3.36e-03 &  4.17 \\
+		RRNA PROCESSING (GOBP) &  3.36e-03 &  4.16 \\
+		NCRNA PROCESSING (GOBP) &  3.36e-03 &  4.16 \\
+		HALLMARK\_MYC\_TARGETS\_V1 (MSIGDB\_C2) &  3.36e-03 &  4.09 \\
+		\bottomrule
+	\end{tabular}
+	
+	\bigskip
+	\ContinuedFloat
+	
+	\subcaption{Synovial Sarcoma Innate Immune Cluster}
+	\begin{tabular}{L{10cm}R{1.5cm}R{1.5cm}}
+		\toprule
+		Pathway &      Adjusted P-value &   NES \\
+		\midrule
+		HALLMARK\_INTERFERON\_GAMMA\_RESPONSE (MSIGDB\_C2) &  1.77e-03 &  5.11 \\
+		HALLMARK\_INFLAMMATORY\_RESPONSE (MSIGDB\_C2) &  1.77e-03 &  5.01 \\
+		HALLMARK\_TNFA\_SIGNALING\_VIA\_NFKB (MSIGDB\_C2) &  1.77e-03 &  4.87 \\
+		RESPONSE TO INTERFERON-GAMMA (GOBP) &  1.77e-03 &  4.77 \\
+		INFLAMMATORY RESPONSE (GOBP) &  1.77e-03 &  4.67 \\
+		LEUKOCYTE MIGRATION (GOBP) &  1.77e-03 &  4.63 \\
+		HALLMARK\_ALLOGRAFT\_REJECTION (MSIGDB\_C2) &  1.77e-03 &  4.60 \\
+		CELLULAR RESPONSE TO INTERFERON-GAMMA (GOBP) &  1.77e-03 &  4.57 \\
+		IMMUNOREGULATORY INTERACTIONS  &  1.77e-03 &  4.57 \\
+		MYELOID CELL ACTIVATION (REACTOME) &  1.77e-03 &  4.56 \\
+		\bottomrule
+	\end{tabular}
+	
+	\ContinuedFloat
+	
+	\subcaption{Synovial Sarcoma Metastasis Rate}
+	\centering
+	\includegraphics[width=0.75\textwidth]{img/synovial-kaplan-meier-2x}	
+\end{table}
+
+\FloatBarrier
 
 %\paragraph*{S1 File.}
 %\label{S1_File}
