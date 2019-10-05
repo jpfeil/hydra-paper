@@ -246,19 +246,6 @@ Oberg JA, Glade~Bender JL, Sulis ML, Pendrick D, Sireci AN, Hsiao SJ, et~al.
 \newblock Genome Medicine. 2016;8(1):133.
 \newblock doi:{10.1186/s13073-016-0389-6}.
 
-\bibitem{yuClusterProfilerPackageComparing2012}
-Yu G, Wang LG, Han Y, He QY.
-\newblock {{clusterProfiler}}: An {{R}} Package for Comparing Biological Themes
-  among Gene Clusters.
-\newblock Omics: A Journal of Integrative Biology. 2012;16(5):284--287.
-\newblock doi:{10.1089/omi.2011.0118}.
-
-\bibitem{benson2012genbank}
-Benson DA, Cavanaugh M, Clark K, {Karsch-Mizrachi} I, Lipman DJ, Ostell J,
-  et~al.
-\newblock {{GenBank}}.
-\newblock Nucleic acids research. 2012;41(D1):D36--D42.
-
 \bibitem{ashburnerGeneOntologyTool2000}
 Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, et~al.
 \newblock Gene Ontology: Tool for the Unification of Biology. {{The Gene
@@ -276,6 +263,13 @@ Merico D, Isserlin R, Stueker O, Emili A, Bader GD.
 \newblock Enrichment Map: A Network-Based Method for Gene-Set Enrichment
   Visualization and Interpretation.
 \newblock PloS one. 2010;5(11):e13984.
+
+\bibitem{yuClusterProfilerPackageComparing2012}
+Yu G, Wang LG, Han Y, He QY.
+\newblock {{clusterProfiler}}: An {{R}} Package for Comparing Biological Themes
+  among Gene Clusters.
+\newblock Omics: A Journal of Integrative Biology. 2012;16(5):284--287.
+\newblock doi:{10.1089/omi.2011.0118}.
 
 \bibitem{barbieSystematicRNAInterference2009}
 Barbie DA, Tamayo P, Boehm JS, Kim SY, Moody SE, Dunn IF, et~al.
@@ -343,11 +337,21 @@ Pedregosa F, Varoquaux G, Gramfort A, Michel V, Thirion B, Grisel O, et~al.
 Jones E, Oliphant T, Peterson P, et~al.
 \newblock {{SciPy}}: {{Open}} Source Scientific Tools for {{Python}}. 2001;.
 
+\bibitem{kassambaraSurvminerDrawingSurvival2019}
+Kassambara A, Kosinski M, Biecek P.
+\newblock Survminer: Drawing Survival Curves Using 'Ggplot2'; 2019.
+
 \bibitem{morgensternChallengeDefiningUltrahighrisk2019a}
 Morgenstern DA, Bagatell R, Cohn SL, Hogarty MD, Maris JM, Moreno L, et~al.
 \newblock The Challenge of Defining ``Ultra-High-Risk'' Neuroblastoma.
 \newblock Pediatric Blood \& Cancer. 2019;66(4):e27556.
 \newblock doi:{10.1002/pbc.27556}.
+
+\bibitem{fosterEvolvingRelationshipWound}
+Foster DS, Jones RE, Ransom RC, Longaker MT, Norton JA.
+\newblock The Evolving Relationship of Wound Healing and Tumor Stroma.
+\newblock JCI Insight;3(18).
+\newblock doi:{10.1172/jci.insight.99911}.
 
 \bibitem{yoshiharaInferringTumourPurity2013a}
 Yoshihara K, Shahmoradgoli M, Mart{\'i}nez E, Vegesna R, Kim H, {Torres-Garcia}
