@@ -240,18 +240,18 @@ Oberg JA, Glade~Bender JL, Sulis ML, Pendrick D, Sireci AN, Hsiao SJ, et~al.
 \newblock Genome Medicine. 2016;8(1):133.
 \newblock doi:{10.1186/s13073-016-0389-6}.
 
-\bibitem{benson2012genbank}
-Benson DA, Cavanaugh M, Clark K, {Karsch-Mizrachi} I, Lipman DJ, Ostell J,
-  et~al.
-\newblock {{GenBank}}.
-\newblock Nucleic acids research. 2012;41(D1):D36--D42.
-
 \bibitem{yuClusterProfilerPackageComparing2012}
 Yu G, Wang LG, Han Y, He QY.
 \newblock {{clusterProfiler}}: An {{R}} Package for Comparing Biological Themes
   among Gene Clusters.
 \newblock Omics: A Journal of Integrative Biology. 2012;16(5):284--287.
 \newblock doi:{10.1089/omi.2011.0118}.
+
+\bibitem{benson2012genbank}
+Benson DA, Cavanaugh M, Clark K, {Karsch-Mizrachi} I, Lipman DJ, Ostell J,
+  et~al.
+\newblock {{GenBank}}.
+\newblock Nucleic acids research. 2012;41(D1):D36--D42.
 
 \bibitem{ashburnerGeneOntologyTool2000}
 Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, et~al.
@@ -299,6 +299,20 @@ Zwiener I, Frisch B, Binder H.
 \newblock PLOS ONE. 2014;9(1):e85150.
 \newblock doi:{10.1371/journal.pone.0085150}.
 
+\bibitem{lagardeChromosomeInstabilityAccounts2013}
+Lagarde P, Przybyl J, Brulard C, P{\'e}rot G, Pierron G, Delattre O, et~al.
+\newblock Chromosome Instability Accounts for Reverse Metastatic Outcomes of
+  Pediatric and Adult Synovial Sarcomas.
+\newblock Journal of Clinical Oncology: Official Journal of the American
+  Society of Clinical Oncology. 2013;31(5):608--615.
+\newblock doi:{10.1200/JCO.2012.46.0147}.
+
+\bibitem{newmanRobustEnumerationCell2015}
+Newman AM, Liu CL, Green MR, Gentles AJ, Feng W, Xu Y, et~al.
+\newblock Robust Enumeration of Cell Subsets from Tissue Expression Profiles.
+\newblock Nature Methods. 2015;12(5):453--457.
+\newblock doi:{10.1038/nmeth.3337}.
+
 \bibitem{yoshiharaInferringTumourPurity2013}
 Yoshihara K, Shahmoradgoli M, Mart{\'i}nez E, Vegesna R, Kim H, {Torres-Garcia}
   W, et~al.
@@ -306,6 +320,22 @@ Yoshihara K, Shahmoradgoli M, Mart{\'i}nez E, Vegesna R, Kim H, {Torres-Garcia}
   Expression Data.
 \newblock Nature Communications. 2013;4:2612.
 \newblock doi:{10.1038/ncomms3612}.
+
+\bibitem{tibshirani2001estimating}
+Tibshirani R, Walther G, Hastie T.
+\newblock Estimating the Number of Clusters in a Data Set via the Gap
+  Statistic.
+\newblock Journal of the Royal Statistical Society: Series B (Statistical
+  Methodology). 2001;63(2):411--423.
+
+\bibitem{pedregosa2011scikit}
+Pedregosa F, Varoquaux G, Gramfort A, Michel V, Thirion B, Grisel O, et~al.
+\newblock Scikit-Learn: Machine Learning in Python.
+\newblock Journal of machine learning research. 2011;12(Oct):2825--2830.
+
+\bibitem{jonesSciPyOpenSource2001}
+Jones E, Oliphant T, Peterson P, et~al.
+\newblock {{SciPy}}: {{Open}} Source Scientific Tools for {{Python}}. 2001;.
 
 \bibitem{morgensternChallengeDefiningUltrahighrisk2019a}
 Morgenstern DA, Bagatell R, Cohn SL, Hogarty MD, Maris JM, Moreno L, et~al.
@@ -321,11 +351,32 @@ Yoshihara K, Shahmoradgoli M, Mart{\'i}nez E, Vegesna R, Kim H, {Torres-Garcia}
 \newblock Nature Communications. 2013;4:2612.
 \newblock doi:{10.1038/ncomms3612}.
 
+\bibitem{maechler2012cluster}
+Maechler M, Rousseeuw P, Struyf A, Hubert M, Hornik K, et~al.
+\newblock Cluster: Cluster Analysis Basics and Extensions.
+\newblock R package version. 2012;1(2):56.
+
 \bibitem{reevesAntigenProcessingImmune2017}
 Reeves E, James E.
 \newblock Antigen Processing and Immune Regulation in the Response to Tumours.
 \newblock Immunology. 2017;150(1):16--24.
 \newblock doi:{10.1111/imm.12675}.
+
+\bibitem{hermansJAK1JAK2Inhibitor2018}
+Hermans MAW, Schrijver B, {van Holten-Neelen} CCPA, {Gerth van Wijk} R, {van
+  Hagen} PM, {van Daele} PLA, et~al.
+\newblock The {{JAK1}}/{{JAK2}}- Inhibitor Ruxolitinib Inhibits Mast Cell
+  Degranulation and Cytokine Release.
+\newblock Clinical and Experimental Allergy: Journal of the British Society for
+  Allergy and Clinical Immunology. 2018;48(11):1412--1420.
+\newblock doi:{10.1111/cea.13217}.
+
+\bibitem{Hoadley2014}
+Hoadley KA, Yau C, Wolf DM, Cherniack AD, Tamborero D, Ng S, et~al.
+\newblock Multiplatform Analysis of 12 Cancer Types Reveals Molecular
+  Classification within and across Tissues of Origin.
+\newblock Cell. 2014;158(4):929--44.
+\newblock doi:{10.1016/j.cell.2014.06.049}.
 
 \bibitem{majzner2017harnessing}
 Majzner RG, Heitzeneder S, Mackall CL.
