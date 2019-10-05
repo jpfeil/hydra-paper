@@ -194,6 +194,12 @@ Antoniak CE.
 \newblock The Annals of Statistics. 1974;2(6):1152--1174.
 \newblock doi:{10.1214/aos/1176342871}.
 
+\bibitem{fergusonBayesianAnalysisNonparametric1973}
+Ferguson TS.
+\newblock A {{Bayesian Analysis}} of {{Some Nonparametric Problems}}.
+\newblock The Annals of Statistics. 1973;1(2):209--230.
+\newblock doi:{10.1214/aos/1176342360}.
+
 \bibitem{muller2004nonparametric}
 M{\"u}ller P, Quintana FA.
 \newblock Nonparametric Bayesian Data Analysis.
