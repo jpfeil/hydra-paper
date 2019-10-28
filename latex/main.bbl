@@ -251,6 +251,12 @@ Yu G, Wang LG, Han Y, He QY.
 \newblock Omics: A Journal of Integrative Biology. 2012;16(5):284--287.
 \newblock doi:{10.1089/omi.2011.0118}.
 
+\bibitem{korotkevichFastGeneSet2019}
+Korotkevich G, Sukhov V, Sergushichev A.
+\newblock Fast Gene Set Enrichment Analysis.
+\newblock bioRxiv. 2019; p. 060012.
+\newblock doi:{10.1101/060012}.
+
 \bibitem{barbieSystematicRNAInterference2009}
 Barbie DA, Tamayo P, Boehm JS, Kim SY, Moody SE, Dunn IF, et~al.
 \newblock Systematic {{RNA}} Interference Reveals That Oncogenic
@@ -316,6 +322,19 @@ Pedregosa F, Varoquaux G, Gramfort A, Michel V, Thirion B, Grisel O, et~al.
 Jones E, Oliphant T, Peterson P, et~al.
 \newblock {{SciPy}}: {{Open}} Source Scientific Tools for {{Python}}. 2001;.
 
+\bibitem{2019arXiv190710121V}
+Virtanen P, Gommers R, Oliphant TE, Haberland M, Reddy T, Cournapeau D, et~al.
+\newblock {{SciPy}} 1.0\textendash{{Fundamental Algorithms}} for {{Scientific
+  Computing}} in {{Python}}.
+\newblock arXiv e-prints. 2019; p. arXiv:1907.10121.
+
+\bibitem{Terpilowski2019}
+Terpilowski M.
+\newblock Scikit-Posthocs: {{Pairwise}} Multiple Comparison Tests in
+  {{Python}}.
+\newblock The Journal of Open Source Software. 2019;4(36):1169.
+\newblock doi:{10.21105/joss.01169}.
+
 \bibitem{kassambaraSurvminerDrawingSurvival2019}
 Kassambara A, Kosinski M, Biecek P.
 \newblock Survminer: Drawing Survival Curves Using 'Ggplot2'; 2019.
@@ -333,6 +352,36 @@ Yoshihara K, Shahmoradgoli M, Mart{\'i}nez E, Vegesna R, Kim H, {Torres-Garcia}
   Expression Data.
 \newblock Nature Communications. 2013;4:2612.
 \newblock doi:{10.1038/ncomms3612}.
+
+\bibitem{wilkersonConsensusClusterPlusClassDiscovery2010a}
+Wilkerson MD, Hayes DN.
+\newblock {{ConsensusClusterPlus}}: A Class Discovery Tool with Confidence
+  Assessments and Item Tracking.
+\newblock Bioinformatics (Oxford, England). 2010;26(12):1572--1573.
+\newblock doi:{10.1093/bioinformatics/btq170}.
+
+\bibitem{bourgonIndependentFilteringIncreases2010}
+Bourgon R, Gentleman R, Huber W.
+\newblock Independent Filtering Increases Detection Power for High-Throughput
+  Experiments.
+\newblock Proceedings of the National Academy of Sciences.
+  2010;107(21):9546--9551.
+\newblock doi:{10.1073/pnas.0914005107}.
+
+\bibitem{tritchlerFilteringGenesCluster2009}
+Tritchler D, Parkhomenko E, Beyene J.
+\newblock Filtering {{Genes}} for {{Cluster}} and {{Network Analysis}}.
+\newblock BMC Bioinformatics. 2009;10(1):193.
+\newblock doi:{10.1186/1471-2105-10-193}.
+
+\bibitem{carcamo-oriveAnalysisTranscriptionalVariability2017}
+{Carcamo-Orive} I, Hoffman GE, Cundiff P, Beckmann ND, D'Souza SL, Knowles JW,
+  et~al.
+\newblock Analysis of {{Transcriptional Variability}} in a {{Large Human iPSC
+  Library Reveals Genetic}} and {{Non}}-Genetic {{Determinants}} of
+  {{Heterogeneity}}.
+\newblock Cell Stem Cell. 2017;20(4):518--532.e9.
+\newblock doi:{10.1016/j.stem.2016.11.005}.
 
 \bibitem{maechler2012cluster}
 Maechler M, Rousseeuw P, Struyf A, Hubert M, Hornik K, et~al.
