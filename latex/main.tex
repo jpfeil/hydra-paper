@@ -440,27 +440,29 @@ We next wanted to see if similar hydra clusters could be identified across other
 
 \begin{figure}[!h]
 	%\includegraphics[width=1.05\textwidth]{img/hydra-pan-small-round-blue-V2-2x}
-	\caption{{\bf Hydra analysis of small blue round cell tumors reveals similar expression subtypes across cancer types.}A: TumorMap visualization of 6 small blue round cell tumor types. B: Hierarchically clustered heatmap of gene set normalized enrichment scores (NES) for the top 10 enriched gene sets for each cancer subtype cluster (y-axis). The cancer type color bar corresponds to the cancer type color in panel A. The expression subtype was manually assigned after reviewing the most highly enriched gene sets for each cluster (x-axis).}
+	\caption{{\bf Hydra analysis of small blue round cell tumors reveals similar expression subtypes across cancer types.}A: TumorMap visualization of 6 small blue round cell tumor types. B: Hierarchically clustered heatmap for the top 10 enriched gene sets across the 21 small blue round cell tumor expression subtypes. Each column corresponds to a cancer type and an expression subtype (x-axis). Each row corresponds to a gene set. The expression subtype was manually assigned after reviewing the most highly enriched gene sets for each cancer expression subtype.}
 	\label{pancan}
 \end{figure}
 
-We next performed hydra analysis within each cancer type and found similar biological themes appear during the cluster profiling analysis. Hierarchical clustering of the top 10 statistically significant gene sets for each disease cluster resulted in clustering of diseases by expression subtype and not the cancer histology (Fig \ref{pancan}B). Common themes emerged across diseases including translational regulation, cell cycle regulation, immune effector cell signaling, inflammation, extracellular matrix organization, and tissue-of-origin signals. Furthermore, these signals predicted differences in patient outcomes in osteosarcoma and synovial sarcoma, two diseases for which we had patient outcome data (\nameref{S6_Fig}). In both cases, the presence of immune associated expression correlated with better patient outcomes compared to tumors with proliferative signaling pathways associated with the upregulation of translation initiation.
+We next performed hydra analysis within each cancer type and found similar biological themes appear during the cluster profiling analysis. Hierarchical clustering of the top 10 statistically significant gene sets for each disease cluster resulted in clustering of diseases by expression subtype and not the cancer histology (Fig \ref{pancan}B). Common themes emerged across diseases including translational regulation, cell cycle regulation, immune effector cell signaling, inflammation, extracellular matrix organization, and tissue-of-origin signals. Furthermore, these signals predicted differences in patient outcomes in osteosarcoma and synovial sarcoma (\nameref{S6_Fig}). In both cases, the presence of immune associated expression correlated with better patient outcomes compared to tumors with proliferative signaling pathways associated with the upregulation of translation initiation.
 
-%% EDGE %% 
+
 
 \section*{Discussion}
-The hydra framework uses model-based clustering to identify recurrent expression patterns within cancer gene expression cohorts. We leveraged recent improvements in model-based clustering algorithms to identify differentially expressed genes without a matched normal distribution. We modeled differential expression as a multimodal Gaussian distribution using nonparametric Bayesian statistics. We then enriched for biologically-annotated Gene Ontology terms and performed multivariate clustering to reveal cancer subtyping expression signatures. The hydra framework can be used for identifying expression subtypes and classifying N-of-1 tumors. The hydra framework outperformed standard gene set enrichment tools for identifying overexpression of the MSigDB Hallmark cancer gene sets in synthetic cancer gene expression data and identified tumor microenvironment gene expression signatures in the TARGET pediatric neuroblastoma and osteosarcoma datasets that were not detected by consensus clustering analysis. 
+The hydra framework uses model-based clustering to identify recurrent expression patterns within cancer gene expression cohorts. We leveraged recent improvements in model-based clustering algorithms to identify differentially expressed genes without a matched normal distribution. We modeled differential expression as a multimodal Gaussian distribution using nonparametric Bayesian statistics. We then enriched for biologically-annotated Gene Ontology terms and performed multivariate clustering to reveal expression signatures for cancer subtyping. The hydra framework can be used for both identifying expression subtypes within cohorts and classifying N-of-1 tumors using the models trained on large cancer cohorts. The hydra framework outperformed standard gene set enrichment tools for identifying overexpression of the MSigDB Hallmark cancer gene sets in synthetic cancer gene expression data and identified tumor microenvironment gene expression signatures in the TARGET pediatric neuroblastoma and osteosarcoma datasets that were not detected by consensus clustering analysis. 
+ 
+Multivariate gene expression analysis is typically underpowered because the number of genes greatly exceeds the number of samples. To address this limitation, we propose selecting for multimodally expressed genes before performing multivariate analysis. The hydra multimodal filter reduces the number of genes and enriches for genes that participate in known biological processes, including those curated in the Gene Ontology database. As Yi Li et al. (2005) found in their study on unsupervised clustering of gene expression data, we also found that reducing expression data to multimodally expressed genes improves clustering of clinical subtypes in pediatric cancers. For example, multimodally expressed genes separate neuroblastoma subtypes by TumorMap analysis better than the standard approach of using all expressed genes. Furthermore, we showed that the hydra approach is more sensitive at resolving tumor microenvironment subtypes than the M3C consensus clustering approach. 
 
-Multivariate gene expression analysis is typically underpowered because the number of genes greatly exceeds the number of samples. To address this limitation, we propose selecting for multimodally expressed genes before performing multivariate analysis. The hydra multimodal filter reduces the number of genes and enriches for genes that participate in known biological processes, including those curated in the Gene Ontology database. As Yi Li et al. (2005) found in their study on unsupervised clustering of gene expression data, we also found that reducing expression data to multimodally expressed genes improves clustering of clinical subtypes in pediatric cancers. For example, multimodally expressed genes separate neuroblastoma subtypes by TumorMap analysis better than the standard approach of using all expressed genes. Furthermore, we showed that the hydra approach is more sensitive at resolving tumor microenvironment subtypes than the M3C consensus clustering approach.
+Significant progress has been made in subtyping neuroblastomas and adapting therapy for aggressive subtypes, but unexplained heterogeneity remains \cite{morgensternChallengeDefiningUltrahighrisk2019}. Failure to account for this heterogeneity decreases the power of standard methods to detect important expression patterns. Identifying biomarkers using genome-wide technology may lead to improved risk stratification and the discovery of novel drug targets. Hydra analysis of the TARGET MYCN-NA neuroblastoma cohort (N=70) found differential expression of tumor microenvironment markers, including markers of the adaptive immune response. Pediatric cancers are generally thought to be less immunogenic because they have lower mutation burdens than adult cancers, but the immunogenicity of pediatric cancer has not been sufficiently investigated \cite{majzner2017harnessing}. Our analysis found significant variation in immune marker expression and identified ATRX deletions as a potential biomarker of immune infiltrated tumors in MYCN-NA neuroblastoma. Analysis of other small blue round cell tumors revealed similar expression signatures across tumor types, despite samples clustering by their histology in a pan-cancer TumorMap analysis. Identification of shared expression signatures across cancer types may suggest that these patients would respond similarly to therapies that target these pathways. In particular, the identification of a cross-disease subtype associated with high expression of immune markers may warrant further investigation of immunotherapies in small blue round cell tumors using a basket clinical trial design \cite{cunananEfficientBasketTrial2017}.
 
-Significant progress has been made in subtyping neuroblastomas and adapting therapy for aggressive subtypes, but unexplained heterogeneity remains. Not accounting for this heterogeneity decreases the power of standard methods to detect important expression patterns. Identifying biomarkers using genome-wide technology may lead to improved risk stratification and the discovery of novel drug targets \cite{morgensternChallengeDefiningUltrahighrisk2019a}. Hydra analysis of the TARGET MYCN-NA neuroblastoma cohort (N=70) found differential expression of tumor microenvironment markers, including markers of the adaptive immune response. Pediatric cancers are generally thought to be non-immunogenic because they have lower mutation burden than adult cancers, but the immunogenicity of pediatric cancer has not been sufficiently investigated \cite{majzner2017harnessing}. Our analysis found significant variation in immune marker expression and identified ATRX deletions as a potential biomarker of immune infiltrated tumors. Further investigation into gene expression signatures and molecular aberrations that predict response to immunotherapy in pediatric cancers is needed. Hydra analysis may facilitate the development of novel therapies by grouping patients with similar tumor microenvironment properties.
+We found significant differences in immune and stromal expression that may inform precision medicine applications. The tumor microenvironment has become an important therapeutic consideration, but few methods account for the tumor microenvironment directly. Tumor purity has been identified as a confounding factor in cancer gene expression subtyping efforts \cite{rheeImpactTumorPurity2018}. For example, tumor purity and tumor microenvironment expression have been shown to correlate with pancreatic cancer subtypes \cite{raphael2017integrated}. Furthermore, Aran et al. (2018) found that tumor purity was correlated with the mesenchymal glioblastoma subtype and recommended a differential expression approach to computationally remove the tumor purity signal. However, standard approaches for subtracting the tumor purity effect may not be the best approach because several mechanisms may influence tumor purity, and each mechanism may result in a different expression pattern. For instance, our analysis of MYCN-NA neuroblastoma identified two gene expression signatures that correlated with lower predicted tumor purity. Cluster 1 had an adaptive immune expression signature and cluster 3 had a cancer-associated fibroblast signature. Therefore, we suggest that the estimated tumor purity signal should not be subtracted without first accounting for the different mechanisms influencing tumor purity.
 
-We found significant differences in immune and stromal expression that may inform precision medicine applications. The tumor microenvironment has become an important therapeutic consideration, but few methods account for the tumor microenvironment directly. Tumor purity has been identified as a confounding factor in cancer gene expression subtyping efforts \cite{rheeImpactTumorPurity2018}. For example, tumor purity and tumor microenvironment expression have been shown to correlate with pancreatic cancer subtypes \cite{raphael2017integrated}. Furthermore, Aran et al. (2018) found that tumor purity was correlated with the mesenchymal glioblastoma subtype and recommended a differential expression approach to computationally remove the tumor purity signal. However, standard approaches for subtracting the tumor purity effect may not be the best approach because several mechanisms may influence tumor purity, and each mechanism may result in a different expression pattern. For instance, our analysis of MYCN-NA neuroblastoma identified two gene expression signatures that correlated with lower predicted tumor purity. Cluster 1 had an adaptive immune expression signature and cluster 3 had a cancer-associated fibroblast signature. Therefore, the estimated tumor purity signal should not be subtracted without first accounting for the different mechanisms influencing tumor purity.
+We also found shared biological pathway enrichment across small blue round cell tumors. Although these diseases have distinct expression patterns on the surface, we discovered common themes once we accounted for the cell-of-origin signal. There appear to be at least three major tumor microenvironment states: immune silent, immune infiltrated, and wound healing subtypes. The immune infiltrated and wound healing subtypes predicted better overall survival in osteosarcoma and delayed metastases in synovial sarcoma tumors, which suggests the involvement of the host immune response limits the progression of tumors. Amplification of the host immune response may further limit tumor growth and lead to immune-mediated tumor cell death. 
 
 We also found shared biological pathway enrichment across small round blue cell tumors. Although these diseases have, on the surface, distinct expression patterns, once we accounted for the cell-of-origin signal, we discovered common themes. There appears to be at least three major tumor microenvironment states: immune silent, immune infiltrated, and wound healing subtype. The immune infiltrated and wound healing subtypes predicted better overall survival in osteosarcoma and delayed metastases in synovial sarcoma tumors, which suggests the involvement of the host immune response limits the progression of tumors. Amplification of the host immune response may further limit tumor growth and lead to immune-mediated tumor cell killing.
 
 \section*{Conclusion}
-Precision oncology aims to differentiate tumors of the same diagnosis in order to match patients with the best treatment. We have developed the hydra framework to discover subtle but recurrent expression patterns within a cancer type. Our approach may help to uncover the biology underlying tumor progression and response to therapy. We have shown that hydra is more sensitive than standard gene set enrichment approaches for detecting differential pathway expression. Additionally, we applied the unsupervised hydra analysis to small round blue cell tumors and discovered distinct tumor microenvironment states. The hydra framework is a sensitive unsupervised clustering approach for N-of-1 tumor analysis and will facilitate pediatric precision oncology by discovering expression subtype signatures.
+Precision oncology aims to differentiate tumors of the same diagnosis in order to match patients with the best treatment. We have developed the hydra framework to discover subtle but recurrent expression patterns within a cancer type, which is a novel strategy for pediatric precision oncology research. Our approach may help to uncover the biology underlying tumor progression and response to therapy. We have shown that hydra is more sensitive than standard gene set enrichment approaches for detecting differential pathway expression. Additionally, our framework also provides tools to conduct unsupervised clustering analysis to discover expression subtypes. We applied the unsupervised hydra analysis to small blue round cell tumors and discovered distinct tumor microenvironment states. This shows that one of the loudest signals in these data sets comes from the tumor microenvironment. The hydra framework accelerates pediatric oncology research by identifying major sources of variation in gene expression data that can be used for clinical decision making.
 
 \section*{Supporting information}
 
@@ -493,106 +495,9 @@ Precision oncology aims to differentiate tumors of the same diagnosis in order t
 \includegraphics[width=\textwidth]{img/Selection_026}
 \label{S6_Fig} {\bf Hydra analysis identifies expression of druggable JAK1 gene in Ewing sarcoma correlates with mast cell expression signature.} We show the utility of the mixture model approach for identifying important gene expression patterns for precision medicine applications. JAK1 is a druggable gene, but JAK1 is also an important gene in immune cell signaling pathways. We found that expression of JAK1 in Ewing sarcoma correlated with mast cell expression. Interestingly, the JAK1 inhibitor ruxolitinib was shown to inhibit mast cell functions \cite{hermansJAK1JAK2Inhibitor2018}. Accounting for the tumor microenvironment expression is, therefore, an important step in developing precision medicine approaches for pediatric cancers.
 
-\begin{table}
-	\label{S1_Table}
-	\caption*{\bf{S1 Table}}
-	\subcaption{Osteosarcoma Translational Regulation Cluster}
-	\begin{tabular}{L{10cm}R{1.5cm}R{1.5cm}}
-		\toprule
-		Pathway &      Adjusted P-value &   NES \\
-		\midrule
-		TRANSLATION (REACTOME) &  1.56e-03 &  4.14 \\
-		CHROMOSOME MAINTENANCE (REACTOME) &  1.52e-03 &  3.95 \\
-		MITOCHONDRIAL TRANSLATIONAL ELONGATION (GOBP) &  1.52e-03 &  3.84 \\
-		HALLMARK\_E2F\_TARGETS (MSIGDB\_C2) &  1.52e-03 &  3.84 \\
-		TRANSLATION (GOBP) &  1.57e-03 &  3.83 \\
-		MITOCHONDRIAL TRANSLATION ELONGATION (REACTOME) &  1.52e-03 &  3.82 \\
-		HALLMARK\_MYC\_TARGETS\_V1 (MSIGDB\_C2) &  1.52e-03 &  3.80 \\
-		DEPOSITION OF NEW CENPA-CONTAINING NUCLEOSOMES (REACTOME) &  1.52e-03 &  3.78 \\
-		NUCLEOSOME ASSEMBLY (REACTOME) &  1.52e-03 &  3.78 \\
-		MITOCHONDRIAL TRANSLATION TERMINATION (REACTOME) &  1.52e-03 &  3.75 \\
-		\bottomrule
-	\end{tabular}
-	
-	\bigskip
-
-	\subcaption{Osteosarcoma Wound Healing Cluster}
-	\begin{tabular}{L{10cm}R{1.5cm}R{1.5cm}}
-		\toprule
-		Pathway &  Adjusted P-value &   NES \\
-		\midrule
-		EXTRACELLULAR MATRIX ORGANIZATION (GOBP) &  0.04 &  4.38 \\
-		EXTRACELLULAR STRUCTURE ORGANIZATION (GOBP) &  0.05 &  4.38 \\
-		NABA\_CORE\_MATRISOME (MSIGDB\_C2) &  0.04 &  4.02 \\
-		HALLMARK\_INFLAMMATORY\_RESPONSE (MSIGDB\_C2) &  0.03 &  3.97 \\
-		TYROBP CAUSAL NETWORK (WIKIPATHWAYS\_20181110) &  0.01 &  3.93 \\
-		PID\_AVB3\_INTEGRIN\_PATHWAY (MSIGDB\_C2) &  0.02 &  3.91 \\
-		HALLMARK\_COAGULATION (MSIGDB\_C2) &  0.02 &  3.90 \\
-		HALLMARK\_EPITHELIAL\_MESENCHYMAL\_TRANSITION (MSIGDB\_C2) &  0.04 &  3.89 \\
-		PID\_INTEGRIN1\_PATHWAY (MSIGDB\_C2) &  0.01 &  3.88 \\
-		BETA1 INTEGRIN CELL SURFACE INTERACTIONS (PID) &  0.01 &  3.88 \\
-		\bottomrule
-	\end{tabular}
-	
-	\ContinuedFloat
-	
-	\subcaption{Osteosarcoma Overall Survival}
-	\centering
-	\includegraphics[width=0.75\textwidth]{img/osteo-kaplan-meier-2x}	
-\end{table}
-
-\FloatBarrier
-
-\begin{table}
-	\label{S2_Table}
-	\caption*{\bf{S2 Table}}
-	\subcaption{Synovial Sarcoma Translational Regulation Cluster}
-	\begin{tabular}{L{10cm}R{1.5cm}R{1.5cm}}
-		\toprule
-		Pathway &      Adjusted P-Value &   NES \\
-		\midrule
-		TRANSLATION (REACTOME) &  3.36e-03 &  4.52 \\
-		TRANSLATION (GOBP) &  3.36e-03 &  4.42 \\
-		RIBOSOME BIOGENESIS (GOBP) &  3.36e-03 &  4.42 \\
-		RNA PROCESSING (REACTOME) &  3.36e-03 &  4.29 \\
-		RRNA PROCESSING IN THE NUCLEUS AND CYTOSOL (REACTOME) &  3.36e-03 &  4.25 \\
-		MAJOR PATHWAY OF RRNA PROCESSING (REACTOME) &  3.36e-03 &  4.22 \\
-		PEPTIDE BIOSYNTHETIC PROCESS (GOBP) &  3.36e-03 &  4.17 \\
-		RRNA PROCESSING (GOBP) &  3.36e-03 &  4.16 \\
-		NCRNA PROCESSING (GOBP) &  3.36e-03 &  4.16 \\
-		HALLMARK\_MYC\_TARGETS\_V1 (MSIGDB\_C2) &  3.36e-03 &  4.09 \\
-		\bottomrule
-	\end{tabular}
-	
-	\bigskip
-	\ContinuedFloat
-	
-	\subcaption{Synovial Sarcoma Innate Immune Cluster}
-	\begin{tabular}{L{10cm}R{1.5cm}R{1.5cm}}
-		\toprule
-		Pathway &      Adjusted P-value &   NES \\
-		\midrule
-		HALLMARK\_INTERFERON\_GAMMA\_RESPONSE (MSIGDB\_C2) &  1.77e-03 &  5.11 \\
-		HALLMARK\_INFLAMMATORY\_RESPONSE (MSIGDB\_C2) &  1.77e-03 &  5.01 \\
-		HALLMARK\_TNFA\_SIGNALING\_VIA\_NFKB (MSIGDB\_C2) &  1.77e-03 &  4.87 \\
-		RESPONSE TO INTERFERON-GAMMA (GOBP) &  1.77e-03 &  4.77 \\
-		INFLAMMATORY RESPONSE (GOBP) &  1.77e-03 &  4.67 \\
-		LEUKOCYTE MIGRATION (GOBP) &  1.77e-03 &  4.63 \\
-		HALLMARK\_ALLOGRAFT\_REJECTION (MSIGDB\_C2) &  1.77e-03 &  4.60 \\
-		CELLULAR RESPONSE TO INTERFERON-GAMMA (GOBP) &  1.77e-03 &  4.57 \\
-		IMMUNOREGULATORY INTERACTIONS  &  1.77e-03 &  4.57 \\
-		MYELOID CELL ACTIVATION (REACTOME) &  1.77e-03 &  4.56 \\
-		\bottomrule
-	\end{tabular}
-	
-	\ContinuedFloat
-	
-	\subcaption{Synovial Sarcoma Metastasis Rate}
-	\centering
-	\includegraphics[width=0.75\textwidth]{img/synovial-kaplan-meier-2x}	
-\end{table}
-
-\FloatBarrier
+\paragraph*{S7 Fig.}
+%\includegraphics[width=\textwidth]{img/Selection_026}
+\label{S7_Fig} {\bf Hydra analysis identifies tumor microenvironment expression subtypes that correlate with patient outcomes in osteosarcoma and synovial sarcoma.} A: Kaplan-Meier plot showing overall survival curves for osteosarcoma wound healing and translation clusters. B: Kaplan-Meier plot showing metastasis survival curves for synovial sarcoma innate immune and translation clusters.
 
 %\paragraph*{S1 File.}
 %\label{S1_File}
