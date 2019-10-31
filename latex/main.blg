@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: plos2015.bst
+Illegal, another \bibstyle command---line 107 of file main.aux
+ : \bibstyle
+ :          {plos2015.bst}
+I'm skipping whatever remains of this command
+Database file #1: zotero-library.bib.bib
+Repeated entry---line 11910 of file zotero-library.bib.bib
+ : @book{dahlModelbasedClusteringExpression2006
+ :                                             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "ashburnerGeneOntologyTool2000"
+Warning--I didn't find a database entry for "yoshiharaInferringTumourPurity2013"
+Warning--I didn't find a database entry for "morgensternChallengeDefiningUltrahighrisk2019a"
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+`journal' is a missing field, not a string, for entry hughesBnpyReliableScalable
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in hughesBnpyReliableScalable
+Warning--empty year in hughesBnpyReliableScalable
+`journal' is a missing field, not a string, for entry jonesSciPyOpenSource2001
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in jonesSciPyOpenSource2001
+Warning--missing publisher in kassambaraSurvminerDrawingSurvival2019
+Warning--empty year in fosterEvolvingRelationshipWound
+You've used 67 entries,
+            3058 wiz_defined-function locations,
+            1126 strings with 30934 characters,
+and the built_in function-call counts, 211015 in all, are:
+= -- 25723
+> -- 1220
+< -- 10
++ -- 840
+- -- 305
+* -- 19769
+:= -- 23020
+add.period$ -- 308
+call.type$ -- 67
+change.case$ -- 6
+chr.to.int$ -- 0
+cite$ -- 72
+duplicate$ -- 11670
+empty$ -- 21052
+format.name$ -- 367
+if$ -- 48511
+int.to.chr$ -- 0
+int.to.str$ -- 67
+missing$ -- 690
+newline$ -- 384
+num.names$ -- 69
+pop$ -- 995
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1320
+stack$ -- 0
+substring$ -- 51105
+swap$ -- 1834
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 5
+while$ -- 699
+width$ -- 69
+write$ -- 827
+(There were 4 error messages)
