@@ -1,0 +1,54 @@
+\documentclass[preview]{standalone}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\begin{document}
+	\begin{table}[h]
+		\caption{Synovial Sarcoma Translational Regulation Cluster}
+		\begin{tabular}{L{10cm}R{1.5cm}R{1.5cm}}
+		\toprule
+                                               Pathway &      Adjusted P-Value &   NES \\
+\midrule
+                                TRANSLATION (REACTOME) &  3.36e-03 &  4.52 \\
+                                    TRANSLATION (GOBP) &  3.36e-03 &  4.42 \\
+                            RIBOSOME BIOGENESIS (GOBP) &  3.36e-03 &  4.42 \\
+                             RNA PROCESSING (REACTOME) &  3.36e-03 &  4.29 \\
+RRNA PROCESSING IN THE NUCLEUS AND CYTOSOL (REACTOME) &  3.36e-03 &  4.25 \\
+           MAJOR PATHWAY OF RRNA PROCESSING (REACTOME) &  3.36e-03 &  4.22 \\
+                   PEPTIDE BIOSYNTHETIC PROCESS (GOBP) &  3.36e-03 &  4.17 \\
+                                RRNA PROCESSING (GOBP) &  3.36e-03 &  4.16 \\
+                               NCRNA PROCESSING (GOBP) &  3.36e-03 &  4.16 \\
+               HALLMARK\_MYC\_TARGETS\_V1 (MSIGDB\_C2) &  3.36e-03 &  4.09 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}
+	\caption{Synovial Sarcoma Innate Immune Cluster}
+\begin{tabular}{L{10cm}R{1.5cm}R{1.5cm}}
+	\toprule
+	Pathway &      Adjusted P-value &   NES \\
+	\midrule
+	HALLMARK\_INTERFERON\_GAMMA\_RESPONSE (MSIGDB\_C2) &  1.77e-03 &  5.11 \\
+	HALLMARK\_INFLAMMATORY\_RESPONSE (MSIGDB\_C2) &  1.77e-03 &  5.01 \\
+	HALLMARK\_TNFA\_SIGNALING\_VIA\_NFKB (MSIGDB\_C2) &  1.77e-03 &  4.87 \\
+	RESPONSE TO INTERFERON-GAMMA (GOBP) &  1.77e-03 &  4.77 \\
+	INFLAMMATORY RESPONSE (GOBP) &  1.77e-03 &  4.67 \\
+	LEUKOCYTE MIGRATION (GOBP) &  1.77e-03 &  4.63 \\
+	HALLMARK\_ALLOGRAFT\_REJECTION (MSIGDB\_C2) &  1.77e-03 &  4.60 \\
+	CELLULAR RESPONSE TO INTERFERON-GAMMA (GOBP) &  1.77e-03 &  4.57 \\
+	IMMUNOREGULATORY INTERACTIONS  &  1.77e-03 &  4.57 \\
+	MYELOID CELL ACTIVATION (REACTOME) &  1.77e-03 &  4.56 \\
+	\bottomrule
+\end{tabular}
+
+\end{table}
+
+
+\end{document}

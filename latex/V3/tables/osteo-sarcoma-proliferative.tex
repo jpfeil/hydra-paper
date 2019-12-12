@@ -1,0 +1,33 @@
+\documentclass[varwidth=1000pt,border=10pt,convert={size=640x}]{standalone}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\begin{document}
+	\begin{table}[h]
+		\caption{Osteosarcoma Translational Regulation Cluster}
+		\begin{tabular}{L{10cm}R{1.5cm}R{1.5cm}}
+			\toprule
+			Pathway &      Adjusted P-value &   NES \\
+			\midrule
+			TRANSLATION (REACTOME) &  1.56e-03 &  4.14 \\
+			CHROMOSOME MAINTENANCE (REACTOME) &  1.52e-03 &  3.95 \\
+			MITOCHONDRIAL TRANSLATIONAL ELONGATION (GOBP) &  1.52e-03 &  3.84 \\
+			HALLMARK\_E2F\_TARGETS (MSIGDB\_C2) &  1.52e-03 &  3.84 \\
+			TRANSLATION (GOBP) &  1.57e-03 &  3.83 \\
+			MITOCHONDRIAL TRANSLATION ELONGATION (REACTOME) &  1.52e-03 &  3.82 \\
+			HALLMARK\_MYC\_TARGETS\_V1 (MSIGDB\_C2) &  1.52e-03 &  3.80 \\
+			DEPOSITION OF NEW CENPA-CONTAINING NUCLEOSOMES (REACTOME) &  1.52e-03 &  3.78 \\
+			NUCLEOSOME ASSEMBLY (REACTOME) &  1.52e-03 &  3.78 \\
+			MITOCHONDRIAL TRANSLATION TERMINATION (REACTOME) &  1.52e-03 &  3.75 \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+\end{document}
+
+\end{table}
+\end{document}
