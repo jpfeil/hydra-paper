@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.14)  28 DEC 2019 10:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.14)  28 DEC 2019 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -689,7 +689,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<"img/PNG/overview-fig".png, id=129, 968.61874pt x 600.2425pt>
+<"img/PNG/overview-fig".png, id=133, 968.61874pt x 600.2425pt>
 File: "img/PNG/overview-fig".png Graphic file (type png)
 <use "img/PNG/overview-fig".png>
 Package pdftex.def Info: "img/PNG/overview-fig".png  used on input line 330.
@@ -702,7 +702,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ) [7] [8]
-<img/PNG/ROC-PLOT-2x.png, id=215, 853.1875pt x 718.685pt>
+<img/PNG/ROC-PLOT-2x.png, id=219, 853.1875pt x 718.685pt>
 File: img/PNG/ROC-PLOT-2x.png Graphic file (type png)
 <use img/PNG/ROC-PLOT-2x.png>
 Package pdftex.def Info: img/PNG/ROC-PLOT-2x.png  used on input line 389.
@@ -711,95 +711,105 @@ Package pdftex.def Info: img/PNG/ROC-PLOT-2x.png  used on input line 389.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9] [10 <./img/PNG/ROC-PLOT-2x.png>] [11] [12] [13] [14] [15]
-<img/PNG/TumorMap-NBL-MM-V3-2x.png, id=333, 1606.0pt x 501.875pt>
+[9] [10 <./img/PNG/ROC-PLOT-2x.png>]
+<img/PNG/MYCN-NA-Figure-V5@2x.png, id=256, 1606.0pt x 1136.245pt>
+File: img/PNG/MYCN-NA-Figure-V5@2x.png Graphic file (type png)
+<use img/PNG/MYCN-NA-Figure-V5@2x.png>
+Package pdftex.def Info: img/PNG/MYCN-NA-Figure-V5@2x.png  used on input line 4
+11.
+(pdftex.def)             Requested size: 379.4175pt x 268.4393pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11] [12 <./img/PNG/MYCN-NA-Figure-V5@2x.png>]
+<img/PNG/NBL-MYCN-NA-HE-2x.png, id=291, 824.07875pt x 598.235pt>
+File: img/PNG/NBL-MYCN-NA-HE-2x.png Graphic file (type png)
+<use img/PNG/NBL-MYCN-NA-HE-2x.png>
+Package pdftex.def Info: img/PNG/NBL-MYCN-NA-HE-2x.png  used on input line 434.
+
+(pdftex.def)             Requested size: 379.4175pt x 275.4379pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13] [14 <./img/PNG/NBL-MYCN-NA-HE-2x.png>]
+<img/PNG/pan-cancer-figure-V4.png, id=318, 1410.0178pt x 529.22719pt>
+File: img/PNG/pan-cancer-figure-V4.png Graphic file (type png)
+<use img/PNG/pan-cancer-figure-V4.png>
+Package pdftex.def Info: img/PNG/pan-cancer-figure-V4.png  used on input line 4
+53.
+(pdftex.def)             Requested size: 398.38953pt x 149.5231pt.
+
+Overfull \hbox (18.97203pt too wide) in paragraph at lines 453--454
+[][] 
+ []
+
+[15 <./img/PNG/pan-cancer-figure-V4.png>] [16]
+<img/PNG/TumorMap-NBL-MM-V3-2x.png, id=346, 1606.0pt x 501.875pt>
 File: img/PNG/TumorMap-NBL-MM-V3-2x.png Graphic file (type png)
 <use img/PNG/TumorMap-NBL-MM-V3-2x.png>
 Package pdftex.def Info: img/PNG/TumorMap-NBL-MM-V3-2x.png  used on input line 
 483.
 (pdftex.def)             Requested size: 379.4175pt x 118.56859pt.
- [16]
-<img/PNG/clustering-screen.png, id=342, 719.68875pt x 395.22656pt>
+ [17]
+<img/PNG/clustering-screen.png, id=356, 719.68875pt x 395.22656pt>
 File: img/PNG/clustering-screen.png Graphic file (type png)
 <use img/PNG/clustering-screen.png>
 Package pdftex.def Info: img/PNG/clustering-screen.png  used on input line 488.
 
 (pdftex.def)             Requested size: 284.56311pt x 156.27258pt.
-<img/PNG/SubCluster-Analysis-V2@2x.png, id=343, 1606.0pt x 1366.10374pt>
+<img/PNG/SubCluster-Analysis-V2@2x.png, id=357, 1606.0pt x 1366.10374pt>
 File: img/PNG/SubCluster-Analysis-V2@2x.png Graphic file (type png)
 <use img/PNG/SubCluster-Analysis-V2@2x.png>
 Package pdftex.def Info: img/PNG/SubCluster-Analysis-V2@2x.png  used on input l
 ine 493.
 (pdftex.def)             Requested size: 379.4175pt x 322.74371pt.
- [17 <./img/PNG/TumorMap-NBL-MM-V3-2x.png> <./img/PNG/clustering-screen.png>]
-<img/PNG/muscle-signature-genes-2x.png, id=351, 1085.05376pt x 614.295pt>
+ [18 <./img/PNG/TumorMap-NBL-MM-V3-2x.png> <./img/PNG/clustering-screen.png>]
+<img/PNG/muscle-signature-genes-2x.png, id=365, 1085.05376pt x 614.295pt>
 File: img/PNG/muscle-signature-genes-2x.png Graphic file (type png)
 <use img/PNG/muscle-signature-genes-2x.png>
 Package pdftex.def Info: img/PNG/muscle-signature-genes-2x.png  used on input l
 ine 497.
 (pdftex.def)             Requested size: 379.4175pt x 214.80025pt.
- [18 <./img/PNG/SubCluster-Analysis-V2@2x.png>]
-
-! LaTeX Error: File `img/PNG/Selection_026' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.502 ...[width=\textwidth]{img/PNG/Selection_026}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps,.ep
-s
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `img/PNG/Selection_026' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.506 ...[width=\textwidth]{img/PNG/Selection_026}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps,.ep
-s
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./main.bbl [19 <./img/PNG/muscle-signature-genes-2x.png>]
+ [19 <./img/PNG/SubCluster-Analysis-V2@2x.png>]
+<img/PNG/ewing-jak1-expression-fig.png, id=373, 772.38562pt x 344.03531pt>
+File: img/PNG/ewing-jak1-expression-fig.png Graphic file (type png)
+<use img/PNG/ewing-jak1-expression-fig.png>
+Package pdftex.def Info: img/PNG/ewing-jak1-expression-fig.png  used on input l
+ine 502.
+(pdftex.def)             Requested size: 379.4175pt x 168.99873pt.
+<img/PNG/synovial-osteo-sarcoma-survival-figure.png, id=374, 1060.71281pt x 356
+.0803pt>
+File: img/PNG/synovial-osteo-sarcoma-survival-figure.png Graphic file (type png
+)
+<use img/PNG/synovial-osteo-sarcoma-survival-figure.png>
+Package pdftex.def Info: img/PNG/synovial-osteo-sarcoma-survival-figure.png  us
+ed on input line 506.
+(pdftex.def)             Requested size: 379.4175pt x 127.36838pt.
+ [20 <./img/PNG/muscle-signature-genes-2x.png> <./img/PNG/ewing-jak1-expression
+-fig.png>] (./main.bbl [21 <./img/PNG/synovial-osteo-sarcoma-survival-figure.pn
+g>]
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [20] [21] [22]
-[23]) 
+) [22] [23] [24])
+
 AED: lastpage setting LastPage
-[24]
+[25]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 989.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 989.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 989.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 989.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 47A811252B69BA55EBDBB9731C3DBC32;233
-(rerunfilecheck)             After:  82AF82DA9BE0008BF183F2C9A229E5D3;400.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 82AF82DA9BE0008BF183F2C9A229E5D3;400.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 989.
  ) 
 Here is how much of TeX's memory you used:
- 12140 strings out of 492982
- 183120 string characters out of 6134896
+ 12154 strings out of 492982
+ 184036 string characters out of 6134896
  320603 words of memory out of 5000000
- 15299 multiletter control sequences out of 15000+600000
+ 15320 multiletter control sequences out of 15000+600000
  10521 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,43p,2025b,596s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -821,10 +831,10 @@ t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (24 pages, 2305260 bytes).
+Output written on main.pdf (25 pages, 5121122 bytes).
 PDF statistics:
- 495 PDF objects out of 1000 (max. 8388607)
- 433 compressed objects within 5 object streams
- 141 named destinations out of 1000 (max. 500000)
- 11823 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 514 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 11856 words of extra memory for PDF output out of 12000 (max. 10000000)
 

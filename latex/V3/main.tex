@@ -408,7 +408,7 @@ We applied the hydra unsupervised enrichment analysis to the MYCN-NA cohort. The
 
 % TODO Link supplemental tables
 \begin{figure}[!h]
-	%\includegraphics[width=\textwidth]{img/MYCN-NA-Figure-V5@2x}
+	\includegraphics[width=\textwidth]{img/PNG/MYCN-NA-Figure-V5@2x}
 	\caption{{\bf Hydra analysis identifies three distinct tumor microenvironment expression subtypes in MYCN non-amplified neuroblastoma samples.}
 	A: Gene expression heatmap displaying expression profiles of hydra clusters. Heatmap columns (samples) are ordered by hydra cluster membership. Ward hierarchical clustering applied to rows (genes) identified coordinated expression of GO term genes. These GO term genes were originally identified by the hydra \textit{enrich} command. B: GSEA performed on each cluster identified enrichment of tumor microenvironment and proliferative signaling gene sets. C: xCell enrichment score distributions for B-cells, CD8+ naive T-cells, and Fibroblasts, and the ESTIMATE TumorPurity score distributions for each cluster; enrichments for all cell types are available in \nameref{S1_File}. Abbreviations: Normalized Enrichment Score (NES), Epithelial to Mesenchymal Transition (EMT), Gene Ontology Biological Process (GOBP).
 	\label{MYCN-NA}}
@@ -431,7 +431,7 @@ Three of the ATRX-deleted samples clustered with the high immune expression clus
 H\&E slide images for the 5 MYCN-NA neuroblastomas were reviewed by a licensed pathologist and scored for evidence of inflammation. The hydra analysis agreed with the pathologist review in 4 out of 5 samples, with sample 4 as the one discordant sample (Fig \ref{hefig}). Sample 4 is from lymph node tissue, which may have inherently high immune expression because the lymph nodes normally contain lymphocytes. Small round blue cell tumors are also difficult to differentiate from immune cells because these cell types share histological features. Notably, concordant ESTIMATE values were present in 3 out of 5 samples scored by the pathologist: samples 1D, 1R, and 2. 
 
 \begin{figure}[!h]
-	%\includegraphics[width=\textwidth]{img/NBL-MYCN-NA-HE-2x}
+	\includegraphics[width=\textwidth]{img/PNG/NBL-MYCN-NA-HE-2x}
 	\caption{{\bf Hydra method correlates with histopathology review of tumor H\&E slides.}
 		The tumor microenvironments of stage 4 MYCN-NA neuroblastoma patient samples were analyzed using gene expression and H\&E slide image data. Inflammation levels in the same tumor samples were assessed from H\&E slide images at 20x magnification (Moderate inflammation: 20-30\% lymphocyte content; Minimal inflammation: $<$ 10\% lymphocyte content). ATRX mutation status, hydra cluster assignment, and ESTIMATE ImmuneScore value are also indicated. Concordant and discordant predictions are marked with a positive (+) and negative (-) sign, respectively.}
 	\label{hefig}
@@ -450,7 +450,7 @@ We applied the \textit{filter} method to Ewing sarcoma and discovered multimodal
 We next investigated whether similar hydra clusters could be identified across other small blue round cell tumors. We first performed TumorMap analysis, which is a dimensionality reduction approach for visualizing genomic data on a 2D surface \cite{newtonTumorMapExploringMolecular2017}. We found that small blue round cell tumor types --- MYCN-NA neuroblastoma, osteosarcoma, Ewing sarcoma, synovial sarcoma, alveolar rhabdomyosarcoma, and embryonal rhabdomyosarcoma --- all form separate TumorMap clusters (Fig \ref{pancan}A). This suggests there is a strong cell-of-origin signal driving the clustering of these cancer types, which is an observation that was recently made in the larger TCGA dataset of adult cancers \cite{hoadleyCellofOriginPatternsDominate2018}. While pan-cancer analysis emphasized the differences across small blue round cell tumors, we hypothesized that expression subtypes within histological cancer types would share similar biological themes.
 
 \begin{figure}[!h]
-	%\includegraphics[width=1.05\textwidth]{img/hydra-pan-small-round-blue-V2-2x}
+	\includegraphics[width=1.05\textwidth]{img/PNG/pan-cancer-figure-V4}
 	\caption{{\bf Hydra analysis of small blue round cell tumors reveals similar expression subtypes across cancer types.}A: TumorMap visualization of 6 small blue round cell tumor types. B: Hierarchically clustered heatmap for the top 10 enriched gene sets across the 21 small blue round cell tumor expression subtypes. Each column corresponds to a cancer type and an expression subtype (x-axis). Each row corresponds to a gene set. The expression subtype was manually assigned after reviewing the most highly enriched gene sets for each cancer expression subtype.}
 	\label{pancan}
 \end{figure}
@@ -499,11 +499,11 @@ Precision oncology aims to differentiate tumors of the same diagnosis in order t
 
 % Add panel labels
 \paragraph*{S6 Fig.}
-\includegraphics[width=\textwidth]{img/PNG/Selection_026}
+\includegraphics[width=\textwidth]{img/PNG/ewing-jak1-expression-fig}
 \label{S6_Fig} {\bf Hydra analysis identifies correlation between expression of druggable JAK1 gene and mast cell expression signature in Ewing sarcoma.} A: We show the utility of the mixture model approach for identifying important gene expression patterns for precision medicine applications. JAK1 is a druggable gene, but JAK1 is also an important gene in immune cell signaling pathways. B: Boxplot showing the xCell mast cell enrichment score for three clusters associated with JAK1 expression.
 
 \paragraph*{S7 Fig.}
-\includegraphics[width=\textwidth]{img/PNG/Selection_026}
+\includegraphics[width=\textwidth]{img/PNG/synovial-osteo-sarcoma-survival-figure}
 \label{S7_Fig} {\bf Hydra analysis identifies tumor microenvironment expression subtypes that correlate with patient outcomes in osteosarcoma and synovial sarcoma.} A: Kaplan-Meier plot showing overall survival curves for osteosarcoma wound healing and translation clusters. B: Kaplan-Meier plot showing metastasis survival curves for synovial sarcoma innate immune and translation clusters.
 
 \paragraph*{S1 File.}
