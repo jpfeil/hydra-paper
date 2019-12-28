@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.14)  28 DEC 2019 12:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.14)  28 DEC 2019 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -716,7 +716,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: img/PNG/MYCN-NA-Figure-V5@2x.png Graphic file (type png)
 <use img/PNG/MYCN-NA-Figure-V5@2x.png>
 Package pdftex.def Info: img/PNG/MYCN-NA-Figure-V5@2x.png  used on input line 4
-11.
+12.
 (pdftex.def)             Requested size: 379.4175pt x 268.4393pt.
 
 
@@ -726,7 +726,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <img/PNG/NBL-MYCN-NA-HE-2x.png, id=290, 824.07875pt x 598.235pt>
 File: img/PNG/NBL-MYCN-NA-HE-2x.png Graphic file (type png)
 <use img/PNG/NBL-MYCN-NA-HE-2x.png>
-Package pdftex.def Info: img/PNG/NBL-MYCN-NA-HE-2x.png  used on input line 432.
+Package pdftex.def Info: img/PNG/NBL-MYCN-NA-HE-2x.png  used on input line 433.
 
 (pdftex.def)             Requested size: 379.4175pt x 275.4379pt.
 
@@ -737,7 +737,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: img/PNG/SubCluster-Analysis-V2@2x.png Graphic file (type png)
 <use img/PNG/SubCluster-Analysis-V2@2x.png>
 Package pdftex.def Info: img/PNG/SubCluster-Analysis-V2@2x.png  used on input l
-ine 442.
+ine 443.
 (pdftex.def)             Requested size: 379.4175pt x 322.74371pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -845,7 +845,7 @@ t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (25 pages, 5121701 bytes).
+Output written on main.pdf (25 pages, 5121721 bytes).
 PDF statistics:
  514 PDF objects out of 1000 (max. 8388607)
  441 compressed objects within 5 object streams
