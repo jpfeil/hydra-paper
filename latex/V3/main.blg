@@ -2,12 +2,12 @@ This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: plos2015.bst
-Illegal, another \bibstyle command---line 105 of file main.aux
+Illegal, another \bibstyle command---line 107 of file main.aux
  : \bibstyle
  :          {plos2015.bst}
 I'm skipping whatever remains of this command
 Database file #1: zotero-library.bib
-Repeated entry---line 11915 of file zotero-library.bib
+Repeated entry---line 12484 of file zotero-library.bib
  : @book{dahlModelbasedClusteringExpression2006
  :                                             ,
 I'm skipping whatever remains of this entry
@@ -15,54 +15,304 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+`journal' is a missing field, not a string, for entry vivianToilEnablesReproducible2017
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in vivianToilEnablesReproducible2017
+Warning--empty year in vivianToilEnablesReproducible2017
+`journal' is a missing field, not a string, for entry pughGeneticLandscapeHighrisk2013
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in pughGeneticLandscapeHighrisk2013
+Warning--empty year in pughGeneticLandscapeHighrisk2013
+`journal' is a missing field, not a string, for entry goldmanUCSCXenaPlatform2018
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in goldmanUCSCXenaPlatform2018
+Warning--empty year in goldmanUCSCXenaPlatform2018
+`journal' is a missing field, not a string, for entry thecancergenomeatlasresearchnetworkCancerGenomeAtlas2013
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in thecancergenomeatlasresearchnetworkCancerGenomeAtlas2013
+Warning--empty year in thecancergenomeatlasresearchnetworkCancerGenomeAtlas2013
+`journal' is a missing field, not a string, for entry newtonTumorMapExploringMolecular2017
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in newtonTumorMapExploringMolecular2017
+Warning--empty year in newtonTumorMapExploringMolecular2017
+`journal' is a missing field, not a string, for entry vaskeComparativeTumorRNA2019
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in vaskeComparativeTumorRNA2019
+Warning--empty year in vaskeComparativeTumorRNA2019
+`journal' is a missing field, not a string, for entry joyceCellExclusionImmune2015
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in joyceCellExclusionImmune2015
+Warning--empty year in joyceCellExclusionImmune2015
+`journal' is a missing field, not a string, for entry chenElementsCancerImmunity2017
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in chenElementsCancerImmunity2017
+Warning--empty year in chenElementsCancerImmunity2017
+`journal' is a missing field, not a string, for entry mellmanCancerImmunotherapyComes2011
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in mellmanCancerImmunotherapyComes2011
+Warning--empty year in mellmanCancerImmunotherapyComes2011
+`journal' is a missing field, not a string, for entry pageImmuneModulationCancer2014
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in pageImmuneModulationCancer2014
+Warning--empty year in pageImmuneModulationCancer2014
+`journal' is a missing field, not a string, for entry andersCountbasedDifferentialExpression2013
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in andersCountbasedDifferentialExpression2013
+Warning--empty year in andersCountbasedDifferentialExpression2013
+`journal' is a missing field, not a string, for entry andersDifferentialExpressionAnalysis2010
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in andersDifferentialExpressionAnalysis2010
+Warning--empty year in andersDifferentialExpressionAnalysis2010
+`journal' is a missing field, not a string, for entry sonesonComparisonMethodsDifferential2013
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in sonesonComparisonMethodsDifferential2013
+Warning--empty year in sonesonComparisonMethodsDifferential2013
+`journal' is a missing field, not a string, for entry subramanianGeneSetEnrichment2005
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in subramanianGeneSetEnrichment2005
+Warning--empty year in subramanianGeneSetEnrichment2005
+`journal' is a missing field, not a string, for entry moothaPGC1alpharesponsiveGenesInvolved2003
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in moothaPGC1alpharesponsiveGenesInvolved2003
+Warning--empty year in moothaPGC1alpharesponsiveGenesInvolved2003
+`journal' is a missing field, not a string, for entry liberzonMolecularSignaturesDatabase2011
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in liberzonMolecularSignaturesDatabase2011
+Warning--empty year in liberzonMolecularSignaturesDatabase2011
+`journal' is a missing field, not a string, for entry oyeladeClusteringAlgorithmsTheir2016
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in oyeladeClusteringAlgorithmsTheir2016
+Warning--empty year in oyeladeClusteringAlgorithmsTheir2016
+`journal' is a missing field, not a string, for entry johnM3CMonteCarlo2018
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in johnM3CMonteCarlo2018
+Warning--empty year in johnM3CMonteCarlo2018
+`journal' is a missing field, not a string, for entry wilkersonConsensusClusterPlusClassDiscovery2010a
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in wilkersonConsensusClusterPlusClassDiscovery2010a
+Warning--empty year in wilkersonConsensusClusterPlusClassDiscovery2010a
+`journal' is a missing field, not a string, for entry lenzPrincipalComponentsAnalysis2016
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in lenzPrincipalComponentsAnalysis2016
+Warning--empty year in lenzPrincipalComponentsAnalysis2016
+Warning--there's a month but no year in yiliMultimodalityCriterionFeature2005
+`journal' is a missing field, not a string, for entry ghoshMixtureModelsAssessing2004
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in ghoshMixtureModelsAssessing2004
+Warning--empty year in ghoshMixtureModelsAssessing2004
+Warning--empty chapter in dahlModelBasedClusteringExpression2006
+Warning--there's a month but no year in dahlModelBasedClusteringExpression2006
+`journal' is a missing field, not a string, for entry kimVariableSelectionClustering2006
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in kimVariableSelectionClustering2006
+Warning--empty year in kimVariableSelectionClustering2006
+Warning--there's a month but no year in gelmanBayesianDataAnalysis2013
+`journal' is a missing field, not a string, for entry thallBayesianNonparametricStatistics2017
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in thallBayesianNonparametricStatistics2017
+Warning--empty year in thallBayesianNonparametricStatistics2017
+`journal' is a missing field, not a string, for entry teh2010dirichlet
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in teh2010dirichlet
+Warning--empty year in teh2010dirichlet
+`journal' is a missing field, not a string, for entry antoniakMixturesDirichletProcesses1974
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in antoniakMixturesDirichletProcesses1974
+Warning--empty year in antoniakMixturesDirichletProcesses1974
+`journal' is a missing field, not a string, for entry fergusonBayesianAnalysisNonparametric1973
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in fergusonBayesianAnalysisNonparametric1973
+Warning--empty year in fergusonBayesianAnalysisNonparametric1973
+`journal' is a missing field, not a string, for entry muller2004nonparametric
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in muller2004nonparametric
+Warning--empty year in muller2004nonparametric
+`journal' is a missing field, not a string, for entry gorurDirichletProcessGaussian2010
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in gorurDirichletProcessGaussian2010
+Warning--empty year in gorurDirichletProcessGaussian2010
+Warning--there's a month but no year in hughes2013memoized
+`journal' is a missing field, not a string, for entry nealMarkovChainSampling2000
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in nealMarkovChainSampling2000
+Warning--empty year in nealMarkovChainSampling2000
 `journal' is a missing field, not a string, for entry hughesBnpyReliableScalable
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in hughesBnpyReliableScalable
 Warning--empty year in hughesBnpyReliableScalable
+`journal' is a missing field, not a string, for entry Ashburner2000
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in Ashburner2000
+Warning--empty year in Ashburner2000
+`journal' is a missing field, not a string, for entry gene2018gene
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in gene2018gene
+Warning--empty year in gene2018gene
+`journal' is a missing field, not a string, for entry merico2010enrichment
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in merico2010enrichment
+Warning--empty year in merico2010enrichment
+`journal' is a missing field, not a string, for entry yuClusterProfilerPackageComparing2012
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in yuClusterProfilerPackageComparing2012
+Warning--empty year in yuClusterProfilerPackageComparing2012
+`journal' is a missing field, not a string, for entry tamayoLimitationsSimpleGene2016
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in tamayoLimitationsSimpleGene2016
+Warning--empty year in tamayoLimitationsSimpleGene2016
+`journal' is a missing field, not a string, for entry korotkevichFastGeneSet2019
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in korotkevichFastGeneSet2019
+Warning--empty year in korotkevichFastGeneSet2019
+`journal' is a missing field, not a string, for entry barbieSystematicRNAInterference2009
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in barbieSystematicRNAInterference2009
+Warning--empty year in barbieSystematicRNAInterference2009
+`journal' is a missing field, not a string, for entry hanzelmannGSVAGeneSet2013
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in hanzelmannGSVAGeneSet2013
+Warning--empty year in hanzelmannGSVAGeneSet2013
+`journal' is a missing field, not a string, for entry tarcaComparisonGeneSet2013
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in tarcaComparisonGeneSet2013
+Warning--empty year in tarcaComparisonGeneSet2013
+`journal' is a missing field, not a string, for entry zwienerTransformingRNASeqData2014
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in zwienerTransformingRNASeqData2014
+Warning--empty year in zwienerTransformingRNASeqData2014
+`journal' is a missing field, not a string, for entry lagardeChromosomeInstabilityAccounts2013
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in lagardeChromosomeInstabilityAccounts2013
+Warning--empty year in lagardeChromosomeInstabilityAccounts2013
+`journal' is a missing field, not a string, for entry aranXCellDigitallyPortraying2017
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in aranXCellDigitallyPortraying2017
+Warning--empty year in aranXCellDigitallyPortraying2017
+`journal' is a missing field, not a string, for entry newmanRobustEnumerationCell2015
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in newmanRobustEnumerationCell2015
+Warning--empty year in newmanRobustEnumerationCell2015
+`journal' is a missing field, not a string, for entry yoshiharaInferringTumourPurity2013a
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in yoshiharaInferringTumourPurity2013a
+Warning--empty year in yoshiharaInferringTumourPurity2013a
+`journal' is a missing field, not a string, for entry tibshirani2001estimating
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in tibshirani2001estimating
+Warning--empty year in tibshirani2001estimating
+`journal' is a missing field, not a string, for entry pedregosa2011scikit
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in pedregosa2011scikit
+Warning--empty year in pedregosa2011scikit
 `journal' is a missing field, not a string, for entry jonesSciPyOpenSource2001
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in jonesSciPyOpenSource2001
+Warning--empty year in jonesSciPyOpenSource2001
+`journal' is a missing field, not a string, for entry 2019arXiv190710121V
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in 2019arXiv190710121V
+Warning--empty year in 2019arXiv190710121V
+`journal' is a missing field, not a string, for entry Terpilowski2019
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in Terpilowski2019
+Warning--empty year in Terpilowski2019
 Warning--missing publisher in kassambaraSurvminerDrawingSurvival2019
+Warning--there's a month but no year in kassambaraSurvminerDrawingSurvival2019
+`journal' is a missing field, not a string, for entry morgensternChallengeDefiningUltrahighrisk2019
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in morgensternChallengeDefiningUltrahighrisk2019
+Warning--empty year in morgensternChallengeDefiningUltrahighrisk2019
+`journal' is a missing field, not a string, for entry cotto2017dgidb
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in cotto2017dgidb
+Warning--empty year in cotto2017dgidb
+`journal' is a missing field, not a string, for entry fosterEvolvingRelationshipWound
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in fosterEvolvingRelationshipWound
 Warning--empty year in fosterEvolvingRelationshipWound
-You've used 66 entries,
+`journal' is a missing field, not a string, for entry bourgonIndependentFilteringIncreases2010
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in bourgonIndependentFilteringIncreases2010
+Warning--empty year in bourgonIndependentFilteringIncreases2010
+`journal' is a missing field, not a string, for entry tritchlerFilteringGenesCluster2009
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in tritchlerFilteringGenesCluster2009
+Warning--empty year in tritchlerFilteringGenesCluster2009
+`journal' is a missing field, not a string, for entry carcamo-oriveAnalysisTranscriptionalVariability2017
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in carcamo-oriveAnalysisTranscriptionalVariability2017
+Warning--empty year in carcamo-oriveAnalysisTranscriptionalVariability2017
+`journal' is a missing field, not a string, for entry maechler2012cluster
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in maechler2012cluster
+Warning--empty year in maechler2012cluster
+`journal' is a missing field, not a string, for entry reevesAntigenProcessingImmune2017
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in reevesAntigenProcessingImmune2017
+Warning--empty year in reevesAntigenProcessingImmune2017
+`journal' is a missing field, not a string, for entry hermansJAK1JAK2Inhibitor2018
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in hermansJAK1JAK2Inhibitor2018
+Warning--empty year in hermansJAK1JAK2Inhibitor2018
+`journal' is a missing field, not a string, for entry hoadleyCellofOriginPatternsDominate2018
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in hoadleyCellofOriginPatternsDominate2018
+Warning--empty year in hoadleyCellofOriginPatternsDominate2018
+`journal' is a missing field, not a string, for entry majzner2017harnessing
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in majzner2017harnessing
+Warning--empty year in majzner2017harnessing
+`journal' is a missing field, not a string, for entry cunananEfficientBasketTrial2017
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in cunananEfficientBasketTrial2017
+Warning--empty year in cunananEfficientBasketTrial2017
+`journal' is a missing field, not a string, for entry rheeImpactTumorPurity2018
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in rheeImpactTumorPurity2018
+Warning--empty year in rheeImpactTumorPurity2018
+`journal' is a missing field, not a string, for entry raphael2017integrated
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in raphael2017integrated
+Warning--empty year in raphael2017integrated
+You've used 68 entries,
             3058 wiz_defined-function locations,
-            1114 strings with 28470 characters,
-and the built_in function-call counts, 190583 in all, are:
-= -- 23410
-> -- 1180
+            1114 strings with 29396 characters,
+and the built_in function-call counts, 171728 in all, are:
+= -- 19899
+> -- 1212
 < -- 10
-+ -- 800
-- -- 295
-* -- 17573
-:= -- 20760
-add.period$ -- 303
-call.type$ -- 66
++ -- 816
+- -- 303
+* -- 16446
+:= -- 18870
+add.period$ -- 192
+call.type$ -- 68
 change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 71
-duplicate$ -- 11421
-empty$ -- 18838
-format.name$ -- 356
-if$ -- 43939
+cite$ -- 201
+duplicate$ -- 8254
+empty$ -- 17326
+format.name$ -- 365
+if$ -- 38959
 int.to.chr$ -- 0
-int.to.str$ -- 66
-missing$ -- 674
-newline$ -- 378
-num.names$ -- 68
-pop$ -- 979
+int.to.str$ -- 68
+missing$ -- 693
+newline$ -- 330
+num.names$ -- 70
+pop$ -- 1194
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1289
+skip$ -- 1262
 stack$ -- 0
-substring$ -- 44720
-swap$ -- 1800
+substring$ -- 41900
+swap$ -- 1769
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 683
-width$ -- 68
-write$ -- 814
-(There were 4 error messages)
+warning$ -- 133
+while$ -- 642
+width$ -- 70
+write$ -- 659
+(There were 65 error messages)
