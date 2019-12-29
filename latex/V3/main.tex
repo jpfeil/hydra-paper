@@ -394,15 +394,15 @@ To assess how well hydra detects differentially expressed pathways as compared t
 
 We further investigated the performance of these methods by plotting the AUC against the effect size at 10 and 25\%DEG (Fig \ref{rocplot}B). The hydra method performed better across all effect sizes, achieving near perfect performance above an effect size of 2.0 and 0.75 at 10 and 25\%DEG, respectively. ssGSEA and GSVA performed similarly at low effect sizes, but ssGSEA performed better than GSVA as the effect size increased. Overall, the hydra framework performed significantly better than these standard gene set enrichment approaches, particularly at low effect sizes. Therefore, the hydra approach is better suited for subtyping within a disease cohort when the effect sizes are smaller and fewer genes are differentially expressed.
 
-\subsection{Hydra Analysis of High-Risk Neuroblastoma}
+\subsection*{Hydra Analysis of High-Risk Neuroblastoma}
 High-risk neuroblastoma is an aggressive disease and is resistant to intensive therapy. Further subtyping of high-risk neuroblastoma may identify novel therapeutic targets and improve risk stratification. We hypothesized that unsupervised clustering of multimodally expressed genes associated with enriched Gene Ontology terms would identify expression subtypes of high-risk neuroblastoma tumors. TumorMap  analysis \cite{newtonTumorMapExploringMolecular2017} showed that the MYCN-non-amplified (MYCN-NA) neuroblastoma samples clustered separately from MYCN-amplified (MYCN-A) and stage 4S neuroblastoma samples (\nameref{S2_Fig}). We focused on the MYCN-NA neuroblastoma tumor samples because this is the largest set of samples (N=70) and variation within MYCN-NA tumors is not well understood \cite{morgensternChallengeDefiningUltrahighrisk2019}.
 
-\subsubsection{Hydra \textit{filter} Analysis of High-Risk Neuroblastoma Identifies  Multimodally Expressed Genes}
+\subsubsection*{Hydra \textit{filter} Analysis of High-Risk Neuroblastoma Identifies 931 Multimodally Expressed Genes.}
 After completing the performance assessment with synthetic gene expression data, we applied the hydra filter analysis to the TARGET high-risk neuroblastoma cohort. This analysis identified 931 genes within the MYCN-NA neuroblastoma cohort with a multimodal expression distribution. Of the 931 multimodally expressed genes, 358 genes were found to be potentially druggable by the Drug Gene Interaction Database (DGiDB) and 61 genes were associated with an FDA-approved, anti-neoplastic drug  \cite{cotto2017dgidb}. We next looked to see if unsupervised clustering of multimodally expressed genes revealed coordinated expression of annotated gene sets.
 
 % TODO: Add sweep analysis
-\subsubsection{Hydra \textit{sweep} Analysis of High-Risk Neuroblastoma Reveals Subtype Expression Within Curated Gene Set Databases}
-We next investigated the coordinated expression of MSigDB 
+\subsubsection*{Hydra \textit{sweep} Analysis of High-Risk Neuroblastoma Reveals Subtype Expression Within Curated Gene Set Databases}
+We next investigated the coordinated expression of multimodally expressed genes within MSigDB gene sets. Applying the hydra \textit{sweep} command to the MYCN-NA neuroblastoma cohort discovered 
 
 \subsubsection*{Hydra \textit{enrich} Analysis of High-Risk Neuroblastoma Identifies Distinct Tumor Microenvironment States}
 We applied the hydra unsupervised enrichment analysis to the MYCN-NA cohort. The multimodal expression filter identified 428 genes with a minor component probability greater than 20\% (\nameref{S1_File}). Gene Ontology analysis found enrichment for the following GO terms (FDR: q $<$ 0.01): adaptive immune response (24 genes), mesenchyme development (12 genes), steroid hormone secretion (4 genes), and response to corticosterone (4 genes). DP-GMM analysis of the 44 enriched GO term genes identified three clusters of neuroblastoma samples (Fig \ref{MYCN-NA}A). The posterior probability for belonging to each cluster was 42\%, 34\%, and 17\% for clusters 1, 2, and 3, respectively. The posterior probability for a sample belonging to a new cluster was about 6\% in our analysis. We next investigated cluster-specific expression signatures using GSEA (see Hydra Method section). Cluster 1 was enriched for adaptive immune response gene sets, cluster 2 was enriched for proliferative signaling gene sets, and cluster 3 was enriched for cancer-associated fibroblast gene sets (Fig \ref{MYCN-NA}B). Cluster 3 shares several features of a wound healing response, including fibroblast recruitment, extracellular matrix organization, and infiltration of immune cells \cite{fosterEvolvingRelationshipWound}. 
@@ -501,7 +501,7 @@ Precision oncology aims to differentiate tumors of the same diagnosis in order t
 
 % Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
 \paragraph*{S1 Fig.}
-%\includegraphics[width=\textwidth]{img/bnpy-example-fit}
+\includegraphics[width=\textwidth]{img/PNG/bnpy-example-fit}
 \label{S1_Fig}
 {\bf Example of bnpy memoized online variational inference clustering on toy data.} We used the bnpy moVB algorithm to infer the number of clusters from synthetic data. The model first randomly assigns clusters. Then, the model iteratively improves the model fit, creating and destroying clusters until the model converges on the correct number of clusters \cite{hughesBnpyReliableScalable}. 
 

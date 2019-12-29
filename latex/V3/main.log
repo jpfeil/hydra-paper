@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.14)  28 DEC 2019 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.14)  28 DEC 2019 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -689,7 +689,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<"img/PNG/overview-fig".png, id=133, 968.61874pt x 600.2425pt>
+<"img/PNG/overview-fig".png, id=121, 968.61874pt x 600.2425pt>
 File: "img/PNG/overview-fig".png Graphic file (type png)
 <use "img/PNG/overview-fig".png>
 Package pdftex.def Info: "img/PNG/overview-fig".png  used on input line 330.
@@ -702,7 +702,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ) [7] [8]
-<img/PNG/ROC-PLOT-2x.png, id=219, 853.1875pt x 718.685pt>
+<img/PNG/ROC-PLOT-2x.png, id=207, 853.1875pt x 718.685pt>
 File: img/PNG/ROC-PLOT-2x.png Graphic file (type png)
 <use img/PNG/ROC-PLOT-2x.png>
 Package pdftex.def Info: img/PNG/ROC-PLOT-2x.png  used on input line 389.
@@ -712,7 +712,7 @@ Package pdftex.def Info: img/PNG/ROC-PLOT-2x.png  used on input line 389.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9] [10 <./img/PNG/ROC-PLOT-2x.png>]
-<img/PNG/MYCN-NA-Figure-V5@2x.png, id=256, 1606.0pt x 1136.245pt>
+<img/PNG/MYCN-NA-Figure-V5@2x.png, id=246, 1606.0pt x 1136.245pt>
 File: img/PNG/MYCN-NA-Figure-V5@2x.png Graphic file (type png)
 <use img/PNG/MYCN-NA-Figure-V5@2x.png>
 Package pdftex.def Info: img/PNG/MYCN-NA-Figure-V5@2x.png  used on input line 4
@@ -723,7 +723,7 @@ Package pdftex.def Info: img/PNG/MYCN-NA-Figure-V5@2x.png  used on input line 4
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [11] [12 <./img/PNG/MYCN-NA-Figure-V5@2x.png>]
-<img/PNG/NBL-MYCN-NA-HE-2x.png, id=290, 824.07875pt x 598.235pt>
+<img/PNG/NBL-MYCN-NA-HE-2x.png, id=281, 824.07875pt x 598.235pt>
 File: img/PNG/NBL-MYCN-NA-HE-2x.png Graphic file (type png)
 <use img/PNG/NBL-MYCN-NA-HE-2x.png>
 Package pdftex.def Info: img/PNG/NBL-MYCN-NA-HE-2x.png  used on input line 433.
@@ -733,7 +733,7 @@ Package pdftex.def Info: img/PNG/NBL-MYCN-NA-HE-2x.png  used on input line 433.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/PNG/SubCluster-Analysis-V2@2x.png, id=292, 1606.0pt x 1366.10374pt>
+<img/PNG/SubCluster-Analysis-V2@2x.png, id=283, 1606.0pt x 1366.10374pt>
 File: img/PNG/SubCluster-Analysis-V2@2x.png Graphic file (type png)
 <use img/PNG/SubCluster-Analysis-V2@2x.png>
 Package pdftex.def Info: img/PNG/SubCluster-Analysis-V2@2x.png  used on input l
@@ -743,7 +743,7 @@ ine 443.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [13]
-<img/PNG/muscle-signature-genes-2x.png, id=305, 1085.05376pt x 614.295pt>
+<img/PNG/muscle-signature-genes-2x.png, id=296, 1085.05376pt x 614.295pt>
 File: img/PNG/muscle-signature-genes-2x.png Graphic file (type png)
 <use img/PNG/muscle-signature-genes-2x.png>
 Package pdftex.def Info: img/PNG/muscle-signature-genes-2x.png  used on input l
@@ -755,7 +755,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14 <./img/PNG/NBL-MYCN-NA-HE-2x.png>] [15 <./img/PNG/SubCluster-Analysis-V2@2x
 .png>]
-<img/PNG/pan-cancer-figure-V4.png, id=328, 1410.0178pt x 529.22719pt>
+<img/PNG/pan-cancer-figure-V4.png, id=318, 1410.0178pt x 529.22719pt>
 File: img/PNG/pan-cancer-figure-V4.png Graphic file (type png)
 <use img/PNG/pan-cancer-figure-V4.png>
 Package pdftex.def Info: img/PNG/pan-cancer-figure-V4.png  used on input line 4
@@ -769,7 +769,7 @@ Overfull \hbox (18.97203pt too wide) in paragraph at lines 469--470
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/PNG/synovial-osteo-sarcoma-survival-figure.png, id=331, 1060.71281pt x 356
+<img/PNG/synovial-osteo-sarcoma-survival-figure.png, id=321, 1060.71281pt x 356
 .0803pt>
 File: img/PNG/synovial-osteo-sarcoma-survival-figure.png Graphic file (type png
 )
@@ -782,31 +782,36 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16 <./img/PNG/muscle-signature-genes-2x.png>] [17 <./img/PNG/pan-cancer-figure
 -V4.png> <./img/PNG/synovial-osteo-sarcoma-survival-figure.png>] [18]
-<img/PNG/TumorMap-NBL-MM-V3-2x.png, id=364, 1606.0pt x 501.875pt>
+<img/PNG/bnpy-example-fit.png, id=354, 642.4pt x 425.59pt>
+File: img/PNG/bnpy-example-fit.png Graphic file (type png)
+<use img/PNG/bnpy-example-fit.png>
+Package pdftex.def Info: img/PNG/bnpy-example-fit.png  used on input line 504.
+(pdftex.def)             Requested size: 379.4175pt x 251.36865pt.
+<img/PNG/TumorMap-NBL-MM-V3-2x.png, id=356, 1606.0pt x 501.875pt>
 File: img/PNG/TumorMap-NBL-MM-V3-2x.png Graphic file (type png)
 <use img/PNG/TumorMap-NBL-MM-V3-2x.png>
 Package pdftex.def Info: img/PNG/TumorMap-NBL-MM-V3-2x.png  used on input line 
 509.
 (pdftex.def)             Requested size: 379.4175pt x 118.56859pt.
-<img/PNG/clustering-screen.png, id=365, 719.68875pt x 395.22656pt>
+ [19 <./img/PNG/bnpy-example-fit.png>]
+<img/PNG/clustering-screen.png, id=367, 719.68875pt x 395.22656pt>
 File: img/PNG/clustering-screen.png Graphic file (type png)
 <use img/PNG/clustering-screen.png>
 Package pdftex.def Info: img/PNG/clustering-screen.png  used on input line 514.
 
 (pdftex.def)             Requested size: 284.56311pt x 156.27258pt.
- [19 <./img/PNG/TumorMap-NBL-MM-V3-2x.png>]
-<img/PNG/ewing-jak1-expression-fig.png, id=376, 772.38562pt x 344.03531pt>
+<img/PNG/ewing-jak1-expression-fig.png, id=368, 772.38562pt x 344.03531pt>
 File: img/PNG/ewing-jak1-expression-fig.png Graphic file (type png)
 <use img/PNG/ewing-jak1-expression-fig.png>
 Package pdftex.def Info: img/PNG/ewing-jak1-expression-fig.png  used on input l
 ine 524.
 (pdftex.def)             Requested size: 379.4175pt x 168.99873pt.
- (./main.bbl [20 <./img/PNG/clustering-screen.png> <./img/PNG/ewing-jak1-expres
-sion-fig.png>]
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+ [20 <./img/PNG/TumorMap-NBL-MM-V3-2x.png> <./img/PNG/clustering-screen.png>] (
+./main.bbl [21 <./img/PNG/ewing-jak1-expression-fig.png>] (/usr/share/texlive/t
+exmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [21] [22] [23]
-[24]) 
+) [22]
+[23] [24]) 
 AED: lastpage setting LastPage
 [25]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1009.
@@ -816,17 +821,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1009.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1009.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F34F1E03C0389E2E842A905397BEDE8F;395.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1009.
  ) 
 Here is how much of TeX's memory you used:
  12154 strings out of 492982
- 184056 string characters out of 6134896
- 323178 words of memory out of 5000000
- 15320 multiletter control sequences out of 15000+600000
+ 184122 string characters out of 6134896
+ 323145 words of memory out of 5000000
+ 15319 multiletter control sequences out of 15000+600000
  10521 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,43p,2025b,596s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,43p,2025b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
@@ -845,10 +850,10 @@ t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (25 pages, 5121721 bytes).
+Output written on main.pdf (25 pages, 5168560 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 441 compressed objects within 5 object streams
+ 506 PDF objects out of 1000 (max. 8388607)
+ 431 compressed objects within 5 object streams
  142 named destinations out of 1000 (max. 500000)
- 11856 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 11837 words of extra memory for PDF output out of 12000 (max. 10000000)
 
