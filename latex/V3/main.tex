@@ -404,6 +404,12 @@ After completing the performance assessment with synthetic gene expression data,
 \subsubsection*{Hydra \textit{sweep} Analysis of High-Risk Neuroblastoma Reveals Subtype Expression Within Curated Gene Set Databases}
 We next investigated the coordinated expression of multimodally expressed genes within MSigDB gene sets. Applying the hydra \textit{sweep} command to the MYCN-NA neuroblastoma cohort discovered 
 
+\begin{figure}[!h]
+	\includegraphics[width=\textwidth]{img/PNG/sweep-gene-set-network-2x}
+	\caption{{\bf Hydra sweep}
+		\label{sweep}}
+\end{figure}
+
 \subsubsection*{Hydra \textit{enrich} Analysis of High-Risk Neuroblastoma Identifies Distinct Tumor Microenvironment States}
 We applied the hydra unsupervised enrichment analysis to the MYCN-NA cohort. The multimodal expression filter identified 428 genes with a minor component probability greater than 20\% (\nameref{S1_File}). Gene Ontology analysis found enrichment for the following GO terms (FDR: q $<$ 0.01): adaptive immune response (24 genes), mesenchyme development (12 genes), steroid hormone secretion (4 genes), and response to corticosterone (4 genes). DP-GMM analysis of the 44 enriched GO term genes identified three clusters of neuroblastoma samples (Fig \ref{MYCN-NA}A). The posterior probability for belonging to each cluster was 42\%, 34\%, and 17\% for clusters 1, 2, and 3, respectively. The posterior probability for a sample belonging to a new cluster was about 6\% in our analysis. We next investigated cluster-specific expression signatures using GSEA (see Hydra Method section). Cluster 1 was enriched for adaptive immune response gene sets, cluster 2 was enriched for proliferative signaling gene sets, and cluster 3 was enriched for cancer-associated fibroblast gene sets (Fig \ref{MYCN-NA}B). Cluster 3 shares several features of a wound healing response, including fibroblast recruitment, extracellular matrix organization, and infiltration of immune cells \cite{fosterEvolvingRelationshipWound}. 
 
@@ -440,7 +446,7 @@ To further investigate expression patterns within the hydra-identified tumor mic
 
 
 \begin{figure}[!h]
-	\includegraphics[width=\textwidth]{img/PNG/SubCluster-Analysis-V2@2x.png}
+	\includegraphics[width=\textwidth]{img/PNG/SubCluster-Survival-V1-2x}
 	\caption{{\bf Gene set enrichment analysis (GSEA) of MYCN-NA neuroblastoma identifies survival differences within hydra cluster 2 and cluster 3.}
 		Top 5 differentially enriched gene sets for each cluster comparing the entire MYCN-NA neuroblastoma cohort (cohort-level GSEA) and the corresponding hydra cluster (cluster-level GSEA). GSEA analysis of the hydra clusters found immune and cell cycle signals that were not identified in the cohort-level analysis. B: cluster-level GSEA separated cluster 2 into high and low immune subtypes. C: cluster-level GSEA separated cluster 3 into high and low cell cycle subtypes.}
 	\label{subcluster}
