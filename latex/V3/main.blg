@@ -200,6 +200,8 @@ Warning--empty year in yoshiharaInferringTumourPurity2013a
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in tibshirani2001estimating
 Warning--empty year in tibshirani2001estimating
+Warning--there's a month but no year in bastian2009gephi
+Warning--empty pages in bastian2009gephi
 `journal' is a missing field, not a string, for entry pedregosa2011scikit
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in pedregosa2011scikit
@@ -274,45 +276,45 @@ Warning--empty year in rheeImpactTumorPurity2018
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in raphael2017integrated
 Warning--empty year in raphael2017integrated
-You've used 68 entries,
+You've used 69 entries,
             3058 wiz_defined-function locations,
-            1114 strings with 29396 characters,
-and the built_in function-call counts, 171728 in all, are:
-= -- 19899
-> -- 1212
+            1118 strings with 29608 characters,
+and the built_in function-call counts, 172921 in all, are:
+= -- 20039
+> -- 1224
 < -- 10
-+ -- 816
-- -- 303
-* -- 16446
-:= -- 18870
-add.period$ -- 192
-call.type$ -- 68
-change.case$ -- 6
++ -- 822
+- -- 306
+* -- 16547
+:= -- 19006
+add.period$ -- 195
+call.type$ -- 69
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 201
-duplicate$ -- 8254
-empty$ -- 17326
-format.name$ -- 365
-if$ -- 38959
+cite$ -- 204
+duplicate$ -- 8337
+empty$ -- 17443
+format.name$ -- 369
+if$ -- 39231
 int.to.chr$ -- 0
-int.to.str$ -- 68
-missing$ -- 693
-newline$ -- 330
-num.names$ -- 70
-pop$ -- 1194
+int.to.str$ -- 69
+missing$ -- 700
+newline$ -- 335
+num.names$ -- 71
+pop$ -- 1213
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1262
+skip$ -- 1276
 stack$ -- 0
-substring$ -- 41900
-swap$ -- 1769
+substring$ -- 42130
+swap$ -- 1783
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 133
-while$ -- 642
-width$ -- 70
-write$ -- 659
+warning$ -- 135
+while$ -- 648
+width$ -- 71
+write$ -- 669
 (There were 65 error messages)

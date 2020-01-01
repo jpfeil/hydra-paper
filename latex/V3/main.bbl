@@ -287,6 +287,13 @@ Tibshirani R, Walther G, Hastie T.
 \newblock Estimating the Number of Clusters in a Data Set via the Gap
   Statistic;63(2):411--423.
 
+\bibitem{bastian2009gephi}
+Bastian M, Heymann S, Jacomy M.
+\newblock Gephi: An Open Source Software for Exploring and Manipulating
+  Networks.
+\newblock In: Third International {{AAAI}} Conference on Weblogs and Social
+  Media;.
+
 \bibitem{pedregosa2011scikit}
 Pedregosa F, Varoquaux G, Gramfort A, Michel V, Thirion B, Grisel O, et~al.
 \newblock Scikit-Learn: Machine Learning in Python;12:2825--2830.
