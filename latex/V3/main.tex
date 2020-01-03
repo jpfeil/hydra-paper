@@ -285,7 +285,7 @@ Gaussian mixture models are a powerful class of unsupervised clustering algorith
 Here, we develop the hydra framework for identifying clinically relevant expression subtypes and classifying N-of-1 tumor samples using learned models. We provide an overview of the hydra framework, assess performance for detecting differential pathway expression, and apply the framework to better understand expression patterns in high-risk neuroblastoma and other small blue round cell tumors. We apply the learned models trained on publicly available cancer gene expression data to the N-of-1 setting and show that this framework can identify distinct immune and stromal expression signatures that differentiate pediatric cancer samples. Finally, we identify recurrent tumor microenvironment signatures across pediatric cancer types associated with differences in patient outcomes.
   
 \section*{Materials and methods}
-\subsection*{Dirichlet Process Gaussian Mixture Model}
+\subsection*{Dirichlet process gaussian mixture model}
 
 Traditional parametric models, like the finite mixture model, use a fixed number of parameters (i.e. number of clusters). Over- or underfitting can occur when the parametric model does not reflect the underlying data \cite{teh2010dirichlet}. Unlike the finite mixture model, the Dirichlet process mixture model (DPMM) represents a theoretically infinite number of clusters and can adapt the number of clusters based on prior belief and the data \cite{gelmanBayesianDataAnalysis2013, antoniakMixturesDirichletProcesses1974, teh2010dirichlet}.
 
@@ -320,7 +320,7 @@ G | \alpha, \mathcal{NW}_0 \sim DP(\alpha, \mathcal{NW}_0)
 
 We found that standard Markov Chain Monte Carlo (MCMC) inference algorithms, like the collapsed Gibbs sampler \cite{nealMarkovChainSampling2000, muller2004nonparametric}, over-estimate the number of clusters. For this reason, we incorporated the bnpy memoized online variational inference algorithm (moVB) \cite{hughes2013memoized} into our analysis framework. The moVB algorithm uses variational inference to approximate the posterior distribution and interleaves birth, merge, and delete moves to avoid local optima and remove redundant clusters \cite{hughesBnpyReliableScalable}. 
 
-\subsection*{Hydra Method}
+\subsection*{Hydra method}
 We developed a Bayesian non-parametric clustering framework for identifying biological and technical variation in large cancer gene expression datasets without the need for a reference normal dataset. To our knowledge, this is the first reproducible and widely deployable implementation of a non-parametric mixture model framework designed to overcome the challenges of precision oncology gene expression analysis. The hydra pipeline is an open source software tool hosted on GitHub (\url{www.github.com/jpfeil/hydra}). A Docker container is available for deployment across environments (\url{https://hub.docker.com/r/jpfeil/hydra}).
 
 The hydra framework contains three main command-line tools: \textit{filter}, \textit{enrich}, and \textit{sweep} (Fig \ref{overview}). The \textit{filter} command is run first to isolate the multimodally expressed genes using a univariate Dirichlet Process Gaussian Mixture Model (DP-GMM). There are two methods for analyzing the resulting set of multimodally expressed genes. The \textit{enrich} method subsets to the genes found to be significantly enriched in biological pathways, and the \textit{sweep} method, which searches within user-defined gene sets for multimodal expression signatures. The underlying analysis routines can be accessed within the docker using Jupyter notebooks to facilitate the development of user-defined workflows.
@@ -344,9 +344,8 @@ We have also implemented routines for cluster profiling and N-of-1 tumor analysi
 
 The N-of-1 tumor analysis routine classifies a new gene expression profile into one of the inferred clusters, calculates a gene-level z-score for that sample relative to the normalized expression distribution, and performs GSEA. This procedure can identify new gene expression signatures that may not be detectable using the entire expression cohort as a background reference distribution. This approach is another novel contribution to the field and may facilitate the identification of clinically relevant signatures that are being overlooked in current gene expression analyses.
 
-\subsection*{Synthetic Data Generation and Validation}
+\subsection*{Synthetic data generation and validation}
 % For figure citations, please use "Fig" instead of "Figure".
-
 We first tested the hydra framework’s ability to detect differential pathway expression using synthetic cancer data. We compared hydra to two widely used gene set enrichment tools: single-sample gene set enrichment analysis (ssGSEA) and gene set variation analysis (GSVA) \cite{barbieSystematicRNAInterference2009, hanzelmannGSVAGeneSet2013, tarcaComparisonGeneSet2013}. Both methods are implemented in the GSVA R package \cite{hanzelmannGSVAGeneSet2013}. We modeled cancer gene expression as a multivariate Gaussian distribution. We used the TCGA glioblastoma multiforme cohort (N=166) to model a background mean and covariance matrix. This approach allowed us to model cancer gene expression data while also controlling for subtype-related expression variation. We downloaded the RSEM-quantified TPM normalized gene expression measurements from the UCSC Xena Browser \cite{goldmanUCSCXenaPlatform2018}. We focus our analysis on normalized gene expression data because this data is more widely used in the cancer research community and fewer methods are available to analyze normalized counts. To reduce heteroscedasticity and the effect of outlier expression levels, we transformed the expression data to log2(TPM + 1) \cite{zwienerTransformingRNASeqData2014}. 
 
 We defined an expression subtype as a subset of samples with a distinct expression mean and correlation structure compared to other samples within the disease cohort. To avoid biases in the synthetic data generation process, we used random sampling to select MSigDB gene sets for each subtype, the size of the subtype, and the correlation structure within the subtype. We randomly generated a covariance matrix for the cancer subtype expression data, but used the underlying covariance matrix of the TCGA glioblastoma multiforme dataset for the background samples. We tested the effect of having 10\% and 25\% of genes within a gene set being differentially expressed (\%DEG). In addition to these parameters, we tested a range of effect sizes: 0.25 (least different), 0.5, 0.75, 1.0, 1.5, 2.0, 2.5, and 3.0 (most different). This process was repeated twice for each gene set to create synthetic training and test data, which resulted in the generation of 640 synthetic datasets. 
@@ -360,28 +359,28 @@ We then applied the hydra framework using the hydra \textit{sweep} command (Fig 
 %\label{fig1}
 %\end{figure}
 
-\subsection*{Pediatric Cancer Gene Expression Data}
+\subsection*{Pediatric cancer gene expression data}
 We downloaded pediatric cancer RNA-Seq data for neuroblastoma, osteosarcoma, Ewing sarcoma, alveolar rhabdomyosarcoma, and embryonal rhabdomyosarcoma from the UCSC Treehouse Compendium (\url{https://treehousegenomics.soe.ucsc.edu/public-data/}). This data was produced using the same RNA-seq pipeline, so potential computational batch effects are minimized \cite{vivianToilEnablesReproducible2017,vaskeComparativeTumorRNA2019}. Clinical data for the TARGET neuroblastoma and osteosarcoma samples were obtained from the TARGET Data Matrix (https://ocg.cancer.gov/programs/target/data-matrix). We also analyzed a set of 58 synovial sarcoma microarray profiles with matching metastasis rate data \cite{lagardeChromosomeInstabilityAccounts2013}.
  
-\subsection*{TARGET Neuroblastoma Analysis}
+\subsection*{TARGET neuroblastoma analysis}
 The hydra \textit{filter} method included all genes with a mean expression greater than 1.0 log2(TPM + 1), a minor expression component probability of at least 20\%, and a minimum effect size of 1.0. Our synthetic data analysis found that the signal decreases below an effect size of 1.0, so we use this parameter value for all following analyses. We set a minimum mean threshold of 1.0 log2(TPM + 1) to exclude lowly expressed genes that may have unstable measurements. We used the hydra \textit{scan} routine to search a range of minimum component probability thresholds and found 20\% yielded the most clusters while keeping the number of genes (p = 42) below the number of samples (n = 70). 
 
 The hydra \textit{enrich} command identified correlated expression signatures using the enriched GO term genes (FDR $<$ 0.01). The multivariate mixture model $\alpha$ concentration parameter was set to 5.0; the prior on the covariance matrix was set to the identity scaled by 2.0. The prior parameter for the number of clusters was set to five. We correlated hydra expression clusters with the results of the tumor microenvironment profiling tools xCell \cite{aranXCellDigitallyPortraying2017}, CIBERSORT \cite{newmanRobustEnumerationCell2015}, and ESTIMATE \cite{yoshiharaInferringTumourPurity2013a}. We also applied the consensus clustering method M3C \cite{johnM3CMonteCarlo2018} and Gap statistic k-means method \cite{tibshirani2001estimating} to the TARGET MYCN-NA neuroblastoma data. We tested a range of median absolute deviation (MAD) thresholds. The number of clusters was assumed to be the smallest statistically significant value.
 
 The hydra \textit{sweep} command was applied to search for subtype expression within curated MSigDB gene sets. We included the hallmark (n=50), BioCarta (n=289), KEGG (n=186), PID (n=196), and Reactome (1499) genesets \cite{liberzonMolecularSignaturesDatabase2011}. To increase the sensitivity for expression subtypes within well-defined signatures, we include all signatures with a minimum component probability of 10\%. For example, the smallest subtype cluster considered in this analysis has 7 samples. We clustered differentially expressed gene sets by the pairwise Jaccard index. The similarity network was visualized using Gephi \cite{bastian2009gephi}.
 
-\subsection*{Small Blue Round Cell Tumor Analysis}
+\subsection*{Small blue round cell tumor analysis}
 We then compared the clustering patterns across MYCN-NA neuroblastoma, osteosarcoma, Ewing sarcoma, embryonal rhabdomyosarcoma, alveolar rhabdomyosarcoma, and synovial sarcoma. We applied the TumorMap dimensionality reduction method \cite{newtonTumorMapExploringMolecular2017} to visualize clustering of the full small blue round cell tumor gene expression matrix. We then applied the hydra framework to explore expression variation within each disease. Each disease expression matrix had unique statistical properties including sample size and subtype variation. This required us to adapt the minimum probability threshold for each disease dataset using the \textit{scan} routine. The Jupyter notebooks for exploring these datasets can be found on GitHub (\url{www.github.com/jpfeil/hydra-paper/analysis}). We used agglomerative clustering to investigate patterns in the top 10 enriched gene sets for each disease's expression subtypes.
 
-\subsection*{Statistical Analysis}
+\subsection*{Statistical analysis}
 A Kruskal-Wallis test was used to identify statistically significant differences across two or more groups, and a Mann-Whitney U test was used for pairwise tests using a Holm-Sidak correction for multiple hypothesis testing \cite{pedregosa2011scikit,jonesSciPyOpenSource2001}. We used the scipy \cite{2019arXiv190710121V} stats implementation of the Kruskal-Wallis test and the scikit-learn post hoc processing \cite{Terpilowski2019} implementation of pairwise Mann-Whitney U tests . Spearman rank and Pearson correlation values were calculated using the scipy library \cite{jonesSciPyOpenSource2001}. Survival analysis was done using the survminer package \cite{kassambaraSurvminerDrawingSurvival2019}. 
 
-\subsection*{H\&E Slide Preparation and Pathologist Review}
+\subsection*{H\&E slide preparation and pathologist review}
 Pediatric tumor samples were flash frozen, embedded in OCT, and 5$\mu$m cryosections were collected. Slides were hematoxylin and eosin (H\&E) stained and imaged on a Leica DMi8, equipped with a HC PL APO 40x/0.85 NA objective and DFC7000T camera. H\&E slides were reviewed by a licensed pathologist for evidence of inflammation and graded as having either minimal ($<$ 10\%) or moderate inflammation (20-30\%).
 
 % Results and Discussion can be combined.
 \section*{Results}
-\subsection*{Performance Assessment using Synthetic Gene Expression Data}
+\subsection*{Performance assessment using synthetic gene expression data}
 To assess how well hydra detects differentially expressed pathways as compared to common pathway enrichment approaches, we applied these methods to synthetically-generated cancer gene expression data. We generated synthetic cancer gene expression data based on the TCGA glioblastoma multiforme and the MSigDB Hallmark gene sets as described above. We tested a range of effect sizes and percent differentially expressed genes (\%DEG) within the MSigDB gene sets. We generated receiver operator curves (ROC) and calculated the area under the receiver operator curve (AUC) for each analysis. Overall, the hydra pipeline outperformed the single-sample GSEA approaches with a mean AUC of 0.93 (95\% CI: 0.91 - 0.95). ssGSEA had a mean AUC of 0.72 (95\% CI: 0.71 - 0.74) and GSVA had a mean AUC of 0.67 (95\% CI: 0.66 - 0.68) (Fig \ref{rocplot}A).
 
 % Synthetic Data Validation Figure
@@ -394,7 +393,7 @@ To assess how well hydra detects differentially expressed pathways as compared t
 
 We further investigated the performance of these methods by plotting the AUC against the effect size at 10 and 25\%DEG (Fig \ref{rocplot}B). The hydra method performed better across all effect sizes, achieving near perfect performance above an effect size of 2.0 and 0.75 at 10 and 25\%DEG, respectively. ssGSEA and GSVA performed similarly at low effect sizes, but ssGSEA performed better than GSVA as the effect size increased. Overall, the hydra framework performed significantly better than these standard gene set enrichment approaches, particularly at low effect sizes. Therefore, the hydra approach is better suited for subtyping within a disease cohort when the effect sizes are smaller and fewer genes are differentially expressed.
 
-\subsection*{Hydra Analysis of High-Risk Neuroblastoma}
+\subsection*{Hydra analysis of high-risk neuroblastoma}
 High-risk neuroblastoma is an aggressive disease and is resistant to intensive therapy. Further subtyping of high-risk neuroblastoma may identify novel therapeutic targets and improve risk stratification. We hypothesized that unsupervised clustering of multimodally expressed genes associated with enriched Gene Ontology terms would identify expression subtypes of high-risk neuroblastoma tumors. TumorMap  analysis \cite{newtonTumorMapExploringMolecular2017} showed that the MYCN-non-amplified (MYCN-NA) neuroblastoma samples clustered separately from MYCN-amplified (MYCN-A) and stage 4S neuroblastoma samples (\nameref{S2_Fig}). We focused on the MYCN-NA neuroblastoma tumor samples because this is the largest set of samples (N=70) and variation within MYCN-NA tumors is not well understood \cite{morgensternChallengeDefiningUltrahighrisk2019}.
 
 \subsubsection*{Hydra \textit{filter} analysis of high-risk neuroblastoma identifies 931 multimodally expressed genes.}
@@ -402,15 +401,9 @@ After completing the performance assessment with synthetic gene expression data,
 
 % TODO: Add sweep analysis
 \subsubsection*{Hydra \textit{sweep} analysis of high-risk neuroblastoma reveals subtype expression across curated gene sets}
-We next investigated the coordinated expression of multimodally expressed genes within the MSigDB database. Applying the hydra \textit{sweep} command to the MYCN-NA neuroblastoma cohort discovered 105 gene sets with multimodal expression patterns. We clustered the differentially expressed gene-sets to reveal biological themes (Fig \ref{sweep}). We found 6 major themes, including generic cancer functions, cell cycle regulation, cell signaling pathways, immune functions, extracellular matrix related gene sets, and metabolic pathway gene sets.
+We next investigated the coordinated expression of multimodally expressed genes within the MSigDB database. Applying the hydra \textit{sweep} command to the MYCN-NA neuroblastoma cohort discovered 105 gene sets with multimodal expression patterns. We clustered the differentially expressed gene-sets to reveal biological themes (\nameref{S1_Fig}). We found 6 major themes, including generic cancer functions, cell cycle regulation, cell signaling pathways, immune functions, extracellular matrix related gene sets, and metabolic pathway gene sets.
 
-\begin{figure}[!h]
-	\includegraphics[width=\textwidth]{img/PNG/sweep-gene-set-network-V3-2x}
-	\caption{{\bf Hydra \textit{sweep} Identifies }
-		\label{sweep}}
-\end{figure}
-
-\subsubsection*{Hydra \textit{enrich} Analysis of High-Risk Neuroblastoma Identifies Distinct Tumor Microenvironment States}
+\subsubsection*{Hydra \textit{enrich} analysis of high-risk neuroblastoma identifies distinct tumor microenvironment states}
 We applied the hydra unsupervised enrichment analysis to the MYCN-NA cohort. The multimodal expression filter identified 428 genes with a minor component probability greater than 20\% (\nameref{S1_File}). Gene Ontology analysis found enrichment for the following GO terms (FDR: q $<$ 0.01): adaptive immune response (24 genes), mesenchyme development (12 genes), steroid hormone secretion (4 genes), and response to corticosterone (4 genes). DP-GMM analysis of the 44 enriched GO term genes identified three clusters of neuroblastoma samples (Fig \ref{MYCN-NA}A). The posterior probability for belonging to each cluster was 42\%, 34\%, and 17\% for clusters 1, 2, and 3, respectively. The posterior probability for a sample belonging to a new cluster was about 6\% in our analysis. We next investigated cluster-specific expression signatures using GSEA (see Hydra Method section). Cluster 1 was enriched for adaptive immune response gene sets, cluster 2 was enriched for proliferative signaling gene sets, and cluster 3 was enriched for cancer-associated fibroblast gene sets (Fig \ref{MYCN-NA}B). Cluster 3 shares several features of a wound healing response, including fibroblast recruitment, extracellular matrix organization, and infiltration of immune cells \cite{fosterEvolvingRelationshipWound}. 
 
 % TODO Link supplemental tables
@@ -438,7 +431,7 @@ To further investigate expression patterns within the hydra-identified tumor mic
 	\label{subcluster}
 \end{figure}
 
-\subsection*{N-of-1 Tumor Analysis for Pediatric Neuroblastoma}
+\subsection*{N-of-1 tumor analysis for pediatric neuroblastoma}
 We investigated the predictive performance of the hydra approach for identifying clinically relevant signals in the N-of-1 tumor analysis setting. The command-line interface of the hydra toolkit includes a \textit{predict} function for labeling samples using a pre-fit model. The MYCN-NA neuroblastoma model described above was used to predict expression subtypes on a new set of samples. We obtained tumor gene expression data from five stage 4, MYCN-NA neuroblastoma samples from the UCSC Treehouse gene expression compendium \cite{newtonTumorMapExploringMolecular2017, vaskeComparativeTumorRNA2019}. The age at diagnosis ranged from 2 to 6 years. Four out of five samples had a deletion in the ATRX gene. Samples 1D and 1R were diagnosis and resection samples from the same patient. Most of the samples (4 out of 5) clustered in cluster 1, which is characterized by adaptive immune pathway expression.
 
 Three of the ATRX-deleted samples clustered with the high immune expression cluster (cluster 1) and one clustered in the low immune, high proliferative signaling cluster (cluster 2). Hydra analysis assigned sample 1D to cluster 1 and sample 1R to cluster 2 despite both samples originating from the same patient. The resection sample 1R was extracted from lymph node tissue, which has a significantly different cellular composition than the training data. Another possible explanation for the different cluster assignments is that the tumor microenvironment is dynamic and the tumor may evade immune recognition as the disease progresses, resulting in different expression signatures. We performed GSEA comparing samples 1D and 1R to investigate potential mechanisms leading to immune evasion in sample 1R. GSEA found downregulation of the MHC Class I Antigen Processing \& Presentation GO term in sample 1R (adjusted p-value $<$ 0.002). Loss of antigen processing functions is a common mechanism of immune evasion across cancer types \cite{reevesAntigenProcessingImmune2017}. 
@@ -455,7 +448,7 @@ H\&E slide images for the 5 MYCN-NA neuroblastomas were reviewed by a licensed p
 
 
 
-\subsection*{Hydra Analysis Discovers Complex Tissue Signatures}
+\subsection*{Hydra analysis discovers complex tissue signatures}
 While the MYCN-NA neuroblastoma analysis above focused on immune and fibroblast expression signatures, the hydra \textit{enrich} method is unsupervised and can therefore detect any type of expression signature. To illustrate this, we applied the hydra \textit{filter}/\textit{enrich} analysis to the TARGET osteosarcoma cohort (N=74) and discovered enrichment of the GO striated muscle contraction term (FDR $<$ 0.01, Fig \ref{muscle}). Multivariate clustering for the GO striated muscle contraction gene set using the sweep routine identified two clusters. xCell analysis of the osteosarcoma cohort found significant enrichment of skeletal muscle expression in the second cluster (Mann-Whitney U test, p $<$ 0.001). Surprisingly, the M3C clustering approach was not able to detect the strong muscle signature using the 5000 genes with the largest MAD (p $>$ 0.05). We used the muscle expression signature to identify osteosarcoma tumors in the Treehouse Compendium which also contained a similar expression signature. We subsequently confirmed with a licensed pathologist that one of the muscle-expression positive tumor samples did contain significant muscle tissue infiltration. This analysis is completely unsupervised and revealed expression signatures not routinely investigated but contributes significantly to the tumor expression profile. Explaining these sources of variation is necessary to derive clinically relevant conclusions from gene expression data.
 
 %
@@ -464,13 +457,15 @@ While the MYCN-NA neuroblastoma analysis above focused on immune and fibroblast 
 \begin{figure}[!h]
 	\includegraphics[width=\textwidth]{img/PNG/muscle-signature-genes-2x}
 	\caption{{\bf Hydra analysis of TARGET osteosarcoma cohort reveals skeletal muscle signature.}
-		 Hydra enrichment analysis on the TARGET osteosarcoma cohort revealed a subset of patients with high skeletal muscle expression. A: Clustered heatmap shows the muscle signature genes identified by hydra unsupervised enrichment analysis. B: xCell tumor microenvironment profiling identified significant differences in skeletal muscle expression compared to background (p $<$ 0.001). C: H\&E stained tumor slide for an independent osteosarcoma sample confirms presence of striated muscle tissue within the sequenced tumor sample.}
+		 Hydra enrichment analysis on the TARGET osteosarcoma cohort revealed a subset of patients with high skeletal muscle expression. A: Clustered heatmap shows the muscle signature genes identified by hydra unsupervised enrichment analysis. B: xCell tumor microenvironment profiling identified significant differences in skeletal muscle expression compared to background (p $<$ 0.001). C: H\&E stained tumor slide for an out-of-sample osteosarcoma expression profile confirms presence of striated muscle tissue within the tumor sample.}
 	\label{muscle}
 \end{figure}
 
 We applied the \textit{filter} method to Ewing sarcoma and discovered multimodal expression of a druggable gene, JAK1. Applying the multimodal expression model allowed us to deconstruct the Ewing sarcoma distribution into three components. We found that the expression component with the highest JAK1 expression was also enriched for mast cell expression (\nameref{S6_Fig}). Therefore, over-expression of JAK1 may not correspond to activation of the JAK/STAT signaling pathway in cancer cells but rather to the presence of mast cells within the tumor microenvironment. Furthermore, targeted inhibition of JAK1 using ruxolitinib was shown to inhibit essential mast cell functions, including degranulation \cite{hermansJAK1JAK2Inhibitor2018}. Therefore, therapeutic intervention intending to inhibit JAK1 expression in cancer cells may inadvertently inhibit the patient’s mast cell functions. Over-expression analysis using the Ewing sarcoma JAK1 expression distribution may identify JAK1 as an actionable lead, but further investigation into the effect of inhibiting off-target JAK1 expression in mast cells is needed. The hydra framework facilitates the identification of important expression signatures which can be used to deconstruct complex tumor expression subtypes and identify potentially confounding expression signals.
 
-\subsection*{Hydra Analysis Reveals Similar Expression Subtypes Across Small Blue Round Cell Tumors}
+We next quantified the number of multimodal druggable genes from the MYCN-NA neuroblastoma dataset that correlated with at least one cell type signature using the xCell signatures. Out of the 358 druggable genes, we found that 77 correlated with a stromal cell type (Kruskal-Wallis: p-value < 0.05). Many genes were expected, including the cytokines IL6 and TGFB2. Other druggable genes were surprising, like AURKA and AURKB, which play essential roles in spindle formation during mitosis and the overexpression of these genes is associated with evading spindle formation checkpoints in cancer \cite{marisInitialTestingAurora2010}. These targets show limited clinical activity in solid tumors, but has been shown to have greater effect in leukemia \cite{marisInitialTestingAurora2010,gautschiAuroraKinasesAnticancer2008}.
+
+\subsection*{Hydra analysis reveals recurrent expression subtypes across small blue round cell tumors}
 We next investigated whether similar hydra clusters could be identified across other small blue round cell tumors. We first performed TumorMap analysis, which is a dimensionality reduction approach for visualizing genomic data on a 2D surface \cite{newtonTumorMapExploringMolecular2017}. We found that small blue round cell tumor types --- MYCN-NA neuroblastoma, osteosarcoma, Ewing sarcoma, synovial sarcoma, alveolar rhabdomyosarcoma, and embryonal rhabdomyosarcoma --- all form separate TumorMap clusters (Fig \ref{pancan}A). This suggests there is a strong cell-of-origin signal driving the clustering of these cancer types, which is an observation that was recently made in the larger TCGA dataset of adult cancers \cite{hoadleyCellofOriginPatternsDominate2018}. While pan-cancer analysis emphasized the differences across small blue round cell tumors, we hypothesized that expression subtypes within histological cancer types would share similar biological themes.
 
 \begin{figure}[!h]
@@ -523,20 +518,23 @@ Precision oncology aims to differentiate tumors of the same diagnosis in order t
 \label{S3_Fig}
 {\bf{Consensus and k-means clustering applied to TARGET MYCN-NA dataset.}} We tested a range of gene expression variation thresholds based on the median absolute deviation, but found that the clusters identified by this approach could not resolve the same clusters as the hydra approach. The barplot shows the number of clusters and the lineplot tracks the Rand index comparing the M3C and k-means clusters and the hydra clusters.
 
-
-
-
+\paragraph*{S4 Fig.}
+\includegraphics[width=\textwidth]{img/PNG/sweep-gene-set-network-V3-2x}
+\label{S4_Fig}{\bf Hydra \textit{sweep} analysis reveals differential pathway expression with MYCN-NA neuroblastoma without a matched cohort of normal tissue.} 
+Unsupervised clustering of MSigDB gene sets revealed related biological themes emerging from gene sets with multimodal expression patterns.
 
 % Add panel labels
-\paragraph*{S6 Fig.}
+\paragraph*{S5 Fig.}
 \includegraphics[width=\textwidth]{img/PNG/ewing-jak1-expression-fig}
-\label{S6_Fig} {\bf Hydra analysis identifies correlation between expression of druggable JAK1 gene and mast cell expression signature in Ewing sarcoma.} A: We show the utility of the mixture model approach for identifying important gene expression patterns for precision medicine applications. JAK1 is a druggable gene, but JAK1 is also an important gene in immune cell signaling pathways. B: Boxplot showing the xCell mast cell enrichment score for three clusters associated with JAK1 expression.
-
-
+\label{S5_Fig} {\bf Hydra analysis identifies correlation between expression of druggable JAK1 gene and mast cell expression signature in Ewing sarcoma.} A: We show the utility of the mixture model approach for identifying important gene expression patterns for precision medicine applications. JAK1 is a druggable gene, but JAK1 is also an important gene in immune cell signaling pathways. B: Boxplot showing the xCell mast cell enrichment score for three clusters associated with JAK1 expression.
 
 \paragraph*{S1 File.}
 \label{S1_File}
-{\bf TARGET MYCN-NA Neuroblastoma Supplementary Data.}
+{\bf TARGET MYCN-NA neuroblastoma supplementary data.}
+
+\paragraph*{S2 File.}
+\label{S2_File}
+{\bf Hydra method documentation.}
 
 %\paragraph*{S1 Video.}
 %\label{S1_Video}

@@ -59,6 +59,18 @@ Page DB, Postow MA, Callahan MK, Allison JP, Wolchok JD.
 \newblock Immune Modulation in Cancer with Antibodies;65:185--202.
 \newblock doi:{10.1146/annurev-med-092012-112807}.
 
+\bibitem{majzner2017harnessing}
+Majzner RG, Heitzeneder S, Mackall CL.
+\newblock Harnessing the Immunotherapy Revolution for the Treatment of
+  Childhood Cancers;31(4):476--485.
+
+\bibitem{zamoraPediatricPatientsAcute2019}
+Zamora AE, Crawford JC, Allen EK, Guo XzJ, Bakke J, Carter RA, et~al.
+\newblock Pediatric Patients with Acute Lymphoblastic Leukemia Generate
+  Abundant and Functional Neoantigen-Specific {{CD8}}+ {{T}} Cell
+  Responses;11(498).
+\newblock doi:{10.1126/scitranslmed.aat8549}.
+
 \bibitem{andersCountbasedDifferentialExpression2013}
 Anders S, McCarthy DJ, Chen Y, Okoniewski M, Smyth GK, Huber W, et~al.
 \newblock Count-Based Differential Expression Analysis of {{RNA}} Sequencing
@@ -371,16 +383,22 @@ Hermans MAW, Schrijver B, van Holten-Neelen CCPA, Gerth~van Wijk R, van Hagen
   Degranulation and Cytokine Release;48(11):1412--1420.
 \newblock doi:{10.1111/cea.13217}.
 
+\bibitem{marisInitialTestingAurora2010}
+Maris JM, Morton CL, Gorlick R, Kolb EA, Lock R, Carol H, et~al.
+\newblock Initial Testing of the Aurora Kinase a Inhibitor {{MLN8237}} by the
+  {{Pediatric Preclinical Testing Program}} ({{PPTP}});55(1):26--34.
+\newblock doi:{10.1002/pbc.22430}.
+
+\bibitem{gautschiAuroraKinasesAnticancer2008}
+Gautschi O, Heighway J, Mack PC, Purnell PR, Lara PN, Gandara DR.
+\newblock Aurora {{Kinases}} as {{Anticancer Drug Targets}};14(6):1639--1648.
+\newblock doi:{10.1158/1078-0432.CCR-07-2179}.
+
 \bibitem{hoadleyCellofOriginPatternsDominate2018}
 Hoadley KA, Yau C, Hinoue T, Wolf DM, Lazar AJ, Drill E, et~al.
 \newblock Cell-of-{{Origin Patterns Dominate}} the {{Molecular Classification}}
   of 10,000 {{Tumors}} from 33 {{Types}} of {{Cancer}};173(2):291--304.e6.
 \newblock doi:{10.1016/j.cell.2018.03.022}.
-
-\bibitem{majzner2017harnessing}
-Majzner RG, Heitzeneder S, Mackall CL.
-\newblock Harnessing the Immunotherapy Revolution for the Treatment of
-  Childhood Cancers;31(4):476--485.
 
 \bibitem{cunananEfficientBasketTrial2017}
 Cunanan KM, Iasonos A, Shen R, Begg CB, Gönen M.

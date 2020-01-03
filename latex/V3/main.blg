@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: plos2015.bst
-Illegal, another \bibstyle command---line 113 of file main.aux
+Illegal, another \bibstyle command---line 119 of file main.aux
  : \bibstyle
  :          {plos2015.bst}
 I'm skipping whatever remains of this command
@@ -55,6 +55,14 @@ Warning--empty year in mellmanCancerImmunotherapyComes2011
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in pageImmuneModulationCancer2014
 Warning--empty year in pageImmuneModulationCancer2014
+`journal' is a missing field, not a string, for entry majzner2017harnessing
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in majzner2017harnessing
+Warning--empty year in majzner2017harnessing
+`journal' is a missing field, not a string, for entry zamoraPediatricPatientsAcute2019
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in zamoraPediatricPatientsAcute2019
+Warning--empty year in zamoraPediatricPatientsAcute2019
 `journal' is a missing field, not a string, for entry andersCountbasedDifferentialExpression2013
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in andersCountbasedDifferentialExpression2013
@@ -256,14 +264,18 @@ Warning--empty year in reevesAntigenProcessingImmune2017
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in hermansJAK1JAK2Inhibitor2018
 Warning--empty year in hermansJAK1JAK2Inhibitor2018
+`journal' is a missing field, not a string, for entry marisInitialTestingAurora2010
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in marisInitialTestingAurora2010
+Warning--empty year in marisInitialTestingAurora2010
+`journal' is a missing field, not a string, for entry gautschiAuroraKinasesAnticancer2008
+while executing---line 1875 of file plos2015.bst
+Warning--empty journal in gautschiAuroraKinasesAnticancer2008
+Warning--empty year in gautschiAuroraKinasesAnticancer2008
 `journal' is a missing field, not a string, for entry hoadleyCellofOriginPatternsDominate2018
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in hoadleyCellofOriginPatternsDominate2018
 Warning--empty year in hoadleyCellofOriginPatternsDominate2018
-`journal' is a missing field, not a string, for entry majzner2017harnessing
-while executing---line 1875 of file plos2015.bst
-Warning--empty journal in majzner2017harnessing
-Warning--empty year in majzner2017harnessing
 `journal' is a missing field, not a string, for entry cunananEfficientBasketTrial2017
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in cunananEfficientBasketTrial2017
@@ -276,45 +288,45 @@ Warning--empty year in rheeImpactTumorPurity2018
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in raphael2017integrated
 Warning--empty year in raphael2017integrated
-You've used 69 entries,
+You've used 72 entries,
             3058 wiz_defined-function locations,
-            1118 strings with 29608 characters,
-and the built_in function-call counts, 172921 in all, are:
-= -- 20039
-> -- 1224
+            1142 strings with 31164 characters,
+and the built_in function-call counts, 183650 in all, are:
+= -- 21283
+> -- 1304
 < -- 10
-+ -- 822
-- -- 306
-* -- 16547
-:= -- 19006
-add.period$ -- 195
-call.type$ -- 69
++ -- 886
+- -- 326
+* -- 17603
+:= -- 20179
+add.period$ -- 204
+call.type$ -- 72
 change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 204
-duplicate$ -- 8337
-empty$ -- 17443
-format.name$ -- 369
-if$ -- 39231
+cite$ -- 213
+duplicate$ -- 8806
+empty$ -- 18531
+format.name$ -- 392
+if$ -- 41659
 int.to.chr$ -- 0
-int.to.str$ -- 69
-missing$ -- 700
-newline$ -- 335
-num.names$ -- 71
-pop$ -- 1213
+int.to.str$ -- 72
+missing$ -- 737
+newline$ -- 350
+num.names$ -- 74
+pop$ -- 1271
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1276
+skip$ -- 1336
 stack$ -- 0
-substring$ -- 42130
-swap$ -- 1783
+substring$ -- 44857
+swap$ -- 1870
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 135
-while$ -- 648
-width$ -- 71
-write$ -- 669
-(There were 65 error messages)
+warning$ -- 141
+while$ -- 682
+width$ -- 74
+write$ -- 699
+(There were 68 error messages)
