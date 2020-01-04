@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: plos2015.bst
-Illegal, another \bibstyle command---line 119 of file main.aux
+Illegal, another \bibstyle command---line 116 of file main.aux
  : \bibstyle
  :          {plos2015.bst}
 I'm skipping whatever remains of this command
@@ -140,6 +140,8 @@ while executing---line 1875 of file plos2015.bst
 Warning--empty journal in gorurDirichletProcessGaussian2010
 Warning--empty year in gorurDirichletProcessGaussian2010
 Warning--there's a month but no year in hughes2013memoized
+Warning--there's a month but no year in mullerBayesianNonparametricData2015
+Warning--there's a month but no year in phadia2015prior
 `journal' is a missing field, not a string, for entry nealMarkovChainSampling2000
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in nealMarkovChainSampling2000
@@ -288,45 +290,45 @@ Warning--empty year in rheeImpactTumorPurity2018
 while executing---line 1875 of file plos2015.bst
 Warning--empty journal in raphael2017integrated
 Warning--empty year in raphael2017integrated
-You've used 72 entries,
+You've used 74 entries,
             3058 wiz_defined-function locations,
-            1142 strings with 31164 characters,
-and the built_in function-call counts, 183650 in all, are:
-= -- 21283
-> -- 1304
+            1153 strings with 31566 characters,
+and the built_in function-call counts, 185697 in all, are:
+= -- 21527
+> -- 1324
 < -- 10
-+ -- 886
-- -- 326
-* -- 17603
-:= -- 20179
-add.period$ -- 204
-call.type$ -- 72
++ -- 896
+- -- 331
+* -- 17763
+:= -- 20412
+add.period$ -- 211
+call.type$ -- 74
 change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 213
-duplicate$ -- 8806
-empty$ -- 18531
-format.name$ -- 392
-if$ -- 41659
+cite$ -- 217
+duplicate$ -- 8945
+empty$ -- 18738
+format.name$ -- 398
+if$ -- 42140
 int.to.chr$ -- 0
-int.to.str$ -- 72
-missing$ -- 737
-newline$ -- 350
-num.names$ -- 74
-pop$ -- 1271
+int.to.str$ -- 74
+missing$ -- 750
+newline$ -- 361
+num.names$ -- 76
+pop$ -- 1307
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1336
+skip$ -- 1363
 stack$ -- 0
-substring$ -- 44857
-swap$ -- 1870
+substring$ -- 45233
+swap$ -- 1894
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 141
-while$ -- 682
-width$ -- 74
-write$ -- 699
+warning$ -- 143
+while$ -- 693
+width$ -- 76
+write$ -- 722
 (There were 68 error messages)

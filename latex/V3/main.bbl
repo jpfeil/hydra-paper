@@ -202,6 +202,18 @@ Hughes MC, Sudderth E.
 \newblock In: Advances in Neural Information Processing Systems;. p.
   1133--1141.
 
+\bibitem{mullerBayesianNonparametricData2015}
+Müller P, Quintana FA, Jara A, Hanson T.
+\newblock Bayesian {{Nonparametric Data Analysis}}.
+\newblock Springer {{Series}} in {{Statistics}}. {Springer International
+  Publishing};.
+\newblock Available from: \url{https://www.springer.com/gp/book/9783319189673}.
+
+\bibitem{phadia2015prior}
+Phadia EG.
+\newblock Prior Processes and Their Applications.
+\newblock {Springer};.
+
 \bibitem{nealMarkovChainSampling2000}
 Neal RM.
 \newblock Markov {{Chain Sampling Methods}} for {{Dirichlet Process Mixture
