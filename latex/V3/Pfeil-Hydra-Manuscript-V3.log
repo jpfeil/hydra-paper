@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.14)  4 JAN 2020 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.14)  6 JAN 2020 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -686,26 +686,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-
-LaTeX Warning: Citation `zamoraPediatricPatientsAcute2019' on page 2 undefined 
-on input line 277.
-
-[2] [3]
-
-LaTeX Warning: Citation `mullerBayesianNonparametricData2015' on page 4 undefin
-ed on input line 293.
-
-
-LaTeX Warning: Citation `phadia2015prior' on page 4 undefined on input line 293
-.
-
-[4]
+ [2] [3] [4]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<"img/PNG/overview-fig".png, id=117, 968.61874pt x 600.2425pt>
+<"img/PNG/overview-fig".png, id=121, 968.61874pt x 600.2425pt>
 File: "img/PNG/overview-fig".png Graphic file (type png)
 <use "img/PNG/overview-fig".png>
 Package pdftex.def Info: "img/PNG/overview-fig".png  used on input line 328.
@@ -717,69 +703,51 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [5] [6 <./img/PNG/overview-fig.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [7]
-
-LaTeX Warning: Citation `bastian2009gephi' on page 8 undefined on input line 37
-2.
-
-[8] [9]
-<img/PNG/ROC-PLOT-V2-2x.png, id=221, 853.1875pt x 1049.9225pt>
+) [7] [8] [9]
+<img/PNG/ROC-PLOT-V2-2x.png, id=227, 853.1875pt x 1049.9225pt>
 File: img/PNG/ROC-PLOT-V2-2x.png Graphic file (type png)
 <use img/PNG/ROC-PLOT-V2-2x.png>
 Package pdftex.def Info: img/PNG/ROC-PLOT-V2-2x.png  used on input line 394.
 (pdftex.def)             Requested size: 379.4175pt x 466.91766pt.
- [10 <./img/PNG/ROC-PLOT-V2-2x.png>]
 
-LaTeX Warning: Citation `cotto2017dgidb' on page 11 undefined on input line 407
-.
 
-[11]
-<img/PNG/MYCN-NA-Figure-V5@2x.png, id=251, 1606.0pt x 1136.245pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10] [11 <./img/PNG/ROC-PLOT-V2-2x.png>]
+<img/PNG/MYCN-NA-Figure-V5@2x.png, id=258, 1606.0pt x 1136.245pt>
 File: img/PNG/MYCN-NA-Figure-V5@2x.png Graphic file (type png)
 <use img/PNG/MYCN-NA-Figure-V5@2x.png>
 Package pdftex.def Info: img/PNG/MYCN-NA-Figure-V5@2x.png  used on input line 4
 17.
 (pdftex.def)             Requested size: 379.4175pt x 268.4393pt.
  [12 <./img/PNG/MYCN-NA-Figure-V5@2x.png>] [13]
-<img/PNG/SubCluster-Survival-V1-2x.png, id=284, 886.31125pt x 315.1775pt>
+<img/PNG/SubCluster-Survival-V1-2x.png, id=292, 886.31125pt x 315.1775pt>
 File: img/PNG/SubCluster-Survival-V1-2x.png Graphic file (type png)
 <use img/PNG/SubCluster-Survival-V1-2x.png>
 Package pdftex.def Info: img/PNG/SubCluster-Survival-V1-2x.png  used on input l
 ine 436.
 (pdftex.def)             Requested size: 379.4175pt x 134.92253pt.
  [14 <./img/PNG/SubCluster-Survival-V1-2x.png>]
-<img/PNG/muscle-signature-genes-2x.png, id=298, 1085.05376pt x 614.295pt>
+<img/PNG/muscle-signature-genes-2x.png, id=306, 1085.05376pt x 614.295pt>
 File: img/PNG/muscle-signature-genes-2x.png Graphic file (type png)
 <use img/PNG/muscle-signature-genes-2x.png>
 Package pdftex.def Info: img/PNG/muscle-signature-genes-2x.png  used on input l
-ine 457.
+ine 455.
 (pdftex.def)             Requested size: 379.4175pt x 214.80025pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `marisInitialTestingAurora2010' on page 15 undefined on
- input line 465.
-
-
-LaTeX Warning: Citation `marisInitialTestingAurora2010' on page 15 undefined on
- input line 465.
-
-
-LaTeX Warning: Citation `gautschiAuroraKinasesAnticancer2008' on page 15 undefi
-ned on input line 465.
-
 [15]
-<img/PNG/hydra-pan-small-round-blue-V2-2x.png, id=316, 1418.29875pt x 553.06625
+<img/PNG/hydra-pan-small-round-blue-V2-2x.png, id=328, 1418.29875pt x 553.06625
 pt>
 File: img/PNG/hydra-pan-small-round-blue-V2-2x.png Graphic file (type png)
 <use img/PNG/hydra-pan-small-round-blue-V2-2x.png>
 Package pdftex.def Info: img/PNG/hydra-pan-small-round-blue-V2-2x.png  used on 
-input line 471.
+input line 469.
 (pdftex.def)             Requested size: 398.38953pt x 155.34695pt.
 
-Overfull \hbox (18.97203pt too wide) in paragraph at lines 471--472
+Overfull \hbox (18.97203pt too wide) in paragraph at lines 469--470
 [][] 
  []
 
@@ -787,94 +755,90 @@ Overfull \hbox (18.97203pt too wide) in paragraph at lines 471--472
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16 <./img/PNG/muscle-signature-genes-2x.png>]
-<img/PNG/osteosarcoma-synovial-survival-2x.png, id=330, 998.73125pt x 359.3425p
+<img/PNG/osteosarcoma-synovial-survival-2x.png, id=342, 998.73125pt x 359.3425p
 t>
 File: img/PNG/osteosarcoma-synovial-survival-2x.png Graphic file (type png)
 <use img/PNG/osteosarcoma-synovial-survival-2x.png>
 Package pdftex.def Info: img/PNG/osteosarcoma-synovial-survival-2x.png  used on
- input line 483.
+ input line 481.
 (pdftex.def)             Requested size: 379.4175pt x 136.51318pt.
  [17 <./img/PNG/hydra-pan-small-round-blue-V2-2x.png> <./img/PNG/osteosarcoma-s
 ynovial-survival-2x.png>]
-
-LaTeX Warning: Citation `zamoraPediatricPatientsAcute2019' on page 18 undefined
- on input line 493.
-
 [18]
-<img/PNG/cluster-over-time.png, id=353, 643.05846pt x 426.24846pt>
+<img/PNG/cluster-over-time.png, id=367, 643.05846pt x 426.24846pt>
 File: img/PNG/cluster-over-time.png Graphic file (type png)
 <use img/PNG/cluster-over-time.png>
-Package pdftex.def Info: img/PNG/cluster-over-time.png  used on input line 508.
+Package pdftex.def Info: img/PNG/cluster-over-time.png  used on input line 506.
 
 (pdftex.def)             Requested size: 379.4175pt x 251.50392pt.
  [19]
-<img/PNG/TumorMap-NBL-MM-V3-2x.png, id=362, 1606.0pt x 501.875pt>
+<img/PNG/TumorMap-NBL-MM-V3-2x.png, id=376, 1606.0pt x 501.875pt>
 File: img/PNG/TumorMap-NBL-MM-V3-2x.png Graphic file (type png)
 <use img/PNG/TumorMap-NBL-MM-V3-2x.png>
 Package pdftex.def Info: img/PNG/TumorMap-NBL-MM-V3-2x.png  used on input line 
-513.
+511.
 (pdftex.def)             Requested size: 379.4175pt x 118.56859pt.
-<img/PNG/clustering-screen.png, id=363, 719.68875pt x 395.22656pt>
+<img/PNG/clustering-screen.png, id=377, 719.68875pt x 395.22656pt>
 File: img/PNG/clustering-screen.png Graphic file (type png)
 <use img/PNG/clustering-screen.png>
-Package pdftex.def Info: img/PNG/clustering-screen.png  used on input line 518.
+Package pdftex.def Info: img/PNG/clustering-screen.png  used on input line 516.
 
 (pdftex.def)             Requested size: 284.56311pt x 156.27258pt.
  [20 <./img/PNG/cluster-over-time.png> <./img/PNG/TumorMap-NBL-MM-V3-2x.png>]
-<img/PNG/sweep-gene-set-network-V4-2x.png, id=372, 1040.88875pt x 596.2275pt>
+<img/PNG/sweep-gene-set-network-V4-2x.png, id=386, 1040.88875pt x 596.2275pt>
 File: img/PNG/sweep-gene-set-network-V4-2x.png Graphic file (type png)
 <use img/PNG/sweep-gene-set-network-V4-2x.png>
 Package pdftex.def Info: img/PNG/sweep-gene-set-network-V4-2x.png  used on inpu
-t line 523.
+t line 521.
 (pdftex.def)             Requested size: 379.4175pt x 217.33464pt.
-<img/PNG/NBL-MYCN-NA-HE-2x.png, id=373, 824.07875pt x 598.235pt>
-File: img/PNG/NBL-MYCN-NA-HE-2x.png Graphic file (type png)
-<use img/PNG/NBL-MYCN-NA-HE-2x.png>
-Package pdftex.def Info: img/PNG/NBL-MYCN-NA-HE-2x.png  used on input line 528.
-
-(pdftex.def)             Requested size: 379.4175pt x 275.4379pt.
+<img/PNG/HE-Figure-3-Clusters-2x.png, id=387, 493.845pt x 400.49625pt>
+File: img/PNG/HE-Figure-3-Clusters-2x.png Graphic file (type png)
+<use img/PNG/HE-Figure-3-Clusters-2x.png>
+Package pdftex.def Info: img/PNG/HE-Figure-3-Clusters-2x.png  used on input lin
+e 526.
+(pdftex.def)             Requested size: 379.4175pt x 307.6925pt.
  [21 <./img/PNG/clustering-screen.png> <./img/PNG/sweep-gene-set-network-V4-2x.
 png>]
-<img/PNG/Checkpoint-Plots-V1.png, id=382, 697.60625pt x 336.25626pt>
+<img/PNG/Checkpoint-Plots-V1.png, id=396, 697.60625pt x 336.25626pt>
 File: img/PNG/Checkpoint-Plots-V1.png Graphic file (type png)
 <use img/PNG/Checkpoint-Plots-V1.png>
 Package pdftex.def Info: img/PNG/Checkpoint-Plots-V1.png  used on input line 53
-4.
+2.
 (pdftex.def)             Requested size: 379.4175pt x 182.88403pt.
-<img/PNG/ewing-jak1-expression-fig.png, id=383, 772.38562pt x 344.03531pt>
+ [22 <./img/PNG/HE-Figure-3-Clusters-2x.png>]
+<img/PNG/ewing-jak1-expression-fig.png, id=403, 772.38562pt x 344.03531pt>
 File: img/PNG/ewing-jak1-expression-fig.png Graphic file (type png)
 <use img/PNG/ewing-jak1-expression-fig.png>
 Package pdftex.def Info: img/PNG/ewing-jak1-expression-fig.png  used on input l
-ine 539.
+ine 537.
 (pdftex.def)             Requested size: 379.4175pt x 168.99873pt.
- [22 <./img/PNG/NBL-MYCN-NA-HE-2x.png> <./img/PNG/Checkpoint-Plots-V1.png>] [23
- <./img/PNG/ewing-jak1-expression-fig.png>] [24] [25] [26] [27]
+ [23 <./img/PNG/Checkpoint-Plots-V1.png> <./img/PNG/ewing-jak1-expression-fig.p
+ng>] [24]
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+) [25] [26] [27]
 
 AED: lastpage setting LastPage
 [28]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1026.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1026.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1015.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1015.
  (./Pfeil-Hydra-Manuscript-V3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1026.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1026.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1015.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1015.
 
 Package rerunfilecheck Info: File `Pfeil-Hydra-Manuscript-V3.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1026.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1015.
  ) 
 Here is how much of TeX's memory you used:
- 11687 strings out of 492982
- 179957 string characters out of 6134896
- 321852 words of memory out of 5000000
- 14853 multiletter control sequences out of 15000+600000
+ 12179 strings out of 492982
+ 185195 string characters out of 6134896
+ 322189 words of memory out of 5000000
+ 15335 multiletter control sequences out of 15000+600000
  10629 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,43p,1611b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,43p,1611b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
@@ -893,10 +857,10 @@ t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Pfeil-Hydra-Manuscript-V3.pdf (28 pages, 6118910 bytes).
+Output written on Pfeil-Hydra-Manuscript-V3.pdf (28 pages, 5188571 bytes).
 PDF statistics:
- 523 PDF objects out of 1000 (max. 8388607)
- 441 compressed objects within 5 object streams
- 143 named destinations out of 1000 (max. 500000)
+ 545 PDF objects out of 1000 (max. 8388607)
+ 463 compressed objects within 5 object streams
+ 150 named destinations out of 1000 (max. 500000)
  11847 words of extra memory for PDF output out of 12000 (max. 10000000)
 
