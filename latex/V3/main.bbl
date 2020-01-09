@@ -2,137 +2,131 @@
 
 \bibitem{vivianToilEnablesReproducible2017}
 Vivian J, Rao AA, Nothaft FA, Ketchum C, Armstrong J, Novak A, et~al.
-\newblock Toil Enables Reproducible, Open Source, Big Biomedical Data Analyses.
-\newblock Nature Biotechnology. 2017;35(4):314--316.
+\newblock Toil Enables Reproducible, Open Source, Big Biomedical Data
+  Analyses;35(4):314--316.
 \newblock doi:{10.1038/nbt.3772}.
 
 \bibitem{pughGeneticLandscapeHighrisk2013}
 Pugh TJ, Morozova O, Attiyeh EF, Asgharzadeh S, Wei JS, Auclair D, et~al.
-\newblock The Genetic Landscape of High-Risk Neuroblastoma.
-\newblock Nature Genetics. 2013;45(3):279--284.
+\newblock The Genetic Landscape of High-Risk Neuroblastoma;45(3):279--284.
 \newblock doi:{10.1038/ng.2529}.
 
 \bibitem{goldmanUCSCXenaPlatform2018}
 Goldman M, Craft B, Kamath A, Brooks A, Zhu J, Haussler D.
 \newblock The {{UCSC Xena Platform}} for Cancer Genomics Data Visualization and
-  Interpretation.
-\newblock bioRxiv. 2018; p. 326470.
+  Interpretation; p. 326470.
 \newblock doi:{10.1101/326470}.
 
 \bibitem{thecancergenomeatlasresearchnetworkCancerGenomeAtlas2013}
 {The Cancer Genome Atlas Research Network}, Weinstein JN, Collisson EA, Mills
   GB, Shaw KRM, Ozenberger BA, et~al.
-\newblock The {{Cancer Genome Atlas Pan}}-{{Cancer}} Analysis Project.
-\newblock Nature Genetics. 2013;45:1113--1120.
+\newblock The {{Cancer Genome Atlas Pan}}-{{Cancer}} Analysis
+  Project;45:1113--1120.
 \newblock doi:{10.1038/ng.2764}.
 
 \bibitem{newtonTumorMapExploringMolecular2017}
 Newton Y, Novak AM, Swatloski T, McColl DC, Chopra S, Graim K, et~al.
 \newblock {{TumorMap}}: {{Exploring}} the {{Molecular Similarities}} of
-  {{Cancer Samples}} in an {{Interactive Portal}}.
-\newblock Cancer Research. 2017;77(21):e111--e114.
+  {{Cancer Samples}} in an {{Interactive Portal}};77(21):e111--e114.
 \newblock doi:{10.1158/0008-5472.CAN-17-0580}.
 
 \bibitem{vaskeComparativeTumorRNA2019}
 Vaske OM, Bjork I, Salama SR, Beale H, Shah AT, Sanders L, et~al.
 \newblock Comparative {{Tumor RNA Sequencing Analysis}} for
   {{Difficult}}-to-{{Treat Pediatric}} and {{Young Adult Patients With
-  Cancer}}.
-\newblock JAMA Network Open. 2019;2(10):e1913968--e1913968.
+  Cancer}};2(10):e1913968--e1913968.
 \newblock doi:{10.1001/jamanetworkopen.2019.13968}.
 
 \bibitem{joyceCellExclusionImmune2015}
 Joyce JA, Fearon DT.
-\newblock T Cell Exclusion, Immune Privilege, and the Tumor Microenvironment.
-\newblock Science (New York, NY). 2015;348(6230):74--80.
+\newblock T Cell Exclusion, Immune Privilege, and the Tumor
+  Microenvironment;348(6230):74--80.
 \newblock doi:{10.1126/science.aaa6204}.
 
 \bibitem{chenElementsCancerImmunity2017}
 Chen DS, Mellman I.
-\newblock Elements of Cancer Immunity and the Cancer\textendash{}Immune Set
-  Point.
-\newblock Nature. 2017;541(7637):321--330.
+\newblock Elements of Cancer Immunity and the Cancer–Immune Set
+  Point;541(7637):321--330.
 \newblock doi:{10.1038/nature21349}.
 
 \bibitem{mellmanCancerImmunotherapyComes2011}
 Mellman I, Coukos G, Dranoff G.
-\newblock Cancer Immunotherapy Comes of Age.
-\newblock Nature. 2011;480(7378):480--489.
+\newblock Cancer Immunotherapy Comes of Age;480(7378):480--489.
 \newblock doi:{10.1038/nature10673}.
 
 \bibitem{pageImmuneModulationCancer2014}
 Page DB, Postow MA, Callahan MK, Allison JP, Wolchok JD.
-\newblock Immune Modulation in Cancer with Antibodies.
-\newblock Annual Review of Medicine. 2014;65:185--202.
+\newblock Immune Modulation in Cancer with Antibodies;65:185--202.
 \newblock doi:{10.1146/annurev-med-092012-112807}.
+
+\bibitem{majzner2017harnessing}
+Majzner RG, Heitzeneder S, Mackall CL.
+\newblock Harnessing the Immunotherapy Revolution for the Treatment of
+  Childhood Cancers;31(4):476--485.
+
+\bibitem{zamoraPediatricPatientsAcute2019}
+Zamora AE, Crawford JC, Allen EK, Guo XzJ, Bakke J, Carter RA, et~al.
+\newblock Pediatric Patients with Acute Lymphoblastic Leukemia Generate
+  Abundant and Functional Neoantigen-Specific {{CD8}}+ {{T}} Cell
+  Responses;11(498).
+\newblock doi:{10.1126/scitranslmed.aat8549}.
 
 \bibitem{andersCountbasedDifferentialExpression2013}
 Anders S, McCarthy DJ, Chen Y, Okoniewski M, Smyth GK, Huber W, et~al.
 \newblock Count-Based Differential Expression Analysis of {{RNA}} Sequencing
-  Data Using {{R}} and {{Bioconductor}}.
-\newblock Nature Protocols. 2013;8(9):1765--1786.
+  Data Using {{R}} and {{Bioconductor}};8(9):1765--1786.
 \newblock doi:{10.1038/nprot.2013.099}.
 
 \bibitem{andersDifferentialExpressionAnalysis2010}
 Anders S, Huber W.
-\newblock Differential Expression Analysis for Sequence Count Data.
-\newblock Genome Biology. 2010;11(10):R106.
+\newblock Differential Expression Analysis for Sequence Count Data;11(10):R106.
 \newblock doi:{10.1186/gb-2010-11-10-r106}.
 
 \bibitem{sonesonComparisonMethodsDifferential2013}
 Soneson C, Delorenzi M.
 \newblock A Comparison of Methods for Differential Expression Analysis of
-  {{RNA}}-Seq Data.
-\newblock BMC Bioinformatics. 2013;14(1):91.
+  {{RNA}}-Seq Data;14(1):91.
 \newblock doi:{10.1186/1471-2105-14-91}.
 
 \bibitem{subramanianGeneSetEnrichment2005}
 Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, et~al.
 \newblock Gene Set Enrichment Analysis: A Knowledge-Based Approach for
-  Interpreting Genome-Wide Expression Profiles.
-\newblock Proceedings of the National Academy of Sciences of the United States
-  of America. 2005;102(43):15545--15550.
+  Interpreting Genome-Wide Expression Profiles;102(43):15545--15550.
 \newblock doi:{10.1073/pnas.0506580102}.
 
 \bibitem{moothaPGC1alpharesponsiveGenesInvolved2003}
 Mootha VK, Lindgren CM, Eriksson KF, Subramanian A, Sihag S, Lehar J, et~al.
 \newblock {{PGC}}-1alpha-Responsive Genes Involved in Oxidative Phosphorylation
-  Are Coordinately Downregulated in Human Diabetes.
-\newblock Nature Genetics. 2003;34(3):267--273.
+  Are Coordinately Downregulated in Human Diabetes;34(3):267--273.
 \newblock doi:{10.1038/ng1180}.
 
 \bibitem{liberzonMolecularSignaturesDatabase2011}
-Liberzon A, Subramanian A, Pinchback R, Thorvaldsd{\'o}ttir H, Tamayo P,
-  Mesirov JP.
-\newblock Molecular Signatures Database ({{MSigDB}}) 3.0.
-\newblock Bioinformatics. 2011;27(12):1739--1740.
+Liberzon A, Subramanian A, Pinchback R, Thorvaldsdóttir H, Tamayo P, Mesirov
+  JP.
+\newblock Molecular Signatures Database ({{MSigDB}}) 3.0;27(12):1739--1740.
 \newblock doi:{10.1093/bioinformatics/btr260}.
 
 \bibitem{oyeladeClusteringAlgorithmsTheir2016}
 Oyelade J, Isewon I, Oladipupo F, Aromolaran O, Uwoghiren E, Ameh F, et~al.
 \newblock Clustering {{Algorithms}}: {{Their Application}} to {{Gene Expression
-  Data}}.
-\newblock Bioinformatics and Biology Insights. 2016;10:237--253.
+  Data}};10:237--253.
 \newblock doi:{10.4137/BBI.S38316}.
 
 \bibitem{johnM3CMonteCarlo2018}
 John CR, Watson D, Russ D, Goldmann K, Ehrenstein M, Lewis M, et~al.
 \newblock {{M3C}}: {{A Monte Carlo}} Reference-Based Consensus Clustering
-  Algorithm.
-\newblock bioRxiv. 2018; p. 377002.
+  Algorithm; p. 377002.
 
 \bibitem{wilkersonConsensusClusterPlusClassDiscovery2010a}
 Wilkerson MD, Hayes DN.
 \newblock {{ConsensusClusterPlus}}: A Class Discovery Tool with Confidence
-  Assessments and Item Tracking.
-\newblock Bioinformatics (Oxford, England). 2010;26(12):1572--1573.
+  Assessments and Item Tracking;26(12):1572--1573.
 \newblock doi:{10.1093/bioinformatics/btq170}.
 
 \bibitem{lenzPrincipalComponentsAnalysis2016}
-Lenz M, M{\"u}ller FJ, Zenke M, Schuppert A.
+Lenz M, Müller FJ, Zenke M, Schuppert A.
 \newblock Principal Components Analysis and the Reported Low Intrinsic
-  Dimensionality of Gene Expression Microarray Data.
-\newblock Scientific Reports. 2016;6(1):1--11.
+  Dimensionality of Gene Expression Microarray Data;6(1):1--11.
 \newblock doi:{10.1038/srep25696}.
 
 \bibitem{yiliMultimodalityCriterionFeature2005}
@@ -140,78 +134,91 @@ Lenz M, M{\"u}ller FJ, Zenke M, Schuppert A.
 \newblock Multimodality as a Criterion for Feature Selection in Unsupervised
   Analysis of Gene Expression Data.
 \newblock In: Fifth {{IEEE Symposium}} on {{Bioinformatics}} and
-  {{Bioengineering}} ({{BIBE}}'05); 2005. p. 276--280.
+  {{Bioengineering}} ({{BIBE}}'05);. p. 276--280.
 
 \bibitem{ghoshMixtureModelsAssessing2004}
 Ghosh D.
 \newblock Mixture Models for Assessing Differential Expression in Complex
-  Tissues Using Microarray Data.
-\newblock Bioinformatics (Oxford, England). 2004;20(11):1663--1669.
+  Tissues Using Microarray Data;20(11):1663--1669.
 \newblock doi:{10.1093/bioinformatics/bth139}.
 
 \bibitem{dahlModelBasedClusteringExpression2006}
 Dahl DB, Vannucci M.
-\newblock Model-{{Based Clustering}} for {{Expression Data}} via a {{Dirichlet
-  Process Mixture Model}}.
-\newblock In: Do KA, Muller P, editors. Bayesian {{Inference}} for {{Gene
-  Expression}} and {{Proteomics}}. {Cambridge}: {Cambridge University Press};
-  2006. p. 201--218.
+\newblock In: Do KA, Muller P, editors. Model-{{Based Clustering}} for
+  {{Expression Data}} via a {{Dirichlet Process Mixture Model}}. {Cambridge
+  University Press};. p. 201--218.
+\newblock Available from:
+  \url{https://www.cambridge.org/core/product/identifier/CBO9780511584589A070/type/book_part}.
 
 \bibitem{kimVariableSelectionClustering2006}
 Kim S, Tadesse MG, Vannucci M.
 \newblock Variable Selection in Clustering via {{Dirichlet}} Process Mixture
-  Models.
-\newblock Biometrika. 2006;93(4):877--893.
+  Models;93(4):877--893.
 \newblock doi:{10.1093/biomet/93.4.877}.
 
 \bibitem{gelmanBayesianDataAnalysis2013}
 Gelman A, Carlin JB, Stern HS, Dunson DB, Vehtari A, Rubin DB, et~al.
 \newblock Bayesian {{Data Analysis}}.
-\newblock {Chapman and Hall/CRC}; 2013.
+\newblock {Chapman and Hall/CRC};.
+\newblock Available from:
+  \url{https://www.taylorfrancis.com/books/9780429113079}.
 
 \bibitem{thallBayesianNonparametricStatistics2017}
 Thall PF, Mueller P, Xu Y, Guindani M.
 \newblock Bayesian Nonparametric Statistics: {{A}} New Toolkit for Discovery in
-  Cancer Research.
-\newblock Pharmaceutical Statistics. 2017;16(6):414--423.
+  Cancer Research;16(6):414--423.
 \newblock doi:{10.1002/pst.1819}.
 
 \bibitem{teh2010dirichlet}
 Teh YW.
-\newblock Dirichlet Process.
-\newblock Encyclopedia of machine learning. 2010; p. 280--287.
+\newblock Dirichlet Process; p. 280--287.
 
 \bibitem{antoniakMixturesDirichletProcesses1974}
 Antoniak CE.
 \newblock Mixtures of {{Dirichlet Processes}} with {{Applications}} to
-  {{Bayesian Nonparametric Problems}}.
-\newblock The Annals of Statistics. 1974;2(6):1152--1174.
+  {{Bayesian Nonparametric Problems}};2(6):1152--1174.
 \newblock doi:{10.1214/aos/1176342871}.
 
 \bibitem{fergusonBayesianAnalysisNonparametric1973}
 Ferguson TS.
-\newblock A {{Bayesian Analysis}} of {{Some Nonparametric Problems}}.
-\newblock The Annals of Statistics. 1973;1(2):209--230.
+\newblock A {{Bayesian Analysis}} of {{Some Nonparametric
+  Problems}};1(2):209--230.
 \newblock doi:{10.1214/aos/1176342360}.
 
 \bibitem{muller2004nonparametric}
-M{\"u}ller P, Quintana FA.
-\newblock Nonparametric Bayesian Data Analysis.
-\newblock Statistical science. 2004; p. 95--110.
+Müller P, Quintana FA.
+\newblock Nonparametric Bayesian Data Analysis; p. 95--110.
 
 \bibitem{gorurDirichletProcessGaussian2010}
-G{\"o}r{\"u}r D, Edward~Rasmussen C.
+Görür D, Edward~Rasmussen C.
 \newblock Dirichlet {{Process Gaussian Mixture Models}}: {{Choice}} of the
-  {{Base Distribution}}.
-\newblock Journal of Computer Science and Technology. 2010;25(4):653--664.
+  {{Base Distribution}};25(4):653--664.
 \newblock doi:{10.1007/s11390-010-9355-8}.
 
 \bibitem{hughes2013memoized}
 Hughes MC, Sudderth E.
 \newblock Memoized Online Variational Inference for {{Dirichlet}} Process
   Mixture Models.
-\newblock In: Advances in Neural Information Processing Systems; 2013. p.
+\newblock In: Advances in Neural Information Processing Systems;. p.
   1133--1141.
+
+\bibitem{mullerBayesianNonparametricData2015}
+Müller P, Quintana FA, Jara A, Hanson T.
+\newblock Bayesian {{Nonparametric Data Analysis}}.
+\newblock Springer {{Series}} in {{Statistics}}. {Springer International
+  Publishing};.
+\newblock Available from: \url{https://www.springer.com/gp/book/9783319189673}.
+
+\bibitem{phadia2015prior}
+Phadia EG.
+\newblock Prior Processes and Their Applications.
+\newblock {Springer};.
+
+\bibitem{nealMarkovChainSampling2000}
+Neal RM.
+\newblock Markov {{Chain Sampling Methods}} for {{Dirichlet Process Mixture
+  Models}};9(2):249--265.
+\newblock doi:{10.1080/10618600.2000.10474879}.
 
 \bibitem{hughesBnpyReliableScalable}
 Hughes MC, Sudderth EB.
@@ -220,216 +227,205 @@ Hughes MC, Sudderth EB.
 
 \bibitem{Ashburner2000}
 Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, et~al.
-\newblock Gene {{Ontology}}: Tool for the Unification of Biology.
-\newblock Nature Genetics. 2000;25(1):25--29.
+\newblock Gene {{Ontology}}: Tool for the Unification of Biology;25(1):25--29.
 \newblock doi:{10.1038/75556}.
 
 \bibitem{gene2018gene}
 Consortium GO.
-\newblock The Gene Ontology Resource: 20 Years and Still {{GOing}} Strong.
-\newblock Nucleic acids research. 2018;47(D1):D330--D338.
+\newblock The Gene Ontology Resource: 20 Years and Still {{GOing}}
+  Strong;47(D1):D330--D338.
 
 \bibitem{merico2010enrichment}
 Merico D, Isserlin R, Stueker O, Emili A, Bader GD.
 \newblock Enrichment Map: A Network-Based Method for Gene-Set Enrichment
-  Visualization and Interpretation.
-\newblock PloS one. 2010;5(11):e13984.
+  Visualization and Interpretation;5(11):e13984.
 
 \bibitem{yuClusterProfilerPackageComparing2012}
 Yu G, Wang LG, Han Y, He QY.
 \newblock {{clusterProfiler}}: An {{R}} Package for Comparing Biological Themes
-  among Gene Clusters.
-\newblock Omics: A Journal of Integrative Biology. 2012;16(5):284--287.
+  among Gene Clusters;16(5):284--287.
 \newblock doi:{10.1089/omi.2011.0118}.
 
 \bibitem{tamayoLimitationsSimpleGene2016}
 Tamayo P, Steinhardt G, Liberzon A, Mesirov JP.
 \newblock The {{Limitations}} of {{Simple Gene Set Enrichment Analysis Assuming
-  Gene Independence}}.
-\newblock Statistical methods in medical research. 2016;25(1):472--487.
+  Gene Independence}};25(1):472--487.
 \newblock doi:{10.1177/0962280212460441}.
 
 \bibitem{korotkevichFastGeneSet2019}
 Korotkevich G, Sukhov V, Sergushichev A.
-\newblock Fast Gene Set Enrichment Analysis.
-\newblock bioRxiv. 2019; p. 060012.
+\newblock Fast Gene Set Enrichment Analysis; p. 060012.
 \newblock doi:{10.1101/060012}.
 
 \bibitem{barbieSystematicRNAInterference2009}
 Barbie DA, Tamayo P, Boehm JS, Kim SY, Moody SE, Dunn IF, et~al.
 \newblock Systematic {{RNA}} Interference Reveals That Oncogenic
-  {{KRAS}}-Driven Cancers Require {{TBK1}}.
-\newblock Nature. 2009;462(7269):108--112.
+  {{KRAS}}-Driven Cancers Require {{TBK1}};462(7269):108--112.
 \newblock doi:{10.1038/nature08460}.
 
 \bibitem{hanzelmannGSVAGeneSet2013}
-H{\"a}nzelmann S, Castelo R, Guinney J.
+Hänzelmann S, Castelo R, Guinney J.
 \newblock {{GSVA}}: Gene Set Variation Analysis for Microarray and
-  {{RNA}}-{{Seq}} Data.
-\newblock BMC Bioinformatics. 2013;14(1):7.
+  {{RNA}}-{{Seq}} Data;14(1):7.
 \newblock doi:{10.1186/1471-2105-14-7}.
 
 \bibitem{tarcaComparisonGeneSet2013}
 Tarca AL, Bhatti G, Romero R.
 \newblock A {{Comparison}} of {{Gene Set Analysis Methods}} in {{Terms}} of
-  {{Sensitivity}}, {{Prioritization}} and {{Specificity}}.
-\newblock PLOS ONE. 2013;8(11):e79217.
+  {{Sensitivity}}, {{Prioritization}} and {{Specificity}};8(11):e79217.
 \newblock doi:{10.1371/journal.pone.0079217}.
 
 \bibitem{zwienerTransformingRNASeqData2014}
 Zwiener I, Frisch B, Binder H.
 \newblock Transforming {{RNA}}-{{Seq Data}} to {{Improve}} the {{Performance}}
-  of {{Prognostic Gene Signatures}}.
-\newblock PLOS ONE. 2014;9(1):e85150.
+  of {{Prognostic Gene Signatures}};9(1):e85150.
 \newblock doi:{10.1371/journal.pone.0085150}.
 
 \bibitem{lagardeChromosomeInstabilityAccounts2013}
-Lagarde P, Przybyl J, Brulard C, P{\'e}rot G, Pierron G, Delattre O, et~al.
+Lagarde P, Przybyl J, Brulard C, Pérot G, Pierron G, Delattre O, et~al.
 \newblock Chromosome Instability Accounts for Reverse Metastatic Outcomes of
-  Pediatric and Adult Synovial Sarcomas.
-\newblock Journal of Clinical Oncology: Official Journal of the American
-  Society of Clinical Oncology. 2013;31(5):608--615.
+  Pediatric and Adult Synovial Sarcomas;31(5):608--615.
 \newblock doi:{10.1200/JCO.2012.46.0147}.
 
 \bibitem{aranXCellDigitallyPortraying2017}
 Aran D, Hu Z, Butte AJ.
 \newblock {{xCell}}: Digitally Portraying the Tissue Cellular Heterogeneity
-  Landscape.
-\newblock Genome Biology. 2017;18(1):220.
+  Landscape;18(1):220.
 \newblock doi:{10.1186/s13059-017-1349-1}.
 
 \bibitem{newmanRobustEnumerationCell2015}
 Newman AM, Liu CL, Green MR, Gentles AJ, Feng W, Xu Y, et~al.
-\newblock Robust Enumeration of Cell Subsets from Tissue Expression Profiles.
-\newblock Nature Methods. 2015;12(5):453--457.
+\newblock Robust Enumeration of Cell Subsets from Tissue Expression
+  Profiles;12(5):453--457.
 \newblock doi:{10.1038/nmeth.3337}.
 
 \bibitem{yoshiharaInferringTumourPurity2013a}
-Yoshihara K, Shahmoradgoli M, Mart{\'i}nez E, Vegesna R, Kim H, {Torres-Garcia}
-  W, et~al.
+Yoshihara K, Shahmoradgoli M, Martínez E, Vegesna R, Kim H, Torres-Garcia W,
+  et~al.
 \newblock Inferring Tumour Purity and Stromal and Immune Cell Admixture from
-  Expression Data.
-\newblock Nature Communications. 2013;4:2612.
+  Expression Data;4:2612.
 \newblock doi:{10.1038/ncomms3612}.
 
 \bibitem{tibshirani2001estimating}
 Tibshirani R, Walther G, Hastie T.
 \newblock Estimating the Number of Clusters in a Data Set via the Gap
-  Statistic.
-\newblock Journal of the Royal Statistical Society: Series B (Statistical
-  Methodology). 2001;63(2):411--423.
+  Statistic;63(2):411--423.
+
+\bibitem{bastian2009gephi}
+Bastian M, Heymann S, Jacomy M.
+\newblock Gephi: An Open Source Software for Exploring and Manipulating
+  Networks.
+\newblock In: Third International {{AAAI}} Conference on Weblogs and Social
+  Media;.
 
 \bibitem{pedregosa2011scikit}
 Pedregosa F, Varoquaux G, Gramfort A, Michel V, Thirion B, Grisel O, et~al.
-\newblock Scikit-Learn: Machine Learning in Python.
-\newblock Journal of machine learning research. 2011;12(Oct):2825--2830.
+\newblock Scikit-Learn: Machine Learning in Python;12:2825--2830.
 
 \bibitem{jonesSciPyOpenSource2001}
 Jones E, Oliphant T, Peterson P, et~al.
-\newblock {{SciPy}}: {{Open}} Source Scientific Tools for {{Python}}. 2001;.
+\newblock {{SciPy}}: {{Open}} Source Scientific Tools for {{Python}};.
 
 \bibitem{2019arXiv190710121V}
 Virtanen P, Gommers R, Oliphant TE, Haberland M, Reddy T, Cournapeau D, et~al.
-\newblock {{SciPy}} 1.0\textendash{{Fundamental Algorithms}} for {{Scientific
-  Computing}} in {{Python}}.
-\newblock arXiv e-prints. 2019; p. arXiv:1907.10121.
+\newblock {{SciPy}} 1.0–{{Fundamental Algorithms}} for {{Scientific
+  Computing}} in {{Python}}; p. arXiv:1907.10121.
 
 \bibitem{Terpilowski2019}
 Terpilowski M.
 \newblock Scikit-Posthocs: {{Pairwise}} Multiple Comparison Tests in
-  {{Python}}.
-\newblock The Journal of Open Source Software. 2019;4(36):1169.
+  {{Python}};4(36):1169.
 \newblock doi:{10.21105/joss.01169}.
 
 \bibitem{kassambaraSurvminerDrawingSurvival2019}
 Kassambara A, Kosinski M, Biecek P.
-\newblock Survminer: Drawing Survival Curves Using 'Ggplot2'; 2019.
+\newblock Survminer: Drawing Survival Curves Using 'Ggplot2';.
+\newblock Available from: \url{https://CRAN.R-project.org/package=survminer}.
 
 \bibitem{morgensternChallengeDefiningUltrahighrisk2019}
 Morgenstern DA, Bagatell R, Cohn SL, Hogarty MD, Maris JM, Moreno L, et~al.
-\newblock The Challenge of Defining ``Ultra-High-Risk'' Neuroblastoma.
-\newblock Pediatric Blood \& Cancer. 2019;66(4):e27556.
+\newblock The Challenge of Defining “Ultra-High-Risk”
+  Neuroblastoma;66(4):e27556.
 \newblock doi:{10.1002/pbc.27556}.
+
+\bibitem{cotto2017dgidb}
+Cotto KC, Wagner AH, Feng YY, Kiwala S, Coffman AC, Spies G, et~al.
+\newblock {{DGIdb}} 3.0: A Redesign and Expansion of the Drug–Gene
+  Interaction Database;46(D1):D1068--D1073.
 
 \bibitem{fosterEvolvingRelationshipWound}
 Foster DS, Jones RE, Ransom RC, Longaker MT, Norton JA.
-\newblock The Evolving Relationship of Wound Healing and Tumor Stroma.
-\newblock JCI Insight;3(18).
+\newblock The Evolving Relationship of Wound Healing and Tumor Stroma;3(18).
 \newblock doi:{10.1172/jci.insight.99911}.
 
 \bibitem{bourgonIndependentFilteringIncreases2010}
 Bourgon R, Gentleman R, Huber W.
 \newblock Independent Filtering Increases Detection Power for High-Throughput
-  Experiments.
-\newblock Proceedings of the National Academy of Sciences.
-  2010;107(21):9546--9551.
+  Experiments;107(21):9546--9551.
 \newblock doi:{10.1073/pnas.0914005107}.
 
 \bibitem{tritchlerFilteringGenesCluster2009}
 Tritchler D, Parkhomenko E, Beyene J.
-\newblock Filtering {{Genes}} for {{Cluster}} and {{Network Analysis}}.
-\newblock BMC Bioinformatics. 2009;10(1):193.
+\newblock Filtering {{Genes}} for {{Cluster}} and {{Network
+  Analysis}};10(1):193.
 \newblock doi:{10.1186/1471-2105-10-193}.
 
 \bibitem{carcamo-oriveAnalysisTranscriptionalVariability2017}
-{Carcamo-Orive} I, Hoffman GE, Cundiff P, Beckmann ND, D'Souza SL, Knowles JW,
+Carcamo-Orive I, Hoffman GE, Cundiff P, Beckmann ND, D’Souza SL, Knowles JW,
   et~al.
 \newblock Analysis of {{Transcriptional Variability}} in a {{Large Human iPSC
   Library Reveals Genetic}} and {{Non}}-Genetic {{Determinants}} of
-  {{Heterogeneity}}.
-\newblock Cell Stem Cell. 2017;20(4):518--532.e9.
+  {{Heterogeneity}};20(4):518--532.e9.
 \newblock doi:{10.1016/j.stem.2016.11.005}.
 
 \bibitem{maechler2012cluster}
 Maechler M, Rousseeuw P, Struyf A, Hubert M, Hornik K, et~al.
-\newblock Cluster: Cluster Analysis Basics and Extensions.
-\newblock R package version. 2012;1(2):56.
+\newblock Cluster: Cluster Analysis Basics and Extensions;1(2):56.
 
 \bibitem{reevesAntigenProcessingImmune2017}
 Reeves E, James E.
-\newblock Antigen Processing and Immune Regulation in the Response to Tumours.
-\newblock Immunology. 2017;150(1):16--24.
+\newblock Antigen Processing and Immune Regulation in the Response to
+  Tumours;150(1):16--24.
 \newblock doi:{10.1111/imm.12675}.
 
 \bibitem{hermansJAK1JAK2Inhibitor2018}
-Hermans MAW, Schrijver B, {van Holten-Neelen} CCPA, {Gerth van Wijk} R, {van
-  Hagen} PM, {van Daele} PLA, et~al.
+Hermans MAW, Schrijver B, van Holten-Neelen CCPA, Gerth~van Wijk R, van Hagen
+  PM, van Daele PLA, et~al.
 \newblock The {{JAK1}}/{{JAK2}}- Inhibitor Ruxolitinib Inhibits Mast Cell
-  Degranulation and Cytokine Release.
-\newblock Clinical and Experimental Allergy: Journal of the British Society for
-  Allergy and Clinical Immunology. 2018;48(11):1412--1420.
+  Degranulation and Cytokine Release;48(11):1412--1420.
 \newblock doi:{10.1111/cea.13217}.
+
+\bibitem{marisInitialTestingAurora2010}
+Maris JM, Morton CL, Gorlick R, Kolb EA, Lock R, Carol H, et~al.
+\newblock Initial Testing of the Aurora Kinase a Inhibitor {{MLN8237}} by the
+  {{Pediatric Preclinical Testing Program}} ({{PPTP}});55(1):26--34.
+\newblock doi:{10.1002/pbc.22430}.
+
+\bibitem{gautschiAuroraKinasesAnticancer2008}
+Gautschi O, Heighway J, Mack PC, Purnell PR, Lara PN, Gandara DR.
+\newblock Aurora {{Kinases}} as {{Anticancer Drug Targets}};14(6):1639--1648.
+\newblock doi:{10.1158/1078-0432.CCR-07-2179}.
 
 \bibitem{hoadleyCellofOriginPatternsDominate2018}
 Hoadley KA, Yau C, Hinoue T, Wolf DM, Lazar AJ, Drill E, et~al.
 \newblock Cell-of-{{Origin Patterns Dominate}} the {{Molecular Classification}}
-  of 10,000 {{Tumors}} from 33 {{Types}} of {{Cancer}}.
-\newblock Cell. 2018;173(2):291--304.e6.
+  of 10,000 {{Tumors}} from 33 {{Types}} of {{Cancer}};173(2):291--304.e6.
 \newblock doi:{10.1016/j.cell.2018.03.022}.
 
-\bibitem{majzner2017harnessing}
-Majzner RG, Heitzeneder S, Mackall CL.
-\newblock Harnessing the Immunotherapy Revolution for the Treatment of
-  Childhood Cancers.
-\newblock Cancer Cell. 2017;31(4):476--485.
-
 \bibitem{cunananEfficientBasketTrial2017}
-Cunanan KM, Iasonos A, Shen R, Begg CB, G{\"o}nen M.
-\newblock An {{Efficient Basket Trial Design}}.
-\newblock Statistics in medicine. 2017;36(10):1568--1579.
+Cunanan KM, Iasonos A, Shen R, Begg CB, Gönen M.
+\newblock An {{Efficient Basket Trial Design}};36(10):1568--1579.
 \newblock doi:{10.1002/sim.7227}.
 
 \bibitem{rheeImpactTumorPurity2018}
 Rhee JK, Jung YC, Kim KR, Yoo J, Kim J, Lee YJ, et~al.
 \newblock Impact of {{Tumor Purity}} on {{Immune Gene Expression}} and
-  {{Clustering Analyses}} across {{Multiple Cancer Types}}.
-\newblock Cancer Immunology Research. 2018;6(1):87--97.
+  {{Clustering Analyses}} across {{Multiple Cancer Types}};6(1):87--97.
 \newblock doi:{10.1158/2326-6066.CIR-17-0201}.
 
 \bibitem{raphael2017integrated}
 Raphael BJ, Hruban RH, Aguirre AJ, Moffitt RA, Yeh JJ, Stewart C, et~al.
 \newblock Integrated Genomic Characterization of Pancreatic Ductal
-  Adenocarcinoma.
-\newblock Cancer cell. 2017;32(2):185--203.
+  Adenocarcinoma;32(2):185--203.
 
 \end{thebibliography}

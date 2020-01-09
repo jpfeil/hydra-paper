@@ -1,0 +1,1916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="4216.039"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-2102.948242 -2086.661377 4216.039063 4150.023926"
+     height="4150.024" preserveAspectRatio="xMidYMid meet"
+     xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <g id="edges">
+        <path fill="none" stroke-width="6.0591784"
+              d="M 1592.809570,-97.113731 C 1467.130981,-157.221786 1368.775024,-435.901886 1428.883057,-561.580566"
+              class="id_HALLMARK_E2F_TARGETS id_REACTOME_CELL_CYCLE_MITOTIC"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.231785"
+              d="M 1592.809570,-97.113731 C 1559.991943,-240.198914 1725.393433,-504.053009 1868.478638,-536.870544"
+              class="id_HALLMARK_E2F_TARGETS id_HALLMARK_G2M_CHECKPOINT"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.04365"
+              d="M 1592.809570,-97.113731 C 1375.269287,-204.736618 1210.393311,-692.481262 1318.016113,-910.021545"
+              class="id_HALLMARK_E2F_TARGETS id_REACTOME_DNA_REPLICATION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0547123"
+              d="M 1592.809570,-97.113731 C 1393.243408,-113.582779 1118.597900,-437.635498 1135.066895,-637.201599"
+              class="id_HALLMARK_E2F_TARGETS id_REACTOME_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0365877"
+              d="M 1592.809570,-97.113731 C 1499.479126,-51.138031 1290.519775,-122.170258 1244.544067,-215.500763"
+              class="id_HALLMARK_E2F_TARGETS id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.084705"
+              d="M -1032.228394,124.059280 C -1157.618774,144.395966 -1376.209473,-13.184616 -1396.546143,-138.575043"
+              class="id_KEGG_SMALL_CELL_LUNG_CANCER id_PID_INTEGRIN1_PATHWAY"
+              stroke-opacity="1.0" stroke="#60be9e"/>
+        <path fill="none" stroke-width="6.0905538"
+              d="M -1032.228394,124.059280 C -972.647705,-88.010536 -565.171936,-316.744202 -353.102081,-257.163452"
+              class="id_KEGG_SMALL_CELL_LUNG_CANCER id_KEGG_MELANOMA"
+              stroke-opacity="1.0" stroke="#00bd7d"/>
+        <path fill="none" stroke-width="6.2792606"
+              d="M -1032.228394,124.059280 C -877.980469,37.768539 -517.172485,139.704300 -430.881744,293.952209"
+              class="id_KEGG_SMALL_CELL_LUNG_CANCER id_KEGG_PATHWAYS_IN_CANCER"
+              stroke-opacity="1.0" stroke="#00bd7d"/>
+        <path fill="none" stroke-width="6.11025"
+              d="M -1032.228394,124.059280 C -1238.113403,170.460907 -1616.543335,-68.764114 -1662.944946,-274.649109"
+              class="id_KEGG_SMALL_CELL_LUNG_CANCER id_KEGG_ECM_RECEPTOR_INTERACTION"
+              stroke-opacity="1.0" stroke="#399164"/>
+        <path fill="none" stroke-width="6.1279516"
+              d="M -1032.228394,124.059280 C -1099.920898,34.708786 -1067.433960,-200.855682 -978.083435,-268.548187"
+              class="id_KEGG_SMALL_CELL_LUNG_CANCER id_KEGG_FOCAL_ADHESION"
+              stroke-opacity="1.0" stroke="#60be9e"/>
+        <path fill="none" stroke-width="6.133854"
+              d="M -1032.228394,124.059280 C -1050.320313,226.549149 -1231.193237,353.145966 -1333.683105,335.053955"
+              class="id_KEGG_SMALL_CELL_LUNG_CANCER id_PID_A6B1_A6B4_INTEGRIN_PATHWAY"
+              stroke-opacity="1.0" stroke="#60be9e"/>
+        <path fill="none" stroke-width="6.315385"
+              d="M 1206.350708,-1572.973999 C 1453.135864,-1415.201782 1586.655273,-808.365723 1428.883057,-561.580566"
+              class="id_REACTOME_MITOTIC_PROMETAPHASE id_REACTOME_CELL_CYCLE_MITOTIC"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.664134"
+              d="M 1206.350708,-1572.973999 C 1361.274292,-1462.716675 1428.273438,-1064.945190 1318.016113,-910.021545"
+              class="id_REACTOME_MITOTIC_PROMETAPHASE id_REACTOME_DNA_REPLICATION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.200582"
+              d="M 1206.350708,-1572.973999 C 1379.248413,-1371.562866 1336.478027,-810.099304 1135.066895,-637.201599"
+              class="id_REACTOME_MITOTIC_PROMETAPHASE id_REACTOME_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.763228"
+              d="M 1206.350708,-1572.973999 C 1336.575195,-1554.511963 1504.218872,-1331.482056 1485.756836,-1201.257568"
+              class="id_REACTOME_MITOTIC_PROMETAPHASE id_REACTOME_MITOTIC_M_M_G1_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.051003"
+              d="M 1206.350708,-1572.973999 C 1076.097900,-1542.775391 835.420898,-1692.856567 805.222290,-1823.109375"
+              class="id_REACTOME_MITOTIC_PROMETAPHASE id_PID_PLK1_PATHWAY"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.2285814"
+              d="M 1428.883057,-561.580566 C 1153.034790,-578.749207 765.015381,-1018.274597 782.184082,-1294.122803"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.2343683"
+              d="M 1428.883057,-561.580566 C 1358.718750,-418.497070 1038.847168,-309.118225 895.763672,-379.282532"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.303811"
+              d="M 1428.883057,-561.580566 C 1274.319580,-434.194763 851.395813,-474.961182 724.010010,-629.524597"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0591784"
+              d="M 1428.883057,-561.580566 C 1521.744141,-644.557678 1785.501587,-629.731689 1868.478638,-536.870544"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_HALLMARK_G2M_CHECKPOINT"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.407584"
+              d="M 1428.883057,-561.580566 C 1230.852539,-520.786194 872.614990,-756.640442 831.820618,-954.671021"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_REACTOME_CELL_CYCLE_CHECKPOINTS"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.9230065"
+              d="M 1428.883057,-561.580566 C 1337.021484,-609.095337 1270.501221,-818.159973 1318.016113,-910.021545"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_REACTOME_DNA_REPLICATION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="7.2637997"
+              d="M 1428.883057,-561.580566 C 1354.995605,-517.941528 1178.705811,-563.314148 1135.066895,-637.201599"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_REACTOME_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0525427"
+              d="M 1428.883057,-561.580566 C 1161.153564,-426.929901 557.583252,-626.548340 422.932556,-894.277832"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_REACTOME_ADAPTIVE_IMMUNE_SYSTEM"
+              stroke-opacity="1.0" stroke="#b180b4"/>
+        <path fill="none" stroke-width="6.807269"
+              d="M 1428.883057,-561.580566 C 1312.322388,-700.890747 1346.446655,-1084.696899 1485.756836,-1201.257568"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_REACTOME_MITOTIC_M_M_G1_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.4600563"
+              d="M 1428.883057,-561.580566 C 1237.453003,-625.493103 1046.176636,-1008.507080 1110.089111,-1199.937134"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_REACTOME_G1_S_TRANSITION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0320635"
+              d="M 1428.883057,-561.580566 C 1481.183594,-332.691528 1216.300781,89.092827 987.411865,141.393372"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_KEGG_OOCYTE_MEIOSIS"
+              stroke-opacity="1.0" stroke="#90add2"/>
+        <path fill="none" stroke-width="6.604728"
+              d="M 1428.883057,-561.580566 C 1411.171021,-672.932983 1551.631592,-866.529785 1662.984009,-884.241821"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_REACTOME_MITOTIC_G1_G1_S_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.2806635"
+              d="M 1428.883057,-561.580566 C 1614.430054,-590.366760 1935.929688,-355.225739 1964.715942,-169.678802"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_REACTOME_MITOTIC_G2_G2_M_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.2463355"
+              d="M 1428.883057,-561.580566 C 1461.231201,-455.496796 1350.627808,-247.848938 1244.544067,-215.500763"
+              class="id_REACTOME_CELL_CYCLE_MITOTIC id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.4966383"
+              d="M -140.205704,1885.744507 C -395.484863,1796.371094 -644.343506,1279.392334 -554.970093,1024.113159"
+              class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.119266"
+              d="M -140.205704,1885.744507 C -314.659546,1705.533081 -306.023010,1173.535034 -125.811485,999.081055"
+              class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.137723"
+              d="M -140.205704,1885.744507 C -231.500336,1866.836548 -340.080231,1701.532593 -321.172211,1610.237915"
+              class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION id_REACTOME_SIGNALING_BY_GPCR"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.110604"
+              d="M -140.205704,1885.744507 C -233.044556,1961.587769 -486.067719,1936.094482 -561.911011,1843.255615"
+              class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.468691"
+              d="M -140.205704,1885.744507 C -216.290848,1756.523804 -136.587555,1448.565186 -7.366876,1372.479980"
+              class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION id_REACTOME_GPCR_LIGAND_BINDING"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.1358576"
+              d="M -140.205704,1885.744507 C -309.648407,1809.907593 -450.057068,1441.988037 -374.220123,1272.545410"
+              class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.159521"
+              d="M -140.205704,1885.744507 C -320.385284,1938.579834 -669.907593,1747.563354 -722.742920,1567.383789"
+              class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION id_REACTOME_GPCR_DOWNSTREAM_SIGNALING"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.1180925"
+              d="M -140.205704,1885.744507 C -199.520355,1642.628906 76.181015,1188.983521 319.296600,1129.668945"
+              class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION id_KEGG_CALCIUM_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.149494"
+              d="M -140.205704,1885.744507 C -409.541443,1892.143066 -823.142944,1497.737427 -829.541565,1228.401611"
+              class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.079822"
+              d="M -140.205704,1885.744507 C -127.072060,1769.499756 66.995659,1614.832886 183.240494,1627.966553"
+              class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION id_REACTOME_G_ALPHA_S_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="7.4728346"
+              d="M 782.184082,-1294.122803 C 987.868103,-1133.870728 1056.015747,-584.966553 895.763672,-379.282532"
+              class="id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1 id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="7.405019"
+              d="M 782.184082,-1294.122803 C 903.468872,-1149.568359 868.564453,-750.809387 724.010010,-629.524597"
+              class="id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1 id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.788742"
+              d="M 782.184082,-1294.122803 C 860.001770,-1236.159790 889.783691,-1032.488770 831.820618,-954.671021"
+              class="id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1 id_REACTOME_CELL_CYCLE_CHECKPOINTS"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.240559"
+              d="M 782.184082,-1294.122803 C 966.170715,-1324.468994 1287.669922,-1094.008179 1318.016113,-910.021545"
+              class="id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1 id_REACTOME_DNA_REPLICATION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.1335726"
+              d="M 782.184082,-1294.122803 C 984.144836,-1233.315063 1195.874634,-839.162354 1135.066895,-637.201599"
+              class="id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1 id_REACTOME_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0474515"
+              d="M 782.184082,-1294.122803 C 790.302734,-1142.303467 574.751831,-902.396484 422.932556,-894.277832"
+              class="id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1 id_REACTOME_ADAPTIVE_IMMUNE_SYSTEM"
+              stroke-opacity="1.0" stroke="#b180b4"/>
+        <path fill="none" stroke-width="6.2845216"
+              d="M 782.184082,-1294.122803 C 941.471680,-1416.264404 1363.615234,-1360.545166 1485.756836,-1201.257568"
+              class="id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1 id_REACTOME_MITOTIC_M_M_G1_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.4207973"
+              d="M 782.184082,-1294.122803 C 866.602234,-1340.866699 1063.345215,-1284.355347 1110.089111,-1199.937134"
+              class="id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1 id_REACTOME_G1_S_TRANSITION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.327982"
+              d="M 782.184082,-1294.122803 C 1040.320313,-1388.306641 1568.800171,-1142.378052 1662.984009,-884.241821"
+              class="id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1 id_REACTOME_MITOTIC_G1_G1_S_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.37184"
+              d="M -554.970093,1024.113159 C -474.144775,933.275024 -216.649643,918.255737 -125.811485,999.081055"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.435431"
+              d="M -554.970093,1024.113159 C -390.985565,1094.578613 -250.706848,1446.253418 -321.172211,1610.237915"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS id_REACTOME_SIGNALING_BY_GPCR"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.03269"
+              d="M -554.970093,1024.113159 C -567.464600,905.688721 -408.569763,709.310303 -290.145325,696.815796"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS id_KEGG_CHEMOKINE_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#bd9340"/>
+        <path fill="none" stroke-width="6.595122"
+              d="M -554.970093,1024.113159 C -392.529785,1189.329834 -396.694336,1680.815308 -561.911011,1843.255615"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="7.2178674"
+              d="M -554.970093,1024.113159 C -375.776093,984.265869 -47.214149,1193.286011 -7.366876,1372.479980"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS id_REACTOME_GPCR_LIGAND_BINDING"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.4034476"
+              d="M -554.970093,1024.113159 C -469.133606,1037.649536 -360.683655,1186.708984 -374.220123,1272.545410"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.4585714"
+              d="M -554.970093,1024.113159 C -479.870544,1166.321899 -580.534241,1492.284180 -722.742920,1567.383789"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS id_REACTOME_GPCR_DOWNSTREAM_SIGNALING"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.0"
+              d="M -554.970093,1024.113159 C -716.181580,962.576233 -865.693481,628.453552 -804.156555,467.242065"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS id_KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION"
+              stroke-opacity="1.0" stroke="#bd9340"/>
+        <path fill="none" stroke-width="6.0242677"
+              d="M -554.970093,1024.113159 C -359.005615,870.371033 165.554413,933.704407 319.296600,1129.668945"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS id_KEGG_CALCIUM_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.9711986"
+              d="M -554.970093,1024.113159 C -569.026733,1119.885132 -733.769592,1242.458252 -829.541565,1228.401611"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.0340605"
+              d="M -554.970093,1024.113159 C -286.557312,997.241699 156.369080,1359.553833 183.240494,1627.966553"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS id_REACTOME_G_ALPHA_S_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="7.427145"
+              d="M 895.763672,-379.282532 C 811.364563,-394.980194 708.312317,-545.125488 724.010010,-629.524597"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.8952293"
+              d="M 895.763672,-379.282532 C 767.897339,-481.571625 729.531555,-826.804688 831.820618,-954.671021"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS id_REACTOME_CELL_CYCLE_CHECKPOINTS"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.2493067"
+              d="M 895.763672,-379.282532 C 874.066345,-569.880798 1127.417847,-888.324219 1318.016113,-910.021545"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS id_REACTOME_DNA_REPLICATION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0078363"
+              d="M 895.763672,-379.282532 C 901.540527,-235.036392 693.836609,-10.001884 549.590515,-4.225023"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS id_KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION"
+              stroke-opacity="1.0" stroke="#90add2"/>
+        <path fill="none" stroke-width="6.1380396"
+              d="M 895.763672,-379.282532 C 892.040527,-478.726990 1035.622437,-633.478455 1135.066895,-637.201599"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS id_REACTOME_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.043136"
+              d="M 895.763672,-379.282532 C 698.198364,-387.715363 414.499725,-696.712585 422.932556,-894.277832"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS id_REACTOME_ADAPTIVE_IMMUNE_SYSTEM"
+              stroke-opacity="1.0" stroke="#b180b4"/>
+        <path fill="none" stroke-width="6.294166"
+              d="M 895.763672,-379.282532 C 849.367310,-661.676208 1203.363159,-1154.861206 1485.756836,-1201.257568"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS id_REACTOME_MITOTIC_M_M_G1_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.4343276"
+              d="M 895.763672,-379.282532 C 774.497864,-586.278564 903.093079,-1078.671265 1110.089111,-1199.937134"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS id_REACTOME_G1_S_TRANSITION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0"
+              d="M 895.763672,-379.282532 C 1018.228516,-293.476990 1073.217407,18.928555 987.411865,141.393372"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS id_KEGG_OOCYTE_MEIOSIS"
+              stroke-opacity="1.0" stroke="#90add2"/>
+        <path fill="none" stroke-width="6.3394494"
+              d="M 895.763672,-379.282532 C 948.215881,-633.718445 1408.548096,-936.694031 1662.984009,-884.241821"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS id_REACTOME_MITOTIC_G1_G1_S_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.008267"
+              d="M 895.763672,-379.282532 C 998.276123,-416.282257 1207.544312,-318.013184 1244.544067,-215.500763"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.412497"
+              d="M 466.029510,667.899780 C 390.094482,727.641846 186.578842,703.352295 126.836823,627.417236"
+              class="id_KEGG_MELANOGENESIS id_KEGG_BASAL_CELL_CARCINOMA"
+              stroke-opacity="1.0" stroke="#5ebd9d"/>
+        <path fill="none" stroke-width="6.0877676"
+              d="M 466.029510,667.899780 C 211.857758,772.492493 -326.289001,548.123962 -430.881744,293.952209"
+              class="id_KEGG_MELANOGENESIS id_KEGG_PATHWAYS_IN_CANCER"
+              stroke-opacity="1.0" stroke="#5ebd9d"/>
+        <path fill="none" stroke-width="6.019308"
+              d="M 466.029510,667.899780 C 320.577759,824.917969 -133.127151,842.267578 -290.145325,696.815796"
+              class="id_KEGG_MELANOGENESIS id_KEGG_CHEMOKINE_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#de909f"/>
+        <path fill="none" stroke-width="6.023665"
+              d="M 466.029510,667.899780 C 562.581421,593.147705 819.537292,625.847351 894.289368,722.399231"
+              class="id_KEGG_MELANOGENESIS id_PID_LYSOPHOSPHOLIPID_PATHWAY"
+              stroke-opacity="1.0" stroke="#bdbdbd"/>
+        <path fill="none" stroke-width="6.048426"
+              d="M 466.029510,667.899780 C 348.316711,516.762573 398.453308,113.487747 549.590515,-4.225023"
+              class="id_KEGG_MELANOGENESIS id_KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION"
+              stroke-opacity="1.0" stroke="#bdbdbd"/>
+        <path fill="none" stroke-width="6.334353"
+              d="M 466.029510,667.899780 C 451.890411,569.027283 578.990417,399.509949 677.862915,385.370880"
+              class="id_KEGG_MELANOGENESIS id_KEGG_WNT_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#bebebe"/>
+        <path fill="none" stroke-width="6.06929"
+              d="M 466.029510,667.899780 C 465.004700,458.322052 777.834106,142.418182 987.411865,141.393372"
+              class="id_KEGG_MELANOGENESIS id_KEGG_OOCYTE_MEIOSIS"
+              stroke-opacity="1.0" stroke="#bdbdbd"/>
+        <path fill="none" stroke-width="6.0460744"
+              d="M 466.029510,667.899780 C 529.036743,789.600159 440.997009,1066.661621 319.296600,1129.668945"
+              class="id_KEGG_MELANOGENESIS id_KEGG_CALCIUM_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#9cc05e"/>
+        <path fill="none" stroke-width="6.190439"
+              d="M 466.029510,667.899780 C 347.241333,626.911194 230.541992,387.246033 271.530609,268.457855"
+              class="id_KEGG_MELANOGENESIS id_WNT_SIGNALING"
+              stroke-opacity="1.0" stroke="#bebebe"/>
+        <path fill="none" stroke-width="6.136992"
+              d="M 466.029510,667.899780 C 581.052673,705.885498 696.608887,935.398804 658.623169,1050.421997"
+              class="id_KEGG_MELANOGENESIS id_REACTOME_CLASS_B_2_SECRETIN_FAMILY_RECEPTORS"
+              stroke-opacity="1.0" stroke="#9cc05e"/>
+        <path fill="none" stroke-width="7.189546"
+              d="M -1492.419678,700.019287 C -1376.683594,723.009521 -1237.564697,931.098877 -1260.554932,1046.834961"
+              class="id_NABA_MATRISOME id_NABA_MATRISOME_ASSOCIATED"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.1705103"
+              d="M -1492.419678,700.019287 C -1611.105835,748.196411 -1861.401001,642.432739 -1909.578125,523.746460"
+              class="id_NABA_MATRISOME id_NABA_ECM_GLYCOPROTEINS"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.3150415"
+              d="M -1492.419678,700.019287 C -1631.885010,636.510986 -1745.820679,332.050507 -1682.312378,192.585144"
+              class="id_NABA_MATRISOME id_NABA_CORE_MATRISOME"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.03807"
+              d="M -1492.419678,700.019287 C -1401.322510,515.811218 -988.364624,376.144836 -804.156555,467.242065"
+              class="id_NABA_MATRISOME id_KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION"
+              stroke-opacity="1.0" stroke="#b86466"/>
+        <path fill="none" stroke-width="6.4412775"
+              d="M -1492.419678,700.019287 C -1389.875244,617.111816 -1111.697510,646.567261 -1028.790039,749.111694"
+              class="id_NABA_MATRISOME id_NABA_SECRETED_FACTORS"
+              stroke-opacity="1.0" stroke="#779425"/>
+        <path fill="none" stroke-width="6.2310033"
+              d="M -125.811485,999.081055 C -42.652260,1160.384521 -159.868683,1527.078735 -321.172211,1610.237915"
+              class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK id_REACTOME_SIGNALING_BY_GPCR"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.029752"
+              d="M -125.811485,999.081055 C -219.131302,971.494751 -317.731628,790.135620 -290.145325,696.815796"
+              class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK id_KEGG_CHEMOKINE_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#bd9340"/>
+        <path fill="none" stroke-width="6.020897"
+              d="M -125.811485,999.081055 C -44.196487,1255.135986 -305.856201,1761.640625 -561.911011,1843.255615"
+              class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.3583293"
+              d="M -125.811485,999.081055 C -27.442772,1050.071899 43.623989,1274.111206 -7.366876,1372.479980"
+              class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK id_REACTOME_GPCR_LIGAND_BINDING"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.156818"
+              d="M -125.811485,999.081055 C -287.764435,842.979065 -296.540863,365.896729 -140.438873,203.943771"
+              class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK id_REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION"
+              stroke-opacity="1.0" stroke="#9cc05e"/>
+        <path fill="none" stroke-width="7.5"
+              d="M -125.811485,999.081055 C -120.800339,1103.455688 -269.845520,1267.534302 -374.220123,1272.545410"
+              class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.236461"
+              d="M -125.811485,999.081055 C -131.537231,1232.127930 -489.696075,1573.109619 -722.742920,1567.383789"
+              class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK id_REACTOME_GPCR_DOWNSTREAM_SIGNALING"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.020551"
+              d="M -125.811485,999.081055 C -335.382629,743.525696 -266.406311,45.835892 -10.850940,-163.735260"
+              class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK id_REACTOME_HEMOSTASIS"
+              stroke-opacity="1.0" stroke="#bd9e7e"/>
+        <path fill="none" stroke-width="6.068644"
+              d="M -125.811485,999.081055 C -10.672283,936.177002 256.392548,1014.529785 319.296600,1129.668945"
+              class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK id_KEGG_CALCIUM_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.255496"
+              d="M -125.811485,999.081055 C -220.693390,1185.691162 -642.931396,1323.283447 -829.541565,1228.401611"
+              class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.1371665"
+              d="M -1585.220459,-1245.122559 C -1396.621826,-1166.934814 -1231.005615,-766.755066 -1309.193359,-578.156372"
+              class="id_KEGG_CARDIAC_MUSCLE_CONTRACTION id_KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.3182783"
+              d="M -1585.220459,-1245.122559 C -1520.784302,-1115.715454 -1618.240479,-824.950500 -1747.647583,-760.514282"
+              class="id_KEGG_CARDIAC_MUSCLE_CONTRACTION id_KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.292406"
+              d="M -1585.220459,-1245.122559 C -1489.264526,-1212.767212 -1393.863525,-1020.300232 -1426.218872,-924.344299"
+              class="id_KEGG_CARDIAC_MUSCLE_CONTRACTION id_KEGG_DILATED_CARDIOMYOPATHY"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.5677357"
+              d="M -1396.546143,-138.575043 C -1477.040771,-112.510094 -1636.880005,-194.154541 -1662.944946,-274.649109"
+              class="id_PID_INTEGRIN1_PATHWAY id_KEGG_ECM_RECEPTOR_INTERACTION"
+              stroke-opacity="1.0" stroke="#999285"/>
+        <path fill="none" stroke-width="6.017632"
+              d="M -1396.546143,-138.575043 C -1466.991821,-243.961853 -1414.580200,-507.710663 -1309.193359,-578.156372"
+              class="id_PID_INTEGRIN1_PATHWAY id_KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.051003"
+              d="M -1396.546143,-138.575043 C -1481.843140,24.219063 -1853.979980,140.464615 -2016.774048,55.167545"
+              class="id_PID_INTEGRIN1_PATHWAY id_HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"
+              stroke-opacity="1.0" stroke="#999285"/>
+        <path fill="none" stroke-width="6.0041184"
+              d="M -1396.546143,-138.575043 C -1591.154297,-192.742599 -1801.815063,-565.906189 -1747.647583,-760.514282"
+              class="id_PID_INTEGRIN1_PATHWAY id_KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.1830134"
+              d="M -1396.546143,-138.575043 C -1338.848267,-248.262207 -1087.770630,-326.246094 -978.083435,-268.548187"
+              class="id_PID_INTEGRIN1_PATHWAY id_KEGG_FOCAL_ADHESION"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.06896"
+              d="M -1396.546143,-138.575043 C -1387.467285,-15.189751 -1558.927124,183.506348 -1682.312378,192.585144"
+              class="id_PID_INTEGRIN1_PATHWAY id_NABA_CORE_MATRISOME"
+              stroke-opacity="1.0" stroke="#999285"/>
+        <path fill="none" stroke-width="6.0470185"
+              d="M -1396.546143,-138.575043 C -1568.017212,-74.135468 -1921.883301,-234.682770 -1986.322876,-406.153900"
+              class="id_PID_INTEGRIN1_PATHWAY id_REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION"
+              stroke-opacity="1.0" stroke="#999285"/>
+        <path fill="none" stroke-width="6.037615"
+              d="M -1396.546143,-138.575043 C -1289.247681,-56.421852 -1251.529907,227.755554 -1333.683105,335.053955"
+              class="id_PID_INTEGRIN1_PATHWAY id_PID_A6B1_A6B4_INTEGRIN_PATHWAY"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.1272936"
+              d="M 126.836823,627.417236 C -51.399895,672.267944 -386.031006,472.188904 -430.881744,293.952209"
+              class="id_KEGG_BASAL_CELL_CARCINOMA id_KEGG_PATHWAYS_IN_CANCER"
+              stroke-opacity="1.0" stroke="#00bd7d"/>
+        <path fill="none" stroke-width="6.308071"
+              d="M 126.836823,627.417236 C 188.632782,468.802704 519.248413,323.574921 677.862915,385.370880"
+              class="id_KEGG_BASAL_CELL_CARCINOMA id_KEGG_WNT_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#60be9e"/>
+        <path fill="none" stroke-width="6.3710637"
+              d="M 126.836823,627.417236 C 83.983696,526.686584 170.799988,311.310974 271.530609,268.457855"
+              class="id_KEGG_BASAL_CELL_CARCINOMA id_WNT_SIGNALING"
+              stroke-opacity="1.0" stroke="#60be9e"/>
+        <path fill="none" stroke-width="6.332487"
+              d="M 126.836823,627.417236 C 317.795044,605.660889 636.866821,859.463745 658.623169,1050.421997"
+              class="id_KEGG_BASAL_CELL_CARCINOMA id_REACTOME_CLASS_B_2_SECRETIN_FAMILY_RECEPTORS"
+              stroke-opacity="1.0" stroke="#3ec03e"/>
+        <path fill="none" stroke-width="6.205171"
+              d="M -353.102081,-257.163452 C -258.434875,-131.384369 -305.102661,199.285004 -430.881744,293.952209"
+              class="id_KEGG_MELANOMA id_KEGG_PATHWAYS_IN_CANCER"
+              stroke-opacity="1.0" stroke="#00bd7d"/>
+        <path fill="none" stroke-width="6.1991367"
+              d="M -353.102081,-257.163452 C -375.071594,-153.000351 -564.270508,-29.709957 -668.433594,-51.679466"
+              class="id_KEGG_MELANOMA id_KEGG_REGULATION_OF_ACTIN_CYTOSKELETON"
+              stroke-opacity="1.0" stroke="#60be9e"/>
+        <path fill="none" stroke-width="6.0864863"
+              d="M -353.102081,-257.163452 C -121.975883,-387.114288 419.639679,-235.351227 549.590515,-4.225023"
+              class="id_KEGG_MELANOMA id_KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION"
+              stroke-opacity="1.0" stroke="#5ebd9d"/>
+        <path fill="none" stroke-width="6.062691"
+              d="M -353.102081,-257.163452 C -480.375305,-134.444122 -855.364136,-141.274963 -978.083435,-268.548187"
+              class="id_KEGG_MELANOMA id_KEGG_FOCAL_ADHESION"
+              stroke-opacity="1.0" stroke="#60be9e"/>
+        <path fill="none" stroke-width="6.078788"
+              d="M -353.102081,-257.163452 C -462.555695,-250.292603 -637.042358,-404.166687 -643.913208,-513.620300"
+              class="id_KEGG_MELANOMA id_KEGG_MAPK_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#3ec03e"/>
+        <path fill="none" stroke-width="6.5909753"
+              d="M -1493.844971,1366.467773 C -1619.130127,1345.605713 -1775.764771,1126.384888 -1754.902710,1001.099670"
+              class="id_REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS id_REACTOME_PHOSPHOLIPID_METABOLISM"
+              stroke-opacity="1.0" stroke="#ff8b00"/>
+        <path fill="none" stroke-width="6.080603"
+              d="M -430.881744,293.952209 C -547.518433,272.336243 -690.049561,64.957237 -668.433594,-51.679466"
+              class="id_KEGG_PATHWAYS_IN_CANCER id_KEGG_REGULATION_OF_ACTIN_CYTOSKELETON"
+              stroke-opacity="1.0" stroke="#60be9e"/>
+        <path fill="none" stroke-width="6.1619287"
+              d="M -430.881744,293.952209 C -652.822144,290.892456 -981.143127,-46.607758 -978.083435,-268.548187"
+              class="id_KEGG_PATHWAYS_IN_CANCER id_KEGG_FOCAL_ADHESION"
+              stroke-opacity="1.0" stroke="#60be9e"/>
+        <path fill="none" stroke-width="6.1125507"
+              d="M -430.881744,293.952209 C -635.002563,175.044006 -762.821411,-309.499512 -643.913208,-513.620300"
+              class="id_KEGG_PATHWAYS_IN_CANCER id_KEGG_MAPK_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#3ec03e"/>
+        <path fill="none" stroke-width="6.107211"
+              d="M -430.881744,293.952209 C -190.849075,90.487000 474.397705,145.338226 677.862915,385.370880"
+              class="id_KEGG_PATHWAYS_IN_CANCER id_KEGG_WNT_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#60be9e"/>
+        <path fill="none" stroke-width="6.011474"
+              d="M -430.881744,293.952209 C -295.498138,148.370850 125.949257,133.074249 271.530609,268.457855"
+              class="id_KEGG_PATHWAYS_IN_CANCER id_WNT_SIGNALING"
+              stroke-opacity="1.0" stroke="#60be9e"/>
+        <path fill="none" stroke-width="6.0064855"
+              d="M -430.881744,293.952209 C -459.431488,504.565765 -818.176514,777.661499 -1028.790039,749.111694"
+              class="id_KEGG_PATHWAYS_IN_CANCER id_NABA_SECRETED_FACTORS"
+              stroke-opacity="1.0" stroke="#3ec03e"/>
+        <path fill="none" stroke-width="6.344667"
+              d="M 64.041168,-1085.140625 C 233.343826,-885.881165 188.408569,-333.037933 -10.850940,-163.735260"
+              class="id_REACTOME_FACTORS_INVOLVED_IN_MEGAKARYOCYTE_DEVELOPMENT_AND_PLATELET_PRODUCTION id_REACTOME_HEMOSTASIS"
+              stroke-opacity="1.0" stroke="#ff79fc"/>
+        <path fill="none" stroke-width="6.153878"
+              d="M 64.041168,-1085.140625 C -51.307999,-1177.459717 -85.853020,-1488.962280 6.466131,-1604.311401"
+              class="id_REACTOME_FACTORS_INVOLVED_IN_MEGAKARYOCYTE_DEVELOPMENT_AND_PLATELET_PRODUCTION id_REACTOME_KINESINS"
+              stroke-opacity="1.0" stroke="#df9cde"/>
+        <path fill="none" stroke-width="6.8214383"
+              d="M 724.010010,-629.524597 C 680.542847,-716.116028 745.229187,-911.203857 831.820618,-954.671021"
+              class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE id_REACTOME_CELL_CYCLE_CHECKPOINTS"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.2884927"
+              d="M 724.010010,-629.524597 C 786.711853,-804.425171 1143.115479,-972.723389 1318.016113,-910.021545"
+              class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE id_REACTOME_DNA_REPLICATION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0470185"
+              d="M 724.010010,-629.524597 C 814.186035,-469.580780 709.534363,-94.401047 549.590515,-4.225023"
+              class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE id_KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION"
+              stroke-opacity="1.0" stroke="#90add2"/>
+        <path fill="none" stroke-width="6.1916475"
+              d="M 724.010010,-629.524597 C 804.685974,-713.271362 1051.320068,-717.877563 1135.066895,-637.201599"
+              class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE id_REACTOME_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0533953"
+              d="M 724.010010,-629.524597 C 610.843872,-622.259705 430.197388,-781.111633 422.932556,-894.277832"
+              class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE id_REACTOME_ADAPTIVE_IMMUNE_SYSTEM"
+              stroke-opacity="1.0" stroke="#b180b4"/>
+        <path fill="none" stroke-width="6.3122206"
+              d="M 724.010010,-629.524597 C 762.012756,-896.220581 1219.060913,-1239.260376 1485.756836,-1201.257568"
+              class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE id_REACTOME_MITOTIC_M_M_G1_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.5041413"
+              d="M 724.010010,-629.524597 C 687.143311,-820.822937 918.790771,-1163.070435 1110.089111,-1199.937134"
+              class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE id_REACTOME_G1_S_TRANSITION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0698557"
+              d="M 724.010010,-629.524597 C 930.873962,-528.021362 1088.915039,-65.470596 987.411865,141.393372"
+              class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE id_KEGG_OOCYTE_MEIOSIS"
+              stroke-opacity="1.0" stroke="#90add2"/>
+        <path fill="none" stroke-width="6.4017425"
+              d="M 724.010010,-629.524597 C 860.861389,-868.262817 1424.245728,-1021.093201 1662.984009,-884.241821"
+              class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE id_REACTOME_MITOTIC_G1_G1_S_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0849366"
+              d="M 724.010010,-629.524597 C 910.921570,-650.826660 1223.242065,-402.412354 1244.544067,-215.500763"
+              class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.020897"
+              d="M -357.302429,-1964.003418 C -285.223755,-2056.313721 -38.640156,-2086.661377 53.670223,-2014.582642"
+              class="id_PID_AURORA_A_PATHWAY id_PID_AURORA_B_PATHWAY"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0463037"
+              d="M -321.172211,1610.237915 C -497.651245,1421.348145 -479.035126,873.294861 -290.145325,696.815796"
+              class="id_REACTOME_SIGNALING_BY_GPCR id_KEGG_CHEMOKINE_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#bd9340"/>
+        <path fill="none" stroke-width="6.2105603"
+              d="M -321.172211,1610.237915 C -322.716431,1704.989136 -467.159698,1844.799805 -561.911011,1843.255615"
+              class="id_REACTOME_SIGNALING_BY_GPCR id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.6459913"
+              d="M -321.172211,1610.237915 C -305.962708,1499.925171 -117.679535,1357.270508 -7.366876,1372.479980"
+              class="id_REACTOME_SIGNALING_BY_GPCR id_REACTOME_GPCR_LIGAND_BINDING"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.1880736"
+              d="M -321.172211,1610.237915 C -399.320313,1553.309082 -431.149048,1350.693481 -374.220123,1272.545410"
+              class="id_REACTOME_SIGNALING_BY_GPCR id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="7.4575686"
+              d="M -321.172211,1610.237915 C -410.057190,1681.981201 -650.999573,1656.268677 -722.742920,1567.383789"
+              class="id_REACTOME_SIGNALING_BY_GPCR id_REACTOME_GPCR_DOWNSTREAM_SIGNALING"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.1962504"
+              d="M -321.172211,1610.237915 C -499.213318,1635.544434 -804.234924,1406.442749 -829.541565,1228.401611"
+              class="id_REACTOME_SIGNALING_BY_GPCR id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.059284"
+              d="M -321.172211,1610.237915 C -216.743942,1512.901123 85.903679,1523.538208 183.240494,1627.966553"
+              class="id_REACTOME_SIGNALING_BY_GPCR id_REACTOME_G_ALPHA_S_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.0197134"
+              d="M 1868.478638,-536.870544 C 1683.755859,-501.408234 1353.478394,-725.298828 1318.016113,-910.021545"
+              class="id_HALLMARK_G2M_CHECKPOINT id_REACTOME_DNA_REPLICATION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0431924"
+              d="M 1868.478638,-536.870544 C 1701.730103,-410.254425 1261.683105,-470.453033 1135.066895,-637.201599"
+              class="id_HALLMARK_G2M_CHECKPOINT id_REACTOME_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.013434"
+              d="M 1868.478638,-536.870544 C 1659.056885,-593.203552 1429.423706,-991.835754 1485.756836,-1201.257568"
+              class="id_HALLMARK_G2M_CHECKPOINT id_REACTOME_MITOTIC_M_M_G1_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0151086"
+              d="M 1868.478638,-536.870544 C 2045.270752,-405.291748 2113.090820,57.264565 1981.511963,234.056686"
+              class="id_HALLMARK_G2M_CHECKPOINT id_HALLMARK_MITOTIC_SPINDLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.016085"
+              d="M 1868.478638,-536.870544 C 1757.905518,-565.245850 1634.608643,-773.668640 1662.984009,-884.241821"
+              class="id_HALLMARK_G2M_CHECKPOINT id_REACTOME_MITOTIC_G1_G1_S_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0956864"
+              d="M 1868.478638,-536.870544 C 1807.965698,-347.809662 1433.604858,-154.987793 1244.544067,-215.500763"
+              class="id_HALLMARK_G2M_CHECKPOINT id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.759059"
+              d="M 746.936096,1851.927734 C 781.167542,1742.155762 997.172791,1628.844727 1106.944824,1663.076172"
+              class="id_REACTOME_PHASE1_FUNCTIONALIZATION_OF_COMPOUNDS id_REACTOME_BIOLOGICAL_OXIDATIONS"
+              stroke-opacity="1.0" stroke="#ff8b00"/>
+        <path fill="none" stroke-width="6.0615816"
+              d="M 746.936096,1851.927734 C 700.890015,1950.436646 484.057495,2029.130981 385.548553,1983.084961"
+              class="id_REACTOME_PHASE1_FUNCTIONALIZATION_OF_COMPOUNDS id_KEGG_ARACHIDONIC_ACID_METABOLISM"
+              stroke-opacity="1.0" stroke="#ff8b00"/>
+        <path fill="none" stroke-width="6.0117865"
+              d="M -668.433594,-51.679466 C -443.076904,22.361923 -216.103928,471.459106 -290.145325,696.815796"
+              class="id_KEGG_REGULATION_OF_ACTIN_CYTOSKELETON id_KEGG_CHEMOKINE_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#df91a0"/>
+        <path fill="none" stroke-width="6.0113983"
+              d="M -668.433594,-51.679466 C -901.880981,-28.822891 -1286.336792,-344.709045 -1309.193359,-578.156372"
+              class="id_KEGG_REGULATION_OF_ACTIN_CYTOSKELETON id_KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.047585"
+              d="M -668.433594,-51.679466 C -870.224548,-143.050125 -1035.854980,-582.792542 -944.484375,-784.583496"
+              class="id_KEGG_REGULATION_OF_ACTIN_CYTOSKELETON id_REACTOME_AXON_GUIDANCE"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.002443"
+              d="M -668.433594,-51.679466 C -511.710022,-106.153763 -194.913162,47.220177 -140.438873,203.943771"
+              class="id_KEGG_REGULATION_OF_ACTIN_CYTOSKELETON id_REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION"
+              stroke-opacity="1.0" stroke="#bebebe"/>
+        <path fill="none" stroke-width="6.359261"
+              d="M -668.433594,-51.679466 C -773.737305,-33.123238 -959.527161,-163.244476 -978.083435,-268.548187"
+              class="id_KEGG_REGULATION_OF_ACTIN_CYTOSKELETON id_KEGG_FOCAL_ADHESION"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.0685916"
+              d="M -668.433594,-51.679466 C -755.917725,-148.971710 -741.205444,-426.136200 -643.913208,-513.620300"
+              class="id_KEGG_REGULATION_OF_ACTIN_CYTOSKELETON id_KEGG_MAPK_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.449464"
+              d="M 831.820618,-954.671021 C 937.989563,-1042.980225 1229.706909,-1016.190552 1318.016113,-910.021545"
+              class="id_REACTOME_CELL_CYCLE_CHECKPOINTS id_REACTOME_DNA_REPLICATION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.365872"
+              d="M 831.820618,-954.671021 C 955.963745,-951.826416 1137.911499,-761.344727 1135.066895,-637.201599"
+              class="id_REACTOME_CELL_CYCLE_CHECKPOINTS id_REACTOME_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0339355"
+              d="M 831.820618,-954.671021 C 762.121643,-860.814819 516.788818,-824.578857 422.932556,-894.277832"
+              class="id_REACTOME_CELL_CYCLE_CHECKPOINTS id_REACTOME_ADAPTIVE_IMMUNE_SYSTEM"
+              stroke-opacity="1.0" stroke="#b180b4"/>
+        <path fill="none" stroke-width="6.438838"
+              d="M 831.820618,-954.671021 C 913.290527,-1134.775635 1305.652344,-1282.727539 1485.756836,-1201.257568"
+              class="id_REACTOME_CELL_CYCLE_CHECKPOINTS id_REACTOME_MITOTIC_M_M_G1_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.688045"
+              d="M 831.820618,-954.671021 C 838.421082,-1059.377930 1005.382202,-1206.537598 1110.089111,-1199.937134"
+              class="id_REACTOME_CELL_CYCLE_CHECKPOINTS id_REACTOME_G1_S_TRANSITION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.570287"
+              d="M 831.820618,-954.671021 C 1012.139099,-1106.817871 1510.837158,-1064.560303 1662.984009,-884.241821"
+              class="id_REACTOME_CELL_CYCLE_CHECKPOINTS id_REACTOME_MITOTIC_G1_G1_S_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.289128"
+              d="M 831.820618,-954.671021 C 1062.199341,-889.381653 1309.833496,-445.879517 1244.544067,-215.500763"
+              class="id_REACTOME_CELL_CYCLE_CHECKPOINTS id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.1325064"
+              d="M 1272.169678,541.453064 C 1466.253296,663.801758 1573.855835,1138.450317 1451.507080,1332.533936"
+              class="id_KEGG_P53_SIGNALING_PATHWAY id_PID_P53_DOWNSTREAM_PATHWAY"
+              stroke-opacity="1.0" stroke="#92afd4"/>
+        <path fill="none" stroke-width="6.085289"
+              d="M 1272.169678,541.453064 C 1115.253784,395.587433 1098.678467,-58.584877 1244.544067,-215.500763"
+              class="id_KEGG_P53_SIGNALING_PATHWAY id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.108397"
+              d="M 406.337860,-1849.525146 C 389.725952,-1606.742310 0.633820,-1267.485718 -242.149063,-1284.097656"
+              class="id_REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM id_HALLMARK_INTERFERON_GAMMA_RESPONSE"
+              stroke-opacity="1.0" stroke="#ff6381"/>
+        <path fill="none" stroke-width="6.3561907"
+              d="M 406.337860,-1849.525146 C 480.546082,-1764.799072 464.769165,-1526.397461 380.042999,-1452.189209"
+              class="id_REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM id_REACTOME_IMMUNE_SYSTEM"
+              stroke-opacity="1.0" stroke="#ff6381"/>
+        <path fill="none" stroke-width="6.099967"
+              d="M -290.145325,696.815796 C -48.141705,465.045563 662.519165,480.395599 894.289368,722.399231"
+              class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY id_PID_LYSOPHOSPHOLIPID_PATHWAY"
+              stroke-opacity="1.0" stroke="#de909f"/>
+        <path fill="none" stroke-width="6.208182"
+              d="M -290.145325,696.815796 C -115.210495,980.456909 -278.269897,1668.320801 -561.911011,1843.255615"
+              class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#bd9340"/>
+        <path fill="none" stroke-width="6.05724"
+              d="M -290.145325,696.815796 C -98.456787,775.392944 71.210281,1180.791504 -7.366876,1372.479980"
+              class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY id_REACTOME_GPCR_LIGAND_BINDING"
+              stroke-opacity="1.0" stroke="#bd9340"/>
+        <path fill="none" stroke-width="6.067335"
+              d="M -290.145325,696.815796 C -262.406311,388.660431 241.435165,-31.964020 549.590515,-4.225023"
+              class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY id_KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION"
+              stroke-opacity="1.0" stroke="#de909f"/>
+        <path fill="none" stroke-width="6.126302"
+              d="M -290.145325,696.815796 C -358.778442,568.300110 -268.954559,272.576904 -140.438873,203.943771"
+              class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY id_REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION"
+              stroke-opacity="1.0" stroke="#de909f"/>
+        <path fill="none" stroke-width="6.0244036"
+              d="M -290.145325,696.815796 C -202.551254,957.448914 -462.109802,1479.789673 -722.742920,1567.383789"
+              class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY id_REACTOME_GPCR_DOWNSTREAM_SIGNALING"
+              stroke-opacity="1.0" stroke="#bd9340"/>
+        <path fill="none" stroke-width="6.0443163"
+              d="M -290.145325,696.815796 C -620.805786,641.330627 -1033.568604,62.112244 -978.083435,-268.548187"
+              class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY id_KEGG_FOCAL_ADHESION"
+              stroke-opacity="1.0" stroke="#df91a0"/>
+        <path fill="none" stroke-width="6.025864"
+              d="M -290.145325,696.815796 C -406.396667,468.846680 -238.820007,-47.483932 -10.850940,-163.735260"
+              class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY id_REACTOME_HEMOSTASIS"
+              stroke-opacity="1.0" stroke="#ff6ebe"/>
+        <path fill="none" stroke-width="6.1293907"
+              d="M -290.145325,696.815796 C -438.862305,753.703308 -747.269043,615.959045 -804.156555,467.242065"
+              class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY id_KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION"
+              stroke-opacity="1.0" stroke="#ff6381"/>
+        <path fill="none" stroke-width="6.111921"
+              d="M -290.145325,696.815796 C -291.707397,911.012207 -615.345154,1229.963745 -829.541565,1228.401611"
+              class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS"
+              stroke-opacity="1.0" stroke="#bd9340"/>
+        <path fill="none" stroke-width="6.0053353"
+              d="M -290.145325,696.815796 C -9.237991,788.368774 274.793488,1347.059204 183.240494,1627.966553"
+              class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY id_REACTOME_G_ALPHA_S_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#bd9340"/>
+        <path fill="none" stroke-width="6.111754"
+              d="M -1662.944946,-274.649109 C -1652.895996,-406.100891 -1440.645142,-588.205200 -1309.193359,-578.156372"
+              class="id_KEGG_ECM_RECEPTOR_INTERACTION id_KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC"
+              stroke-opacity="1.0" stroke="#999285"/>
+        <path fill="none" stroke-width="6.042372"
+              d="M -1662.944946,-274.649109 C -1667.747437,-137.919952 -1880.044800,59.970036 -2016.774048,55.167545"
+              class="id_KEGG_ECM_RECEPTOR_INTERACTION id_HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.093397"
+              d="M -1662.944946,-274.649109 C -1777.058472,-354.881622 -1827.880005,-646.400696 -1747.647583,-760.514282"
+              class="id_KEGG_ECM_RECEPTOR_INTERACTION id_KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM"
+              stroke-opacity="1.0" stroke="#999285"/>
+        <path fill="none" stroke-width="6.367598"
+              d="M -1662.944946,-274.649109 C -1524.752441,-410.401245 -1113.835571,-406.740662 -978.083435,-268.548187"
+              class="id_KEGG_ECM_RECEPTOR_INTERACTION id_KEGG_FOCAL_ADHESION"
+              stroke-opacity="1.0" stroke="#999285"/>
+        <path fill="none" stroke-width="6.020897"
+              d="M -1662.944946,-274.649109 C -1552.592529,-65.643372 -1700.572388,413.393982 -1909.578125,523.746460"
+              class="id_KEGG_ECM_RECEPTOR_INTERACTION id_NABA_ECM_GLYCOPROTEINS"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.0952425"
+              d="M -1662.944946,-274.649109 C -1573.371582,-177.328766 -1584.991943,103.011780 -1682.312378,192.585144"
+              class="id_KEGG_ECM_RECEPTOR_INTERACTION id_NABA_CORE_MATRISOME"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.006067"
+              d="M -1662.944946,-274.649109 C -1753.921387,-236.274490 -1947.948242,-315.177368 -1986.322876,-406.153900"
+              class="id_KEGG_ECM_RECEPTOR_INTERACTION id_REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.080603"
+              d="M -1662.944946,-274.649109 C -1745.538818,-451.933350 -1603.503174,-841.750488 -1426.218872,-924.344299"
+              class="id_KEGG_ECM_RECEPTOR_INTERACTION id_KEGG_DILATED_CARDIOMYOPATHY"
+              stroke-opacity="1.0" stroke="#999285"/>
+        <path fill="none" stroke-width="6.038912"
+              d="M -1662.944946,-274.649109 C -1475.151855,-218.560867 -1277.594971,147.260971 -1333.683105,335.053955"
+              class="id_KEGG_ECM_RECEPTOR_INTERACTION id_PID_A6B1_A6B4_INTEGRIN_PATHWAY"
+              stroke-opacity="1.0" stroke="#999285"/>
+        <path fill="none" stroke-width="6.0178466"
+              d="M 894.289368,722.399231 C 680.024780,646.014099 473.205414,210.039612 549.590515,-4.225023"
+              class="id_PID_LYSOPHOSPHOLIPID_PATHWAY id_KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION"
+              stroke-opacity="1.0" stroke="#bdbdbd"/>
+        <path fill="none" stroke-width="6.8427134"
+              d="M -1309.193359,-578.156372 C -1433.355713,-526.937073 -1696.428345,-636.351868 -1747.647583,-760.514282"
+              class="id_KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC id_KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.0403557"
+              d="M -1309.193359,-578.156372 C -1181.049805,-582.456726 -982.383789,-396.691803 -978.083435,-268.548187"
+              class="id_KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC id_KEGG_FOCAL_ADHESION"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.777709"
+              d="M -1309.193359,-578.156372 C -1401.836060,-623.988892 -1472.051270,-831.701599 -1426.218872,-924.344299"
+              class="id_KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC id_KEGG_DILATED_CARDIOMYOPATHY"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.6696486"
+              d="M 1318.016113,-910.021545 C 1335.990234,-818.867737 1226.220703,-655.175720 1135.066895,-637.201599"
+              class="id_REACTOME_DNA_REPLICATION id_REACTOME_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="7.496751"
+              d="M 1318.016113,-910.021545 C 1293.317017,-1001.816895 1393.961548,-1176.558472 1485.756836,-1201.257568"
+              class="id_REACTOME_DNA_REPLICATION id_REACTOME_MITOTIC_M_M_G1_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.5659537"
+              d="M 1318.016113,-910.021545 C 1218.447510,-926.419250 1093.691406,-1100.368530 1110.089111,-1199.937134"
+              class="id_REACTOME_DNA_REPLICATION id_REACTOME_G1_S_TRANSITION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.5093656"
+              d="M 1318.016113,-910.021545 C 1392.165527,-973.859192 1599.146484,-958.391357 1662.984009,-884.241821"
+              class="id_REACTOME_DNA_REPLICATION id_REACTOME_MITOTIC_G1_G1_S_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.065359"
+              d="M 1318.016113,-910.021545 C 1442.225830,-756.422974 1398.142700,-339.710510 1244.544067,-215.500763"
+              class="id_REACTOME_DNA_REPLICATION id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.538279"
+              d="M -561.911011,1843.255615 C -545.157349,1638.191650 -212.430817,1355.726318 -7.366876,1372.479980"
+              class="id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS id_REACTOME_GPCR_LIGAND_BINDING"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.033842"
+              d="M -561.911011,1843.255615 C -638.514832,1691.575317 -525.900330,1349.149292 -374.220123,1272.545410"
+              class="id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.267508"
+              d="M -561.911011,1843.255615 C -649.251770,1820.247681 -745.750916,1654.724487 -722.742920,1567.383789"
+              class="id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS id_REACTOME_GPCR_DOWNSTREAM_SIGNALING"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.4675345"
+              d="M -561.911011,1843.255615 C -738.407959,1773.810913 -898.986267,1404.898560 -829.541565,1228.401611"
+              class="id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.0312347"
+              d="M -561.911011,1843.255615 C -455.938538,1651.167480 -8.847626,1521.994141 183.240494,1627.966553"
+              class="id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS id_REACTOME_G_ALPHA_S_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.0724816"
+              d="M -944.484375,-784.583496 C -847.997070,-674.656677 -868.156616,-365.035431 -978.083435,-268.548187"
+              class="id_REACTOME_AXON_GUIDANCE id_KEGG_FOCAL_ADHESION"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="7.004008"
+              d="M -944.484375,-784.583496 C -1045.260376,-831.204041 -1126.493530,-1052.298950 -1079.873047,-1153.074951"
+              class="id_REACTOME_AXON_GUIDANCE id_REACTOME_DEVELOPMENTAL_BIOLOGY"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.3836036"
+              d="M -7.366876,1372.479980 C -100.724442,1425.863647 -320.836395,1365.902954 -374.220123,1272.545410"
+              class="id_REACTOME_GPCR_LIGAND_BINDING id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.535451"
+              d="M -7.366876,1372.479980 C -111.461334,1554.535889 -540.686951,1671.478271 -722.742920,1567.383789"
+              class="id_REACTOME_GPCR_LIGAND_BINDING id_REACTOME_GPCR_DOWNSTREAM_SIGNALING"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.6785393"
+              d="M -7.366876,1372.479980 C -200.617493,1508.099243 -693.922302,1421.652222 -829.541565,1228.401611"
+              class="id_REACTOME_GPCR_LIGAND_BINDING id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.217575"
+              d="M -7.366876,1372.479980 C 61.419540,1174.870361 461.013580,981.635620 658.623169,1050.421997"
+              class="id_REACTOME_GPCR_LIGAND_BINDING id_REACTOME_CLASS_B_2_SECRETIN_FAMILY_RECEPTORS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.218338"
+              d="M -7.366876,1372.479980 C 81.851921,1385.455811 196.216339,1538.747803 183.240494,1627.966553"
+              class="id_REACTOME_GPCR_LIGAND_BINDING id_REACTOME_G_ALPHA_S_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.1086597"
+              d="M -1260.554932,1046.834961 C -1285.193848,839.636719 -1011.354797,491.880981 -804.156555,467.242065"
+              class="id_NABA_MATRISOME_ASSOCIATED id_KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION"
+              stroke-opacity="1.0" stroke="#b86466"/>
+        <path fill="none" stroke-width="6.6711197"
+              d="M -1260.554932,1046.834961 C -1273.746582,940.937317 -1134.687744,762.303406 -1028.790039,749.111694"
+              class="id_NABA_MATRISOME_ASSOCIATED id_NABA_SECRETED_FACTORS"
+              stroke-opacity="1.0" stroke="#779425"/>
+        <path fill="none" stroke-width="6.472725"
+              d="M 549.590515,-4.225023 C 666.278442,-62.665619 928.971252,24.705414 987.411865,141.393372"
+              class="id_KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION id_KEGG_OOCYTE_MEIOSIS"
+              stroke-opacity="1.0" stroke="#bdbdbd"/>
+        <path fill="none" stroke-width="6.1067443"
+              d="M 549.590515,-4.225023 C 646.326111,-185.470886 1063.298218,-312.236328 1244.544067,-215.500763"
+              class="id_KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#90add2"/>
+        <path fill="none" stroke-width="6.138521"
+              d="M -140.438873,203.943771 C 26.525208,464.420380 -113.743530,1105.581299 -374.220123,1272.545410"
+              class="id_REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#9cc05e"/>
+        <path fill="none" stroke-width="6.0919237"
+              d="M -140.438873,203.943771 C -402.466156,276.974274 -905.052979,-6.520905 -978.083435,-268.548187"
+              class="id_REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION id_KEGG_FOCAL_ADHESION"
+              stroke-opacity="1.0" stroke="#bebebe"/>
+        <path fill="none" stroke-width="6.651396"
+              d="M -140.438873,203.943771 C -188.057098,104.490372 -110.304337,-116.117043 -10.850940,-163.735260"
+              class="id_REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION id_REACTOME_HEMOSTASIS"
+              stroke-opacity="1.0" stroke="#de9bdc"/>
+        <path fill="none" stroke-width="6.0439653"
+              d="M -140.438873,203.943771 C -271.503540,2.068882 -165.288193,-497.340363 36.586700,-628.405029"
+              class="id_REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION id_HALLMARK_COAGULATION"
+              stroke-opacity="1.0" stroke="#de9bdc"/>
+        <path fill="none" stroke-width="6.062691"
+              d="M -140.438873,203.943771 C -161.177399,1.225044 111.792923,-333.960846 314.511658,-354.699371"
+              class="id_REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION id_HALLMARK_COMPLEMENT"
+              stroke-opacity="1.0" stroke="#de909f"/>
+        <path fill="none" stroke-width="6.241809"
+              d="M -374.220123,1272.545410 C -384.957001,1401.217651 -594.070679,1578.120728 -722.742920,1567.383789"
+              class="id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS id_REACTOME_GPCR_DOWNSTREAM_SIGNALING"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.072154"
+              d="M -374.220123,1272.545410 C -264.092072,1105.266724 152.017975,1019.540894 319.296600,1129.668945"
+              class="id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS id_KEGG_CALCIUM_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.2868595"
+              d="M -374.220123,1272.545410 C -474.113190,1354.781006 -747.306030,1328.294678 -829.541565,1228.401611"
+              class="id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.029138"
+              d="M -2016.774048,55.167545 C -1901.619019,127.444145 -1837.301514,408.591492 -1909.578125,523.746460"
+              class="id_HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION id_NABA_ECM_GLYCOPROTEINS"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.0942645"
+              d="M -2016.774048,55.167545 C -1922.398193,15.758728 -1721.721191,98.209290 -1682.312378,192.585144"
+              class="id_HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION id_NABA_CORE_MATRISOME"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.0314674"
+              d="M -2016.774048,55.167545 C -2102.948242,-43.186981 -2084.677490,-319.979858 -1986.322876,-406.153900"
+              class="id_HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION id_REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.19766"
+              d="M -722.742920,1567.383789 C -811.899109,1520.947144 -875.978271,1317.557739 -829.541565,1228.401611"
+              class="id_REACTOME_GPCR_DOWNSTREAM_SIGNALING id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.0946207"
+              d="M -722.742920,1567.383789 C -529.429688,1398.303711 14.160361,1434.653320 183.240494,1627.966553"
+              class="id_REACTOME_GPCR_DOWNSTREAM_SIGNALING id_REACTOME_G_ALPHA_S_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.007988"
+              d="M -1747.647583,-760.514282 C -1495.341553,-816.033875 -1033.603149,-520.854248 -978.083435,-268.548187"
+              class="id_KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM id_KEGG_FOCAL_ADHESION"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="7.2271323"
+              d="M -1747.647583,-760.514282 C -1716.127808,-857.566040 -1523.270630,-955.864075 -1426.218872,-924.344299"
+              class="id_KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM id_KEGG_DILATED_CARDIOMYOPATHY"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.909401"
+              d="M 1832.625610,640.318176 C 1889.971436,732.214600 1838.145386,956.078003 1746.249023,1013.423767"
+              class="id_REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT id_REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.5064716"
+              d="M 1832.625610,640.318176 C 1795.676025,780.062134 1530.635620,934.253723 1390.891602,897.304077"
+              class="id_REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT id_REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS"
+              stroke-opacity="1.0" stroke="#dfa560"/>
+        <path fill="none" stroke-width="6.0012417"
+              d="M -978.083435,-268.548187 C -763.674377,-441.032104 -183.334854,-378.144348 -10.850940,-163.735260"
+              class="id_KEGG_FOCAL_ADHESION id_REACTOME_HEMOSTASIS"
+              stroke-opacity="1.0" stroke="#df9cde"/>
+        <path fill="none" stroke-width="6.0082912"
+              d="M -978.083435,-268.548187 C -1026.702515,-35.475723 -1449.239868,241.204269 -1682.312378,192.585144"
+              class="id_KEGG_FOCAL_ADHESION id_NABA_CORE_MATRISOME"
+              stroke-opacity="1.0" stroke="#999285"/>
+        <path fill="none" stroke-width="6.002828"
+              d="M -978.083435,-268.548187 C -1198.869751,-310.080322 -1467.750977,-703.557983 -1426.218872,-924.344299"
+              class="id_KEGG_FOCAL_ADHESION id_KEGG_DILATED_CARDIOMYOPATHY"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.0220647"
+              d="M -978.083435,-268.548187 C -1175.346680,-425.095642 -1236.420532,-955.811707 -1079.873047,-1153.074951"
+              class="id_KEGG_FOCAL_ADHESION id_REACTOME_DEVELOPMENTAL_BIOLOGY"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.0331893"
+              d="M -978.083435,-268.548187 C -928.482910,-76.707825 -1141.842773,285.453461 -1333.683105,335.053955"
+              class="id_KEGG_FOCAL_ADHESION id_PID_A6B1_A6B4_INTEGRIN_PATHWAY"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.028178"
+              d="M 1135.066895,-637.201599 C 941.224792,-546.189941 513.944214,-700.435730 422.932556,-894.277832"
+              class="id_REACTOME_CELL_CYCLE id_REACTOME_ADAPTIVE_IMMUNE_SYSTEM"
+              stroke-opacity="1.0" stroke="#b180b4"/>
+        <path fill="none" stroke-width="6.5803027"
+              d="M 1135.066895,-637.201599 C 1092.393677,-820.150818 1302.807739,-1158.584351 1485.756836,-1201.257568"
+              class="id_REACTOME_CELL_CYCLE id_REACTOME_MITOTIC_M_M_G1_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.3122644"
+              d="M 1135.066895,-637.201599 C 1017.524170,-744.753174 1002.537598,-1082.394409 1110.089111,-1199.937134"
+              class="id_REACTOME_CELL_CYCLE id_REACTOME_G1_S_TRANSITION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.001548"
+              d="M 1135.066895,-637.201599 C 1261.254883,-451.951599 1172.661865,15.205381 987.411865,141.393372"
+              class="id_REACTOME_CELL_CYCLE id_KEGG_OOCYTE_MEIOSIS"
+              stroke-opacity="1.0" stroke="#90add2"/>
+        <path fill="none" stroke-width="6.423947"
+              d="M 1135.066895,-637.201599 C 1191.242188,-792.193054 1507.992554,-940.417236 1662.984009,-884.241821"
+              class="id_REACTOME_CELL_CYCLE id_REACTOME_MITOTIC_G1_G1_S_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.173778"
+              d="M 1135.066895,-637.201599 C 1394.501221,-709.626831 1892.290649,-429.113159 1964.715942,-169.678802"
+              class="id_REACTOME_CELL_CYCLE id_REACTOME_MITOTIC_G2_G2_M_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.1954975"
+              d="M 1135.066895,-637.201599 C 1241.302490,-574.756897 1306.988892,-321.736389 1244.544067,-215.500763"
+              class="id_REACTOME_CELL_CYCLE id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.001442"
+              d="M -10.850940,-163.735260 C -70.202766,-396.600525 190.067307,-834.926025 422.932556,-894.277832"
+              class="id_REACTOME_HEMOSTASIS id_REACTOME_ADAPTIVE_IMMUNE_SYSTEM"
+              stroke-opacity="1.0" stroke="#ff6ebe"/>
+        <path fill="none" stroke-width="6.0041184"
+              d="M -10.850940,-163.735260 C -94.297363,-266.156738 -65.834778,-544.958618 36.586700,-628.405029"
+              class="id_REACTOME_HEMOSTASIS id_HALLMARK_COAGULATION"
+              stroke-opacity="1.0" stroke="#ff79fc"/>
+        <path fill="none" stroke-width="6.0505986"
+              d="M -10.850940,-163.735260 C 16.028759,-267.000610 211.246307,-381.579041 314.511658,-354.699371"
+              class="id_REACTOME_HEMOSTASIS id_HALLMARK_COMPLEMENT"
+              stroke-opacity="1.0" stroke="#ff6ebe"/>
+        <path fill="none" stroke-width="6.001051"
+              d="M 1106.944824,1663.076172 C 1026.667358,1871.357178 593.829590,2063.362549 385.548553,1983.084961"
+              class="id_REACTOME_BIOLOGICAL_OXIDATIONS id_KEGG_ARACHIDONIC_ACID_METABOLISM"
+              stroke-opacity="1.0" stroke="#ff8b00"/>
+        <path fill="none" stroke-width="7.152377"
+              d="M -1909.578125,523.746460 C -1930.357300,412.061035 -1793.997803,213.364258 -1682.312378,192.585144"
+              class="id_NABA_ECM_GLYCOPROTEINS id_NABA_CORE_MATRISOME"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.052145"
+              d="M -1682.312378,192.585144 C -1862.862305,133.639435 -2045.268555,-225.603989 -1986.322876,-406.153900"
+              class="id_NABA_CORE_MATRISOME id_REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION"
+              stroke-opacity="1.0" stroke="#72654b"/>
+        <path fill="none" stroke-width="6.8984385"
+              d="M 422.932556,-894.277832 C 302.772369,-997.282227 277.038635,-1332.029053 380.042999,-1452.189209"
+              class="id_REACTOME_ADAPTIVE_IMMUNE_SYSTEM id_REACTOME_IMMUNE_SYSTEM"
+              stroke-opacity="1.0" stroke="#ff6381"/>
+        <path fill="none" stroke-width="6.5623674"
+              d="M 1485.756836,-1201.257568 C 1410.887329,-1125.859985 1185.486694,-1125.067627 1110.089111,-1199.937134"
+              class="id_REACTOME_MITOTIC_M_M_G1_PHASES id_REACTOME_G1_S_TRANSITION"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.502639"
+              d="M 1485.756836,-1201.257568 C 1584.605469,-1173.299805 1690.941772,-983.090393 1662.984009,-884.241821"
+              class="id_REACTOME_MITOTIC_M_M_G1_PHASES id_REACTOME_MITOTIC_G1_G1_S_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.036492"
+              d="M 1485.756836,-1201.257568 C 1634.665649,-955.863647 1489.937988,-364.409607 1244.544067,-215.500763"
+              class="id_REACTOME_MITOTIC_M_M_G1_PHASES id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.020071"
+              d="M 1981.511963,234.056686 C 1897.405640,156.668793 1887.328125,-85.572495 1964.715942,-169.678802"
+              class="id_HALLMARK_MITOTIC_SPINDLE id_REACTOME_MITOTIC_G2_G2_M_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.0520205"
+              d="M 677.862915,385.370880 C 690.977173,274.665588 876.706543,128.279083 987.411865,141.393372"
+              class="id_KEGG_WNT_SIGNALING_PATHWAY id_KEGG_OOCYTE_MEIOSIS"
+              stroke-opacity="1.0" stroke="#bebebe"/>
+        <path fill="none" stroke-width="6.4813404"
+              d="M 677.862915,385.370880 C 573.213806,443.254761 329.414459,373.106934 271.530609,268.457855"
+              class="id_KEGG_WNT_SIGNALING_PATHWAY id_WNT_SIGNALING"
+              stroke-opacity="1.0" stroke="#c0c0c0"/>
+        <path fill="none" stroke-width="6.051454"
+              d="M 677.862915,385.370880 C 807.025208,522.229065 795.481384,921.259705 658.623169,1050.421997"
+              class="id_KEGG_WNT_SIGNALING_PATHWAY id_REACTOME_CLASS_B_2_SECRETIN_FAMILY_RECEPTORS"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.193428"
+              d="M 36.586700,-628.405029 C 146.912827,-629.248901 313.667786,-465.025482 314.511658,-354.699371"
+              class="id_HALLMARK_COAGULATION id_HALLMARK_COMPLEMENT"
+              stroke-opacity="1.0" stroke="#ff6ebe"/>
+        <path fill="none" stroke-width="6.003627"
+              d="M -326.495239,-744.263489 C -430.530823,-740.637085 -592.023743,-891.250793 -595.650146,-995.286377"
+              class="id_HALLMARK_ALLOGRAFT_REJECTION id_HALLMARK_INFLAMMATORY_RESPONSE"
+              stroke-opacity="1.0" stroke="#ff6381"/>
+        <path fill="none" stroke-width="6.003627"
+              d="M -326.495239,-744.263489 C -417.592834,-869.099609 -366.985138,-1193.000122 -242.149063,-1284.097656"
+              class="id_HALLMARK_ALLOGRAFT_REJECTION id_HALLMARK_INTERFERON_GAMMA_RESPONSE"
+              stroke-opacity="1.0" stroke="#ff6381"/>
+        <path fill="none" stroke-width="6.047585"
+              d="M -326.495239,-744.263489 C -179.726349,-406.430084 -466.323120,320.473175 -804.156555,467.242065"
+              class="id_HALLMARK_ALLOGRAFT_REJECTION id_KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION"
+              stroke-opacity="1.0" stroke="#ff6381"/>
+        <path fill="none" stroke-width="7.349461"
+              d="M 1110.089111,-1199.937134 C 1283.807129,-1247.377075 1615.544067,-1057.959839 1662.984009,-884.241821"
+              class="id_REACTOME_G1_S_TRANSITION id_REACTOME_MITOTIC_G1_G1_S_PHASES"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.165728"
+              d="M 1110.089111,-1199.937134 C 1333.867432,-1029.940796 1414.540405,-439.279053 1244.544067,-215.500763"
+              class="id_REACTOME_G1_S_TRANSITION id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.217218"
+              d="M 1746.249023,1013.423767 C 1651.953491,1061.271362 1438.739136,991.599487 1390.891602,897.304077"
+              class="id_REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES id_REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS"
+              stroke-opacity="1.0" stroke="#dfa560"/>
+        <path fill="none" stroke-width="6.003627"
+              d="M -595.650146,-995.286377 C -582.712219,-1123.748779 -370.611542,-1297.035645 -242.149063,-1284.097656"
+              class="id_HALLMARK_INFLAMMATORY_RESPONSE id_HALLMARK_INTERFERON_GAMMA_RESPONSE"
+              stroke-opacity="1.0" stroke="#ff6381"/>
+        <path fill="none" stroke-width="6.0374346"
+              d="M -595.650146,-995.286377 C -344.845734,-661.079346 -469.949554,216.437637 -804.156555,467.242065"
+              class="id_HALLMARK_INFLAMMATORY_RESPONSE id_KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION"
+              stroke-opacity="1.0" stroke="#ff6381"/>
+        <path fill="none" stroke-width="6.086762"
+              d="M -595.650146,-995.286377 C -686.581421,-1137.707642 -609.346313,-1487.736694 -466.924927,-1578.667969"
+              class="id_HALLMARK_INFLAMMATORY_RESPONSE id_HALLMARK_TNFA_SIGNALING_VIA_NFKB"
+              stroke-opacity="1.0" stroke="#ff6381"/>
+        <path fill="none" stroke-width="6.176845"
+              d="M 716.052490,1471.982178 C 737.061218,1348.272827 954.138123,1194.222046 1077.847412,1215.230713"
+              class="id_HALLMARK_GLYCOLYSIS id_HALLMARK_HYPOXIA"
+              stroke-opacity="1.0" stroke="#b87825"/>
+        <path fill="none" stroke-width="6.054602"
+              d="M -804.156555,467.242065 C -657.001648,624.551025 -672.232605,1081.246704 -829.541565,1228.401611"
+              class="id_KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS"
+              stroke-opacity="1.0" stroke="#bd9340"/>
+        <path fill="none" stroke-width="6.0046725"
+              d="M -804.156555,467.242065 C -651.930847,757.714355 -859.300659,1421.761353 -1149.772949,1573.987061"
+              class="id_KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION id_KEGG_HEMATOPOIETIC_CELL_LINEAGE"
+              stroke-opacity="1.0" stroke="#ff6ebe"/>
+        <path fill="none" stroke-width="6.365787"
+              d="M -804.156555,467.242065 C -792.709351,568.542664 -927.489441,737.664490 -1028.790039,749.111694"
+              class="id_KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION id_NABA_SECRETED_FACTORS"
+              stroke-opacity="1.0" stroke="#bd9340"/>
+        <path fill="none" stroke-width="6.0434017"
+              d="M 987.411865,141.393372 C 1051.443970,472.671539 650.574768,1065.636841 319.296600,1129.668945"
+              class="id_KEGG_OOCYTE_MEIOSIS id_KEGG_CALCIUM_SIGNALING_PATHWAY"
+              stroke-opacity="1.0" stroke="#9cc05e"/>
+        <path fill="none" stroke-width="6.2068806"
+              d="M 987.411865,141.393372 C 967.459412,18.588097 1121.738892,-195.548370 1244.544067,-215.500763"
+              class="id_KEGG_OOCYTE_MEIOSIS id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#90add2"/>
+        <path fill="none" stroke-width="6.0788693"
+              d="M 271.530609,268.457855 C 505.341949,347.432159 737.597473,816.610657 658.623169,1050.421997"
+              class="id_WNT_SIGNALING id_REACTOME_CLASS_B_2_SECRETIN_FAMILY_RECEPTORS"
+              stroke-opacity="1.0" stroke="#9ec160"/>
+        <path fill="none" stroke-width="6.293252"
+              d="M 1662.984009,-884.241821 C 1713.044189,-666.805603 1461.980225,-265.560974 1244.544067,-215.500763"
+              class="id_REACTOME_MITOTIC_G1_G1_S_PHASES id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.023665"
+              d="M 1542.551270,308.712921 C 1378.107056,263.471619 1199.302734,-51.056587 1244.544067,-215.500763"
+              class="id_PID_FOXM1_PATHWAY id_KEGG_CELL_CYCLE"
+              stroke-opacity="1.0" stroke="#649ee8"/>
+        <path fill="none" stroke-width="6.3879013"
+              d="M 658.623169,1050.421997 C 679.055542,1261.007446 393.825958,1607.534180 183.240494,1627.966553"
+              class="id_REACTOME_CLASS_B_2_SECRETIN_FAMILY_RECEPTORS id_REACTOME_G_ALPHA_S_SIGNALLING_EVENTS"
+              stroke-opacity="1.0" stroke="#7cc300"/>
+        <path fill="none" stroke-width="6.185256"
+              d="M -1226.744873,-1581.660522 C -1119.884399,-1634.508057 -880.322571,-1553.488892 -827.474976,-1446.628418"
+              class="id_REACTOME_CELL_CELL_COMMUNICATION id_HALLMARK_APICAL_JUNCTION"
+              stroke-opacity="1.0" stroke="#bdbdbd"/>
+        <path fill="none" stroke-width="7.034404"
+              d="M -1226.744873,-1581.660522 C -1199.316895,-1711.800415 -962.965149,-1865.868408 -832.825256,-1838.440430"
+              class="id_REACTOME_CELL_CELL_COMMUNICATION id_REACTOME_CELL_JUNCTION_ORGANIZATION"
+              stroke-opacity="1.0" stroke="#bdbdbd"/>
+        <path fill="none" stroke-width="6.1372857"
+              d="M -827.474976,-1446.628418 C -906.907471,-1523.920776 -910.117615,-1759.007935 -832.825256,-1838.440430"
+              class="id_HALLMARK_APICAL_JUNCTION id_REACTOME_CELL_JUNCTION_ORGANIZATION"
+              stroke-opacity="1.0" stroke="#bdbdbd"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1592.8096"
+                class="id_HALLMARK_E2F_TARGETS" cy="-97.11373" stroke="#649ee8"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#00bd7d" r="10.0" cx="-1032.2284"
+                class="id_KEGG_SMALL_CELL_LUNG_CANCER" cy="124.05928"
+                stroke="#00bd7d" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1206.3507"
+                class="id_REACTOME_MITOTIC_PROMETAPHASE" cy="-1572.974"
+                stroke="#649ee8" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1428.883"
+                class="id_REACTOME_CELL_CYCLE_MITOTIC" cy="-561.58057"
+                stroke="#649ee8" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="-140.2057"
+                class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION"
+                cy="1885.7445" stroke="#c0c0c0" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="782.1841"
+                class="id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1"
+                cy="-1294.1228" stroke="#649ee8" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="-554.9701"
+                class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS"
+                cy="1024.1132" stroke="#7cc300" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="895.7637"
+                class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS"
+                cy="-379.28253" stroke="#649ee8" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#bdbdbd" r="10.0" cx="466.0295"
+                class="id_KEGG_MELANOGENESIS" cy="667.8998" stroke="#bdbdbd"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#72654b" r="10.0" cx="-1492.4197"
+                class="id_NABA_MATRISOME" cy="700.0193" stroke="#72654b"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="-125.811485"
+                class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK"
+                cy="999.08105" stroke="#7cc300" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="-1585.2205"
+                class="id_KEGG_CARDIAC_MUSCLE_CONTRACTION" cy="-1245.1226"
+                stroke="#c0c0c0" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="-1396.5461"
+                class="id_PID_INTEGRIN1_PATHWAY" cy="-138.57504"
+                stroke="#c0c0c0" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#00bd7d" r="10.0" cx="126.83682"
+                class="id_KEGG_BASAL_CELL_CARCINOMA" cy="627.41724"
+                stroke="#00bd7d" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#00bd7d" r="10.0" cx="-353.10208"
+                class="id_KEGG_MELANOMA" cy="-257.16345" stroke="#00bd7d"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff8b00" r="10.0" cx="-1493.845"
+                class="id_REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS"
+                cy="1366.4678" stroke="#ff8b00" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#00bd7d" r="10.0" cx="-430.88174"
+                class="id_KEGG_PATHWAYS_IN_CANCER" cy="293.9522"
+                stroke="#00bd7d" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff79fc" r="10.0" cx="64.04117"
+                class="id_REACTOME_FACTORS_INVOLVED_IN_MEGAKARYOCYTE_DEVELOPMENT_AND_PLATELET_PRODUCTION"
+                cy="-1085.1406" stroke="#ff79fc" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="724.01"
+                class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE"
+                cy="-629.5246" stroke="#649ee8" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="-357.30243"
+                class="id_PID_AURORA_A_PATHWAY" cy="-1964.0034" stroke="#649ee8"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="-321.1722"
+                class="id_REACTOME_SIGNALING_BY_GPCR" cy="1610.2379"
+                stroke="#7cc300" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1868.4786"
+                class="id_HALLMARK_G2M_CHECKPOINT" cy="-536.87054"
+                stroke="#649ee8" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff8b00" r="10.0" cx="746.9361"
+                class="id_REACTOME_PHASE1_FUNCTIONALIZATION_OF_COMPOUNDS"
+                cy="1851.9277" stroke="#ff8b00" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="-668.4336"
+                class="id_KEGG_REGULATION_OF_ACTIN_CYTOSKELETON" cy="-51.679466"
+                stroke="#c0c0c0" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="831.8206"
+                class="id_REACTOME_CELL_CYCLE_CHECKPOINTS" cy="-954.671"
+                stroke="#649ee8" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1272.1697"
+                class="id_KEGG_P53_SIGNALING_PATHWAY" cy="541.45306"
+                stroke="#649ee8" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff6381" r="10.0" cx="406.33786"
+                class="id_REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM"
+                cy="-1849.5251" stroke="#ff6381" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="1451.5071"
+                class="id_PID_P53_DOWNSTREAM_PATHWAY" cy="1332.5339"
+                stroke="#c0c0c0" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff6381" r="10.0" cx="-290.14532"
+                class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY" cy="696.8158"
+                stroke="#ff6381" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#72654b" r="10.0" cx="-1662.945"
+                class="id_KEGG_ECM_RECEPTOR_INTERACTION" cy="-274.6491"
+                stroke="#72654b" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#bdbdbd" r="10.0" cx="894.28937"
+                class="id_PID_LYSOPHOSPHOLIPID_PATHWAY" cy="722.39923"
+                stroke="#bdbdbd" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="-1309.1934"
+                class="id_KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC"
+                cy="-578.1564" stroke="#c0c0c0" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1318.0161"
+                class="id_REACTOME_DNA_REPLICATION" cy="-910.02155"
+                stroke="#649ee8" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="-561.911"
+                class="id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS" cy="1843.2556"
+                stroke="#7cc300" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="-944.4844"
+                class="id_REACTOME_AXON_GUIDANCE" cy="-784.5835"
+                stroke="#c0c0c0" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="-7.3668756"
+                class="id_REACTOME_GPCR_LIGAND_BINDING" cy="1372.48"
+                stroke="#7cc300" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#72654b" r="10.0" cx="-1260.5549"
+                class="id_NABA_MATRISOME_ASSOCIATED" cy="1046.835"
+                stroke="#72654b" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#bdbdbd" r="10.0" cx="549.5905"
+                class="id_KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION"
+                cy="-4.2250233" stroke="#bdbdbd" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#bdbdbd" r="10.0" cx="-140.43887"
+                class="id_REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION"
+                cy="203.94377" stroke="#bdbdbd" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="-374.22012"
+                class="id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS" cy="1272.5454"
+                stroke="#7cc300" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#72654b" r="10.0" cx="-2016.774"
+                class="id_HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"
+                cy="55.167545" stroke="#72654b" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="-722.7429"
+                class="id_REACTOME_GPCR_DOWNSTREAM_SIGNALING" cy="1567.3838"
+                stroke="#7cc300" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="-1747.6476"
+                class="id_KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM" cy="-760.5143"
+                stroke="#c0c0c0" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="1832.6256"
+                class="id_REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT"
+                cy="640.3182" stroke="#c0c0c0" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="-978.08344"
+                class="id_KEGG_FOCAL_ADHESION" cy="-268.5482" stroke="#c0c0c0"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1135.0669"
+                class="id_REACTOME_CELL_CYCLE" cy="-637.2016" stroke="#649ee8"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="-643.9132"
+                class="id_KEGG_MAPK_SIGNALING_PATHWAY" cy="-513.6203"
+                stroke="#7cc300" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff79fc" r="10.0" cx="-10.85094"
+                class="id_REACTOME_HEMOSTASIS" cy="-163.73526" stroke="#ff79fc"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff8b00" r="10.0" cx="1106.9448"
+                class="id_REACTOME_BIOLOGICAL_OXIDATIONS" cy="1663.0762"
+                stroke="#ff8b00" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#72654b" r="10.0" cx="-1909.5781"
+                class="id_NABA_ECM_GLYCOPROTEINS" cy="523.74646"
+                stroke="#72654b" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#72654b" r="10.0" cx="-1682.3124"
+                class="id_NABA_CORE_MATRISOME" cy="192.58514" stroke="#72654b"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff6381" r="10.0" cx="422.93256"
+                class="id_REACTOME_ADAPTIVE_IMMUNE_SYSTEM" cy="-894.27783"
+                stroke="#ff6381" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1485.7568"
+                class="id_REACTOME_MITOTIC_M_M_G1_PHASES" cy="-1201.2576"
+                stroke="#649ee8" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="53.670223"
+                class="id_PID_AURORA_B_PATHWAY" cy="-2014.5826" stroke="#649ee8"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1981.512"
+                class="id_HALLMARK_MITOTIC_SPINDLE" cy="234.05669"
+                stroke="#649ee8" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="677.8629"
+                class="id_KEGG_WNT_SIGNALING_PATHWAY" cy="385.37088"
+                stroke="#c0c0c0" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff79fc" r="10.0" cx="36.5867"
+                class="id_HALLMARK_COAGULATION" cy="-628.405" stroke="#ff79fc"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff6381" r="10.0" cx="-326.49524"
+                class="id_HALLMARK_ALLOGRAFT_REJECTION" cy="-744.2635"
+                stroke="#ff6381" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1110.0891"
+                class="id_REACTOME_G1_S_TRANSITION" cy="-1199.9371"
+                stroke="#649ee8" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="1746.249"
+                class="id_REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES"
+                cy="1013.42377" stroke="#c0c0c0" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff6381" r="10.0" cx="-595.65015"
+                class="id_HALLMARK_INFLAMMATORY_RESPONSE" cy="-995.2864"
+                stroke="#ff6381" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff6381" r="10.0" cx="-242.14906"
+                class="id_HALLMARK_INTERFERON_GAMMA_RESPONSE" cy="-1284.0977"
+                stroke="#ff6381" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff8b00" r="10.0" cx="716.0525"
+                class="id_HALLMARK_GLYCOLYSIS" cy="1471.9822" stroke="#ff8b00"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#72654b" r="10.0" cx="-1986.3229"
+                class="id_REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION"
+                cy="-406.1539" stroke="#72654b" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff8b00" r="10.0" cx="1390.8916"
+                class="id_REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS"
+                cy="897.3041" stroke="#ff8b00" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff6381" r="10.0" cx="-804.15656"
+                class="id_KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION"
+                cy="467.24207" stroke="#ff6381" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff6381" r="10.0" cx="314.51166"
+                class="id_HALLMARK_COMPLEMENT" cy="-354.69937" stroke="#ff6381"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#bdbdbd" r="10.0" cx="987.41187"
+                class="id_KEGG_OOCYTE_MEIOSIS" cy="141.39337" stroke="#bdbdbd"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="-1426.2189"
+                class="id_KEGG_DILATED_CARDIOMYOPATHY" cy="-924.3443"
+                stroke="#c0c0c0" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="6.466131"
+                class="id_REACTOME_KINESINS" cy="-1604.3114" stroke="#c0c0c0"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="319.2966"
+                class="id_KEGG_CALCIUM_SIGNALING_PATHWAY" cy="1129.669"
+                stroke="#7cc300" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="-829.54156"
+                class="id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS"
+                cy="1228.4016" stroke="#7cc300" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#72654b" r="10.0" cx="1077.8474"
+                class="id_HALLMARK_HYPOXIA" cy="1215.2307" stroke="#72654b"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="271.5306"
+                class="id_WNT_SIGNALING" cy="268.45786" stroke="#c0c0c0"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1662.984"
+                class="id_REACTOME_MITOTIC_G1_G1_S_PHASES" cy="-884.2418"
+                stroke="#649ee8" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="-1079.873"
+                class="id_REACTOME_DEVELOPMENTAL_BIOLOGY" cy="-1153.075"
+                stroke="#c0c0c0" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff79fc" r="10.0" cx="-1149.773"
+                class="id_KEGG_HEMATOPOIETIC_CELL_LINEAGE" cy="1573.987"
+                stroke="#ff79fc" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1964.716"
+                class="id_REACTOME_MITOTIC_G2_G2_M_PHASES" cy="-169.6788"
+                stroke="#649ee8" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1542.5513"
+                class="id_PID_FOXM1_PATHWAY" cy="308.71292" stroke="#649ee8"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff6381" r="10.0" cx="-466.92493"
+                class="id_HALLMARK_TNFA_SIGNALING_VIA_NFKB" cy="-1578.668"
+                stroke="#ff6381" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="658.62317"
+                class="id_REACTOME_CLASS_B_2_SECRETIN_FAMILY_RECEPTORS"
+                cy="1050.422" stroke="#7cc300" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c0c0c0" r="10.0" cx="-1333.6831"
+                class="id_PID_A6B1_A6B4_INTEGRIN_PATHWAY" cy="335.05396"
+                stroke="#c0c0c0" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff8b00" r="10.0" cx="-1754.9027"
+                class="id_REACTOME_PHOSPHOLIPID_METABOLISM" cy="1001.0997"
+                stroke="#ff8b00" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#bdbdbd" r="10.0" cx="-1226.7449"
+                class="id_REACTOME_CELL_CELL_COMMUNICATION" cy="-1581.6605"
+                stroke="#bdbdbd" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="183.2405"
+                class="id_REACTOME_G_ALPHA_S_SIGNALLING_EVENTS" cy="1627.9666"
+                stroke="#7cc300" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff8b00" r="10.0" cx="385.54855"
+                class="id_KEGG_ARACHIDONIC_ACID_METABOLISM" cy="1983.085"
+                stroke="#ff8b00" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#7cc300" r="10.0" cx="-1028.79"
+                class="id_NABA_SECRETED_FACTORS" cy="749.1117" stroke="#7cc300"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="1244.5441"
+                class="id_KEGG_CELL_CYCLE" cy="-215.50076" stroke="#649ee8"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#649ee8" r="10.0" cx="805.2223"
+                class="id_PID_PLK1_PATHWAY" cy="-1823.1094" stroke="#649ee8"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#bdbdbd" r="10.0" cx="-827.475"
+                class="id_HALLMARK_APICAL_JUNCTION" cy="-1446.6284"
+                stroke="#bdbdbd" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#bdbdbd" r="10.0" cx="-832.82526"
+                class="id_REACTOME_CELL_JUNCTION_ORGANIZATION" cy="-1838.4404"
+                stroke="#bdbdbd" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff6381" r="10.0" cx="380.043"
+                class="id_REACTOME_IMMUNE_SYSTEM" cy="-1452.1892"
+                stroke="#ff6381" stroke-opacity="1.0" stroke-width="1.0"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="56" x="1592.8096" y="-83.41907" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_E2F_TARGETS">
+            HALLMARK_E2F_TARGETS
+        </text>
+        <text font-size="56" x="-1032.2284" y="137.75394" fill="#00bd7d"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_SMALL_CELL_LUNG_CANCER">
+            KEGG_SMALL_CELL_LUNG_CANCER
+        </text>
+        <text font-size="56" x="1206.3507" y="-1559.2793" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_MITOTIC_PROMETAPHASE">
+            REACTOME_MITOTIC_PROMETAPHASE
+        </text>
+        <text font-size="56" x="1428.883" y="-547.8859" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_CELL_CYCLE_MITOTIC">
+            REACTOME_CELL_CYCLE_MITOTIC
+        </text>
+        <text font-size="56" x="-140.2057" y="1899.4392" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_KEGG_NEUROACTIVE_LIGAND_RECEPTOR_INTERACTION">
+            KEGG_NEUROACTIVE_LIGAND_RECEPT...
+        </text>
+        <text font-size="56" x="782.1841" y="-1280.4281" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_APC_C_CDH1_MEDIATED_DEGRADATION_OF_CDC20_AND_OTHER_APC_C_CDH1_TARGETED_PROTEINS_IN_LATE_MITOSIS_EARLY_G1">
+            REACTOME_APC_C_CDH1_MEDIATED_D...
+        </text>
+        <text font-size="56" x="-554.9701" y="1037.8079" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_CLASS_A1_RHODOPSIN_LIKE_RECEPTORS">
+            REACTOME_CLASS_A1_RHODOPSIN_LI...
+        </text>
+        <text font-size="56" x="895.7637" y="-365.58786" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_APC_C_CDC20_MEDIATED_DEGRADATION_OF_MITOTIC_PROTEINS">
+            REACTOME_APC_C_CDC20_MEDIATED_...
+        </text>
+        <text font-size="56" x="466.0295" y="681.5944" fill="#bdbdbd"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_MELANOGENESIS">
+            KEGG_MELANOGENESIS
+        </text>
+        <text font-size="56" x="-1492.4197" y="713.7139" fill="#72654b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_NABA_MATRISOME">
+            NABA_MATRISOME
+        </text>
+        <text font-size="56" x="-125.811485" y="1012.7757" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_GASTRIN_CREB_SIGNALLING_PATHWAY_VIA_PKC_AND_MAPK">
+            REACTOME_GASTRIN_CREB_SIGNALLI...
+        </text>
+        <text font-size="56" x="-1585.2205" y="-1231.4279" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_CARDIAC_MUSCLE_CONTRACTION">
+            KEGG_CARDIAC_MUSCLE_CONTRACTION
+        </text>
+        <text font-size="56" x="-1396.5461" y="-124.88038" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_PID_INTEGRIN1_PATHWAY">
+            PID_INTEGRIN1_PATHWAY
+        </text>
+        <text font-size="56" x="126.83682" y="641.1119" fill="#00bd7d"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_BASAL_CELL_CARCINOMA">
+            KEGG_BASAL_CELL_CARCINOMA
+        </text>
+        <text font-size="56" x="-353.10208" y="-243.4688" fill="#00bd7d"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_MELANOMA">
+            KEGG_MELANOMA
+        </text>
+        <text font-size="56" x="-1493.845" y="1380.1625" fill="#ff8b00"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_METABOLISM_OF_LIPIDS_AND_LIPOPROTEINS">
+            REACTOME_METABOLISM_OF_LIPIDS_...
+        </text>
+        <text font-size="56" x="-430.88174" y="307.64688" fill="#00bd7d"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_PATHWAYS_IN_CANCER">
+            KEGG_PATHWAYS_IN_CANCER
+        </text>
+        <text font-size="56" x="64.04117" y="-1071.4459" fill="#ff79fc"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_FACTORS_INVOLVED_IN_MEGAKARYOCYTE_DEVELOPMENT_AND_PLATELET_PRODUCTION">
+            REACTOME_FACTORS_INVOLVED_IN_M...
+        </text>
+        <text font-size="56" x="724.01" y="-615.82996" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_REGULATION_OF_MITOTIC_CELL_CYCLE">
+            REACTOME_REGULATION_OF_MITOTIC...
+        </text>
+        <text font-size="56" x="-357.30243" y="-1950.3087" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_PID_AURORA_A_PATHWAY">
+            PID_AURORA_A_PATHWAY
+        </text>
+        <text font-size="56" x="-321.1722" y="1623.9326" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_SIGNALING_BY_GPCR">
+            REACTOME_SIGNALING_BY_GPCR
+        </text>
+        <text font-size="56" x="1868.4786" y="-523.1759" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_G2M_CHECKPOINT">
+            HALLMARK_G2M_CHECKPOINT
+        </text>
+        <text font-size="56" x="746.9361" y="1865.6224" fill="#ff8b00"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_PHASE1_FUNCTIONALIZATION_OF_COMPOUNDS">
+            REACTOME_PHASE1_FUNCTIONALIZAT...
+        </text>
+        <text font-size="56" x="-668.4336" y="-37.984806" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_KEGG_REGULATION_OF_ACTIN_CYTOSKELETON">
+            KEGG_REGULATION_OF_ACTIN_CYTOS...
+        </text>
+        <text font-size="56" x="831.8206" y="-940.9764" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_CELL_CYCLE_CHECKPOINTS">
+            REACTOME_CELL_CYCLE_CHECKPOINTS
+        </text>
+        <text font-size="56" x="1272.1697" y="555.1477" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_P53_SIGNALING_PATHWAY">
+            KEGG_P53_SIGNALING_PATHWAY
+        </text>
+        <text font-size="56" x="406.33786" y="-1835.8304" fill="#ff6381"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_CYTOKINE_SIGNALING_IN_IMMUNE_SYSTEM">
+            REACTOME_CYTOKINE_SIGNALING_IN...
+        </text>
+        <text font-size="56" x="1451.5071" y="1346.2286" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_PID_P53_DOWNSTREAM_PATHWAY">
+            PID_P53_DOWNSTREAM_PATHWAY
+        </text>
+        <text font-size="56" x="-290.14532" y="710.51044" fill="#ff6381"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_CHEMOKINE_SIGNALING_PATHWAY">
+            KEGG_CHEMOKINE_SIGNALING_PATHWAY
+        </text>
+        <text font-size="56" x="-1662.945" y="-260.95444" fill="#72654b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_ECM_RECEPTOR_INTERACTION">
+            KEGG_ECM_RECEPTOR_INTERACTION
+        </text>
+        <text font-size="56" x="894.28937" y="736.0939" fill="#bdbdbd"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_PID_LYSOPHOSPHOLIPID_PATHWAY">
+            PID_LYSOPHOSPHOLIPID_PATHWAY
+        </text>
+        <text font-size="56" x="-1309.1934" y="-564.46173" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_KEGG_ARRHYTHMOGENIC_RIGHT_VENTRICULAR_CARDIOMYOPATHY_ARVC">
+            KEGG_ARRHYTHMOGENIC_RIGHT_VENT...
+        </text>
+        <text font-size="56" x="1318.0161" y="-896.3269" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_DNA_REPLICATION">
+            REACTOME_DNA_REPLICATION
+        </text>
+        <text font-size="56" x="-561.911" y="1856.9503" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_G_ALPHA_I_SIGNALLING_EVENTS">
+            REACTOME_G_ALPHA_I_SIGNALLING_...
+        </text>
+        <text font-size="56" x="-944.4844" y="-770.88885" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_AXON_GUIDANCE">
+            REACTOME_AXON_GUIDANCE
+        </text>
+        <text font-size="56" x="-7.3668756" y="1386.1747" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_GPCR_LIGAND_BINDING">
+            REACTOME_GPCR_LIGAND_BINDING
+        </text>
+        <text font-size="56" x="-1260.5549" y="1060.5297" fill="#72654b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_NABA_MATRISOME_ASSOCIATED">
+            NABA_MATRISOME_ASSOCIATED
+        </text>
+        <text font-size="56" x="549.5905" y="9.469638" fill="#bdbdbd"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_KEGG_PROGESTERONE_MEDIATED_OOCYTE_MATURATION">
+            KEGG_PROGESTERONE_MEDIATED_OOC...
+        </text>
+        <text font-size="56" x="-140.43887" y="217.63843" fill="#bdbdbd"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_PLATELET_ACTIVATION_SIGNALING_AND_AGGREGATION">
+            REACTOME_PLATELET_ACTIVATION_S...
+        </text>
+        <text font-size="56" x="-374.22012" y="1286.2401" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_G_ALPHA_Q_SIGNALLING_EVENTS">
+            REACTOME_G_ALPHA_Q_SIGNALLING_...
+        </text>
+        <text font-size="56" x="-2016.774" y="68.862206" fill="#72654b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION">
+            HALLMARK_EPITHELIAL_MESENCHYMA...
+        </text>
+        <text font-size="56" x="-722.7429" y="1581.0785" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_GPCR_DOWNSTREAM_SIGNALING">
+            REACTOME_GPCR_DOWNSTREAM_SIGNA...
+        </text>
+        <text font-size="56" x="-1747.6476" y="-746.81964" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_KEGG_HYPERTROPHIC_CARDIOMYOPATHY_HCM">
+            KEGG_HYPERTROPHIC_CARDIOMYOPAT...
+        </text>
+        <text font-size="56" x="1832.6256" y="654.0128" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_SLC_MEDIATED_TRANSMEMBRANE_TRANSPORT">
+            REACTOME_SLC_MEDIATED_TRANSMEM...
+        </text>
+        <text font-size="56" x="-978.08344" y="-254.85353" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_FOCAL_ADHESION">
+            KEGG_FOCAL_ADHESION
+        </text>
+        <text font-size="56" x="1135.0669" y="-623.50696" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_CELL_CYCLE">
+            REACTOME_CELL_CYCLE
+        </text>
+        <text font-size="56" x="-643.9132" y="-499.92563" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_MAPK_SIGNALING_PATHWAY">
+            KEGG_MAPK_SIGNALING_PATHWAY
+        </text>
+        <text font-size="56" x="-10.85094" y="-150.0406" fill="#ff79fc"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_HEMOSTASIS">
+            REACTOME_HEMOSTASIS
+        </text>
+        <text font-size="56" x="1106.9448" y="1676.7709" fill="#ff8b00"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_BIOLOGICAL_OXIDATIONS">
+            REACTOME_BIOLOGICAL_OXIDATIONS
+        </text>
+        <text font-size="56" x="-1909.5781" y="537.4411" fill="#72654b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_NABA_ECM_GLYCOPROTEINS">
+            NABA_ECM_GLYCOPROTEINS
+        </text>
+        <text font-size="56" x="-1682.3124" y="206.2798" fill="#72654b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_NABA_CORE_MATRISOME">
+            NABA_CORE_MATRISOME
+        </text>
+        <text font-size="56" x="422.93256" y="-880.5832" fill="#ff6381"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_ADAPTIVE_IMMUNE_SYSTEM">
+            REACTOME_ADAPTIVE_IMMUNE_SYSTEM
+        </text>
+        <text font-size="56" x="1485.7568" y="-1187.5629" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_MITOTIC_M_M_G1_PHASES">
+            REACTOME_MITOTIC_M_M_G1_PHASES
+        </text>
+        <text font-size="56" x="53.670223" y="-2000.888" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_PID_AURORA_B_PATHWAY">
+            PID_AURORA_B_PATHWAY
+        </text>
+        <text font-size="56" x="1981.512" y="247.75134" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_MITOTIC_SPINDLE">
+            HALLMARK_MITOTIC_SPINDLE
+        </text>
+        <text font-size="56" x="677.8629" y="399.06555" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_WNT_SIGNALING_PATHWAY">
+            KEGG_WNT_SIGNALING_PATHWAY
+        </text>
+        <text font-size="56" x="36.5867" y="-614.7104" fill="#ff79fc"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_COAGULATION">
+            HALLMARK_COAGULATION
+        </text>
+        <text font-size="56" x="-326.49524" y="-730.56885" fill="#ff6381"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_ALLOGRAFT_REJECTION">
+            HALLMARK_ALLOGRAFT_REJECTION
+        </text>
+        <text font-size="56" x="1110.0891" y="-1186.2424" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_G1_S_TRANSITION">
+            REACTOME_G1_S_TRANSITION
+        </text>
+        <text font-size="56" x="1746.249" y="1027.1184" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_TRANSMEMBRANE_TRANSPORT_OF_SMALL_MOLECULES">
+            REACTOME_TRANSMEMBRANE_TRANSPO...
+        </text>
+        <text font-size="56" x="-595.65015" y="-981.59174" fill="#ff6381"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_INFLAMMATORY_RESPONSE">
+            HALLMARK_INFLAMMATORY_RESPONSE
+        </text>
+        <text font-size="56" x="-242.14906" y="-1270.403" fill="#ff6381"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_INTERFERON_GAMMA_RESPONSE">
+            HALLMARK_INTERFERON_GAMMA_RESP...
+        </text>
+        <text font-size="56" x="716.0525" y="1485.6769" fill="#ff8b00"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_GLYCOLYSIS">
+            HALLMARK_GLYCOLYSIS
+        </text>
+        <text font-size="56" x="-1986.3229" y="-392.45923" fill="#72654b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION">
+            REACTOME_EXTRACELLULAR_MATRIX_...
+        </text>
+        <text font-size="56" x="1390.8916" y="910.9987" fill="#ff8b00"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_TRANSPORT_OF_GLUCOSE_AND_OTHER_SUGARS_BILE_SALTS_AND_ORGANIC_ACIDS_METAL_IONS_AND_AMINE_COMPOUNDS">
+            REACTOME_TRANSPORT_OF_COMPOUNDS
+        </text>
+        <text font-size="56" x="-804.15656" y="480.93674" fill="#ff6381"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION">
+            KEGG_CYTOKINE_CYTOKINE_RECEPTO...
+        </text>
+        <text font-size="56" x="314.51166" y="-341.0047" fill="#ff6381"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_COMPLEMENT">
+            HALLMARK_COMPLEMENT
+        </text>
+        <text font-size="56" x="987.41187" y="155.08803" fill="#bdbdbd"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_OOCYTE_MEIOSIS">
+            KEGG_OOCYTE_MEIOSIS
+        </text>
+        <text font-size="56" x="-1426.2189" y="-910.64966" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_DILATED_CARDIOMYOPATHY">
+            KEGG_DILATED_CARDIOMYOPATHY
+        </text>
+        <text font-size="56" x="6.466131" y="-1590.6167" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_KINESINS">
+            REACTOME_KINESINS
+        </text>
+        <text font-size="56" x="319.2966" y="1143.3636" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_CALCIUM_SIGNALING_PATHWAY">
+            KEGG_CALCIUM_SIGNALING_PATHWAY
+        </text>
+        <text font-size="56" x="-829.54156" y="1242.0963" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_PEPTIDE_LIGAND_BINDING_RECEPTORS">
+            REACTOME_PEPTIDE_LIGAND_BINDIN...
+        </text>
+        <text font-size="56" x="1077.8474" y="1228.9254" fill="#72654b"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_HYPOXIA">
+            HALLMARK_HYPOXIA
+        </text>
+        <text font-size="56" x="271.5306" y="282.15253" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_WNT_SIGNALING">
+            WNT_SIGNALING
+        </text>
+        <text font-size="56" x="1662.984" y="-870.5472" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_MITOTIC_G1_G1_S_PHASES">
+            REACTOME_MITOTIC_G1_G1_S_PHASES
+        </text>
+        <text font-size="56" x="-1079.873" y="-1139.3802" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_DEVELOPMENTAL_BIOLOGY">
+            REACTOME_DEVELOPMENTAL_BIOLOGY
+        </text>
+        <text font-size="56" x="-1149.773" y="1587.6818" fill="#ff79fc"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_HEMATOPOIETIC_CELL_LINEAGE">
+            KEGG_HEMATOPOIETIC_CELL_LINEAGE
+        </text>
+        <text font-size="56" x="1964.716" y="-155.98415" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_MITOTIC_G2_G2_M_PHASES">
+            REACTOME_MITOTIC_G2_G2_M_PHASES
+        </text>
+        <text font-size="56" x="1542.5513" y="322.4076" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_PID_FOXM1_PATHWAY">
+            PID_FOXM1_PATHWAY
+        </text>
+        <text font-size="56" x="-466.92493" y="-1564.9733" fill="#ff6381"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_TNFA_SIGNALING_VIA_NFKB">
+            HALLMARK_TNFA_SIGNALING_VIA_NFKB
+        </text>
+        <text font-size="56" x="658.62317" y="1064.1167" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_CLASS_B_2_SECRETIN_FAMILY_RECEPTORS">
+            REACTOME_CLASS_B_2_SECRETIN_FA...
+        </text>
+        <text font-size="56" x="-1333.6831" y="348.74863" fill="#c0c0c0"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_PID_A6B1_A6B4_INTEGRIN_PATHWAY">
+            PID_A6B1_A6B4_INTEGRIN_PATHWAY
+        </text>
+        <text font-size="56" x="-1754.9027" y="1014.7943" fill="#ff8b00"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_PHOSPHOLIPID_METABOLISM">
+            REACTOME_PHOSPHOLIPID_METABOLISM
+        </text>
+        <text font-size="56" x="-1226.7449" y="-1567.9658" fill="#bdbdbd"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_CELL_CELL_COMMUNICATION">
+            REACTOME_CELL_CELL_COMMUNICATION
+        </text>
+        <text font-size="56" x="183.2405" y="1641.6613" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_G_ALPHA_S_SIGNALLING_EVENTS">
+            REACTOME_G_ALPHA_S_SIGNALLING_...
+        </text>
+        <text font-size="56" x="385.54855" y="1996.7797" fill="#ff8b00"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_ARACHIDONIC_ACID_METABOLISM">
+            KEGG_ARACHIDONIC_ACID_METABOLISM
+        </text>
+        <text font-size="56" x="-1028.79" y="762.80634" fill="#7cc300"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_NABA_SECRETED_FACTORS">
+            NABA_SECRETED_FACTORS
+        </text>
+        <text font-size="56" x="1244.5441" y="-201.8061" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_KEGG_CELL_CYCLE">
+            KEGG_CELL_CYCLE
+        </text>
+        <text font-size="56" x="805.2223" y="-1809.5969" fill="#649ee8"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_PID_PLK1_PATHWAY">
+            PID_PLK1_PATHWAY
+        </text>
+        <text font-size="56" x="-827.475" y="-1432.9337" fill="#bdbdbd"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_HALLMARK_APICAL_JUNCTION">
+            HALLMARK_APICAL_JUNCTION
+        </text>
+        <text font-size="56" x="-832.82526" y="-1824.7457" fill="#bdbdbd"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog"
+              class="id_REACTOME_CELL_JUNCTION_ORGANIZATION">
+            REACTOME_CELL_JUNCTION_ORGANIZ...
+        </text>
+        <text font-size="56" x="380.043" y="-1438.4945" fill="#ff6381"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="id_REACTOME_IMMUNE_SYSTEM">
+            REACTOME_IMMUNE_SYSTEM
+        </text>
+    </g>
+</svg>
