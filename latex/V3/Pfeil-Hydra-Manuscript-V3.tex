@@ -506,46 +506,40 @@ Precision oncology aims to differentiate tumors of the same diagnosis in order t
 \section*{Supporting information}
 
 % Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
-\paragraph{S1 Fig.}
-\includegraphics[width=\textwidth]{img/PNG/neuroblastoma-mycn-distribution-comparison-boxplot.png}
-\label{S1_Sig}
-{\bf \textit{MYCN} distribution for UCSC Treehouse compendium, TARGET neuroblastoma cohort, and the TARGET neuroblastoma cohort subset by \textit{MYCN} amplification status.} 
-
-
-\paragraph*{S2 Fig.}
+\paragraph*{S1 Fig.}
 \includegraphics[width=\textwidth]{img/PNG/cluster-over-time}
-\label{S2_Fig}
+\label{S1_Fig}
 {\bf Example of bnpy memoized online variational inference clustering on toy data.} We used the bnpy moVB algorithm to infer the number of clusters from synthetic data. The model first randomly assigns clusters. Then, the model iteratively improves the model fit, creating and destroying clusters until the model converges on the correct number of clusters at lab 16 \cite{hughesBnpyReliableScalable}.
 
-\paragraph*{S3 Fig.}
+\paragraph*{S2 Fig.}
 \includegraphics[width=\textwidth]{img/PNG/TumorMap-NBL-MM-V3-2x}
-\label{S3_Fig}
+\label{S2_Fig}
 {\bf Enriching for multimodally expressed genes improves clustering of established neuroblastoma subtypes.} Standard TumorMap analysis (Newton et al. 2017) of the TARGET neuroblastoma dataset resulted in stage 4S samples clustering with stage 4 neuroblastoma samples (left). An alternative TumorMap based solely on 1,498 multimodally expressed genes separated the stage 4S samples into a distinct cluster (right).
 
-\paragraph*{S4 Fig.}
+\paragraph*{S3 Fig.}
 \includegraphics[width=0.75\textwidth]{img/PNG/clustering-screen}
-\label{S4_Fig}
+\label{S3_Fig}
 {\bf{Consensus and k-means clustering applied to TARGET MYCN-NA dataset.}} We tested a range of gene expression variation thresholds based on the median absolute deviation, but found that the clusters identified by this approach could not resolve the same clusters as the hydra approach. The barplot shows the number of clusters and the lineplot tracks the Rand index comparing the M3C and k-means clusters and the hydra clusters.
 
-\paragraph*{S5 Fig.}
+\paragraph*{S4 Fig.}
 \includegraphics[width=\textwidth]{img/PNG/sweep-gene-set-network-V4-2x}
-\label{S5_Fig}{\bf Hydra \textit{sweep} analysis reveals differential pathway expression with MYCN-NA neuroblastoma without a matched cohort of normal tissue.}
+\label{S4_Fig}{\bf Hydra \textit{sweep} analysis reveals differential pathway expression with MYCN-NA neuroblastoma without a matched cohort of normal tissue.}
 Unsupervised clustering of multimodal gene sets revealed biological themes associated with cancer functions. cell cycle, immune functions, extracellular matrix organization, and metabolism.
 
-\paragraph*{S6 Fig.}
+\paragraph*{S5 Fig.}
 \includegraphics[width=\textwidth]{img/PNG/HE-Figure-3-Clusters-2x}
-\label{S6_Fig} {\bf Hydra method correlates with distinct tumor features as assessed by licensed pathologist review of tumor H\&E slides.}
+\label{S5_Fig} {\bf Hydra method correlates with distinct tumor features as assessed by licensed pathologist review of tumor H\&E slides.}
 A-B: H\&E sections from fresh frozen tumor tissue from MYCN-NA neuroblastoma sample at A: 2X magnification and B: 20X magnification. Tumor cells are medium to large with moderate amounts of cytoplasm and areas of rhabdoid appearing undifferentiated cells.  There is a moderate amount of mixed inflammation present (30-50\%) consisting mostly of mature mononuclear cells with some plasma cells and scattered eosinophils. C-D: H\&E sections from fresh frozen tumor tissue from MYCN-NA neuroblastoma at C: 2X magnification and D: 20X magnification. Tumor cells are moderate to large in size with moderate amounts of cytoplasm. There is a minimal amount ($<$10\%) of apparent mononuclear inflammation scattered throughout the tumor. E-F: H\&E sections from fresh frozen tumor tissue from MYCN-NA neuroblastoma sample at (E) 2X magnification and (F) 20X magnification.  Tumor cells are medium to large with moderate amounts of cytoplasm and areas of rhabdoid appearing undifferentiated cells.  There are also areas of apparent necrosis.  There is a moderate amount of inflammation present (30-50\%) consisting mostly of mature mononuclear cells with some plasma cells and scattered eosinophils.
 
 % Add panel labels
-\paragraph*{S7 Fig.}
+\paragraph*{S6 Fig.}
 \includegraphics[width=\textwidth]{img/PNG/Checkpoint-Plots-V1}
-\label{S7_Fig} {\bf Hydra \textit{enrich} analysis identifies correlation between expression subtypes and checkpoint blockade markers in MYCN-NA neuroblastoma.}
+\label{S6_Fig} {\bf Hydra \textit{enrich} analysis identifies correlation between expression subtypes and checkpoint blockade markers in MYCN-NA neuroblastoma.}
 
 % Add panel labels
-\paragraph*{S8 Fig.}
+\paragraph*{S7 Fig.}
 \includegraphics[width=\textwidth]{img/PNG/ewing-jak1-expression-fig}
-\label{S8_Fig} {\bf Hydra analysis identifies correlation between expression of druggable JAK1 gene and mast cell expression signature in Ewing sarcoma.} A: We show the utility of the mixture model approach for identifying important gene expression patterns for precision medicine applications. JAK1 is a druggable gene, but JAK1 is also an important gene in immune cell signaling pathways. B: Boxplot showing the xCell mast cell enrichment score for three clusters associated with JAK1 expression.
+\label{S7_Fig} {\bf Hydra analysis identifies correlation between expression of druggable JAK1 gene and mast cell expression signature in Ewing sarcoma.} A: We show the utility of the mixture model approach for identifying important gene expression patterns for precision medicine applications. JAK1 is a druggable gene, but JAK1 is also an important gene in immune cell signaling pathways. B: Boxplot showing the xCell mast cell enrichment score for three clusters associated with JAK1 expression.
 
 \paragraph*{S1 File.}
 \label{S1_File}
