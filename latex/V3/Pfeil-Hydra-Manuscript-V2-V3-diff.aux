@@ -43,16 +43,18 @@
 \newlabel{eq:dp}{{1}{4}{Dirichlet \DIFdelbegin \DIFdel {Process Gaussian Mixture Model}\DIFdelend \DIFaddbegin \DIFadd {process gaussian mixture model}\DIFaddend }{equation.0.1}{}}
 \citation{hughes2013memoized}
 \citation{hughesBnpyReliableScalable}
+\newlabel{eq:mm}{{6}{5}{Dirichlet \DIFdelbegin \DIFdel {Process Gaussian Mixture Model}\DIFdelend \DIFaddbegin \DIFadd {process gaussian mixture model}\DIFaddend }{equation.0.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces {\bf  Overview of the hydra framework tools.} A: Suggested workflow for applying hydra framework tools to identify clinically relevant gene expression subtypes. B: The hydra \textit  {filter} command removes unimodally distributed genes which greatly reduces the number of genes in downstream clustering analysis. C: The hydra \textit  {enrich} command takes the multimodally expressed genes and returns enriched gene sets. The enriched gene set genes are used for multivariate clustering of samples. D: The hydra \textit  {sweep} command looks for multivariate normal clusters within user-defined gene sets. This can be used for the automatic detection of clusters in large gene set databases. \relax }}{5}{figure.caption.7}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{overview}{{1}{5}{{\bf Overview of the hydra framework tools.} A: Suggested workflow for applying hydra framework tools to identify clinically relevant gene expression subtypes. B: The hydra \textit {filter} command removes unimodally distributed genes which greatly reduces the number of genes in downstream clustering analysis. C: The hydra \textit {enrich} command takes the multimodally expressed genes and returns enriched gene sets. The enriched gene set genes are used for multivariate clustering of samples. D: The hydra \textit {sweep} command looks for multivariate normal clusters within user-defined gene sets. This can be used for the automatic detection of clusters in large gene set databases. \relax }{figure.caption.7}{}}
 \citation{liberzonMolecularSignaturesDatabase2011}
 \citation{Ashburner2000,gene2018gene}
 \citation{merico2010enrichment}
-\newlabel{eq:mm}{{6}{5}{Dirichlet \DIFdelbegin \DIFdel {Process Gaussian Mixture Model}\DIFdelend \DIFaddbegin \DIFadd {process gaussian mixture model}\DIFaddend }{equation.0.6}{}}
 \citation{yuClusterProfilerPackageComparing2012}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces {\bf  Overview of the hydra framework tools.} A: Suggested workflow for applying hydra framework tools to identify clinically relevant gene expression subtypes. B: The hydra \textit  {filter} command removes unimodally distributed genes which greatly reduces the number of genes in downstream clustering analysis. C: The hydra \textit  {enrich} command takes the multimodally expressed genes and returns enriched gene sets. The enriched gene set genes are used for multivariate clustering of samples. D: The hydra \textit  {sweep} command looks for multivariate normal clusters within user-defined gene sets. This can be used for the automatic detection of clusters in large gene set databases. \relax }}{6}{figure.caption.7}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{overview}{{1}{6}{{\bf Overview of the hydra framework tools.} A: Suggested workflow for applying hydra framework tools to identify clinically relevant gene expression subtypes. B: The hydra \textit {filter} command removes unimodally distributed genes which greatly reduces the number of genes in downstream clustering analysis. C: The hydra \textit {enrich} command takes the multimodally expressed genes and returns enriched gene sets. The enriched gene set genes are used for multivariate clustering of samples. D: The hydra \textit {sweep} command looks for multivariate normal clusters within user-defined gene sets. This can be used for the automatic detection of clusters in large gene set databases. \relax }{figure.caption.7}{}}
+\citation{caiConstrainedL1Minimization2011}
 \citation{subramanianGeneSetEnrichment2005}
 \citation{tamayoLimitationsSimpleGene2016}
+\citation{korotkevichFastGeneSet2019}
 \citation{korotkevichFastGeneSet2019}
 \citation{barbieSystematicRNAInterference2009,hanzelmannGSVAGeneSet2013,tarcaComparisonGeneSet2013}
 \citation{hanzelmannGSVAGeneSet2013}
@@ -74,54 +76,56 @@
 \citation{Terpilowski2019}
 \citation{jonesSciPyOpenSource2001}
 \citation{kassambaraSurvminerDrawingSurvival2019}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces {\bf  Hydra \DIFaddbeginFL  \textit  {{\color {blue}\uwave  {sweep}}} \DIFaddendFL  is more sensitive than existing gene set enrichment approaches for detecting differential pathway expression in synthetic data \DIFaddbeginFL  {\color {blue}\uwave  {and scales well to large datasets}}\DIFaddendFL  .} A: Mean receiver operator curves across effect sizes, percent differentially expressed genes (\%DEG), and MSigDB Hallmark gene sets. A larger area under the curve (AUC) indicates better performance. The average AUC and 95\% confidence interval for each method are in the ROC plot figure legends. B: Line plots comparing the mean AUC across a range of effect sizes and \%DEG values. \DIFaddbeginFL  {\color {blue}\uwave  {C: Box plot showing mean runtimes for differential pathway analysis where the effect size is fixed but the sample size varies. D: Line plot comparing the mean runtimes for differential pathway analysis across a range of sample sizes. }}\DIFaddendFL  \relax }}{11}{figure.caption.16}}
-\newlabel{rocplot}{{2}{11}{{\bf Hydra \DIFaddbeginFL \textit {\DIFaddFL {sweep}} \DIFaddendFL is more sensitive than existing gene set enrichment approaches for detecting differential pathway expression in synthetic data \DIFaddbeginFL \DIFaddFL {and scales well to large datasets}\DIFaddendFL .} A: Mean receiver operator curves across effect sizes, percent differentially expressed genes (\%DEG), and MSigDB Hallmark gene sets. A larger area under the curve (AUC) indicates better performance. The average AUC and 95\% confidence interval for each method are in the ROC plot figure legends. B: Line plots comparing the mean AUC across a range of effect sizes and \%DEG values. \DIFaddbeginFL \DIFaddFL {C: Box plot showing mean runtimes for differential pathway analysis where the effect size is fixed but the sample size varies. D: Line plot comparing the mean runtimes for differential pathway analysis across a range of sample sizes. }\DIFaddendFL \relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces {\bf  Hydra \DIFaddbeginFL  \textit  {{\color {blue}\uwave  {sweep}}} \DIFaddendFL  is more sensitive than existing gene set enrichment approaches for detecting differential pathway expression in synthetic data \DIFaddbeginFL  {\color {blue}\uwave  {and scales well to large datasets}}\DIFaddendFL  .} A: Mean receiver operator curves across effect sizes, percent differentially expressed genes (\%DEG), and MSigDB Hallmark gene sets. A larger area under the curve (AUC) indicates better performance. The average AUC and 95\% confidence interval for each method are in the ROC plot figure legends. B: Line plots comparing the mean AUC across a range of effect sizes and \%DEG values. \DIFaddbeginFL  {\color {blue}\uwave  {C: Box plot showing mean runtimes for differential pathway analysis where the effect size is fixed but the sample size varies. D: Line plot comparing the mean runtimes for differential pathway analysis across a range of sample sizes. }}\DIFaddendFL  \relax }}{10}{figure.caption.16}}
+\newlabel{rocplot}{{2}{10}{{\bf Hydra \DIFaddbeginFL \textit {\DIFaddFL {sweep}} \DIFaddendFL is more sensitive than existing gene set enrichment approaches for detecting differential pathway expression in synthetic data \DIFaddbeginFL \DIFaddFL {and scales well to large datasets}\DIFaddendFL .} A: Mean receiver operator curves across effect sizes, percent differentially expressed genes (\%DEG), and MSigDB Hallmark gene sets. A larger area under the curve (AUC) indicates better performance. The average AUC and 95\% confidence interval for each method are in the ROC plot figure legends. B: Line plots comparing the mean AUC across a range of effect sizes and \%DEG values. \DIFaddbeginFL \DIFaddFL {C: Box plot showing mean runtimes for differential pathway analysis where the effect size is fixed but the sample size varies. D: Line plot comparing the mean runtimes for differential pathway analysis across a range of sample sizes. }\DIFaddendFL \relax }{figure.caption.16}{}}
 \citation{newtonTumorMapExploringMolecular2017}
 \citation{morgensternChallengeDefiningUltrahighrisk2019}
 \citation{cotto2017dgidb}
 \citation{fosterEvolvingRelationshipWound}
 \citation{aranXCellDigitallyPortraying2017}
 \citation{yoshiharaInferringTumourPurity2013a}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces {\bf  {\color {blue}\uwave  {Hydra analysis identifies three distinct tumor microenvironment expression subtypes in MYCN non-amplified neuroblastoma samples.}}} {\color {blue}\uwave  {A: Gene expression heatmap displaying expression profiles of hydra clusters. Heatmap columns (samples) are ordered by hydra cluster membership. Ward hierarchical clustering applied to rows (genes) identified coordinated expression of GO term genes. These GO term genes were originally identified by the hydra }}\textit  {{\color {blue}\uwave  {enrich}}} {\color {blue}\uwave  {command. B: GSEA performed on each cluster identified enrichment of tumor microenvironment and proliferative signaling gene sets. C: xCell enrichment score distributions for B-cells, CD8+ naive T-cells, and Fibroblasts, and the ESTIMATE TumorPurity score distributions for each cluster; enrichments for all cell types are available in }}\nameref  {S1_File}{\color {blue}\uwave  {. Abbreviations: Normalized Enrichment Score (NES), Epithelial to Mesenchymal Transition (EMT), Gene Ontology Biological Process (GOBP). }}\relax }}{13}{figure.caption.19}}
-\newlabel{MYCN-NA}{{3}{13}{{\bf \DIFaddFL {Hydra analysis identifies three distinct tumor microenvironment expression subtypes in MYCN non-amplified neuroblastoma samples.}} \DIFaddFL {A: Gene expression heatmap displaying expression profiles of hydra clusters. Heatmap columns (samples) are ordered by hydra cluster membership. Ward hierarchical clustering applied to rows (genes) identified coordinated expression of GO term genes. These GO term genes were originally identified by the hydra }\textit {\DIFaddFL {enrich}} \DIFaddFL {command. B: GSEA performed on each cluster identified enrichment of tumor microenvironment and proliferative signaling gene sets. C: xCell enrichment score distributions for B-cells, CD8+ naive T-cells, and Fibroblasts, and the ESTIMATE TumorPurity score distributions for each cluster; enrichments for all cell types are available in }\nameref {S1_File}\DIFaddFL {. Abbreviations: Normalized Enrichment Score (NES), Epithelial to Mesenchymal Transition (EMT), Gene Ontology Biological Process (GOBP). }\relax }{figure.caption.19}{}}
 \citation{johnM3CMonteCarlo2018,wilkersonConsensusClusterPlusClassDiscovery2010a}
 \citation{bourgonIndependentFilteringIncreases2010,tritchlerFilteringGenesCluster2009,carcamo-oriveAnalysisTranscriptionalVariability2017}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces {\bf  {\color {blue}\uwave  {Hydra analysis identifies three distinct tumor microenvironment expression subtypes in }}\textit  {{\color {blue}\uwave  {MYCN}}} {\color {blue}\uwave  {non-amplified neuroblastoma samples.}}} {\color {blue}\uwave  {A: Gene expression heatmap displaying expression profiles of hydra clusters. Heatmap columns (samples) are ordered by hydra cluster membership. Ward hierarchical clustering applied to rows (genes) identified coordinated expression of GO term genes. These GO term genes were originally identified by the hydra }}\textit  {{\color {blue}\uwave  {enrich}}} {\color {blue}\uwave  {command. B: GSEA performed on each cluster identified enrichment of tumor microenvironment and proliferative signaling gene sets. C: xCell enrichment score distributions for B-cells, CD8+ naive T-cells, and Fibroblasts, and the ESTIMATE TumorPurity score distributions for each cluster; enrichments for all cell types are available in }}\nameref  {S1_File}{\color {blue}\uwave  {. Abbreviations: Normalized Enrichment Score (NES), Epithelial to Mesenchymal Transition (EMT), Gene Ontology Biological Process (GOBP). }}\relax }}{12}{figure.caption.19}}
+\newlabel{MYCN-NA}{{3}{12}{{\bf \DIFaddFL {Hydra analysis identifies three distinct tumor microenvironment expression subtypes in }\textit {\DIFaddFL {MYCN}} \DIFaddFL {non-amplified neuroblastoma samples.}} \DIFaddFL {A: Gene expression heatmap displaying expression profiles of hydra clusters. Heatmap columns (samples) are ordered by hydra cluster membership. Ward hierarchical clustering applied to rows (genes) identified coordinated expression of GO term genes. These GO term genes were originally identified by the hydra }\textit {\DIFaddFL {enrich}} \DIFaddFL {command. B: GSEA performed on each cluster identified enrichment of tumor microenvironment and proliferative signaling gene sets. C: xCell enrichment score distributions for B-cells, CD8+ naive T-cells, and Fibroblasts, and the ESTIMATE TumorPurity score distributions for each cluster; enrichments for all cell types are available in }\nameref {S1_File}\DIFaddFL {. Abbreviations: Normalized Enrichment Score (NES), Epithelial to Mesenchymal Transition (EMT), Gene Ontology Biological Process (GOBP). }\relax }{figure.caption.19}{}}
 \citation{tibshirani2001estimating,maechler2012cluster}
 \citation{newtonTumorMapExploringMolecular2017,vaskeComparativeTumorRNA2019}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces {\bf  {\color {blue}\uwave  {Gene set enrichment analysis (GSEA) of }}\textit  {{\color {blue}\uwave  {MYCN}}}{\color {blue}\uwave  {-NA neuroblastoma identifies overall survival differences within hydra cluster 2 and cluster 3.}}} {\color {blue}\uwave  {Cluster-level GSEA separated cluster 2 into high and low immune expression subtypes and cluster 3 into high and low cell cycle expression subtypes. A: Kaplan-Meier plot for immune expression subtypes within cluster 2. B: Kaplan-Meier plot comparing cell cycle expression subtypes within cluster 3.}}\relax }}{13}{figure.caption.21}}
+\newlabel{subcluster}{{4}{13}{{\bf \DIFaddFL {Gene set enrichment analysis (GSEA) of }\textit {\DIFaddFL {MYCN}}\DIFaddFL {-NA neuroblastoma identifies overall survival differences within hydra cluster 2 and cluster 3.}} \DIFaddFL {Cluster-level GSEA separated cluster 2 into high and low immune expression subtypes and cluster 3 into high and low cell cycle expression subtypes. A: Kaplan-Meier plot for immune expression subtypes within cluster 2. B: Kaplan-Meier plot comparing cell cycle expression subtypes within cluster 3.}\relax }{figure.caption.21}{}}
 \citation{reevesAntigenProcessingImmune2017}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces {\bf  {\color {blue}\uwave  {Gene set enrichment analysis (GSEA) of MYCN-NA neuroblastoma identifies survival differences within hydra cluster 2 and cluster 3.}}} {\color {blue}\uwave  {Top 5 differentially enriched gene sets for each cluster comparing the entire MYCN-NA neuroblastoma cohort (cohort-level GSEA) and the corresponding hydra cluster (cluster-level GSEA). GSEA analysis of the hydra clusters found immune and cell cycle signals that were not identified in the cohort-level analysis. B: cluster-level GSEA separated cluster 2 into high and low immune subtypes. C: cluster-level GSEA separated cluster 3 into high and low cell cycle subtypes.}}\relax }}{15}{figure.caption.20}}
-\newlabel{subcluster}{{4}{15}{{\bf \DIFaddFL {Gene set enrichment analysis (GSEA) of MYCN-NA neuroblastoma identifies survival differences within hydra cluster 2 and cluster 3.}} \DIFaddFL {Top 5 differentially enriched gene sets for each cluster comparing the entire MYCN-NA neuroblastoma cohort (cohort-level GSEA) and the corresponding hydra cluster (cluster-level GSEA). GSEA analysis of the hydra clusters found immune and cell cycle signals that were not identified in the cohort-level analysis. B: cluster-level GSEA separated cluster 2 into high and low immune subtypes. C: cluster-level GSEA separated cluster 3 into high and low cell cycle subtypes.}\relax }{figure.caption.20}{}}
 \citation{hermansJAK1JAK2Inhibitor2018}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces {\bf  {\color {blue}\uwave  {Hydra analysis of TARGET osteosarcoma cohort reveals skeletal muscle signature.}}} {\color {blue}\uwave  {Hydra enrichment analysis on the TARGET osteosarcoma cohort revealed a subset of patients with high skeletal muscle expression. A: Clustered heatmap shows the muscle signature genes identified by hydra unsupervised enrichment analysis (purple: enriched for muscle signature; yellow: not enriched for muscle signature). B: xCell tumor microenvironment profiling identified significant differences in skeletal muscle expression compared to background (p $<$ 0.001). C: H\&E stained tumor slide confirms presence of striated muscle tissue within the tumor sample.}}\relax }}{15}{figure.caption.24}}
+\newlabel{muscle}{{5}{15}{{\bf \DIFaddFL {Hydra analysis of TARGET osteosarcoma cohort reveals skeletal muscle signature.}} \DIFaddFL {Hydra enrichment analysis on the TARGET osteosarcoma cohort revealed a subset of patients with high skeletal muscle expression. A: Clustered heatmap shows the muscle signature genes identified by hydra unsupervised enrichment analysis (purple: enriched for muscle signature; yellow: not enriched for muscle signature). B: xCell tumor microenvironment profiling identified significant differences in skeletal muscle expression compared to background (p $<$ 0.001). C: H\&E stained tumor slide confirms presence of striated muscle tissue within the tumor sample.}\relax }{figure.caption.24}{}}
 \citation{marisInitialTestingAurora2010}
 \citation{marisInitialTestingAurora2010,gautschiAuroraKinasesAnticancer2008}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces {\bf  {\color {blue}\uwave  {Hydra analysis of TARGET osteosarcoma cohort reveals skeletal muscle signature.}}} {\color {blue}\uwave  {Hydra enrichment analysis on the TARGET osteosarcoma cohort revealed a subset of patients with high skeletal muscle expression. A: Clustered heatmap shows the muscle signature genes identified by hydra unsupervised enrichment analysis. B: xCell tumor microenvironment profiling identified significant differences in skeletal muscle expression compared to background (p $<$ 0.001). C: H\&E stained tumor slide for an out-of-sample osteosarcoma expression profile confirms presence of striated muscle tissue within the tumor sample.}}\relax }}{17}{figure.caption.23}}
-\newlabel{muscle}{{5}{17}{{\bf \DIFaddFL {Hydra analysis of TARGET osteosarcoma cohort reveals skeletal muscle signature.}} \DIFaddFL {Hydra enrichment analysis on the TARGET osteosarcoma cohort revealed a subset of patients with high skeletal muscle expression. A: Clustered heatmap shows the muscle signature genes identified by hydra unsupervised enrichment analysis. B: xCell tumor microenvironment profiling identified significant differences in skeletal muscle expression compared to background (p $<$ 0.001). C: H\&E stained tumor slide for an out-of-sample osteosarcoma expression profile confirms presence of striated muscle tissue within the tumor sample.}\relax }{figure.caption.23}{}}
+\citation{riesCancerIncidenceSurvival1999}
+\citation{ringCheckpointProteinsPediatric2017}
 \citation{newtonTumorMapExploringMolecular2017}
 \citation{hoadleyCellofOriginPatternsDominate2018}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces {\bf  Hydra \DIFaddbeginFL  \textit  {{\color {blue}\uwave  {enrich}}} \DIFaddendFL  analysis of small blue round cell tumors reveals similar expression subtypes across cancer types.} A: TumorMap visualization of 6 small blue round cell tumor types. B: Hierarchically clustered heatmap for the top 10 enriched gene sets across the 21 small blue round cell tumor expression subtypes. Each column corresponds to a cancer type and an expression subtype (x-axis). Each row corresponds to a gene set. The expression subtype was manually assigned after reviewing the most highly enriched gene sets for each cancer expression subtype.\relax }}{18}{figure.caption.25}}
-\newlabel{pancan}{{6}{18}{{\bf Hydra \DIFaddbeginFL \textit {\DIFaddFL {enrich}} \DIFaddendFL analysis of small blue round cell tumors reveals similar expression subtypes across cancer types.} A: TumorMap visualization of 6 small blue round cell tumor types. B: Hierarchically clustered heatmap for the top 10 enriched gene sets across the 21 small blue round cell tumor expression subtypes. Each column corresponds to a cancer type and an expression subtype (x-axis). Each row corresponds to a gene set. The expression subtype was manually assigned after reviewing the most highly enriched gene sets for each cancer expression subtype.\relax }{figure.caption.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces {\bf  {\color {blue}\uwave  {Hydra analysis identifies tumor microenvironment expression subtypes that correlate with patient outcomes in osteosarcoma and synovial sarcoma.}}} {\color {blue}\uwave  {A: Kaplan-Meier plot showing overall survival curves for osteosarcoma wound healing and translation clusters. B: Kaplan-Meier plot showing metastasis survival curves for synovial sarcoma clusters.}}\relax }}{19}{figure.caption.26}}
-\newlabel{surv}{{7}{19}{{\bf \DIFaddFL {Hydra analysis identifies tumor microenvironment expression subtypes that correlate with patient outcomes in osteosarcoma and synovial sarcoma.}} \DIFaddFL {A: Kaplan-Meier plot showing overall survival curves for osteosarcoma wound healing and translation clusters. B: Kaplan-Meier plot showing metastasis survival curves for synovial sarcoma clusters.}\relax }{figure.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces {\bf  Hydra \DIFaddbeginFL  \textit  {{\color {blue}\uwave  {enrich}}} \DIFaddendFL  analysis of small blue round cell tumors reveals similar expression subtypes across cancer types.} A: TumorMap visualization of 6 small blue round cell tumor types. B: Hierarchically clustered heatmap for the top 10 enriched gene sets across the 21 small blue round cell tumor expression subtypes. Each column corresponds to a cancer type and an expression subtype (x-axis). Each row corresponds to a gene set. The expression subtype was manually assigned after reviewing the most highly enriched gene sets for each cancer expression subtype.\relax }}{17}{figure.caption.26}}
+\newlabel{pancan}{{6}{17}{{\bf Hydra \DIFaddbeginFL \textit {\DIFaddFL {enrich}} \DIFaddendFL analysis of small blue round cell tumors reveals similar expression subtypes across cancer types.} A: TumorMap visualization of 6 small blue round cell tumor types. B: Hierarchically clustered heatmap for the top 10 enriched gene sets across the 21 small blue round cell tumor expression subtypes. Each column corresponds to a cancer type and an expression subtype (x-axis). Each row corresponds to a gene set. The expression subtype was manually assigned after reviewing the most highly enriched gene sets for each cancer expression subtype.\relax }{figure.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces {\bf  {\color {blue}\uwave  {Hydra analysis identifies tumor microenvironment expression subtypes that correlate with patient outcomes in osteosarcoma and synovial sarcoma.}}} {\color {blue}\uwave  {A: Kaplan-Meier plot showing overall survival curves for osteosarcoma wound healing and translation clusters. B: Kaplan-Meier plot showing metastasis survival curves for synovial sarcoma clusters.}}\relax }}{17}{figure.caption.27}}
+\newlabel{surv}{{7}{17}{{\bf \DIFaddFL {Hydra analysis identifies tumor microenvironment expression subtypes that correlate with patient outcomes in osteosarcoma and synovial sarcoma.}} \DIFaddFL {A: Kaplan-Meier plot showing overall survival curves for osteosarcoma wound healing and translation clusters. B: Kaplan-Meier plot showing metastasis survival curves for synovial sarcoma clusters.}\relax }{figure.caption.27}{}}
 \citation{morgensternChallengeDefiningUltrahighrisk2019}
 \citation{majzner2017harnessing}
 \citation{majzner2017harnessing,zamoraPediatricPatientsAcute2019}
 \citation{cunananEfficientBasketTrial2017}
 \citation{rheeImpactTumorPurity2018}
 \citation{raphael2017integrated}
+\citation{hoadleyCellofOriginPatternsDominate2018}
 \citation{hughesBnpyReliableScalable}
-\newlabel{S1_Fig}{{}{21}{S1 Fig}{section*.30}{}}
-\newlabel{S2_Fig}{{}{22}{S2 Fig}{section*.31}{}}
-\newlabel{S3_Fig}{{}{22}{S3 Fig}{section*.32}{}}
-\newlabel{S4_Fig}{{}{23}{S4 Fig}{section*.33}{}}
-\newlabel{S5_Fig}{{}{23}{S5 Fig}{section*.34}{}}
-\newlabel{S6_Fig}{{}{24}{S6 Fig}{section*.35}{}}
+\newlabel{S1_Fig}{{}{19}{S1 Fig}{section*.31}{}}
+\newlabel{S2_Fig}{{}{19}{S2 Fig}{section*.32}{}}
+\newlabel{S3_Fig}{{}{19}{S3 Fig}{section*.33}{}}
+\newlabel{S4_Fig}{{}{20}{S4 Fig}{section*.34}{}}
+\newlabel{S5_Fig}{{}{20}{S5 Fig}{section*.35}{}}
+\newlabel{S6_Fig}{{}{20}{S6 Fig}{section*.36}{}}
+\newlabel{S7_Fig}{{}{20}{\DIFadd {S7 Fig.}}{section*.37}{}}
+\newlabel{S1_File}{{}{20}{\DIFdelbegin \DIFdel {S7 Fig}\DIFdelend \DIFaddbegin \DIFadd {S1 File}\DIFaddend }{section*.38}{}}
 \bibcite{vivianToilEnablesReproducible2017}{1}
 \bibcite{pughGeneticLandscapeHighrisk2013}{2}
 \bibcite{goldmanUCSCXenaPlatform2018}{3}
 \bibcite{thecancergenomeatlasresearchnetworkCancerGenomeAtlas2013}{4}
-\newlabel{S7_Fig}{{}{25}{\DIFadd {S7 Fig.}}{section*.36}{}}
-\newlabel{S1_File}{{}{25}{\DIFdelbegin \DIFdel {S7 Fig}\DIFdelend \DIFaddbegin \DIFadd {S1 File}\DIFaddend }{section*.37}{}}
-\newlabel{S2_File}{{}{25}{\DIFdelbegin \DIFdel {S1 }\DIFdelend \DIFaddbegin \DIFadd {S2 }\DIFaddend File}{section*.38}{}}
 \bibcite{newtonTumorMapExploringMolecular2017}{5}
 \bibcite{vaskeComparativeTumorRNA2019}{6}
 \bibcite{joyceCellExclusionImmune2015}{7}
@@ -129,6 +133,7 @@
 \bibcite{mellmanCancerImmunotherapyComes2011}{9}
 \bibcite{pageImmuneModulationCancer2014}{10}
 \bibcite{majzner2017harnessing}{11}
+\newlabel{S2_File}{{}{21}{\DIFdelbegin \DIFdel {S1 }\DIFdelend \DIFaddbegin \DIFadd {S2 }\DIFaddend File}{section*.39}{}}
 \bibcite{zamoraPediatricPatientsAcute2019}{12}
 \bibcite{andersCountbasedDifferentialExpression2013}{13}
 \bibcite{andersDifferentialExpressionAnalysis2010}{14}
@@ -140,25 +145,25 @@
 \bibcite{johnM3CMonteCarlo2018}{20}
 \bibcite{wilkersonConsensusClusterPlusClassDiscovery2010a}{21}
 \bibcite{lenzPrincipalComponentsAnalysis2016}{22}
-\bibcite{yiliMultimodalityCriterionFeature2005}{23}
-\bibcite{ghoshMixtureModelsAssessing2004}{24}
-\bibcite{dahlModelBasedClusteringExpression2006}{25}
-\bibcite{kimVariableSelectionClustering2006}{26}
-\bibcite{gelmanBayesianDataAnalysis2013}{27}
-\bibcite{thallBayesianNonparametricStatistics2017}{28}
-\bibcite{teh2010dirichlet}{29}
-\bibcite{antoniakMixturesDirichletProcesses1974}{30}
-\bibcite{fergusonBayesianAnalysisNonparametric1973}{31}
-\bibcite{muller2004nonparametric}{32}
-\bibcite{gorurDirichletProcessGaussian2010}{33}
-\bibcite{hughes2013memoized}{34}
-\bibcite{mullerBayesianNonparametricData2015}{35}
-\bibcite{phadia2015prior}{36}
-\bibcite{hughesBnpyReliableScalable}{37}
-\bibcite{Ashburner2000}{38}
-\bibcite{gene2018gene}{39}
-\bibcite{merico2010enrichment}{40}
-\bibcite{yuClusterProfilerPackageComparing2012}{41}
+\bibcite{ghoshMixtureModelsAssessing2004}{23}
+\bibcite{dahlModelBasedClusteringExpression2006}{24}
+\bibcite{kimVariableSelectionClustering2006}{25}
+\bibcite{gelmanBayesianDataAnalysis2013}{26}
+\bibcite{thallBayesianNonparametricStatistics2017}{27}
+\bibcite{teh2010dirichlet}{28}
+\bibcite{antoniakMixturesDirichletProcesses1974}{29}
+\bibcite{fergusonBayesianAnalysisNonparametric1973}{30}
+\bibcite{muller2004nonparametric}{31}
+\bibcite{gorurDirichletProcessGaussian2010}{32}
+\bibcite{hughes2013memoized}{33}
+\bibcite{mullerBayesianNonparametricData2015}{34}
+\bibcite{phadia2015prior}{35}
+\bibcite{hughesBnpyReliableScalable}{36}
+\bibcite{Ashburner2000}{37}
+\bibcite{gene2018gene}{38}
+\bibcite{merico2010enrichment}{39}
+\bibcite{yuClusterProfilerPackageComparing2012}{40}
+\bibcite{caiConstrainedL1Minimization2011}{41}
 \bibcite{tamayoLimitationsSimpleGene2016}{42}
 \bibcite{korotkevichFastGeneSet2019}{43}
 \bibcite{barbieSystematicRNAInterference2009}{44}
@@ -187,10 +192,12 @@
 \bibcite{hermansJAK1JAK2Inhibitor2018}{67}
 \bibcite{marisInitialTestingAurora2010}{68}
 \bibcite{gautschiAuroraKinasesAnticancer2008}{69}
-\bibcite{hoadleyCellofOriginPatternsDominate2018}{70}
-\bibcite{cunananEfficientBasketTrial2017}{71}
-\bibcite{rheeImpactTumorPurity2018}{72}
-\bibcite{raphael2017integrated}{73}
-\newlabel{LastPage}{{}{30}{}{page.30}{}}
-\xdef\lastpage@lastpage{30}
-\xdef\lastpage@lastpageHy{30}
+\bibcite{riesCancerIncidenceSurvival1999}{70}
+\bibcite{ringCheckpointProteinsPediatric2017}{71}
+\bibcite{hoadleyCellofOriginPatternsDominate2018}{72}
+\bibcite{cunananEfficientBasketTrial2017}{73}
+\bibcite{rheeImpactTumorPurity2018}{74}
+\bibcite{raphael2017integrated}{75}
+\newlabel{LastPage}{{}{26}{}{page.26}{}}
+\xdef\lastpage@lastpage{26}
+\xdef\lastpage@lastpageHy{26}
