@@ -1,7 +1,7 @@
 % Template for PLoS
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL ../V3/Pfeil-Hydra-Manuscript-V3.tex   Thu Jan  9 23:12:55 2020
-%DIF ADD Pfeil-Hydra-Manuscript-V4.tex         Mon Mar 16 01:04:45 2020
+%DIF ADD Pfeil-Hydra-Manuscript-V4.tex         Tue Mar 17 18:28:49 2020
 % Version 3.5 March 2018
 %
 % % % % % % % % % % % % % % % % % % % % % %
@@ -286,9 +286,9 @@ Olena Morozova Vaske\textsuperscript{2,3\ddag}
 \\
 \textbf{3} Department of Molecular, Cell and Developmental Biology, University of California, Santa Cruz, \DIFaddbegin \DIFadd{Santa Cruz, }\DIFaddend California, United States of America
 \\
-\textbf{4} Department of Pediatrics, Division of Hematology and Oncology, University of California, San Francisco, California, United States of America
+\textbf{4} Department of Pediatrics, Division of Hematology and Oncology, University of California, San Francisco, \DIFaddbegin \DIFadd{San Francisco, }\DIFaddend California, United States of America
 \\
-\textbf{5} Department of Anatomic Pathology, University of California, San Francisco, California, United States of America
+\textbf{5} Department of Anatomic Pathology, University of California, San Francisco, California, \DIFaddbegin \DIFadd{San Francisco, }\DIFaddend United States of America
 \\
 \textbf{6} Howard Hughes Medical Institute, University of California, Santa Cruz, \DIFaddbegin \DIFadd{Santa Cruz, }\DIFaddend California, United States of America
 \\
@@ -349,299 +349,107 @@ Gaussian mixture models are a powerful class of unsupervised clustering algorith
 
 Here, we present the hydra framework for identifying clinically relevant expression subtypes and classifying N-of-1 tumor samples using learned models. We provide an overview of the hydra framework, assess performance for detecting differential pathway expression, and apply the framework to better understand expression patterns in high-risk neuroblastoma and other small blue round cell tumors. We apply the learned models trained on publicly available cancer gene expression data to the N-of-1 setting and show that this framework can identify distinct immune and stromal expression signatures that differentiate pediatric cancer samples. Finally, we identify recurrent tumor microenvironment signatures across pediatric cancer types associated with differences in patient outcomes.
 
-\DIFdelbegin \section*{\DIFdel{Materials and methods}}
-%DIFAUXCMD
-\subsection*{\DIFdel{Dirichlet process gaussian mixture model}}
-%DIFAUXCMD
-\DIFdel{Traditional parametric models, like the finite mixture model, use a fixed number of parameters (i.e. number of clusters). Over- or underfitting can occur when the parametric model does not reflect the underlying data \mbox{%DIFAUXCMD
-\cite{teh2010dirichlet}}\hspace{0pt}%DIFAUXCMD
-. Unlike the finite mixture model, the Dirichlet process mixture model (DPMM) represents a theoretically infinite number of clusters and can adapt the number of clusters based on prior belief and the data \mbox{%DIFAUXCMD
-\cite{gelmanBayesianDataAnalysis2013, antoniakMixturesDirichletProcesses1974, teh2010dirichlet}}\hspace{0pt}%DIFAUXCMD
-.
-}%DIFDELCMD < 
+\section*{Materials and methods}
+\subsection*{Dirichlet process gaussian mixture model}
+Traditional parametric models, like the finite mixture model, use a fixed number of parameters (i.e. number of clusters). Over- or underfitting can occur when the parametric model does not reflect the underlying data \cite{teh2010dirichlet}. Unlike the finite mixture model, the Dirichlet process mixture model (DPMM) represents a theoretically infinite number of clusters and can adapt the number of clusters based on prior belief and the data \cite{gelmanBayesianDataAnalysis2013, antoniakMixturesDirichletProcesses1974, teh2010dirichlet}.
 
-%DIFDELCMD < %%%
-\DIFdel{The Dirichlet process ($DP$) is an infinite dimensional extension of the Dirichlet distribution \mbox{%DIFAUXCMD
-\cite{fergusonBayesianAnalysisNonparametric1973} }\hspace{0pt}%DIFAUXCMD
-and is commonly used as a prior distribution for infinite mixture models \mbox{%DIFAUXCMD
-\cite{muller2004nonparametric, gorurDirichletProcessGaussian2010}}\hspace{0pt}%DIFAUXCMD
-. The Dirichlet process has two parameters: the concentration parameter $\alpha$ and centering distribution $H$. The concentration parameter $\alpha$, where $\alpha \in \mathbb{R}^+$, controls the extent to which samples from the $DP$ resemble the centering distribution $H$. We model gene expression as a multivariate Gaussian distribution, so our centering distribution is a normal-Wishart distribution ($\mathcal{NW}_0$).
-}%DIFDELCMD < 
+The Dirichlet process ($DP$) is an infinite dimensional extension of the Dirichlet distribution \cite{fergusonBayesianAnalysisNonparametric1973} and is commonly used as a prior distribution for infinite mixture models \cite{muller2004nonparametric, gorurDirichletProcessGaussian2010}. The Dirichlet process has two parameters: the concentration parameter $\alpha$ and centering distribution $H$. The concentration parameter $\alpha$, where $\alpha \in \mathbb{R}^+$, controls the extent to which samples from the $DP$ resemble the centering distribution $H$. We model gene expression as a multivariate Gaussian distribution, so our centering distribution is a normal-Wishart distribution ($\mathcal{NW}_0$).
 
-%DIFDELCMD < %%%
-\DIFdel{We briefly describe the stick-breaking construction of the Dirichlet process $G \sim DP(\alpha, H)$. Consider a stick of unit length. To generate an infinite number of mixing weights $\pi_1, \pi_2, ..., \pi_k$ for the DPMM, first break a stick of unit length at $\nu \in [0, 1]$ where $\nu$ is sampled from a Beta distribution, and set $\pi_1$ to be the length of the first piece. We repeat this process using the remainder of the stick for each $\pi_k$. The DP is truncated to the number of clusters $K$, which was shown to accurately approximate the infinite posterior for large K \mbox{%DIFAUXCMD
-\cite{hughes2013memoized, teh2010dirichlet, gelmanBayesianDataAnalysis2013, fergusonBayesianAnalysisNonparametric1973, mullerBayesianNonparametricData2015, phadia2015prior}}\hspace{0pt}%DIFAUXCMD
-.
-}%DIFDELCMD < 
+We briefly describe the stick-breaking construction of the Dirichlet process $G \sim DP(\alpha, H)$. Consider a stick of unit length. To generate an infinite number of mixing weights $\pi_1, \pi_2, ..., \pi_k$ for the DPMM, first break a stick of unit length at $\nu \in [0, 1]$ where $\nu$ is sampled from a Beta distribution, and set $\pi_1$ to be the length of the first piece. We repeat this process using the remainder of the stick for each $\pi_k$. The DP is truncated to the number of clusters $K$, which was shown to accurately approximate the infinite posterior for large K \cite{hughes2013memoized, teh2010dirichlet, gelmanBayesianDataAnalysis2013, fergusonBayesianAnalysisNonparametric1973, mullerBayesianNonparametricData2015, phadia2015prior}.
 
-%DIFDELCMD < %%%
-\begin{align*}
-\DIFdel{%DIFDELCMD < \label{eq:dp}%%%
-\nu \sim \text{Beta}(1, \alpha) }\\
-\DIFdel{\pi_k = \nu_k \prod_{l=1}^{k-1}(1 - \nu_l)
-}\end{align*}
-%DIFAUXCMD
-%DIFDELCMD < 
+\begin{gather}
+\label{eq:dp}
+\nu \sim \text{Beta}(1, \alpha) \\
+\pi_k = \nu_k \prod_{l=1}^{k-1}(1 - \nu_l)
+\end{gather}
 
-%DIFDELCMD < %%%
-\DIFdel{Next, we sample the parameters from the centering distribution $H$ weighted by the mixing components. If we consider a probability space $\Theta$ where $\theta_k^{*} \in \Theta$, then $H$ is a measure on the partitions of $\Theta$. For our application, we will partition the parameter space $\Theta$ into finite, measurable partitions $B_1, B_2, ..., B_k$.
-}%DIFDELCMD < 
+Next, we sample the parameters from the centering distribution $H$ weighted by the mixing components. If we consider a probability space $\Theta$ where $\theta_k^{*} \in \Theta$, then $H$ is a measure on the partitions of $\Theta$. For our application, we will partition the parameter space $\Theta$ into finite, measurable partitions $B_1, B_2, ..., B_k$.
 
-%DIFDELCMD < %%%
-\begin{align*}
-\DIFdel{\theta_k^{*} \sim H }\\
-\DIFdel{G = \sum_{k=1}^{\infty} \pi_k \delta_{\theta_k^{*}} }\\
-\DIFdel{(G(B_1), G(B_2), ..., G(B_k)) \sim \text{Dir}(\alpha H(B_1), \alpha H(B_2), ..., \alpha H(B_k))
-}\end{align*}
-%DIFAUXCMD
-%DIFDELCMD < 
+\begin{gather}
+\theta_k^{*} \sim H \\
+G = \sum_{k=1}^{\infty} \pi_k \delta_{\theta_k^{*}} \\
+(G(B_1), G(B_2), ..., G(B_k)) \sim \text{Dir}(\alpha H(B_1), \alpha H(B_2), ..., \alpha H(B_k))
+\end{gather}
 
-%DIFDELCMD < %%%
-\DIFdel{This construction generates the marginal of the Dirichlet process, which follows a Dirichlet distribution. Samples from the marginal distribution are finite, discrete, and sum to $1$ \mbox{%DIFAUXCMD
-\cite{fergusonBayesianAnalysisNonparametric1973}}\hspace{0pt}%DIFAUXCMD
-. Next, we outline how the DPMM groups gene expression samples $x_i$ under cluster-specific parameters $\mu_{z_i}$ and $\Sigma_{z_i}$ where $z_i \in {1, 2, ..., K}$ is the cluster index.
-}%DIFDELCMD < 
+This construction generates the marginal of the Dirichlet process, which follows a Dirichlet distribution. Samples from the marginal distribution are finite, discrete, and sum to $1$ \cite{fergusonBayesianAnalysisNonparametric1973}. Next, we outline how the DPMM groups gene expression samples $x_i$ under cluster-specific parameters $\mu_{z_i}$ and $\Sigma_{z_i}$ where $z_i \in {1, 2, ..., K}$ is the cluster index.
 
-%DIFDELCMD < %%%
-\begin{align*}
-\DIFdel{%DIFDELCMD < \label{eq:mm}%%%
-x_i | \mu_{z_i}, \Sigma_{z_i} \sim \mathcal{N}(\mu_{z_i}, \Sigma_{z_i}) }\\
-\DIFdel{z_i | \pi \sim \text{Categorical}(\pi_1, \pi_2, ..., \pi_k) }\\
-\DIFdel{\mu_{z_i}, \Sigma_{z_i} | G \sim G }\\
-\DIFdel{G | \alpha, \mathcal{NW}_0 \sim DP(\alpha, \mathcal{NW}_0)
-}\end{align*}
-%DIFAUXCMD
-%DIFDELCMD < 
+\begin{gather}
+\label{eq:mm}
+x_i | \mu_{z_i}, \Sigma_{z_i} \sim \mathcal{N}(\mu_{z_i}, \Sigma_{z_i}) \\
+z_i | \pi \sim \text{Categorical}(\pi_1, \pi_2, ..., \pi_k) \\
+\mu_{z_i}, \Sigma_{z_i} | G \sim G \\
+G | \alpha, \mathcal{NW}_0 \sim DP(\alpha, \mathcal{NW}_0)
+\end{gather}
 
-%DIFDELCMD < %%%
-\DIFdel{To improve our methods ability to scale to larger datasets, we incorporated the bnpy memoized online variational inference algorithm (moVB) \mbox{%DIFAUXCMD
-\cite{hughes2013memoized} }\hspace{0pt}%DIFAUXCMD
-into our analysis framework. The moVB algorithm uses variational inference to approximate the posterior distribution and interleaves birth, merge, and delete moves to avoid local optima and remove redundant clusters \mbox{%DIFAUXCMD
-\cite{hughesBnpyReliableScalable}}\hspace{0pt}%DIFAUXCMD
-. We found that the moVB algorithm accurately identified the number of clustering on validation datasets (}%DIFDELCMD < \nameref{S1_Fig}%%%
-\DIFdel{), whereas standard MCMC sampling procedures tended to overestimate the number of clusters.
-}%DIFDELCMD < 
+To improve our methods ability to scale to larger datasets, we incorporated the bnpy memoized online variational inference algorithm (moVB) \cite{hughes2013memoized} into our analysis framework. The moVB algorithm uses variational inference to approximate the posterior distribution and interleaves birth, merge, and delete moves to avoid local optima and remove redundant clusters \cite{hughesBnpyReliableScalable}. We found that the moVB algorithm accurately identified the number of clustering on validation datasets (\nameref{S1_Fig}), whereas standard MCMC sampling procedures tended to overestimate the number of clusters.
 
-%DIFDELCMD < %%%
-\subsection*{\DIFdel{Hydra method}}
-%DIFAUXCMD
-\DIFdel{We developed a Bayesian non-parametric clustering framework for identifying biological and technical variation in large cancer gene expression datasets without the need for a reference normal dataset. To our knowledge, this is the first reproducible and widely deployable implementation of a non-parametric mixture model framework designed to overcome the challenges of precision oncology gene expression analysis. The hydra pipeline is an open source software tool hosted on GitHub (}%DIFDELCMD < \url{www.github.com/jpfeil/hydra}%%%
-\DIFdel{). A Docker container is available for deployment across environments (}%DIFDELCMD < \url{https://hub.docker.com/r/jpfeil/hydra}%%%
-\DIFdel{).
-}%DIFDELCMD < 
+\subsection*{Hydra method}
+We developed a Bayesian non-parametric clustering framework for identifying biological and technical variation in large cancer gene expression datasets without the need for a reference normal dataset. To our knowledge, this is the first reproducible and widely deployable implementation of a non-parametric mixture model framework designed to overcome the challenges of precision oncology gene expression analysis. The hydra pipeline is an open source software tool hosted on GitHub (\url{www.github.com/jpfeil/hydra}). A Docker container is available for deployment across environments (\url{https://hub.docker.com/r/jpfeil/hydra}).
 
-%DIFDELCMD < %%%
-\DIFdel{The hydra framework contains three main command-line tools: }\textit{\DIFdel{filter}}%DIFAUXCMD
-\DIFdel{, }\textit{\DIFdel{enrich}}%DIFAUXCMD
-\DIFdel{, and }\textit{\DIFdel{sweep}} %DIFAUXCMD
-\DIFdel{(Fig \ref{overview}). The }\textit{\DIFdel{filter}} %DIFAUXCMD
-\DIFdel{command is run first to isolate the multimodally expressed genes using a univariate Dirichlet Process Gaussian Mixture Model (DP-GMM). There are two methods for analyzing the resulting set of multimodally expressed genes. The }\textit{\DIFdel{enrich}} %DIFAUXCMD
-\DIFdel{method, which subsets to the genes found to be significantly enriched in biological pathways, and the }\textit{\DIFdel{sweep}} %DIFAUXCMD
-\DIFdel{method, which searches within user-defined gene sets for multimodal expression signatures. The underlying analysis routines can be accessed within the Docker using Jupyter notebooks to facilitate the development of user-defined workflows.
-}%DIFDELCMD < 
+The hydra framework contains three main command-line tools: \textit{filter}, \textit{enrich}, and \textit{sweep} (Fig \ref{overview}). The \textit{filter} command is run first to isolate the multimodally expressed genes using a univariate Dirichlet Process Gaussian Mixture Model (DP-GMM). There are two methods for analyzing the resulting set of multimodally expressed genes. The \textit{enrich} method, which subsets to the genes found to be significantly enriched in biological pathways, and the \textit{sweep} method, which searches within user-defined gene sets for multimodal expression signatures. The underlying analysis routines can be accessed within the Docker using Jupyter notebooks to facilitate the development of user-defined workflows.
 
-%DIFDELCMD < %%%
-%DIF <  Overview Figure
-%DIFDELCMD < \begin{figure}[h!]
-%DIFDELCMD < 	%%%
-%DIF < \includegraphics[width=\textwidth]{"img/PNG/overview-fig"}
-	%DIFDELCMD < \caption{%
-{%DIFAUXCMD
-%DIFDELCMD < {\bf %%%
-\DIFdelFL{Overview of the hydra framework tools.}%DIFDELCMD < }
-%DIFDELCMD < 		%%%
-\DIFdelFL{A: Suggested workflow for applying hydra framework tools to identify clinically relevant gene expression subtypes. B: The hydra }\textit{\DIFdelFL{filter}} %DIFAUXCMD
-\DIFdelFL{command removes unimodally distributed genes which greatly reduces the number of genes in downstream clustering analysis. C: The hydra }\textit{\DIFdelFL{enrich}} %DIFAUXCMD
-\DIFdelFL{command takes the multimodally expressed genes and returns enriched gene sets. The enriched gene set genes are used for multivariate clustering of samples. D: The hydra
-	    }\textit{\DIFdelFL{sweep}} %DIFAUXCMD
-\DIFdelFL{command looks for multivariate normal clusters within user-defined gene sets. This can be used for the automatic detection of clusters in large gene set databases.
-		}%DIFDELCMD < \label{overview}%%%
-}
-%DIFAUXCMD
-%DIFDELCMD < \end{figure}
-%DIFDELCMD < 
+% Overview Figure
+\begin{figure}[h!]
+	%\includegraphics[width=\textwidth]{"img/PNG/overview-fig"}
+	\caption{{\bf Overview of the hydra framework tools.}
+		A: Suggested workflow for applying hydra framework tools to identify clinically relevant gene expression subtypes. B: The hydra \textit{filter} command removes unimodally distributed genes which greatly reduces the number of genes in downstream clustering analysis. C: The hydra \textit{enrich} command takes the multimodally expressed genes and returns enriched gene sets. The enriched gene set genes are used for multivariate clustering of samples. D: The hydra
+		\textit{sweep} command looks for multivariate normal clusters within user-defined gene sets. This can be used for the automatic detection of clusters in large gene set databases. \DIFaddbeginFL \DIFaddFL{Abbreviations: Tumor microenvironment (TME) 
+		}\DIFaddendFL \label{overview}}
+\end{figure}
 
-%DIFDELCMD < %%%
-\DIFdel{The }\textit{\DIFdel{filter}} %DIFAUXCMD
-\DIFdel{command (Fig \ref{overview}B) takes an expression matrix and filters the genes down to the multimodally expressed genes using the DP-GMM described above. We apply a DP-GMM to each gene, saving the model for genes with two or more expression clusters. This creates a directory of multimodally expressed gene models which can be used to predict differential expression in new samples. This analysis framework is a novel contribution to the precision medicine research community. Our approach has several beneficial properties. For example, training models on curated data sets and applying the models to new samples avoids the use of reference distributions, which overestimate the uncertainty in the analysis by not accounting for subtype expression. Furthermore, this approach identifies the set of most strongly differentially expressed genes within a disease context, which may enrich for potential biomarkers for precision medicine applications. The multimodally expressed genes are also used in downstream clustering analysis.
-}%DIFDELCMD < 
+The \textit{filter} command (Fig \ref{overview}B) takes an expression matrix and filters the genes down to the multimodally expressed genes using the DP-GMM described above. We apply a DP-GMM to each gene, saving the model for genes with two or more expression clusters. This creates a directory of multimodally expressed gene models which can be used to predict differential expression in new samples. This analysis framework is a novel contribution to the precision medicine research community. Our approach has several beneficial properties. For example, training models on curated data sets and applying the models to new samples avoids the use of reference distributions, which overestimate the uncertainty in the analysis by not accounting for subtype expression. Furthermore, this approach identifies the set of most strongly differentially expressed genes within a disease context, which may enrich for potential biomarkers for precision medicine applications. The multimodally expressed genes are also used in downstream clustering analysis.
 
-%DIFDELCMD < %%%
-\DIFdel{The }\textit{\DIFdel{enrich}} %DIFAUXCMD
-\DIFdel{(Fig \ref{overview}C) and }\textit{\DIFdel{sweep}} %DIFAUXCMD
-\DIFdel{(Fig \ref{overview}D) routines are two independent analyses to explore multimodal expression in cancer gene expression cohorts. In addition to identifying expression variation within a disease context, we also found that multimodally expressed genes that participate in a biological pathway tend to have correlated expression distributions. This insight facilitates the detection of multimodal expression signatures by enriching for genes that have multimodal expression distributions and participate in known biological processes. The hydra software comes prepackaged with popular gene sets, including the Molecular Signatures Database (MSigDB) \mbox{%DIFAUXCMD
-\cite{liberzonMolecularSignaturesDatabase2011}}\hspace{0pt}%DIFAUXCMD
-, the Gene Ontology terms \mbox{%DIFAUXCMD
-\cite{Ashburner2000, gene2018gene}}\hspace{0pt}%DIFAUXCMD
-, and the EnrichmentMap gene sets \mbox{%DIFAUXCMD
-\cite{merico2010enrichment}}\hspace{0pt}%DIFAUXCMD
-. The gene set database is configurable, so additional gene sets can be added at runtime.
-}%DIFDELCMD < 
+The \textit{enrich} (Fig \ref{overview}C) and \textit{sweep} (Fig \ref{overview}D) routines are two independent analyses to explore multimodal expression in cancer gene expression cohorts. In addition to identifying expression variation within a disease context, we also found that multimodally expressed genes that participate in a biological pathway tend to have correlated expression distributions. This insight facilitates the detection of multimodal expression signatures by enriching for genes that have multimodal expression distributions and participate in known biological processes. The hydra software comes prepackaged with popular gene sets, including the Molecular Signatures Database (MSigDB) \cite{liberzonMolecularSignaturesDatabase2011}, the Gene Ontology terms \cite{Ashburner2000, gene2018gene}, and the EnrichmentMap gene sets \cite{merico2010enrichment}. The gene set database is configurable, so additional gene sets can be added at runtime.
 
-%DIFDELCMD < %%%
-\DIFdel{The }\textit{\DIFdel{enrich}} %DIFAUXCMD
-\DIFdel{command uses a hypergeometric test \mbox{%DIFAUXCMD
-\cite{yuClusterProfilerPackageComparing2012} }\hspace{0pt}%DIFAUXCMD
-to discover enrichment of multimodally expressed genes within a user-defined database of gene sets. This creates a list of gene sets and a list of enriched gene set genes. The }\textit{\DIFdel{enrich}} %DIFAUXCMD
-\DIFdel{method outputs a table of enriched gene sets while also clustering samples across the genes that participate in the enriched gene sets. The table of enriched gene sets may reveal surprising expression patterns and generate hypotheses for further investigation of tumor subtypes.
-}%DIFDELCMD < 
+The \textit{enrich} command uses a hypergeometric test \cite{yuClusterProfilerPackageComparing2012} to discover enrichment of multimodally expressed genes within a user-defined database of gene sets. This creates a list of gene sets and a list of enriched gene set genes. The \textit{enrich} method outputs a table of enriched gene sets while also clustering samples across the genes that participate in the enriched gene sets. The table of enriched gene sets may reveal surprising expression patterns and generate hypotheses for further investigation of tumor subtypes.
 
-%DIFDELCMD < %%%
-\DIFdel{The implementation of the }\textit{\DIFdel{enrich}} %DIFAUXCMD
-\DIFdel{method includes an important parameter known as the minimum component probability. The minimum component probability is the probability of placing a sample within the smallest expression cluster. This is an additional filter to remove multimodally expressed genes that influence a relatively small subset of tumor samples. This parameter gives the user the ability to subset the enriched genes to those that influence a greater number of patients. To aid in the exploration of minimum component thresholds, we implemented a }\textit{\DIFdel{scan}} %DIFAUXCMD
-\DIFdel{sub-routine. The }\textit{\DIFdel{scan}} %DIFAUXCMD
-\DIFdel{routine tunes the analysis with respect to the constraints of the available data (e.g. number of samples and number of genes), which is an important factor in pediatric cancer research since data is often difficult to obtain and so datasets are relatively small. We recommend setting this threshold such that the number of genes is less than the number of samples because otherwise the inference may become unstable \mbox{%DIFAUXCMD
-\cite{caiConstrainedL1Minimization2011}}\hspace{0pt}%DIFAUXCMD
-.
-}%DIFDELCMD < 
+The implementation of the \textit{enrich} method includes an important parameter known as the minimum component probability. The minimum component probability is the probability of placing a sample within the smallest expression cluster. This is an additional filter to remove multimodally expressed genes that influence a relatively small subset of tumor samples. This parameter gives the user the ability to subset the enriched genes to those that influence a greater number of patients. To aid in the exploration of minimum component thresholds, we implemented a \textit{scan} sub-routine. The \textit{scan} routine tunes the analysis with respect to the constraints of the available data (e.g. number of samples and number of genes), which is an important factor in pediatric cancer research since data is often difficult to obtain and so datasets are relatively small. We recommend setting this threshold such that the number of genes is less than the number of samples because otherwise the inference may become unstable \cite{caiConstrainedL1Minimization2011}.
 
-%DIFDELCMD < %%%
-\DIFdel{The }\textit{\DIFdel{sweep}} %DIFAUXCMD
-\DIFdel{routine identifies differentially expressed gene sets and can be used as an alternative to single-sample GSEA \mbox{%DIFAUXCMD
-\cite{subramanianGeneSetEnrichment2005}}\hspace{0pt}%DIFAUXCMD
-. For each gene set, a multivariate DP-GMM is applied to determine if more than one expression cluster is present within the gene set. This approach is useful when curated gene sets are available for the disease of interest, but manual inspection of each gene set is not feasible. Reducing the genes to multimodally expressed genes facilitates the detection of differentially expressed gene sets. Existing gene set enrichment tools are known to under-perform when the expression is correlated \mbox{%DIFAUXCMD
-\cite{tamayoLimitationsSimpleGene2016}}\hspace{0pt}%DIFAUXCMD
-, but our approach is designed to identify distinct correlation structures within gene expression datasets.
-}%DIFDELCMD < 
+The \textit{sweep} routine identifies differentially expressed gene sets and can be used as an alternative to single-sample GSEA \cite{subramanianGeneSetEnrichment2005}. For each gene set, a multivariate DP-GMM is applied to determine if more than one expression cluster is present within the gene set. This approach is useful when curated gene sets are available for the disease of interest, but manual inspection of each gene set is not feasible. Reducing the genes to multimodally expressed genes facilitates the detection of differentially expressed gene sets. Existing gene set enrichment tools are known to under-perform when the expression is correlated \cite{tamayoLimitationsSimpleGene2016}, but our approach is designed to identify distinct correlation structures within gene expression datasets.
 
-%DIFDELCMD < %%%
-\DIFdel{We have also implemented routines for cluster profiling and N-of-1 tumor analysis. These routines are accessible within the docker container using the Jupyter notebook command. Cluster profiling analysis of clusters derived from the }\textit{\DIFdel{enrich}} %DIFAUXCMD
-\DIFdel{or }\textit{\DIFdel{sweep}} %DIFAUXCMD
-\DIFdel{routines includes GSEA \mbox{%DIFAUXCMD
-\cite{korotkevichFastGeneSet2019} }\hspace{0pt}%DIFAUXCMD
-to identify the pathway expression that characterizes each cluster. GSEA uses all available genes since it requires non-differentially expressed genes to assess the significance of an enrichment score. A t-statistic is calculated for each gene, comparing gene expression values of samples inside to those outside of a cluster. Cluster profiling GSEA uses the ranked gene-level t-statistics to determine gene set enrichment.
-}%DIFDELCMD < 
+We have also implemented routines for cluster profiling and N-of-1 tumor analysis. These routines are accessible within the docker container using the Jupyter notebook command. Cluster profiling analysis of clusters derived from the \textit{enrich} or \textit{sweep} routines includes GSEA \cite{korotkevichFastGeneSet2019} to identify the pathway expression that characterizes each cluster. GSEA uses all available genes since it requires non-differentially expressed genes to assess the significance of an enrichment score. A t-statistic is calculated for each gene, comparing gene expression values of samples inside to those outside of a cluster. Cluster profiling GSEA uses the ranked gene-level t-statistics to determine gene set enrichment.
 
-%DIFDELCMD < %%%
-\DIFdel{The N-of-1 tumor analysis routine classifies a new gene expression profile into one of the inferred clusters, calculates a gene-level z-score for that sample relative to the normalized expression distribution, and performs standard GSEA using a preranked list of z-score values \mbox{%DIFAUXCMD
-\cite{korotkevichFastGeneSet2019}}\hspace{0pt}%DIFAUXCMD
-. This procedure can identify new gene expression signatures that may not be detectable using the entire expression cohort as a background reference distribution. This approach is another novel contribution to the field and may facilitate the identification of clinically relevant signatures that are being overlooked in current gene expression analyses.
-}%DIFDELCMD < 
+The N-of-1 tumor analysis routine classifies a new gene expression profile into one of the inferred clusters, calculates a gene-level z-score for that sample relative to the normalized expression distribution, and performs standard GSEA using a preranked list of z-score values \cite{korotkevichFastGeneSet2019}. This procedure can identify new gene expression signatures that may not be detectable using the entire expression cohort as a background reference distribution. This approach is another novel contribution to the field and may facilitate the identification of clinically relevant signatures that are being overlooked in current gene expression analyses.
 
-%DIFDELCMD < %%%
-\subsection*{\DIFdel{Synthetic data generation and validation}}
-%DIFAUXCMD
-%DIF <  For figure citations, please use "Fig" instead of "Figure".
-\DIFdel{We first tested the hydra framework’s ability to detect differential pathway expression using synthetic cancer data. We compared hydra }\textit{\DIFdel{sweep}} %DIFAUXCMD
-\DIFdel{to two widely used gene set enrichment tools: single-sample gene set enrichment analysis (ssGSEA) and gene set variation analysis (GSVA) \mbox{%DIFAUXCMD
-\cite{barbieSystematicRNAInterference2009, hanzelmannGSVAGeneSet2013, tarcaComparisonGeneSet2013}}\hspace{0pt}%DIFAUXCMD
-. Both methods are implemented in the GSVA R package \mbox{%DIFAUXCMD
-\cite{hanzelmannGSVAGeneSet2013}}\hspace{0pt}%DIFAUXCMD
-. In order to accurately model correlation structures within cancer cohorts, we modeled the synthetic cancer gene expression data as a multivariate Gaussian distribution. We used the TCGA glioblastoma multiforme (GBM) cohort (N=166) to model a background mean and covariance matrix for the synthetic data analysis. We chose TCGA GBM, a very different disease from those analyzed in the remainder of this manuscript, to avoid overfitting the hydra method to diseases of interest. This also enables us to demonstrate the flexibility of our method to analyze data from a variety of cancer genome sequencing projects.
-}%DIFDELCMD < 
+\subsection*{Synthetic data generation and validation}
+% For figure citations, please use "Fig" instead of "Figure".
+We first tested the hydra framework’s ability to detect differential pathway expression using synthetic cancer data. We compared hydra \textit{sweep} to two widely used gene set enrichment tools: single-sample gene set enrichment analysis (ssGSEA) and gene set variation analysis (GSVA) \cite{barbieSystematicRNAInterference2009, hanzelmannGSVAGeneSet2013, tarcaComparisonGeneSet2013}. Both methods are implemented in the GSVA R package \cite{hanzelmannGSVAGeneSet2013}. In order to accurately model correlation structures within cancer cohorts, we modeled the synthetic cancer gene expression data as a multivariate Gaussian distribution. We used the TCGA glioblastoma multiforme (GBM) cohort (N=166) to model a background mean and covariance matrix for the synthetic data analysis. We chose TCGA GBM, a very different disease from those analyzed in the remainder of this manuscript, to avoid overfitting the hydra method to diseases of interest. This also enables us to demonstrate the flexibility of our method to analyze data from a variety of cancer genome sequencing projects.
 
-%DIFDELCMD < %%%
-\DIFdel{This approach allowed us to model cancer gene expression data while also controlling for subtype-related expression variation. We downloaded the RSEM-quantified TPM normalized gene expression measurements from the UCSC Xena Browser \mbox{%DIFAUXCMD
-\cite{goldmanUCSCXenaPlatform2018}}\hspace{0pt}%DIFAUXCMD
-. We focus our analysis on normalized gene expression data because this data is more widely used in the cancer research community and fewer methods are available to analyze normalized counts. To reduce heteroscedasticity and the effect of outlier expression levels, we transformed the expression data to log2(TPM + 1) \mbox{%DIFAUXCMD
-\cite{zwienerTransformingRNASeqData2014}}\hspace{0pt}%DIFAUXCMD
-.
-}%DIFDELCMD < 
+This approach allowed us to model cancer gene expression data while also controlling for subtype-related expression variation. We downloaded the RSEM-quantified \DIFdelbegin \DIFdel{TPM }\DIFdelend \DIFaddbegin \DIFadd{transcripts per million (TPM) }\DIFaddend normalized gene expression measurements from the UCSC Xena Browser \cite{goldmanUCSCXenaPlatform2018}. We focus our analysis on normalized gene expression data because this data is more widely used in the cancer research community and fewer methods are available to analyze normalized counts. To reduce heteroscedasticity and the effect of outlier expression levels, we transformed the expression data to log2(TPM + 1) \cite{zwienerTransformingRNASeqData2014}.
 
-%DIFDELCMD < %%%
-\DIFdel{We defined an expression subtype as a subset of samples with a distinct expression mean and correlation structure compared to other samples within the disease cohort. To avoid biases in the synthetic data generation process, we used random sampling to select MSigDB gene sets for each subtype, the size of the subtype, and the correlation structure within the subtype. We randomly generated a covariance matrix for the cancer subtype expression data, but used the underlying covariance matrix of the TCGA glioblastoma multiforme dataset for the background samples. We tested the effect of having 10\% and 25\% of genes within a gene set being differentially expressed (\%DEG). In addition to these parameters, we tested a range of effect sizes: 0.25 (least different), 0.5, 0.75, 1.0, 1.5, 2.0, 2.5, and 3.0 (most different). This process was repeated twice for each gene set to create synthetic training and test data, which resulted in the generation of 640 synthetic datasets.
-}%DIFDELCMD < 
+We defined an expression subtype as a subset of samples with a distinct expression mean and correlation structure compared to other samples within the disease cohort. To avoid biases in the synthetic data generation process, we used random sampling to select MSigDB gene sets for each subtype, the size of the subtype, and the correlation structure within the subtype. We randomly generated a covariance matrix for the cancer subtype expression data, but used the underlying covariance matrix of the TCGA glioblastoma multiforme dataset for the background samples. We tested the effect of having 10\% and 25\% of genes within a gene set being differentially expressed (\%DEG). In addition to these parameters, we tested a range of effect sizes: 0.25 (least different), 0.5, 0.75, 1.0, 1.5, 2.0, 2.5, and 3.0 (most different). This process was repeated twice for each gene set to create synthetic training and test data, which resulted in the generation of 640 synthetic datasets.
 
-%DIFDELCMD < %%%
-\DIFdel{We then applied the hydra framework using the hydra }\textit{\DIFdel{sweep}} %DIFAUXCMD
-\DIFdel{command (Fig \ref{overview}C), since this method is directly comparable to the single-sample GSEA methods. The mean expression filter removed any genes with a mean expression of fewer than 1.0 log2(TPM + 1). This avoids lowly-expressed genes that may have particularly noisy expression measurements. The prior on the hydra covariance matrix was the identity scaled by 2.0 and the prior on the number of clusters was set to 2 because we expect there to be an activated cluster and a baseline expression cluster. We set the over-expressing cluster to be the cluster with the largest L1 norm.
-}%DIFDELCMD < 
+We then applied the hydra framework using the hydra \textit{sweep} command (Fig \ref{overview}C), since this method is directly comparable to the single-sample GSEA methods. The mean expression filter removed any genes with a mean expression of fewer than 1.0 log2(TPM + 1). This avoids lowly-expressed genes that may have particularly noisy expression measurements. The prior on the hydra covariance matrix was the identity scaled by 2.0 and the prior on the number of clusters was set to 2 because we expect there to be an activated cluster and a baseline expression cluster. We set the over-expressing cluster to be the cluster with the largest L1 norm.
 
-%DIFDELCMD < %%%
-%DIF <  Place figure captions after the first paragraph in which they are cited.
-%DIF < \begin{figure}[!h]
-%DIF < \caption{{\bf Bold the figure title.}
-%DIF < Figure caption text here, please use this space for the figure panel %descriptions instead of using subfigure commands. A: Lorem ipsum dolor %sit amet. B: Consectetur adipiscing elit.}
-%DIF < \label{fig1}
-%DIF < \end{figure}
-%DIFDELCMD < 
+% Place figure captions after the first paragraph in which they are cited.
+%\begin{figure}[!h]
+%\caption{{\bf Bold the figure title.}
+%Figure caption text here, please use this space for the figure panel %descriptions instead of using subfigure commands. A: Lorem ipsum dolor %sit amet. B: Consectetur adipiscing elit.}
+%\label{fig1}
+%\end{figure}
 
-%DIFDELCMD < %%%
-\subsection*{\DIFdel{Pediatric cancer gene expression data}}
-%DIFAUXCMD
-\DIFdel{We downloaded pediatric cancer RNA-Seq data for neuroblastoma, osteosarcoma, Ewing sarcoma, alveolar rhabdomyosarcoma, and embryonal rhabdomyosarcoma from the UCSC Treehouse Compendium (}%DIFDELCMD < \url{https://treehousegenomics.soe.ucsc.edu/public-data/}%%%
-\DIFdel{). This data was produced using the same RNA-seq pipeline, so potential computational batch effects are minimized \mbox{%DIFAUXCMD
-\cite{vivianToilEnablesReproducible2017,vaskeComparativeTumorRNA2019}}\hspace{0pt}%DIFAUXCMD
-. Clinical data for the TARGET neuroblastoma and osteosarcoma samples were obtained from the TARGET Data Matrix (https://ocg.cancer.gov/programs/target/data-matrix). We also analyzed a set of 58 synovial sarcoma microarray profiles with matching metastasis rate data \mbox{%DIFAUXCMD
-\cite{lagardeChromosomeInstabilityAccounts2013}}\hspace{0pt}%DIFAUXCMD
-.
-}%DIFDELCMD < 
+\subsection*{Pediatric cancer gene expression data}
+We downloaded pediatric cancer RNA-Seq data for neuroblastoma, osteosarcoma, Ewing sarcoma, alveolar rhabdomyosarcoma, and embryonal rhabdomyosarcoma from the UCSC Treehouse Compendium (\url{https://treehousegenomics.soe.ucsc.edu/public-data/}). This data was produced using the same RNA-seq pipeline, so potential computational batch effects are minimized \cite{vivianToilEnablesReproducible2017,vaskeComparativeTumorRNA2019}. Clinical data for the TARGET neuroblastoma and osteosarcoma samples were obtained from the TARGET Data Matrix (https://ocg.cancer.gov/programs/target/data-matrix). We also analyzed a set of 58 synovial sarcoma microarray profiles with matching metastasis rate data \cite{lagardeChromosomeInstabilityAccounts2013}.
 
-%DIFDELCMD < %%%
-\subsection*{\DIFdel{TARGET neuroblastoma analysis}}
-%DIFAUXCMD
-\DIFdel{We applied each hydra tool to the TARGET }\textit{\DIFdel{MYCN}}%DIFAUXCMD
-\DIFdel{-NA neuroblastoma cohort. We first obtained the multimodal gene models using the hydra }\textit{\DIFdel{filter}} %DIFAUXCMD
-\DIFdel{tool. The hydra }\textit{\DIFdel{filter}} %DIFAUXCMD
-\DIFdel{tool identified all genes with a multimodal expression pattern. We used the mean expression filter to remove genes that may have unstable measurements due to low transcript abundances. We excluded all genes with a mean expression value less than 1 log2(TPM + 1).
-}%DIFDELCMD < 
+\subsection*{TARGET neuroblastoma analysis}
+We applied each hydra tool to the TARGET \textit{MYCN}\DIFdelbegin \DIFdel{-NA }\DIFdelend \DIFaddbegin \DIFadd{-non-amplified }\DIFaddend neuroblastoma cohort. We first obtained the multimodal gene models using the hydra \textit{filter} tool. The hydra \textit{filter} tool identified all genes with a multimodal expression pattern. We used the mean expression filter to remove genes that may have unstable measurements due to low transcript abundances. We excluded all genes with a mean expression value less than 1 log2(TPM + 1).
 
-%DIFDELCMD < %%%
-\DIFdel{The hydra }\textit{\DIFdel{sweep}} %DIFAUXCMD
-\DIFdel{command was applied to search for subtype expression within curated MSigDB gene sets. We included the hallmark (n=50), BioCarta (n=289), KEGG (n=186), PID (n=196), and Reactome (n=1499) genesets \mbox{%DIFAUXCMD
-\cite{liberzonMolecularSignaturesDatabase2011}}\hspace{0pt}%DIFAUXCMD
-. We include all signatures with a minimum component probability of 10\%. For example, the smallest subtype cluster considered in this analysis had 7 samples, since the total number of samples was 70. We investigated relationships among differentially expressed gene sets by clustering the gene sets by their pairwise Jaccard index. This created a similarity network that was then visualized using the Gephi software tool \mbox{%DIFAUXCMD
-\cite{bastian2009gephi}}\hspace{0pt}%DIFAUXCMD
-.
-}%DIFDELCMD < 
+The hydra \textit{sweep} command was applied to search for subtype expression within curated MSigDB gene sets. We included the hallmark (n=50), BioCarta (n=289), KEGG (n=186), PID (n=196), and Reactome (n=1499) genesets \cite{liberzonMolecularSignaturesDatabase2011}. We include all signatures with a minimum component probability of 10\%. For example, the smallest subtype cluster considered in this analysis had 7 samples, since the total number of samples was 70. We investigated relationships among differentially expressed gene sets by clustering the gene sets by their pairwise Jaccard index. This created a similarity network that was then visualized using the Gephi software tool \cite{bastian2009gephi}.
 
-%DIFDELCMD < %%%
-\DIFdel{The hydra }\textit{\DIFdel{enrich}} %DIFAUXCMD
-\DIFdel{command identified correlated expression signatures using the enriched GO term genes (FDR $<$ 0.01). The multivariate mixture model $\alpha$ concentration parameter was set to 5.0; the prior on the covariance matrix was set to the identity scaled by 2.0. The prior parameter for the number of clusters was set to 5. Our synthetic data analysis found that the signal decreases below an effect size of 1.0, so we use this parameter value for all following analyses. We used the hydra }\textit{\DIFdel{scan}} %DIFAUXCMD
-\DIFdel{routine to search a range of minimum component probability thresholds (see Results) and found that a threshold/probability of 20\% yielded the most clusters while keeping the number of genes (p = 42) below the number of samples (n = 70).
-}%DIFDELCMD < 
+The hydra \textit{enrich} command identified correlated expression signatures using the enriched GO term genes (FDR $<$ 0.01). The multivariate mixture model $\alpha$ concentration parameter was set to 5.0; the prior on the covariance matrix was set to the identity scaled by 2.0. The prior parameter for the number of clusters was set to 5. Our synthetic data analysis found that the signal decreases below an effect size of 1.0, so we use this parameter value for all following analyses. We used the hydra \textit{scan} routine to search a range of minimum component probability thresholds (see Results) and found that a threshold/probability of 20\% yielded the most clusters while keeping the number of genes (p = 42) below the number of samples (n = 70).
 
-%DIFDELCMD < %%%
-\DIFdel{To validate tumor microenvironment expression subtypes, we correlated the hydra }\textit{\DIFdel{enrich}} %DIFAUXCMD
-\DIFdel{expression clusters with the results of tumor microenvironment profiling tools xCell \mbox{%DIFAUXCMD
-\cite{aranXCellDigitallyPortraying2017}}\hspace{0pt}%DIFAUXCMD
-, CIBERSORT \mbox{%DIFAUXCMD
-\cite{newmanRobustEnumerationCell2015}}\hspace{0pt}%DIFAUXCMD
-, and ESTIMATE \mbox{%DIFAUXCMD
-\cite{yoshiharaInferringTumourPurity2013a}}\hspace{0pt}%DIFAUXCMD
-. We also compared the hydra }\textit{\DIFdel{enrich}} %DIFAUXCMD
-\DIFdel{approach to state-of-the-art consensus clustering methods M3C \mbox{%DIFAUXCMD
-\cite{johnM3CMonteCarlo2018} }\hspace{0pt}%DIFAUXCMD
-and k-means clustering using the Gap statistic to select the number of clusters \mbox{%DIFAUXCMD
-\cite{tibshirani2001estimating}}\hspace{0pt}%DIFAUXCMD
-. Since these methods are influenced by the number of input genes, we tested a range of median absolute deviation (MAD) thresholds. The number of clusters was assumed to be the smallest statistically significant value.
-}%DIFDELCMD < 
+To validate tumor microenvironment expression subtypes, we correlated the hydra \textit{enrich} expression clusters with the results of tumor microenvironment profiling tools xCell \cite{aranXCellDigitallyPortraying2017}, CIBERSORT \cite{newmanRobustEnumerationCell2015}, and ESTIMATE \cite{yoshiharaInferringTumourPurity2013a}. We also compared the hydra \textit{enrich} approach to state-of-the-art consensus clustering methods M3C \cite{johnM3CMonteCarlo2018} and k-means clustering using the Gap statistic to select the number of clusters \cite{tibshirani2001estimating}. Since these methods are influenced by the number of input genes, we tested a range of median absolute deviation (MAD) thresholds. The number of clusters was assumed to be the smallest statistically significant value.
 
-%DIFDELCMD < %%%
-\subsection*{\DIFdel{Small blue round cell tumor analysis}}
-%DIFAUXCMD
-\DIFdel{We then compared the clustering patterns across }\textit{\DIFdel{MYCN}}%DIFAUXCMD
-\DIFdel{-NA neuroblastoma, osteosarcoma, Ewing sarcoma, embryonal rhabdomyosarcoma, alveolar rhabdomyosarcoma, and synovial sarcoma. We applied the TumorMap dimensionality reduction method \mbox{%DIFAUXCMD
-\cite{newtonTumorMapExploringMolecular2017} }\hspace{0pt}%DIFAUXCMD
-to visualize clustering of the full small blue round cell tumor gene expression matrix. We then applied the hydra framework to explore expression variation within each disease. Each disease expression matrix had unique statistical properties including sample size and subtype variation. This required us to adapt the minimum probability threshold for each disease dataset using the }\textit{\DIFdel{scan}} %DIFAUXCMD
-\DIFdel{routine. The Jupyter notebooks for exploring these datasets can be found on GitHub (}%DIFDELCMD < \url{www.github.com/jpfeil/hydra-paper/analysis}%%%
-\DIFdel{). We used agglomerative clustering to investigate patterns in the top 10 enriched gene sets for each disease's expression subtypes.
-}%DIFDELCMD < 
+\subsection*{Small blue round cell tumor analysis}
+We then compared the clustering patterns across \textit{MYCN}-NA neuroblastoma, osteosarcoma, Ewing sarcoma, embryonal rhabdomyosarcoma, alveolar rhabdomyosarcoma, and synovial sarcoma. We applied the TumorMap dimensionality reduction method \cite{newtonTumorMapExploringMolecular2017} to visualize clustering of the full small blue round cell tumor gene expression matrix. We then applied the hydra framework to explore expression variation within each disease. Each disease expression matrix had unique statistical properties including sample size and subtype variation. This required us to adapt the minimum probability threshold for each disease dataset using the \textit{scan} routine. The Jupyter notebooks for exploring these datasets can be found on GitHub (\url{www.github.com/jpfeil/hydra-paper/analysis}). We used agglomerative clustering to investigate patterns in the top 10 enriched gene sets for each disease's expression subtypes.
 
-%DIFDELCMD < %%%
-\subsection*{\DIFdel{Statistical analysis}}
-%DIFAUXCMD
-\DIFdel{A Kruskal-Wallis test was used to identify statistically significant differences across two or more groups, and a Mann-Whitney U test was used for pairwise tests using a Holm-Sidak correction for multiple hypothesis testing \mbox{%DIFAUXCMD
-\cite{pedregosa2011scikit,jonesSciPyOpenSource2001}}\hspace{0pt}%DIFAUXCMD
-. We used the scipy \mbox{%DIFAUXCMD
-\cite{2019arXiv190710121V} }\hspace{0pt}%DIFAUXCMD
-stats implementation of the Kruskal-Wallis test and the scikit-learn post hoc processing \mbox{%DIFAUXCMD
-\cite{Terpilowski2019} }\hspace{0pt}%DIFAUXCMD
-implementation of pairwise Mann-Whitney U tests. Spearman rank and Pearson correlation values were calculated using the scipy library \mbox{%DIFAUXCMD
-\cite{jonesSciPyOpenSource2001}}\hspace{0pt}%DIFAUXCMD
-. Survival analysis was done using the survminer package \mbox{%DIFAUXCMD
-\cite{kassambaraSurvminerDrawingSurvival2019}}\hspace{0pt}%DIFAUXCMD
-.
-}%DIFDELCMD < 
+\subsection*{Statistical analysis}
+A Kruskal-Wallis test was used to identify statistically significant differences across two or more groups, and a Mann-Whitney U test was used for pairwise tests using a Holm-Sidak correction for multiple hypothesis testing \cite{pedregosa2011scikit,jonesSciPyOpenSource2001}. We used the scipy \cite{2019arXiv190710121V} stats implementation of the Kruskal-Wallis test and the scikit-learn post hoc processing \cite{Terpilowski2019} implementation of pairwise Mann-Whitney U tests. Spearman rank and Pearson correlation values were calculated using the scipy library \cite{jonesSciPyOpenSource2001}. Survival analysis was done using the survminer package \cite{kassambaraSurvminerDrawingSurvival2019}.
 
-%DIFDELCMD < %%%
-\subsection*{\DIFdel{H\&E slide preparation and pathologist review}}
-%DIFAUXCMD
-\DIFdel{Pediatric tumor samples were flash frozen, embedded in OCT, and 5$\mu$m cryosections were collected. Slides were hematoxylin and eosin (H\&E) stained and imaged on a Leica DMi8, equipped with a HC PL APO 40x/0.85 NA objective and DFC7000T camera. H\&E slides were reviewed by a licensed pathologist.  Morphologic analysis was performed and the degree and type of inflammation estimated from the histologic sections. Grading of inflammation was either minimal ($<$10\% of total nuclei consist of inflammatory cells) or  moderate (20-30\% of total nuclei consist of inflammatory cells). The type of inflammation (predominantly small mature lymphocytes or mixed inflammation consisting of small mature lymphocytes along with plasma cells and/or eosinophils) was noted for each tumor sample.
-}%DIFDELCMD < 
+\subsection*{H\&E slide preparation and pathologist review}
+Pediatric tumor samples were flash frozen, embedded in OCT, and 5$\mu$m cryosections were collected. Slides were hematoxylin and eosin (H\&E) stained and imaged on a Leica DMi8, equipped with a HC PL APO 40x/0.85 NA objective and DFC7000T camera. H\&E slides were reviewed by a licensed pathologist.  Morphologic analysis was performed and the degree and type of inflammation estimated from the histologic sections. Grading of inflammation was either minimal ($<$10\% of total nuclei consist of inflammatory cells) or  moderate (20-30\% of total nuclei consist of inflammatory cells). The type of inflammation (predominantly small mature lymphocytes or mixed inflammation consisting of small mature lymphocytes along with plasma cells and/or eosinophils) was noted for each tumor sample.
 
-%DIFDELCMD < %%%
-\DIFdelend % Results and Discussion can be combined.
+% Results and Discussion can be combined.
 \section*{Results}
 \subsection*{Performance assessment using synthetic gene expression data}
 To assess how well hydra detects differentially expressed pathways as compared to common pathway enrichment approaches, we applied the hydra framework to synthetically-generated cancer gene expression data. We generated synthetic cancer gene expression data based on the TCGA glioblastoma multiforme and the MSigDB Hallmark gene sets as described above. We tested a range of effect sizes and percent differentially expressed genes (\%DEG) within the MSigDB gene sets. We generated receiver operator curves (ROC) and calculated the area under the receiver operator curve (AUC) for each analysis. Overall, the hydra pipeline outperformed the single-sample GSEA approaches with a mean AUC of 0.93 (95\% CI: 0.91 - 0.95). ssGSEA had a mean AUC of 0.72 (95\% CI: 0.71 - 0.74) and GSVA had a mean AUC of 0.67 (95\% CI: 0.66 - 0.68) (Fig \ref{rocplot}A).
@@ -720,7 +528,8 @@ While the \textit{MYCN}-NA neuroblastoma analysis above focused on immune and wo
 \end{figure}
 
 %DIF >  TODO Need to fix supplemental figure references
-We applied the \textit{filter} method to Ewing sarcoma and discovered multimodal expression of an important druggable gene, JAK1. Applying the multimodal expression model allowed us to deconstruct the Ewing sarcoma distribution into three components (\nameref{S7_Fig}A). We found that the expression component with the highest JAK1 expression was also enriched for mast cell expression (\nameref{S7_Fig}B). Therefore, overexpression of JAK1 may not correspond to activation of the JAK/STAT signaling pathway in cancer cells but rather to the presence of mast cells within the tumor microenvironment. Furthermore, targeted inhibition of JAK1 using ruxolitinib was shown to inhibit essential mast cell functions, including degranulation \cite{hermansJAK1JAK2Inhibitor2018}. Therefore, therapeutic intervention intending to inhibit JAK1 expression in cancer cells may inadvertently inhibit the patient’s mast cell functions. Overexpression analysis using the Ewing sarcoma JAK1 expression distribution may identify JAK1 as an actionable lead, but further investigation into the effect of inhibiting off-target JAK1 expression in mast cells is needed. The hydra framework facilitates the identification of important expression signatures which can be used to deconstruct complex tumor expression subtypes and identify potentially confounding expression signals.
+We applied the \textit{filter} method to Ewing sarcoma and discovered multimodal expression of an important druggable gene, JAK1. Applying the multimodal expression model allowed us to deconstruct the Ewing sarcoma distribution into three components (\nameref{S7_Fig}\DIFdelbegin \DIFdel{A}\DIFdelend ). We found that the expression component with the highest JAK1 expression was also enriched for mast cell expression\DIFdelbegin \DIFdel{(}%DIFDELCMD < \nameref{S7_Fig}%%%
+\DIFdel{B)}\DIFdelend . Therefore, overexpression of JAK1 may not correspond to activation of the JAK/STAT signaling pathway in cancer cells but rather to the presence of mast cells within the tumor microenvironment. Furthermore, targeted inhibition of JAK1 using ruxolitinib was shown to inhibit essential mast cell functions, including degranulation \cite{hermansJAK1JAK2Inhibitor2018}. Therefore, therapeutic intervention intending to inhibit JAK1 expression in cancer cells may inadvertently inhibit the patient’s mast cell functions. Overexpression analysis using the Ewing sarcoma JAK1 expression distribution may identify JAK1 as an actionable lead, but further investigation into the effect of inhibiting off-target JAK1 expression in mast cells is needed. The hydra framework facilitates the identification of important expression signatures which can be used to deconstruct complex tumor expression subtypes and identify potentially confounding expression signals.
 
 We next quantified the number of multimodal druggable genes from the \textit{MYCN}-NA neuroblastoma dataset that correlated with at least one xCell cell type signature. Out of the 358 druggable genes, we found that 77 correlated with a non-cancer cell type (Kruskal-Wallis test: Holm-Sidak adjusted p-value $<$ 0.05, \nameref{S1_File}). Some of the druggable genes were expected to correlate with non-cancer cells, including the cytokines \textit{IL6} and TGFB2, which correlated with epithelial cells and fibroblasts, respectively. Other druggable genes were surprising, like \textit{AURKA} and \textit{AURKB}, which correlated with higher Th2 cell expression. Aurora kinases play essential roles in spindle formation during mitosis and the overexpression of these genes is associated with evading spindle formation checkpoints in cancer \cite{marisInitialTestingAurora2010}, but little is known in how these genes correlate with infiltrating immune cells. Aurora kinase inhibitors show limited clinical activity in solid tumors, but have been shown to have a greater effect in leukemias \cite{marisInitialTestingAurora2010,gautschiAuroraKinasesAnticancer2008}.
 
@@ -767,206 +576,7 @@ We found at least three shared TME states: immune silent, immune infiltrated, an
 \DIFdelend \DIFaddbegin \subsection*{\DIFadd{Conclusion}}
 \DIFaddend Precision oncology aims to differentiate tumors of the same diagnosis in order to match patients with the best treatment. We have developed the hydra framework to discover subtle but recurrent expression patterns within a cohort of samples with the same diagnosis, which is a novel strategy for pediatric precision oncology research. Our approach may help to uncover the biology underlying tumor progression and response to therapy. We have shown that hydra is more sensitive than standard gene set enrichment approaches for detecting differential pathway expression. Additionally, our framework provides tools to conduct unsupervised clustering analysis to discover expression subtypes. We applied the unsupervised hydra analysis to small blue round cell tumors and discovered distinct tumor microenvironment (TME) states. This shows that one of the strongest signals in clinical gene expression data comes from the TME, so careful modeling of the TME is required to maximize the impact of clinical gene expression analysis. The hydra framework provides unbiased clustering tools to characterize these sources of variation in specific disease populations and identify shared biological themes that can potentially be targeted therapeutically.
 
-\DIFaddbegin \section*{\DIFadd{Materials and methods}}
-\subsection*{\DIFadd{Dirichlet process gaussian mixture model}}
-\DIFadd{Traditional parametric models, like the finite mixture model, use a fixed number of parameters (i.e. number of clusters). Over- or underfitting can occur when the parametric model does not reflect the underlying data \mbox{%DIFAUXCMD
-\cite{teh2010dirichlet}}\hspace{0pt}%DIFAUXCMD
-. Unlike the finite mixture model, the Dirichlet process mixture model (DPMM) represents a theoretically infinite number of clusters and can adapt the number of clusters based on prior belief and the data \mbox{%DIFAUXCMD
-\cite{gelmanBayesianDataAnalysis2013, antoniakMixturesDirichletProcesses1974, teh2010dirichlet}}\hspace{0pt}%DIFAUXCMD
-.
-}
-
-\DIFadd{The Dirichlet process ($DP$) is an infinite dimensional extension of the Dirichlet distribution \mbox{%DIFAUXCMD
-\cite{fergusonBayesianAnalysisNonparametric1973} }\hspace{0pt}%DIFAUXCMD
-and is commonly used as a prior distribution for infinite mixture models \mbox{%DIFAUXCMD
-\cite{muller2004nonparametric, gorurDirichletProcessGaussian2010}}\hspace{0pt}%DIFAUXCMD
-. The Dirichlet process has two parameters: the concentration parameter $\alpha$ and centering distribution $H$. The concentration parameter $\alpha$, where $\alpha \in \mathbb{R}^+$, controls the extent to which samples from the $DP$ resemble the centering distribution $H$. We model gene expression as a multivariate Gaussian distribution, so our centering distribution is a normal-Wishart distribution ($\mathcal{NW}_0$).
-}
-
-\DIFadd{We briefly describe the stick-breaking construction of the Dirichlet process $G \sim DP(\alpha, H)$. Consider a stick of unit length. To generate an infinite number of mixing weights $\pi_1, \pi_2, ..., \pi_k$ for the DPMM, first break a stick of unit length at $\nu \in [0, 1]$ where $\nu$ is sampled from a Beta distribution, and set $\pi_1$ to be the length of the first piece. We repeat this process using the remainder of the stick for each $\pi_k$. The DP is truncated to the number of clusters $K$, which was shown to accurately approximate the infinite posterior for large K \mbox{%DIFAUXCMD
-\cite{hughes2013memoized, teh2010dirichlet, gelmanBayesianDataAnalysis2013, fergusonBayesianAnalysisNonparametric1973, mullerBayesianNonparametricData2015, phadia2015prior}}\hspace{0pt}%DIFAUXCMD
-.
-}
-
-\begin{gather}
-\DIFadd{\label{eq:dp}
-\nu \sim \text{Beta}(1, \alpha) }\\
-\DIFadd{\pi_k = \nu_k \prod_{l=1}^{k-1}(1 - \nu_l)
-}\end{gather}
-
-\DIFadd{Next, we sample the parameters from the centering distribution $H$ weighted by the mixing components. If we consider a probability space $\Theta$ where $\theta_k^{*} \in \Theta$, then $H$ is a measure on the partitions of $\Theta$. For our application, we will partition the parameter space $\Theta$ into finite, measurable partitions $B_1, B_2, ..., B_k$.
-}
-
-\begin{gather}
-\DIFadd{\theta_k^{*} \sim H }\\
-\DIFadd{G = \sum_{k=1}^{\infty} \pi_k \delta_{\theta_k^{*}} }\\
-\DIFadd{(G(B_1), G(B_2), ..., G(B_k)) \sim \text{Dir}(\alpha H(B_1), \alpha H(B_2), ..., \alpha H(B_k))
-}\end{gather}
-
-\DIFadd{This construction generates the marginal of the Dirichlet process, which follows a Dirichlet distribution. Samples from the marginal distribution are finite, discrete, and sum to $1$ \mbox{%DIFAUXCMD
-\cite{fergusonBayesianAnalysisNonparametric1973}}\hspace{0pt}%DIFAUXCMD
-. Next, we outline how the DPMM groups gene expression samples $x_i$ under cluster-specific parameters $\mu_{z_i}$ and $\Sigma_{z_i}$ where $z_i \in {1, 2, ..., K}$ is the cluster index.
-}
-
-\begin{gather}
-\DIFadd{\label{eq:mm}
-x_i | \mu_{z_i}, \Sigma_{z_i} \sim \mathcal{N}(\mu_{z_i}, \Sigma_{z_i}) }\\
-\DIFadd{z_i | \pi \sim \text{Categorical}(\pi_1, \pi_2, ..., \pi_k) }\\
-\DIFadd{\mu_{z_i}, \Sigma_{z_i} | G \sim G }\\
-\DIFadd{G | \alpha, \mathcal{NW}_0 \sim DP(\alpha, \mathcal{NW}_0)
-}\end{gather}
-
-\DIFadd{To improve our methods ability to scale to larger datasets, we incorporated the bnpy memoized online variational inference algorithm (moVB) \mbox{%DIFAUXCMD
-\cite{hughes2013memoized} }\hspace{0pt}%DIFAUXCMD
-into our analysis framework. The moVB algorithm uses variational inference to approximate the posterior distribution and interleaves birth, merge, and delete moves to avoid local optima and remove redundant clusters \mbox{%DIFAUXCMD
-\cite{hughesBnpyReliableScalable}}\hspace{0pt}%DIFAUXCMD
-. We found that the moVB algorithm accurately identified the number of clustering on validation datasets (}\nameref{S1_Fig}\DIFadd{), whereas standard MCMC sampling procedures tended to overestimate the number of clusters.
-}
-
-\subsection*{\DIFadd{Hydra method}}
-\DIFadd{We developed a Bayesian non-parametric clustering framework for identifying biological and technical variation in large cancer gene expression datasets without the need for a reference normal dataset. To our knowledge, this is the first reproducible and widely deployable implementation of a non-parametric mixture model framework designed to overcome the challenges of precision oncology gene expression analysis. The hydra pipeline is an open source software tool hosted on GitHub (}\url{www.github.com/jpfeil/hydra}\DIFadd{). A Docker container is available for deployment across environments (}\url{https://hub.docker.com/r/jpfeil/hydra}\DIFadd{).
-}
-
-\DIFadd{The hydra framework contains three main command-line tools: }\textit{\DIFadd{filter}}\DIFadd{, }\textit{\DIFadd{enrich}}\DIFadd{, and }\textit{\DIFadd{sweep}} \DIFadd{(Fig \ref{overview}). The }\textit{\DIFadd{filter}} \DIFadd{command is run first to isolate the multimodally expressed genes using a univariate Dirichlet Process Gaussian Mixture Model (DP-GMM). There are two methods for analyzing the resulting set of multimodally expressed genes. The }\textit{\DIFadd{enrich}} \DIFadd{method, which subsets to the genes found to be significantly enriched in biological pathways, and the }\textit{\DIFadd{sweep}} \DIFadd{method, which searches within user-defined gene sets for multimodal expression signatures. The underlying analysis routines can be accessed within the Docker using Jupyter notebooks to facilitate the development of user-defined workflows.
-}
-
-%DIF >  Overview Figure
-\begin{figure}[h!]
-	%DIF > \includegraphics[width=\textwidth]{"img/PNG/overview-fig"}
-	\caption{{\bf \DIFaddFL{Overview of the hydra framework tools.}}
-		\DIFaddFL{A: Suggested workflow for applying hydra framework tools to identify clinically relevant gene expression subtypes. B: The hydra }\textit{\DIFaddFL{filter}} \DIFaddFL{command removes unimodally distributed genes which greatly reduces the number of genes in downstream clustering analysis. C: The hydra }\textit{\DIFaddFL{enrich}} \DIFaddFL{command takes the multimodally expressed genes and returns enriched gene sets. The enriched gene set genes are used for multivariate clustering of samples. D: The hydra
-		}\textit{\DIFaddFL{sweep}} \DIFaddFL{command looks for multivariate normal clusters within user-defined gene sets. This can be used for the automatic detection of clusters in large gene set databases. Abbreviation: Tumor microenvironment (TME) 
-		}\label{overview}}
-\end{figure}
-
-\DIFadd{The }\textit{\DIFadd{filter}} \DIFadd{command (Fig \ref{overview}B) takes an expression matrix and filters the genes down to the multimodally expressed genes using the DP-GMM described above. We apply a DP-GMM to each gene, saving the model for genes with two or more expression clusters. This creates a directory of multimodally expressed gene models which can be used to predict differential expression in new samples. This analysis framework is a novel contribution to the precision medicine research community. Our approach has several beneficial properties. For example, training models on curated data sets and applying the models to new samples avoids the use of reference distributions, which overestimate the uncertainty in the analysis by not accounting for subtype expression. Furthermore, this approach identifies the set of most strongly differentially expressed genes within a disease context, which may enrich for potential biomarkers for precision medicine applications. The multimodally expressed genes are also used in downstream clustering analysis.
-}
-
-\DIFadd{The }\textit{\DIFadd{enrich}} \DIFadd{(Fig \ref{overview}C) and }\textit{\DIFadd{sweep}} \DIFadd{(Fig \ref{overview}D) routines are two independent analyses to explore multimodal expression in cancer gene expression cohorts. In addition to identifying expression variation within a disease context, we also found that multimodally expressed genes that participate in a biological pathway tend to have correlated expression distributions. This insight facilitates the detection of multimodal expression signatures by enriching for genes that have multimodal expression distributions and participate in known biological processes. The hydra software comes prepackaged with popular gene sets, including the Molecular Signatures Database (MSigDB) \mbox{%DIFAUXCMD
-\cite{liberzonMolecularSignaturesDatabase2011}}\hspace{0pt}%DIFAUXCMD
-, the Gene Ontology terms \mbox{%DIFAUXCMD
-\cite{Ashburner2000, gene2018gene}}\hspace{0pt}%DIFAUXCMD
-, and the EnrichmentMap gene sets \mbox{%DIFAUXCMD
-\cite{merico2010enrichment}}\hspace{0pt}%DIFAUXCMD
-. The gene set database is configurable, so additional gene sets can be added at runtime.
-}
-
-\DIFadd{The }\textit{\DIFadd{enrich}} \DIFadd{command uses a hypergeometric test \mbox{%DIFAUXCMD
-\cite{yuClusterProfilerPackageComparing2012} }\hspace{0pt}%DIFAUXCMD
-to discover enrichment of multimodally expressed genes within a user-defined database of gene sets. This creates a list of gene sets and a list of enriched gene set genes. The }\textit{\DIFadd{enrich}} \DIFadd{method outputs a table of enriched gene sets while also clustering samples across the genes that participate in the enriched gene sets. The table of enriched gene sets may reveal surprising expression patterns and generate hypotheses for further investigation of tumor subtypes.
-}
-
-\DIFadd{The implementation of the }\textit{\DIFadd{enrich}} \DIFadd{method includes an important parameter known as the minimum component probability. The minimum component probability is the probability of placing a sample within the smallest expression cluster. This is an additional filter to remove multimodally expressed genes that influence a relatively small subset of tumor samples. This parameter gives the user the ability to subset the enriched genes to those that influence a greater number of patients. To aid in the exploration of minimum component thresholds, we implemented a }\textit{\DIFadd{scan}} \DIFadd{sub-routine. The }\textit{\DIFadd{scan}} \DIFadd{routine tunes the analysis with respect to the constraints of the available data (e.g. number of samples and number of genes), which is an important factor in pediatric cancer research since data is often difficult to obtain and so datasets are relatively small. We recommend setting this threshold such that the number of genes is less than the number of samples because otherwise the inference may become unstable \mbox{%DIFAUXCMD
-\cite{caiConstrainedL1Minimization2011}}\hspace{0pt}%DIFAUXCMD
-.
-}
-
-\DIFadd{The }\textit{\DIFadd{sweep}} \DIFadd{routine identifies differentially expressed gene sets and can be used as an alternative to single-sample GSEA \mbox{%DIFAUXCMD
-\cite{subramanianGeneSetEnrichment2005}}\hspace{0pt}%DIFAUXCMD
-. For each gene set, a multivariate DP-GMM is applied to determine if more than one expression cluster is present within the gene set. This approach is useful when curated gene sets are available for the disease of interest, but manual inspection of each gene set is not feasible. Reducing the genes to multimodally expressed genes facilitates the detection of differentially expressed gene sets. Existing gene set enrichment tools are known to under-perform when the expression is correlated \mbox{%DIFAUXCMD
-\cite{tamayoLimitationsSimpleGene2016}}\hspace{0pt}%DIFAUXCMD
-, but our approach is designed to identify distinct correlation structures within gene expression datasets.
-}
-
-\DIFadd{We have also implemented routines for cluster profiling and N-of-1 tumor analysis. These routines are accessible within the docker container using the Jupyter notebook command. Cluster profiling analysis of clusters derived from the }\textit{\DIFadd{enrich}} \DIFadd{or }\textit{\DIFadd{sweep}} \DIFadd{routines includes GSEA \mbox{%DIFAUXCMD
-\cite{korotkevichFastGeneSet2019} }\hspace{0pt}%DIFAUXCMD
-to identify the pathway expression that characterizes each cluster. GSEA uses all available genes since it requires non-differentially expressed genes to assess the significance of an enrichment score. A t-statistic is calculated for each gene, comparing gene expression values of samples inside to those outside of a cluster. Cluster profiling GSEA uses the ranked gene-level t-statistics to determine gene set enrichment.
-}
-
-\DIFadd{The N-of-1 tumor analysis routine classifies a new gene expression profile into one of the inferred clusters, calculates a gene-level z-score for that sample relative to the normalized expression distribution, and performs standard GSEA using a preranked list of z-score values \mbox{%DIFAUXCMD
-\cite{korotkevichFastGeneSet2019}}\hspace{0pt}%DIFAUXCMD
-. This procedure can identify new gene expression signatures that may not be detectable using the entire expression cohort as a background reference distribution. This approach is another novel contribution to the field and may facilitate the identification of clinically relevant signatures that are being overlooked in current gene expression analyses.
-}
-
-\subsection*{\DIFadd{Synthetic data generation and validation}}
-%DIF >  For figure citations, please use "Fig" instead of "Figure".
-\DIFadd{We first tested the hydra framework’s ability to detect differential pathway expression using synthetic cancer data. We compared hydra }\textit{\DIFadd{sweep}} \DIFadd{to two widely used gene set enrichment tools: single-sample gene set enrichment analysis (ssGSEA) and gene set variation analysis (GSVA) \mbox{%DIFAUXCMD
-\cite{barbieSystematicRNAInterference2009, hanzelmannGSVAGeneSet2013, tarcaComparisonGeneSet2013}}\hspace{0pt}%DIFAUXCMD
-. Both methods are implemented in the GSVA R package \mbox{%DIFAUXCMD
-\cite{hanzelmannGSVAGeneSet2013}}\hspace{0pt}%DIFAUXCMD
-. In order to accurately model correlation structures within cancer cohorts, we modeled the synthetic cancer gene expression data as a multivariate Gaussian distribution. We used the TCGA glioblastoma multiforme (GBM) cohort (N=166) to model a background mean and covariance matrix for the synthetic data analysis. We chose TCGA GBM, a very different disease from those analyzed in the remainder of this manuscript, to avoid overfitting the hydra method to diseases of interest. This also enables us to demonstrate the flexibility of our method to analyze data from a variety of cancer genome sequencing projects.
-}
-
-\DIFadd{This approach allowed us to model cancer gene expression data while also controlling for subtype-related expression variation. We downloaded the RSEM-quantified transcripts per million (TPM) normalized gene expression measurements from the UCSC Xena Browser \mbox{%DIFAUXCMD
-\cite{goldmanUCSCXenaPlatform2018}}\hspace{0pt}%DIFAUXCMD
-. We focus our analysis on normalized gene expression data because this data is more widely used in the cancer research community and fewer methods are available to analyze normalized counts. To reduce heteroscedasticity and the effect of outlier expression levels, we transformed the expression data to log2(TPM + 1) \mbox{%DIFAUXCMD
-\cite{zwienerTransformingRNASeqData2014}}\hspace{0pt}%DIFAUXCMD
-.
-}
-
-\DIFadd{We defined an expression subtype as a subset of samples with a distinct expression mean and correlation structure compared to other samples within the disease cohort. To avoid biases in the synthetic data generation process, we used random sampling to select MSigDB gene sets for each subtype, the size of the subtype, and the correlation structure within the subtype. We randomly generated a covariance matrix for the cancer subtype expression data, but used the underlying covariance matrix of the TCGA glioblastoma multiforme dataset for the background samples. We tested the effect of having 10\% and 25\% of genes within a gene set being differentially expressed (\%DEG). In addition to these parameters, we tested a range of effect sizes: 0.25 (least different), 0.5, 0.75, 1.0, 1.5, 2.0, 2.5, and 3.0 (most different). This process was repeated twice for each gene set to create synthetic training and test data, which resulted in the generation of 640 synthetic datasets.
-}
-
-\DIFadd{We then applied the hydra framework using the hydra }\textit{\DIFadd{sweep}} \DIFadd{command (Fig \ref{overview}C), since this method is directly comparable to the single-sample GSEA methods. The mean expression filter removed any genes with a mean expression of fewer than 1.0 log2(TPM + 1). This avoids lowly-expressed genes that may have particularly noisy expression measurements. The prior on the hydra covariance matrix was the identity scaled by 2.0 and the prior on the number of clusters was set to 2 because we expect there to be an activated cluster and a baseline expression cluster. We set the over-expressing cluster to be the cluster with the largest L1 norm.
-}
-
-%DIF >  Place figure captions after the first paragraph in which they are cited.
-%DIF > \begin{figure}[!h]
-%DIF > \caption{{\bf Bold the figure title.}
-%DIF > Figure caption text here, please use this space for the figure panel %descriptions instead of using subfigure commands. A: Lorem ipsum dolor %sit amet. B: Consectetur adipiscing elit.}
-%DIF > \label{fig1}
-%DIF > \end{figure}
-
-\subsection*{\DIFadd{Pediatric cancer gene expression data}}
-\DIFadd{We downloaded pediatric cancer RNA-Seq data for neuroblastoma, osteosarcoma, Ewing sarcoma, alveolar rhabdomyosarcoma, and embryonal rhabdomyosarcoma from the UCSC Treehouse Compendium (}\url{https://treehousegenomics.soe.ucsc.edu/public-data/}\DIFadd{). This data was produced using the same RNA-seq pipeline, so potential computational batch effects are minimized \mbox{%DIFAUXCMD
-\cite{vivianToilEnablesReproducible2017,vaskeComparativeTumorRNA2019}}\hspace{0pt}%DIFAUXCMD
-. Clinical data for the TARGET neuroblastoma and osteosarcoma samples were obtained from the TARGET Data Matrix (https://ocg.cancer.gov/programs/target/data-matrix). We also analyzed a set of 58 synovial sarcoma microarray profiles with matching metastasis rate data \mbox{%DIFAUXCMD
-\cite{lagardeChromosomeInstabilityAccounts2013}}\hspace{0pt}%DIFAUXCMD
-.
-}
-
-\subsection*{\DIFadd{TARGET neuroblastoma analysis}}
-\DIFadd{We applied each hydra tool to the TARGET }\textit{\DIFadd{MYCN}}\DIFadd{-non-amplified neuroblastoma cohort. We first obtained the multimodal gene models using the hydra }\textit{\DIFadd{filter}} \DIFadd{tool. The hydra }\textit{\DIFadd{filter}} \DIFadd{tool identified all genes with a multimodal expression pattern. We used the mean expression filter to remove genes that may have unstable measurements due to low transcript abundances. We excluded all genes with a mean expression value less than 1 log2(TPM + 1).
-}
-
-\DIFadd{The hydra }\textit{\DIFadd{sweep}} \DIFadd{command was applied to search for subtype expression within curated MSigDB gene sets. We included the hallmark (n=50), BioCarta (n=289), KEGG (n=186), PID (n=196), and Reactome (n=1499) genesets \mbox{%DIFAUXCMD
-\cite{liberzonMolecularSignaturesDatabase2011}}\hspace{0pt}%DIFAUXCMD
-. We include all signatures with a minimum component probability of 10\%. For example, the smallest subtype cluster considered in this analysis had 7 samples, since the total number of samples was 70. We investigated relationships among differentially expressed gene sets by clustering the gene sets by their pairwise Jaccard index. This created a similarity network that was then visualized using the Gephi software tool \mbox{%DIFAUXCMD
-\cite{bastian2009gephi}}\hspace{0pt}%DIFAUXCMD
-.
-}
-
-\DIFadd{The hydra }\textit{\DIFadd{enrich}} \DIFadd{command identified correlated expression signatures using the enriched GO term genes (FDR $<$ 0.01). The multivariate mixture model $\alpha$ concentration parameter was set to 5.0; the prior on the covariance matrix was set to the identity scaled by 2.0. The prior parameter for the number of clusters was set to 5. Our synthetic data analysis found that the signal decreases below an effect size of 1.0, so we use this parameter value for all following analyses. We used the hydra }\textit{\DIFadd{scan}} \DIFadd{routine to search a range of minimum component probability thresholds (see Results) and found that a threshold/probability of 20\% yielded the most clusters while keeping the number of genes (p = 42) below the number of samples (n = 70).
-}
-
-\DIFadd{To validate tumor microenvironment expression subtypes, we correlated the hydra }\textit{\DIFadd{enrich}} \DIFadd{expression clusters with the results of tumor microenvironment profiling tools xCell \mbox{%DIFAUXCMD
-\cite{aranXCellDigitallyPortraying2017}}\hspace{0pt}%DIFAUXCMD
-, CIBERSORT \mbox{%DIFAUXCMD
-\cite{newmanRobustEnumerationCell2015}}\hspace{0pt}%DIFAUXCMD
-, and ESTIMATE \mbox{%DIFAUXCMD
-\cite{yoshiharaInferringTumourPurity2013a}}\hspace{0pt}%DIFAUXCMD
-. We also compared the hydra }\textit{\DIFadd{enrich}} \DIFadd{approach to state-of-the-art consensus clustering methods M3C \mbox{%DIFAUXCMD
-\cite{johnM3CMonteCarlo2018} }\hspace{0pt}%DIFAUXCMD
-and k-means clustering using the Gap statistic to select the number of clusters \mbox{%DIFAUXCMD
-\cite{tibshirani2001estimating}}\hspace{0pt}%DIFAUXCMD
-. Since these methods are influenced by the number of input genes, we tested a range of median absolute deviation (MAD) thresholds. The number of clusters was assumed to be the smallest statistically significant value.
-}
-
-\subsection*{\DIFadd{Small blue round cell tumor analysis}}
-\DIFadd{We then compared the clustering patterns across }\textit{\DIFadd{MYCN}}\DIFadd{-NA neuroblastoma, osteosarcoma, Ewing sarcoma, embryonal rhabdomyosarcoma, alveolar rhabdomyosarcoma, and synovial sarcoma. We applied the TumorMap dimensionality reduction method \mbox{%DIFAUXCMD
-\cite{newtonTumorMapExploringMolecular2017} }\hspace{0pt}%DIFAUXCMD
-to visualize clustering of the full small blue round cell tumor gene expression matrix. We then applied the hydra framework to explore expression variation within each disease. Each disease expression matrix had unique statistical properties including sample size and subtype variation. This required us to adapt the minimum probability threshold for each disease dataset using the }\textit{\DIFadd{scan}} \DIFadd{routine. The Jupyter notebooks for exploring these datasets can be found on GitHub (}\url{www.github.com/jpfeil/hydra-paper/analysis}\DIFadd{). We used agglomerative clustering to investigate patterns in the top 10 enriched gene sets for each disease's expression subtypes.
-}
-
-\subsection*{\DIFadd{Statistical analysis}}
-\DIFadd{A Kruskal-Wallis test was used to identify statistically significant differences across two or more groups, and a Mann-Whitney U test was used for pairwise tests using a Holm-Sidak correction for multiple hypothesis testing \mbox{%DIFAUXCMD
-\cite{pedregosa2011scikit,jonesSciPyOpenSource2001}}\hspace{0pt}%DIFAUXCMD
-. We used the scipy \mbox{%DIFAUXCMD
-\cite{2019arXiv190710121V} }\hspace{0pt}%DIFAUXCMD
-stats implementation of the Kruskal-Wallis test and the scikit-learn post hoc processing \mbox{%DIFAUXCMD
-\cite{Terpilowski2019} }\hspace{0pt}%DIFAUXCMD
-implementation of pairwise Mann-Whitney U tests. Spearman rank and Pearson correlation values were calculated using the scipy library \mbox{%DIFAUXCMD
-\cite{jonesSciPyOpenSource2001}}\hspace{0pt}%DIFAUXCMD
-. Survival analysis was done using the survminer package \mbox{%DIFAUXCMD
-\cite{kassambaraSurvminerDrawingSurvival2019}}\hspace{0pt}%DIFAUXCMD
-.
-}
-
-\subsection*{\DIFadd{H\&E slide preparation and pathologist review}}
-\DIFadd{Pediatric tumor samples were flash frozen, embedded in OCT, and 5$\mu$m cryosections were collected. Slides were hematoxylin and eosin (H\&E) stained and imaged on a Leica DMi8, equipped with a HC PL APO 40x/0.85 NA objective and DFC7000T camera. H\&E slides were reviewed by a licensed pathologist.  Morphologic analysis was performed and the degree and type of inflammation estimated from the histologic sections. Grading of inflammation was either minimal ($<$10\% of total nuclei consist of inflammatory cells) or  moderate (20-30\% of total nuclei consist of inflammatory cells). The type of inflammation (predominantly small mature lymphocytes or mixed inflammation consisting of small mature lymphocytes along with plasma cells and/or eosinophils) was noted for each tumor sample.
-}
-
-\DIFaddend \section*{Supporting information}
+\section*{Supporting information}
 
 % Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
 \paragraph*{S1 Fig.}
@@ -1022,9 +632,10 @@ A-B: H\&E sections from fresh frozen tumor tissue from \textit{MYCN}-NA neurobla
 %{\bf Lorem ipsum.} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque.
 
 \section*{Acknowledgments}
-We would like to thank the patients and families who participated in translational genomics research.
-\DIFdelbegin \DIFdel{We would also like to thank the St. Baldrick's Foundation, the California Initiative to Advance Precision Medicine, and the National Human Genome Research Institute of the National Institutes of Health for funding support.
-}\DIFdelend 
+We would like to thank the patients and families who \DIFdelbegin \DIFdel{participated in translational genomics research.
+We would also like to thank the St. Baldrick's Foundation, the California Initiative to Advance Precision Medicine, and the National Human Genome Research Institute of the National Institutes of Health for funding support.
+}\DIFdelend \DIFaddbegin \DIFadd{participate in pediatric oncology research.
+}\DIFaddend 
 
 \nolinenumbers
 
@@ -1220,7 +831,7 @@ We would like to thank the patients and families who participated in translation
 	\DIFaddend Process Mixture Model\DIFdelbegin %DIFDELCMD < }}%%%
 \DIFdel{.
 	}%DIFDELCMD < \newblock %%%
-\DIFdel{In: Do KA, Muller P,editors. Bayesian }\DIFdelend \DIFaddbegin \DIFadd{,'' in }\DIFaddend {{\DIFaddbegin \DIFadd{Bayesian }\DIFaddend Inference}} for {{Gene Expression}}
+\DIFdel{In: Do KA,Muller P, editors. Bayesian }\DIFdelend \DIFaddbegin \DIFadd{,'' in }\DIFaddend {{\DIFaddbegin \DIFadd{Bayesian }\DIFaddend Inference}} for {{Gene Expression}}
 	and {{Proteomics}}\DIFdelbegin \DIFdel{. }%DIFDELCMD < {%%%
 \DIFdel{Cambridge}%DIFDELCMD < }%%%
 \DIFdel{: }%DIFDELCMD < {%%%
